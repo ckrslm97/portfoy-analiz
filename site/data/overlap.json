@@ -1,0 +1,182 @@
+{
+ "yontem": "sum_i min(w_A_i, w_B_i), ilk ~25 varlık üzerinden — ALT SINIR",
+ "kapsama": {
+  "QQQM": 70.5,
+  "QTUM": 28.7,
+  "XLE": 99.8,
+  "SPYM": 51.4,
+  "CIBR": 85.2,
+  "URA": 43.9,
+  "BOTZ": 33.5,
+  "ROBT": 33.8,
+  "XBI": 31.6,
+  "ARKG": 93.9,
+  "NASA": 63.9,
+  "DRAM": 16.0,
+  "JEDI": 85.2,
+  "XLV": 85.5,
+  "VHT": 72.5,
+  "XLF": 77.3,
+  "QBTS": 100.0,
+  "LRCX": 100.0,
+  "RKLB": 100.0
+ },
+ "ciftler": {
+  "XLV|VHT": {
+   "overlap_pct": 72.52,
+   "ortak_hisse": 25
+  },
+  "QQQM|SPYM": {
+   "overlap_pct": 42.38,
+   "ortak_hisse": 16
+  },
+  "NASA|JEDI": {
+   "overlap_pct": 18.1,
+   "ortak_hisse": 6
+  },
+  "QQQM|BOTZ": {
+   "overlap_pct": 12.46,
+   "ortak_hisse": 3
+  },
+  "SPYM|BOTZ": {
+   "overlap_pct": 11.86,
+   "ortak_hisse": 3
+  },
+  "NASA|RKLB": {
+   "overlap_pct": 10.64,
+   "ortak_hisse": 1
+  },
+  "QQQM|CIBR": {
+   "overlap_pct": 9.6,
+   "ortak_hisse": 5
+  },
+  "QQQM|QTUM": {
+   "overlap_pct": 8.96,
+   "ortak_hisse": 7
+  },
+  "SPYM|CIBR": {
+   "overlap_pct": 6.94,
+   "ortak_hisse": 4
+  },
+  "CIBR|ROBT": {
+   "overlap_pct": 6.67,
+   "ortak_hisse": 4
+  },
+  "QTUM|SPYM": {
+   "overlap_pct": 4.49,
+   "ortak_hisse": 4
+  },
+  "SPYM|XLF": {
+   "overlap_pct": 4.43,
+   "ortak_hisse": 4
+  },
+  "ARKG|XLV": {
+   "overlap_pct": 4.39,
+   "ortak_hisse": 1
+  },
+  "ARKG|VHT": {
+   "overlap_pct": 4.39,
+   "ortak_hisse": 1
+  },
+  "JEDI|RKLB": {
+   "overlap_pct": 4.36,
+   "ortak_hisse": 1
+  },
+  "QQQM|ROBT": {
+   "overlap_pct": 4.29,
+   "ortak_hisse": 3
+  },
+  "BOTZ|ROBT": {
+   "overlap_pct": 3.98,
+   "ortak_hisse": 3
+  },
+  "QQQM|DRAM": {
+   "overlap_pct": 3.53,
+   "ortak_hisse": 2
+  },
+  "ROBT|ARKG": {
+   "overlap_pct": 3.42,
+   "ortak_hisse": 2
+  },
+  "SPYM|XLV": {
+   "overlap_pct": 3.05,
+   "ortak_hisse": 3
+  },
+  "SPYM|VHT": {
+   "overlap_pct": 3.05,
+   "ortak_hisse": 3
+  },
+  "XBI|ARKG": {
+   "overlap_pct": 2.53,
+   "ortak_hisse": 2
+  },
+  "QQQM|JEDI": {
+   "overlap_pct": 2.49,
+   "ortak_hisse": 2
+  },
+  "SPYM|ROBT": {
+   "overlap_pct": 2.28,
+   "ortak_hisse": 2
+  },
+  "BOTZ|XLV": {
+   "overlap_pct": 2.1,
+   "ortak_hisse": 1
+  },
+  "BOTZ|VHT": {
+   "overlap_pct": 2.08,
+   "ortak_hisse": 1
+  },
+  "CIBR|BOTZ": {
+   "overlap_pct": 1.81,
+   "ortak_hisse": 1
+  },
+  "QQQM|LRCX": {
+   "overlap_pct": 1.79,
+   "ortak_hisse": 1
+  },
+  "BOTZ|JEDI": {
+   "overlap_pct": 1.67,
+   "ortak_hisse": 1
+  },
+  "QTUM|CIBR": {
+   "overlap_pct": 1.52,
+   "ortak_hisse": 1
+  },
+  "QTUM|ROBT": {
+   "overlap_pct": 1.52,
+   "ortak_hisse": 1
+  },
+  "SPYM|DRAM": {
+   "overlap_pct": 1.48,
+   "ortak_hisse": 1
+  },
+  "ROBT|XLV": {
+   "overlap_pct": 1.45,
+   "ortak_hisse": 1
+  },
+  "ROBT|VHT": {
+   "overlap_pct": 1.45,
+   "ortak_hisse": 1
+  },
+  "SPYM|ARKG": {
+   "overlap_pct": 1.43,
+   "ortak_hisse": 1
+  },
+  "QTUM|BOTZ": {
+   "overlap_pct": 1.26,
+   "ortak_hisse": 1
+  },
+  "QTUM|JEDI": {
+   "overlap_pct": 1.26,
+   "ortak_hisse": 1
+  },
+  "QQQM|NASA": {
+   "overlap_pct": 1.12,
+   "ortak_hisse": 1
+  },
+  "XLE|SPYM": {
+   "overlap_pct": 0.93,
+   "ortak_hisse": 1
+  }
+ }
+}

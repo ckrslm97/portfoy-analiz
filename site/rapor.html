@@ -1,0 +1,1194 @@
+<title>Portföy Analiz Raporu — Temmuz 2026</title>
+<style>
+  :root {
+    --bg: #FBFBFD; --surface: #FFFFFF; --surface-2: #F5F6F9;
+    --ink: #131720; --ink-2: #3D4453; --muted: #6B7385;
+    --rule: #E2E5EC; --rule-strong: #C9CEDA;
+    --accent: #0B6B63; --accent-soft: #E4F0EE;
+    --pos: #0E7256; --neg: #A93520; --warn: #8A5A00;
+    --pos-bg: #E6F2ED; --neg-bg: #FAEAE6; --warn-bg: #F8EFDC;
+    --shadow: 0 1px 2px rgba(19,23,32,.05), 0 8px 24px -12px rgba(19,23,32,.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0E13; --surface: #121722; --surface-2: #171D29;
+      --ink: #E7EAF1; --ink-2: #B9C0CE; --muted: #868FA1;
+      --rule: #222A38; --rule-strong: #333D4E;
+      --accent: #46C9BC; --accent-soft: #10302E;
+      --pos: #4FD198; --neg: #FF8E72; --warn: #EDB544;
+      --pos-bg: #102A22; --neg-bg: #2E1712; --warn-bg: #2B2110;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0B0E13; --surface: #121722; --surface-2: #171D29;
+    --ink: #E7EAF1; --ink-2: #B9C0CE; --muted: #868FA1;
+    --rule: #222A38; --rule-strong: #333D4E;
+    --accent: #46C9BC; --accent-soft: #10302E;
+    --pos: #4FD198; --neg: #FF8E72; --warn: #EDB544;
+    --pos-bg: #102A22; --neg-bg: #2E1712; --warn-bg: #2B2110;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+  :root[data-theme="light"] {
+    --bg: #FBFBFD; --surface: #FFFFFF; --surface-2: #F5F6F9;
+    --ink: #131720; --ink-2: #3D4453; --muted: #6B7385;
+    --rule: #E2E5EC; --rule-strong: #C9CEDA;
+    --accent: #0B6B63; --accent-soft: #E4F0EE;
+    --pos: #0E7256; --neg: #A93520; --warn: #8A5A00;
+    --pos-bg: #E6F2ED; --neg-bg: #FAEAE6; --warn-bg: #F8EFDC;
+    --shadow: 0 1px 2px rgba(19,23,32,.05), 0 8px 24px -12px rgba(19,23,32,.12);
+  }
+
+  /* Tipografi jetonları temadan bağımsızdır; her iki temada da aynı kalır. */
+  :root {
+    --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px 96px; }
+
+  /* ---------- masthead ---------- */
+  header.mast {
+    border-bottom: 1px solid var(--rule-strong);
+    padding: 56px 0 28px; margin-bottom: 8px;
+  }
+  .eyebrow {
+    font-family: var(--mono); font-size: 11.5px; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 18px;
+  }
+  h1 {
+    font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: clamp(30px, 5vw, 46px); line-height: 1.12; font-weight: 600;
+    margin: 0 0 16px; letter-spacing: -.012em; text-wrap: balance;
+  }
+  .standfirst {
+    font-size: 18px; color: var(--ink-2); max-width: 64ch; margin: 0 0 26px;
+  }
+  .meta-strip {
+    display: flex; flex-wrap: wrap; gap: 10px 28px;
+    font-family: var(--mono); font-size: 12px; color: var(--muted);
+  }
+  .meta-strip b { color: var(--ink-2); font-weight: 600; }
+
+  /* ---------- nav ---------- */
+  nav.toc {
+    position: sticky; top: 0; z-index: 20;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 44px; padding: 10px 0;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+  }
+  nav.toc ol {
+    display: flex; gap: 4px; list-style: none; margin: 0; padding: 0;
+    white-space: nowrap;
+  }
+  nav.toc a {
+    display: block; padding: 6px 11px; border-radius: 5px;
+    font-family: var(--mono); font-size: 12px; color: var(--muted);
+    text-decoration: none; transition: background .15s, color .15s;
+  }
+  nav.toc a:hover { background: var(--surface-2); color: var(--ink); }
+  nav.toc a:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  /* ---------- sections ---------- */
+  section { margin-bottom: 68px; scroll-margin-top: 64px; }
+  .sec-head {
+    display: flex; align-items: baseline; gap: 14px;
+    border-bottom: 2px solid var(--ink); padding-bottom: 10px; margin-bottom: 26px;
+  }
+  .sec-num {
+    font-family: var(--mono); font-size: 12px; color: var(--accent);
+    font-weight: 600; letter-spacing: .08em;
+  }
+  .sec-head h2 {
+    font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: clamp(21px, 3vw, 28px); font-weight: 600; margin: 0;
+    letter-spacing: -.008em; text-wrap: balance;
+  }
+  h3 {
+    font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 19px; font-weight: 600; margin: 36px 0 12px; letter-spacing: -.005em;
+  }
+  h4 {
+    font-size: 13px; font-weight: 700; margin: 26px 0 10px;
+    letter-spacing: .07em; text-transform: uppercase; color: var(--muted);
+  }
+  p { margin: 0 0 15px; max-width: 72ch; }
+  ul, ol.body-list { max-width: 72ch; padding-left: 20px; margin: 0 0 15px; }
+  li { margin-bottom: 7px; }
+  strong { font-weight: 650; }
+  code {
+    font-family: var(--mono); font-size: .88em;
+    background: var(--surface-2); padding: 1px 5px; border-radius: 3px;
+  }
+
+  /* ---------- tables ---------- */
+  .scroll { overflow-x: auto; margin: 0 0 10px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td {
+    padding: 8px 12px; text-align: right; white-space: nowrap;
+    border-bottom: 1px solid var(--rule);
+  }
+  th {
+    background: var(--surface-2); font-size: 11px; font-weight: 700;
+    letter-spacing: .05em; text-transform: uppercase; color: var(--muted);
+    position: sticky; top: 0;
+  }
+  th:first-child, td:first-child { text-align: left; }
+  td.l, th.l { text-align: left; white-space: normal; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--surface-2); }
+  .num { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 12.5px; }
+  .tick { font-family: var(--mono); font-weight: 650; font-size: 12.5px; }
+  .pos { color: var(--pos); }
+  .neg { color: var(--neg); }
+  caption {
+    caption-side: bottom; text-align: left; font-size: 12px; color: var(--muted);
+    padding: 10px 12px; line-height: 1.5;
+  }
+
+  /* ---------- chips ---------- */
+  .chip {
+    display: inline-block; padding: 1.5px 8px; border-radius: 100px;
+    font-family: var(--mono); font-size: 10.5px; font-weight: 650;
+    letter-spacing: .04em; text-transform: uppercase;
+  }
+  .chip-h { background: var(--neg-bg); color: var(--neg); }
+  .chip-o { background: var(--warn-bg); color: var(--warn); }
+  .chip-d { background: var(--pos-bg); color: var(--pos); }
+  .chip-n { background: var(--surface-2); color: var(--muted); }
+
+  /* ---------- callouts ---------- */
+  .callout {
+    border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    background: var(--surface); border-radius: 0 8px 8px 0;
+    padding: 16px 20px; margin: 0 0 18px; box-shadow: var(--shadow);
+  }
+  .callout.crit { border-left-color: var(--neg); }
+  .callout.warn { border-left-color: var(--warn); }
+  .callout .ct {
+    font-family: var(--mono); font-size: 11px; font-weight: 700;
+    letter-spacing: .1em; text-transform: uppercase; margin: 0 0 8px; color: var(--accent);
+  }
+  .callout.crit .ct { color: var(--neg); }
+  .callout.warn .ct { color: var(--warn); }
+  .callout p:last-child, .callout ul:last-child { margin-bottom: 0; }
+
+  .assume {
+    background: var(--surface-2); border: 1px dashed var(--rule-strong);
+    border-radius: 6px; padding: 12px 16px; margin: 0 0 16px;
+    font-size: 14.5px; color: var(--ink-2);
+  }
+  .assume b {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--warn); display: block; margin-bottom: 4px;
+  }
+
+  /* ---------- key figures ---------- */
+  .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); gap: 12px; margin: 0 0 26px; }
+  .fig {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 8px; padding: 14px 16px;
+  }
+  .fig .k {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 6px;
+  }
+  .fig .v {
+    font-family: var(--mono); font-variant-numeric: tabular-nums;
+    font-size: 25px; font-weight: 600; line-height: 1.1; letter-spacing: -.02em;
+  }
+  .fig .s { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+  /* ---------- verdict rows ---------- */
+  .verdict { display: grid; gap: 10px; margin: 0 0 20px; }
+  .vrow {
+    display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start;
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 8px; padding: 13px 16px;
+  }
+  .vrow .vlabel {
+    font-family: var(--mono); font-size: 11px; font-weight: 700;
+    letter-spacing: .06em; text-transform: uppercase; padding-top: 2px;
+  }
+  .vrow p { margin: 0; font-size: 14.5px; }
+  .v-sell { border-left: 3px solid var(--neg); } .v-sell .vlabel { color: var(--neg); }
+  .v-trim { border-left: 3px solid var(--warn); } .v-trim .vlabel { color: var(--warn); }
+  .v-keep { border-left: 3px solid var(--pos); } .v-keep .vlabel { color: var(--pos); }
+  .v-add  { border-left: 3px solid var(--accent); } .v-add .vlabel { color: var(--accent); }
+
+  footer.end {
+    border-top: 1px solid var(--rule-strong); padding-top: 24px; margin-top: 72px;
+    font-size: 13px; color: var(--muted); max-width: 78ch;
+  }
+
+  @media (max-width: 620px) {
+    .wrap { padding: 0 16px 64px; }
+    .vrow { grid-template-columns: 1fr; gap: 6px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">Yatırım Araştırma Raporu · Bağımsız Analiz</p>
+  <h1>Küresel Büyüme Portföyü: Kimlik, Risk ve Çakışma Analizi</h1>
+  <p class="standfirst">
+    36 enstrümanlık mevcut ve planlanan portföyün TEFAS ve Yahoo Finance birincil
+    verileriyle yeniden inşa edilmiş, USD bazlı performans ve konsantrasyon incelemesi.
+    10–20 yıllık yatırım ufku için hazırlanmıştır.
+  </p>
+  <div class="meta-strip">
+    <span>Veri kesiti: <b>21 Temmuz 2026</b> (bu rapor sabit, güncellenmiyor)</span>
+    <span>Baz para birimi: <b>USD</b></span>
+    <span>Ölçüt: <b>MSCI ACWI</b></span>
+    <span>USD/TRY: <b>47,20</b></span>
+    <span>Kaynaklar: <b>TEFAS API · Yahoo Finance · stockanalysis.com</b></span>
+  </div>
+  <p style="margin-top:16px">
+    <a href="index.html" style="font-family:var(--mono);font-size:13px;color:var(--accent)">
+      → Canlı portföy aracı: karar, öneri ve takip (her gece güncellenir)</a>
+  </p>
+</header>
+
+<nav class="toc" aria-label="Bölümler">
+  <ol>
+    <li><a href="#s1">01 Yönetici Özeti</a></li>
+    <li><a href="#s2">02 Metodoloji</a></li>
+    <li><a href="#s3">03 Kimlik Doğrulama</a></li>
+    <li><a href="#s4">04 Performans</a></li>
+    <li><a href="#s5">05 Risk</a></li>
+    <li><a href="#s6">06 Çakışma &amp; Korelasyon</a></li>
+    <li><a href="#s7">07 Tematik Harita</a></li>
+    <li><a href="#s8">08 Eksik Alanlar</a></li>
+    <li><a href="#s9">09 Bankacılık &amp; Sağlık</a></li>
+    <li><a href="#s10">10 Aksiyon Planı</a></li>
+  </ol>
+</nav>
+
+<!-- ============ 1 ============ -->
+<section id="s1">
+  <div class="sec-head"><span class="sec-num">01</span><h2>Yönetici Özeti</h2></div>
+
+  <div class="figs">
+    <div class="fig"><div class="k">İncelenen enstrüman</div><div class="v">36</div><div class="s">19 TEFAS · 17 ABD</div></div>
+    <div class="fig"><div class="k">Kimlik hatası</div><div class="v neg">6</div><div class="s">yanlış sınıflandırma</div></div>
+    <div class="fig"><div class="k">En yüksek çakışma</div><div class="v neg">%72,5</div><div class="s">XLV / VHT</div></div>
+    <div class="fig"><div class="k">TL'nin kur etkisi</div><div class="v">%16,8</div><div class="s">son 12 ayda</div></div>
+  </div>
+
+  <p>
+    Portföy, uzun vadeli büyüme niyetiyle kurulmuş ancak <strong>tema tekrarı üzerine inşa
+    edilmiş</strong> bir yapı gösteriyor. Ana bulgular:
+  </p>
+
+  <div class="callout crit">
+    <p class="ct">Kritik bulgu 1 — Üç "ETF" aslında tek hisse</p>
+    <p>
+      <b>QBTS</b> (D-Wave Quantum), <b>LRCX</b> (Lam Research) ve <b>RKLB</b> (Rocket Lab)
+      birer ETF değil, tek tek şirket hisseleridir. Bunlar portföyde ETF gibi
+      değerlendirilirse çeşitlendirme yanılsaması doğar: QBTS tek başına
+      <b>%126 yıllık volatilite</b> ve <b>−%96,7 tarihsel düşüş</b> taşıyor.
+    </p>
+  </div>
+
+  <div class="callout crit">
+    <p class="ct">Kritik bulgu 2 — VCX bir ETF değil, likidite profili tamamen farklı</p>
+    <p>
+      <b>VCX</b> = Fundrise Innovation Fund. Halka açık şirketlere değil <b>özel (private)
+      teknoloji şirketlerine</b> yatırım yapan kapalı uçlu bir fondur. 19 Mart 2026'da NYSE'ye
+      kote oldu. Kapalı uçlu yapısı nedeniyle <b>NAV'a prim/iskonto</b> ile işlem görür ve
+      ETF'lerdeki gibi arbitrajla fiyatı hizalayan yaratma/itfa mekanizması yoktur.
+      Ayrıca <b>19 Eylül 2026'da lockup süresi doluyor</b> — kote öncesi yatırımcıların
+      satışa açılması arz baskısı yaratabilir.
+    </p>
+  </div>
+
+  <div class="callout crit">
+    <p class="ct">Kritik bulgu 3 — Bankacılık diye eklenen iki fon bankacılık fonu değil</p>
+    <p>
+      <b>AFS</b>'yi bankacılık fonu olarak listelemişsin; resmi unvanı
+      <b>"Ak Portföy SAĞLIK Sektörü Yabancı Hisse Senedi Fonu"</b>dur.
+      <b>TI2</b> ise <b>"İş Portföy Hisse Senedi (TL) Fonu"</b> — bankacılık teması olmayan
+      genel bir TR hisse fonudur. Yani <b>bankacılık boşluğun aslında hiç kapanmıyor</b>;
+      sağlık ağırlığın ise farkında olmadan artıyor.
+    </p>
+  </div>
+
+  <div class="callout warn">
+    <p class="ct">Kritik bulgu 4 — TBE kodu doğrulanamadı</p>
+    <p>
+      <b>TBE</b>, TEFAS'ın 1.038 menkul kıymet yatırım fonu ve 309 emeklilik fonu listesinin
+      <b>hiçbirinde bulunamadı</b>; web araştırmasında da bir eşleşme doğrulanamadı.
+      Satın almadan önce kodu kurucu şirketten teyit et. <b>Veri yok</b> — bu rapora dahil edilmedi.
+    </p>
+  </div>
+
+  <div class="callout">
+    <p class="ct">Kritik bulgu 5 — Aynı temayı defalarca satın alıyorsun</p>
+    <p>
+      Yapay zeka/robotik teması portföyde en az <b>7 ayrı enstrümanla</b> tekrar ediyor
+      (BOTZ, ROBT, QTUM, GPT, YJK, KTJ, CPU). BOTZ–ROBT korelasyonu <b>0,93</b>,
+      XLV–VHT <b>0,99</b>, GUH–YAY <b>0,98</b>, YDI–TI2 <b>0,98</b>.
+      Bu, çeşitlendirme değil <b>aynı riskin farklı isimlerle çoğaltılmasıdır</b>.
+    </p>
+  </div>
+
+  <h3>Öne çıkan performans gerçekleri</h3>
+  <ul>
+    <li>
+      <strong>Tematik ETF'lerin çoğu ölçütü yenemedi.</strong> 10 yıllık pencerede
+      BOTZ %9,6, ROBT %7,6, ARKG %8,9 yıllık bileşik getiri üretti — hepsi
+      <b>negatif alfa</b> ile. Aynı dönemde SPYM %15,2 ve <b>%0,02 gider oranıyla</b>.
+    </li>
+    <li>
+      <strong>ARKG son 5 yılda −%55.</strong> %0,75 gider oranı ödenerek elde edilen sonuç bu.
+    </li>
+    <li>
+      <strong>AFS 5 yılda USD bazında negatif</strong> (−%1,1 yıllık). Sağlık maruziyeti
+      istiyorsan bu fon onu pahalı ve kötü yapıyor.
+    </li>
+    <li>
+      <strong>TL getirileri seni yanıltmasın.</strong> Son 12 ayda TL, USD karşısında
+      %16,8 değer kaybetti. YHZ'nin "+%72 TL getirisi" USD bazında +%47'dir;
+      TI2'nin "+%21 TL getirisi" ise sadece <b>+%3,9</b>.
+    </li>
+  </ul>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="s2">
+  <div class="sec-head"><span class="sec-num">02</span><h2>Metodoloji ve Veri Bütünlüğü</h2></div>
+
+  <p>
+    Bu rapordaki her sayı birincil kaynaklardan programatik olarak çekilmiş, elle
+    girilmemiştir. Yöntem kararları sonucu doğrudan etkilediği için açıkça yazıyorum.
+  </p>
+
+  <h4>Para birimi — neden USD</h4>
+  <p>
+    TEFAS fonlarının TL cinsi fiyatları günlük USD/TRY ile bölünerek USD'ye çevrildi.
+    Gerekçe: TL'nin değer kaybı, fon yöneticisinin becerisi olmadığı halde nominal getiriyi
+    şişirir. 10–20 yıllık küresel bir portföyde tek anlamlı ortak payda USD'dir.
+    Ayrıştırma şu kimlikle yapıldı:
+  </p>
+  <p><code>(1 + TL getirisi) = (1 + USD getirisi) × (1 + kur etkisi)</code></p>
+
+  <h4>Beta ve korelasyon — neden haftalık</h4>
+  <p>
+    TEFAS fon fiyatları gecikmeli açıklanır ve BIST ile NYSE takvimleri örtüşmez.
+    Günlük veriyle hesaplanan beta bu yüzden yapay olarak sıfıra yaklaşır
+    (<em>eşzamansız işlem yanlılığı</em>). İlk hesaplamada YAY'ın betası günlük veriyle
+    0,21 çıkarken haftalık veriyle <b>1,00</b> oldu — fonun gerçek davranışı bu.
+    Tüm beta, alfa, izleme hatası ve korelasyon değerleri <b>haftalık (Cuma–Cuma)</b> getirilerle üretildi.
+  </p>
+
+  <h4>Kısa geçmişli fonlarda yıllıklandırma yapılmadı</h4>
+  <p>
+    NASA (0,31 yıl), DRAM (0,30), JEDI (0,82), PNU (0,36) ve PSH (0,26) için CAGR, Sharpe,
+    Sortino ve alfa <b>üretilmedi</b>. 74 günlük bir getiriyi yıllıklandırmak
+    matematiksel olarak mümkün ama anlamsızdır — ilk denemede DRAM için
+    "%805 CAGR" gibi bir sayı çıktı ve bu bilinçli olarak atıldı.
+  </p>
+
+  <h4>Risk kademesi nasıl atandı</h4>
+  <div class="scroll">
+    <table>
+      <thead><tr><th class="l">Bileşen</th><th>Düşük</th><th>Orta</th><th>Yüksek</th></tr></thead>
+      <tbody>
+        <tr><td class="l">Yıllık volatilite</td><td class="num">&lt; %12</td><td class="num">%12–25</td><td class="num">&gt; %25</td></tr>
+        <tr><td class="l">Maksimum düşüş</td><td class="num">&gt; −%15</td><td class="num">−%15 … −%35</td><td class="num">&lt; −%35</td></tr>
+        <tr><td class="l">Beta (ACWI)</td><td class="num">&lt; 0,70</td><td class="num">0,70–1,30</td><td class="num">&gt; 1,30</td></tr>
+      </tbody>
+      <caption>Nihai kademe üç bileşenin medyanıdır. İlk 10 pozisyon ağırlığı %60'ı aşarsa bir kademe yükseltilir. Kural tabanlıdır — kanaate bağlı değildir.</caption>
+    </table>
+  </div>
+
+  <h4>Neyin verisi yok</h4>
+  <ul>
+    <li><b>TEFAS fonlarının gider oranları</b> — TEFAS genel API'sinde yayınlanmıyor. KAP izahnamelerinden tek tek teyit edilmeli.</li>
+    <li><b>TEFAS fonlarının hisse bazlı içerikleri</b> — API'de yok; bu yüzden TEFAS tarafında çakışma <em>holdings</em> ile değil <b>korelasyonla</b> ölçüldü.</li>
+    <li><b>TBE</b> — kod doğrulanamadı.</li>
+    <li><b>VCX</b> — kapalı uçlu fon olduğu için standart ETF metrikleri (gider oranı, holdings) karşılaştırılabilir biçimde alınamadı.</li>
+  </ul>
+  <p>
+    ETF çakışma yüzdeleri yalnızca <b>ilk ~25 varlık</b> üzerinden hesaplandığı için
+    <b>alt sınırdır</b>; gerçek örtüşme daha yüksektir.
+  </p>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="s3">
+  <div class="sec-head"><span class="sec-num">03</span><h2>Kimlik Doğrulama</h2></div>
+  <p>
+    Analize başlamadan önce her kod birincil kaynaktan doğrulandı. Aşağıdaki tablo,
+    senin listendeki etiketle resmî kaydın çeliştiği yerleri gösteriyor.
+  </p>
+
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr><th class="l">Kod</th><th class="l">Senin varsayımın</th><th class="l">Doğrulanan kimlik</th><th class="l">Etki</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tick">QBTS</td><td class="l">ETF</td>
+          <td class="l"><b>D-Wave Quantum Inc.</b> — tek hisse</td>
+          <td class="l"><span class="chip chip-h">Yüksek</span> Vol %126, düşüş −%96,7</td>
+        </tr>
+        <tr>
+          <td class="tick">LRCX</td><td class="l">ETF</td>
+          <td class="l"><b>Lam Research Corp.</b> — tek hisse</td>
+          <td class="l"><span class="chip chip-o">Orta</span> Tek şirket riski</td>
+        </tr>
+        <tr>
+          <td class="tick">RKLB</td><td class="l">ETF</td>
+          <td class="l"><b>Rocket Lab Corp.</b> — tek hisse</td>
+          <td class="l"><span class="chip chip-h">Yüksek</span> Vol %79, düşüş −%83</td>
+        </tr>
+        <tr>
+          <td class="tick">VCX</td><td class="l">ETF</td>
+          <td class="l"><b>Fundrise Innovation Fund</b> — kapalı uçlu, özel şirket fonu</td>
+          <td class="l"><span class="chip chip-h">Yüksek</span> NAV primi + lockup arzı</td>
+        </tr>
+        <tr>
+          <td class="tick">AFS</td><td class="l">Bankacılık fonu</td>
+          <td class="l"><b>Ak Portföy SAĞLIK Sektörü Yabancı Hisse</b></td>
+          <td class="l"><span class="chip chip-h">Yüksek</span> Yanlış sektör</td>
+        </tr>
+        <tr>
+          <td class="tick">TI2</td><td class="l">Bankacılık fonu</td>
+          <td class="l"><b>İş Portföy Hisse Senedi (TL)</b> — genel TR hisse</td>
+          <td class="l"><span class="chip chip-o">Orta</span> Bankacılık teması yok</td>
+        </tr>
+        <tr>
+          <td class="tick">TBE</td><td class="l">Sağlık fonu</td>
+          <td class="l"><b>Bulunamadı</b> — TEFAS YAT/EMK listelerinde yok</td>
+          <td class="l"><span class="chip chip-n">Veri yok</span> Teyit gerekli</td>
+        </tr>
+        <tr>
+          <td class="tick">JEDI</td><td class="l">ETF</td>
+          <td class="l"><b>Defiance Drone and Modern Warfare ETF</b> (ABD)</td>
+          <td class="l"><span class="chip chip-o">Orta</span> Londra'daki JEDI.L farklı üründür</td>
+        </tr>
+        <tr>
+          <td class="tick">XBI</td><td class="l">İki listede birden</td>
+          <td class="l"><b>SPDR S&amp;P Biotech</b> — zaten portföyde var</td>
+          <td class="l"><span class="chip chip-n">Not</span> Tekrar eklemeye gerek yok</td>
+        </tr>
+      </tbody>
+      <caption>Kaynaklar: TEFAS <code>/api/funds/*</code> (20 Tem 2026), Yahoo Finance meta, stockanalysis.com, SEC/NYSE kayıtları.</caption>
+    </table>
+  </div>
+
+  <div class="callout warn">
+    <p class="ct">Yeni kurulmuş fonlar — geçmişi olmayan üç ETF</p>
+    <p>
+      <b>NASA</b> (30 Mar 2026), <b>DRAM</b> (2 Nis 2026) ve <b>JEDI</b> (25 Eyl 2025)
+      bir yıldan kısa süredir işlem görüyor. Bunlar için güvenilir CAGR, Sharpe veya beta
+      üretilemez. DRAM özellikle dikkat çekici: kuruluşundan itibaren <b>~23 milyar dolara</b>
+      ulaşarak tarihin en hızlı ETF lansmanı oldu; Morningstar fonun taşıdığı hisselerin
+      <b>değerlemesinin pahalı</b> olduğuna dikkat çekti. Hızlı para girişi, iyi bir
+      giriş fiyatı anlamına gelmez.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="s4">
+  <div class="sec-head"><span class="sec-num">04</span><h2>Performans Panosu</h2></div>
+
+  <h3>ABD tarafı — tüm geçmiş, USD</h3>
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th class="l">Kod</th><th>AUM</th><th>Gider</th><th>Yıl</th><th>CAGR</th>
+          <th>Vol</th><th>Sharpe</th><th>Sortino</th><th>Maks. düşüş</th><th>Beta</th><th>Alfa</th><th>5 yıl</th><th>Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="tick">LRCX</td><td class="num">—</td><td class="num">—</td><td class="num">10,0</td><td class="num pos">%45,1</td><td class="num">0,457</td><td class="num">0,90</td><td class="num">1,29</td><td class="num neg">−%56</td><td class="num">1,92</td><td class="num pos">+%24,9</td><td class="num pos">+%432</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">RKLB</td><td class="num">—</td><td class="num">—</td><td class="num">5,7</td><td class="num pos">%41,4</td><td class="num">0,790</td><td class="num">0,47</td><td class="num">0,82</td><td class="num neg">−%83</td><td class="num">2,19</td><td class="num pos">+%19,0</td><td class="num pos">+%542</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">QTUM</td><td class="num">5,32B</td><td class="num">%0,40</td><td class="num">7,9</td><td class="num pos">%26,3</td><td class="num">0,276</td><td class="num">0,81</td><td class="num">1,11</td><td class="num neg">−%38</td><td class="num">1,30</td><td class="num pos">+%11,7</td><td class="num pos">+%213</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">CIBR</td><td class="num">14,4B</td><td class="num">%0,58</td><td class="num">10,0</td><td class="num">%18,1</td><td class="num">0,236</td><td class="num">0,60</td><td class="num">0,80</td><td class="num neg">−%34</td><td class="num">1,09</td><td class="num pos">+%4,9</td><td class="num pos">+%91</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">QQQM</td><td class="num">97,5B</td><td class="num">%0,15</td><td class="num">5,8</td><td class="num">%17,2</td><td class="num">0,223</td><td class="num">0,59</td><td class="num">0,84</td><td class="num neg">−%35</td><td class="num">1,23</td><td class="num pos">+%1,1</td><td class="num pos">+%103</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">SPYM</td><td class="num">157B</td><td class="num">%0,02</td><td class="num">10,0</td><td class="num">%15,2</td><td class="num">0,180</td><td class="num">0,62</td><td class="num">0,75</td><td class="num neg">−%34</td><td class="num">1,02</td><td class="num pos">+%2,6</td><td class="num pos">+%85</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">URA</td><td class="num">5,38B</td><td class="num">%0,69</td><td class="num">10,0</td><td class="num">%14,6</td><td class="num">0,380</td><td class="num">0,28</td><td class="num">0,43</td><td class="num neg">−%61</td><td class="num">1,22</td><td class="num">+%0,3</td><td class="num pos">+%148</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">XLF</td><td class="num">56,3B</td><td class="num">%0,08</td><td class="num">10,0</td><td class="num">%13,4</td><td class="num">0,221</td><td class="num">0,43</td><td class="num">0,54</td><td class="num neg">−%43</td><td class="num">1,11</td><td class="num">+%0,1</td><td class="num pos">+%67</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">QBTS</td><td class="num">—</td><td class="num">—</td><td class="num">5,6</td><td class="num">%10,6</td><td class="num neg">1,261</td><td class="num">0,05</td><td class="num">0,10</td><td class="num neg">−%97</td><td class="num">1,95</td><td class="num neg">−%9,6</td><td class="num pos">+%81</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">XBI</td><td class="num">10,5B</td><td class="num">%0,35</td><td class="num">10,0</td><td class="num">%10,2</td><td class="num">0,319</td><td class="num">0,20</td><td class="num">0,30</td><td class="num neg">−%64</td><td class="num">1,15</td><td class="num neg">−%3,5</td><td class="num">+%19</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">XLE</td><td class="num">38,2B</td><td class="num">%0,08</td><td class="num">10,0</td><td class="num">%9,9</td><td class="num">0,296</td><td class="num">0,20</td><td class="num">0,26</td><td class="num neg">−%67</td><td class="num">0,97</td><td class="num neg">−%2,3</td><td class="num pos">+%184</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">VHT</td><td class="num">18,2B</td><td class="num">%0,09</td><td class="num">10,0</td><td class="num">%9,8</td><td class="num">0,170</td><td class="num">0,34</td><td class="num">0,45</td><td class="num">−%29</td><td class="num">0,80</td><td class="num">−%0,9</td><td class="num">+%29</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">XLV</td><td class="num">41,8B</td><td class="num">%0,08</td><td class="num">10,0</td><td class="num">%9,7</td><td class="num">0,166</td><td class="num">0,34</td><td class="num">0,46</td><td class="num">−%28</td><td class="num">0,74</td><td class="num">−%0,6</td><td class="num">+%34</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">BOTZ</td><td class="num">3,20B</td><td class="num">%0,68</td><td class="num">9,9</td><td class="num">%9,6</td><td class="num">0,259</td><td class="num">0,22</td><td class="num">0,30</td><td class="num neg">−%56</td><td class="num">1,36</td><td class="num neg">−%5,9</td><td class="num neg">+%4,4</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">ARKG</td><td class="num">1,62B</td><td class="num">%0,75</td><td class="num">10,0</td><td class="num">%8,9</td><td class="num">0,414</td><td class="num">0,12</td><td class="num">0,18</td><td class="num neg">−%84</td><td class="num">1,62</td><td class="num neg">−%8,9</td><td class="num neg">−%55</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">ROBT</td><td class="num">704M</td><td class="num">%0,65</td><td class="num">8,4</td><td class="num">%7,6</td><td class="num">0,256</td><td class="num">0,14</td><td class="num">0,19</td><td class="num neg">−%44</td><td class="num">1,32</td><td class="num neg">−%6,3</td><td class="num neg">+%3,5</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">DRAM</td><td class="num">23,4B</td><td class="num">%0,65</td><td class="num">0,30</td><td class="num">—</td><td class="num">0,978</td><td class="num">—</td><td class="num">—</td><td class="num neg">−%35</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">NASA</td><td class="num">1,33B</td><td class="num">%0,75</td><td class="num">0,31</td><td class="num">—</td><td class="num">0,667</td><td class="num">—</td><td class="num">—</td><td class="num neg">−%46</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">JEDI</td><td class="num">130M</td><td class="num">%0,69</td><td class="num">0,82</td><td class="num">—</td><td class="num">0,526</td><td class="num">—</td><td class="num">—</td><td class="num neg">−%45</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+      </tbody>
+      <caption>
+        Alfa ve beta MSCI ACWI'ye göre, haftalık getirilerle. "—" = yeterli geçmiş yok.
+        Kaynak: Yahoo Finance (temettü düzeltilmiş), stockanalysis.com. Kesit: 21 Tem 2026.
+      </caption>
+    </table>
+  </div>
+
+  <div class="callout">
+    <p class="ct">Okuma notu — pahalı tematik fonların bilançosu</p>
+    <p>
+      Tabloyu alfa sütunundan okursan tablo netleşiyor: <b>BOTZ (−%5,9), ROBT (−%6,3),
+      ARKG (−%8,9), XBI (−%3,5)</b> uzun vadede ölçütün gerisinde kaldı ve bunun için
+      yılda %0,35–0,75 ücret ödendi. Buna karşılık <b>SPYM %0,02 ücretle +%2,6 alfa</b> üretti.
+      Tematik fon almak, temanın büyümesinden kâr edeceğin anlamına gelmiyor.
+    </p>
+  </div>
+
+  <h3>TEFAS tarafı — TL getirisi ile USD getirisinin ayrıştırılması</h3>
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th class="l">Kod</th><th class="l">Fon</th><th>AUM (mn ₺)</th><th>Yatırımcı</th>
+          <th>Yıl</th><th>CAGR (USD)</th><th>Vol</th><th>Sharpe</th><th>Maks. düşüş</th>
+          <th>TL 1y</th><th>USD 1y</th><th>Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="tick">PHE</td><td class="l">Pusula Hisse Senedi</td><td class="num">75.888</td><td class="num">158.766</td><td class="num">2,3</td><td class="num pos">%52,8</td><td class="num">0,241</td><td class="num pos">2,03</td><td class="num">−%28</td><td class="num pos">+%219</td><td class="num pos">+%173</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">CPU</td><td class="l">Aktif Teknoloji Katılım</td><td class="num">1.536</td><td class="num">17.055</td><td class="num">2,6</td><td class="num pos">%36,2</td><td class="num">0,209</td><td class="num pos">1,54</td><td class="num">−%24</td><td class="num pos">+%87</td><td class="num pos">+%60</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">TI2</td><td class="l">İş Portföy Hisse Senedi</td><td class="num">3.570</td><td class="num">21.054</td><td class="num">5,0</td><td class="num pos">%26,2</td><td class="num">0,307</td><td class="num">0,72</td><td class="num">−%33</td><td class="num">+%21</td><td class="num">+%3,9</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">GPT</td><td class="l">Aktif Robotik Teknolojileri</td><td class="num">110</td><td class="num">3.307</td><td class="num">2,5</td><td class="num pos">%25,4</td><td class="num">0,204</td><td class="num pos">1,05</td><td class="num">−%15</td><td class="num pos">+%64</td><td class="num pos">+%40</td><td><span class="chip chip-d">Düşük</span></td></tr>
+        <tr><td class="tick">KTJ</td><td class="l">Kuveyt Türk Teknoloji Katılım</td><td class="num">1.594</td><td class="num">19.091</td><td class="num">2,4</td><td class="num pos">%25,3</td><td class="num">0,217</td><td class="num">0,99</td><td class="num">−%19</td><td class="num pos">+%65</td><td class="num pos">+%41</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">MAC</td><td class="l">Marmara Capital Hisse</td><td class="num">4.758</td><td class="num">37.236</td><td class="num">5,0</td><td class="num pos">%21,0</td><td class="num">0,319</td><td class="num">0,53</td><td class="num neg">−%43</td><td class="num">+%26</td><td class="num">+%7,8</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">GSP</td><td class="l">Azimut Kar Payı Ödeyen Hisse</td><td class="num">3.859</td><td class="num">14.363</td><td class="num">5,0</td><td class="num pos">%20,0</td><td class="num">0,295</td><td class="num">0,54</td><td class="num neg">−%35</td><td class="num pos">+%52</td><td class="num pos">+%30</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">YDI</td><td class="l">YK Model Portföy Hisse</td><td class="num">1.121</td><td class="num">7.058</td><td class="num">5,0</td><td class="num">%17,6</td><td class="num">0,313</td><td class="num">0,43</td><td class="num">−%32</td><td class="num">+%25</td><td class="num">+%6,7</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">YHZ</td><td class="l">YK BIST Teknoloji Endeksi</td><td class="num">1.297</td><td class="num">16.110</td><td class="num">5,0</td><td class="num">%14,0</td><td class="num">0,325</td><td class="num">0,31</td><td class="num neg">−%48</td><td class="num pos">+%72</td><td class="num pos">+%47</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">YAY</td><td class="l">YK Yabancı Teknoloji Hisse</td><td class="num">12.898</td><td class="num">44.173</td><td class="num">5,0</td><td class="num">%12,6</td><td class="num">0,347</td><td class="num">0,25</td><td class="num neg">−%53</td><td class="num pos">+%75</td><td class="num pos">+%50</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">KPA</td><td class="l">Kuveyt Türk Kar Payı Katılım</td><td class="num">473</td><td class="num">13.656</td><td class="num">1,9</td><td class="num">%12,2</td><td class="num">0,210</td><td class="num">0,39</td><td class="num">−%17</td><td class="num pos">+%46</td><td class="num pos">+%25</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="tick">GUH</td><td class="l">Garanti Yabancı Teknoloji</td><td class="num">4.547</td><td class="num">38.709</td><td class="num">5,0</td><td class="num">%11,6</td><td class="num">0,318</td><td class="num">0,24</td><td class="num neg">−%49</td><td class="num pos">+%76</td><td class="num pos">+%51</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">YTD</td><td class="l">YK Yabancı Fon Sepeti</td><td class="num">1.663</td><td class="num">15.136</td><td class="num">5,0</td><td class="num">%9,5</td><td class="num">0,274</td><td class="num">0,20</td><td class="num neg">−%37</td><td class="num">+%41</td><td class="num">+%20</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">YZC</td><td class="l">YK Fintech ve Blockchain</td><td class="num">611</td><td class="num">12.710</td><td class="num">4,5</td><td class="num">%8,2</td><td class="num">0,270</td><td class="num">0,16</td><td class="num neg">−%53</td><td class="num">+%47</td><td class="num">+%26</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">YJK</td><td class="l">YK Robotik ve Yarı İletken</td><td class="num">1.043</td><td class="num">14.242</td><td class="num">4,8</td><td class="num neg">%0,9</td><td class="num">0,285</td><td class="num neg">−0,11</td><td class="num neg">−%48</td><td class="num">+%69</td><td class="num">+%45</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">AFS</td><td class="l">Ak Portföy Sağlık Yabancı</td><td class="num">803</td><td class="num">27.545</td><td class="num">5,0</td><td class="num neg">−%1,1</td><td class="num">0,256</td><td class="num neg">−0,20</td><td class="num neg">−%41</td><td class="num">+%33</td><td class="num">+%14</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="tick">NKP</td><td class="l">Neo Kar Payı Ödeyen Değişken</td><td class="num">183</td><td class="num">3.528</td><td class="num">1,0</td><td class="num neg">−%2,8</td><td class="num">0,127</td><td class="num neg">−0,54</td><td class="num">−%11</td><td class="num">+%13</td><td class="num neg">−%3,2</td><td><span class="chip chip-d">Düşük</span></td></tr>
+        <tr><td class="tick">PNU</td><td class="l">Pusula Para Piyasası</td><td class="num">21.966</td><td class="num">15.024</td><td class="num">0,36</td><td class="num">—</td><td class="num">0,024</td><td class="num">—</td><td class="num">−%0,2</td><td class="num">—</td><td class="num">—</td><td><span class="chip chip-d">Düşük</span></td></tr>
+        <tr><td class="tick">PSH</td><td class="l">Deniz Perakende Sektörü</td><td class="num">20</td><td class="num">418</td><td class="num">0,26</td><td class="num">—</td><td class="num">0,199</td><td class="num">—</td><td class="num">−%8,9</td><td class="num">—</td><td class="num">—</td><td><span class="chip chip-d">Düşük</span></td></tr>
+      </tbody>
+      <caption>
+        TL ve USD getiri farkı kur etkisidir: son 12 ayda TL, USD karşısında %16,8 değer kaybetti.
+        Kaynak: TEFAS <code>fonFiyatBilgiGetir</code> / <code>fonBilgiGetir</code>, USD/TRY için Yahoo Finance. Kesit: 21 Tem 2026.
+      </caption>
+    </table>
+  </div>
+
+  <div class="callout warn">
+    <p class="ct">PHE hakkında uyarı</p>
+    <p>
+      PHE olağanüstü rakamlar gösteriyor: 12 ayda TL bazında <b>+%219</b>, USD bazında
+      <b>+%173</b>, Sharpe 2,03. Fon 75,9 milyar TL büyüklüğe ve 158 bin yatırımcıya
+      ulaşmış. Ancak yalnızca <b>2,3 yıllık geçmişi</b> var ve bu performans bir tam
+      piyasa döngüsünü kapsamıyor.
+    </p>
+    <div class="assume" style="margin-top:12px;">
+      <b>Varsayım</b>
+      Bu ölçekteki bir getiri, genellikle yoğunlaşmış pozisyonlar ya da güçlü bir
+      küçük/orta ölçek rüzgârıyla açıklanır; TEFAS API'si fonun hisse bazlı içeriğini
+      yayınlamadığı için bu <b>doğrulanamadı</b>. Pozisyon büyütmeden önce KAP'tan
+      fonun portföy dağılımını ve izahnamesini incele.
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="s5">
+  <div class="sec-head"><span class="sec-num">05</span><h2>Risk Analizi</h2></div>
+
+  <p>
+    Aşağıdaki tablo, portföyün taşıdığı risk türlerini enstrüman gruplarına göre
+    kademelendiriyor. Kur riski, TL'de yaşayan bir yatırımcı için hem tehdit hem koruma
+    olduğundan ayrıca ele alınmıştır.
+  </p>
+
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr><th class="l">Risk türü</th><th class="l">Nerede yoğunlaşıyor</th><th>Seviye</th><th class="l">Gerekçe</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="l">Konsantrasyon</td><td class="l">Teknoloji/YZ kümesi</td>
+          <td><span class="chip chip-h">Yüksek</span></td>
+          <td class="l">Aynı tema 7+ enstrümanda tekrar ediyor; korelasyonlar 0,87–0,99</td>
+        </tr>
+        <tr>
+          <td class="l">Sektör</td><td class="l">Yarı iletken · biyoteknoloji</td>
+          <td><span class="chip chip-h">Yüksek</span></td>
+          <td class="l">LRCX+DRAM+YJK+QTUM bellek/çip döngüsüne bağlı; XBI −%64 düşüş geçmişi</td>
+        </tr>
+        <tr>
+          <td class="l">Tek hisse</td><td class="l">QBTS · RKLB · LRCX</td>
+          <td><span class="chip chip-h">Yüksek</span></td>
+          <td class="l">QBTS −%96,7, RKLB −%83 tarihsel düşüş; şirket bazlı iflas/seyrelme riski</td>
+        </tr>
+        <tr>
+          <td class="l">Likidite</td><td class="l">VCX · JEDI · PSH</td>
+          <td><span class="chip chip-h">Yüksek</span></td>
+          <td class="l">VCX kapalı uçlu + lockup; JEDI 130 mn $; PSH 20 mn ₺ / 418 yatırımcı</td>
+        </tr>
+        <tr>
+          <td class="l">Kur</td><td class="l">TEFAS TL fonları</td>
+          <td><span class="chip chip-o">Orta</span></td>
+          <td class="l">TL harcama yapıyorsan USD varlık koruma sağlar; ancak TL fonların nominal getirisi yanıltıcıdır</td>
+        </tr>
+        <tr>
+          <td class="l">Ülke</td><td class="l">BIST'e bağlı fonlar</td>
+          <td><span class="chip chip-h">Yüksek</span></td>
+          <td class="l">YHZ, TI2, MAC, GSP, YDI, PHE — TR politika/enflasyon rejimine doğrudan bağlı</td>
+        </tr>
+        <tr>
+          <td class="l">Regülasyon</td><td class="l">Katılım fonları · biyoteknoloji</td>
+          <td><span class="chip chip-o">Orta</span></td>
+          <td class="l">SPK mevzuatı; ABD'de ilaç fiyatlandırma politikası XBI/ARKG'yi doğrudan etkiler</td>
+        </tr>
+        <tr>
+          <td class="l">Faiz</td><td class="l">Uzun vadeli büyüme hisseleri</td>
+          <td><span class="chip chip-o">Orta</span></td>
+          <td class="l">Kârı geleceğe dönük fonlar (ARKG, QBTS, RKLB) faiz artışına aşırı duyarlı</td>
+        </tr>
+        <tr>
+          <td class="l">Değerleme</td><td class="l">DRAM · NASA</td>
+          <td><span class="chip chip-o">Orta</span></td>
+          <td class="l">Hızlı para girişi sonrası giriş fiyatı riski; Morningstar DRAM için değerleme uyarısı yaptı</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <p class="ct">Portföyün taşımadığı risk — dikkat çekici boşluk</p>
+    <p>
+      Portföyde <b>tahvil, altın, gayrimenkul ya da nakit benzeri hiçbir denge unsuru yok</b>
+      (PNU hariç, o da yeni). Bu, 10–20 yıllık ufukta savunulabilir bir tercihtir —
+      ancak 2022 tipi bir düşüşte portföyün tamamının aynı anda değer kaybedeceğini
+      kabul etmek anlamına gelir. Tematik fonların maksimum düşüşleri
+      <b>−%44 ile −%97</b> arasında.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="s6">
+  <div class="sec-head"><span class="sec-num">06</span><h2>Çakışma ve Korelasyon</h2></div>
+
+  <h3>Holdings çakışması — ABD ETF'leri</h3>
+  <div class="scroll">
+    <table>
+      <thead><tr><th class="l">Çift</th><th>Çakışma</th><th>Ortak hisse</th><th class="l">Yorum</th></tr></thead>
+      <tbody>
+        <tr><td class="tick">XLV / VHT</td><td class="num neg">%72,5</td><td class="num">25</td><td class="l"><b>Neredeyse birebir aynı fon.</b> İkisini birden tutmanın anlamı yok</td></tr>
+        <tr><td class="tick">QQQM / SPYM</td><td class="num neg">%42,4</td><td class="num">16</td><td class="l">QQQM, SPYM'in teknoloji ağırlıklı alt kümesi gibi davranıyor</td></tr>
+        <tr><td class="tick">NASA / JEDI</td><td class="num">%18,1</td><td class="num">6</td><td class="l">Uzay ve savunma temaları aynı yüklenicilerde buluşuyor</td></tr>
+        <tr><td class="tick">QQQM / BOTZ</td><td class="num">%12,5</td><td class="num">3</td><td class="l">BOTZ'un büyük pozisyonları zaten QQQM'de var</td></tr>
+        <tr><td class="tick">SPYM / BOTZ</td><td class="num">%11,9</td><td class="num">3</td><td class="l">Aynı durum geniş endeks için de geçerli</td></tr>
+        <tr><td class="tick">NASA / RKLB</td><td class="num">%10,6</td><td class="num">1</td><td class="l">RKLB'yi ayrıca tutuyorsun; NASA içinde de büyük ağırlıkla var</td></tr>
+        <tr><td class="tick">QQQM / CIBR</td><td class="num">%9,6</td><td class="num">5</td><td class="l">Siber güvenlik devleri endekste zaten mevcut</td></tr>
+        <tr><td class="tick">QQQM / QTUM</td><td class="num">%9,0</td><td class="num">7</td><td class="l">Kuantum teması büyük teknoloji hisseleriyle örtüşüyor</td></tr>
+      </tbody>
+      <caption>Yöntem: Σ min(ağırlık<sub>A</sub>, ağırlık<sub>B</sub>), yalnızca ilk ~25 varlık üzerinden. Bu bir <b>alt sınırdır</b> — gerçek çakışma daha yüksektir.</caption>
+    </table>
+  </div>
+
+  <h3>Korelasyon kümeleri — haftalık, 234 hafta</h3>
+  <p>
+    TEFAS fonlarının hisse bazlı içeriği yayınlanmadığı için o taraftaki tekrarları
+    korelasyonla ölçtüm. Sonuçlar, holdings verisinden bile daha çarpıcı:
+  </p>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th class="l">Çift</th><th>ρ</th><th class="l">Ne anlama geliyor</th></tr></thead>
+      <tbody>
+        <tr><td class="tick">XLV – VHT</td><td class="num neg">0,991</td><td class="l">Pratikte tek bir pozisyon. Birini seç</td></tr>
+        <tr><td class="tick">YDI – TI2</td><td class="num neg">0,983</td><td class="l">İki ayrı TR hisse fonu, aynı piyasa hareketi</td></tr>
+        <tr><td class="tick">GUH – YAY</td><td class="num neg">0,975</td><td class="l">İki yabancı teknoloji fonu — tekrar</td></tr>
+        <tr><td class="tick">QQQM – SPYM</td><td class="num neg">0,945</td><td class="l">Holdings çakışmasını doğruluyor</td></tr>
+        <tr><td class="tick">GSP – TI2</td><td class="num">0,931</td><td class="l">TR hisse kümesi tek blok gibi hareket ediyor</td></tr>
+        <tr><td class="tick">BOTZ – ROBT</td><td class="num">0,931</td><td class="l">İki robotik/YZ ETF'i, ikisi de ölçütün gerisinde</td></tr>
+        <tr><td class="tick">GSP – YDI</td><td class="num">0,929</td><td class="l">TR hisse bloğu devam</td></tr>
+        <tr><td class="tick">YJK – GUH</td><td class="num">0,881</td><td class="l">Yabancı teknoloji tekrarı</td></tr>
+        <tr><td class="tick">QTUM – ROBT</td><td class="num">0,879</td><td class="l">"Kuantum" ve "robotik" aynı hisselere dayanıyor</td></tr>
+        <tr><td class="tick">TI2 – MAC</td><td class="num">0,877</td><td class="l">TR hisse bloğu</td></tr>
+        <tr><td class="tick">XBI – ARKG</td><td class="num">0,849</td><td class="l">Biyoteknoloji tekrarı</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Gerçek çeşitlendiriciler</h3>
+  <p>
+    Portföyde ABD hisselerinden bağımsız hareket eden tek anlamlı blok
+    <b>BIST'e bağlı TR fonları</b>:
+  </p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th class="l">Fon</th><th>ABD ETF'leriyle ort. ρ</th><th class="l">Değerlendirme</th></tr></thead>
+      <tbody>
+        <tr><td class="tick">YHZ</td><td class="num pos">−0,006</td><td class="l">Portföydeki <b>en güçlü çeşitlendirici</b> — BIST teknoloji, ABD'den bağımsız</td></tr>
+        <tr><td class="tick">MAC</td><td class="num pos">+0,027</td><td class="l">TR hisse — güçlü çeşitlendirme katkısı</td></tr>
+        <tr><td class="tick">GSP</td><td class="num pos">+0,044</td><td class="l">TR hisse — güçlü çeşitlendirme katkısı</td></tr>
+        <tr><td class="tick">TI2</td><td class="num pos">+0,046</td><td class="l">TR hisse — güçlü çeşitlendirme katkısı</td></tr>
+        <tr><td class="tick">YDI</td><td class="num pos">+0,056</td><td class="l">TR hisse — ancak TI2 ile 0,98 korelasyonlu, ikisi gereksiz</td></tr>
+        <tr><td class="tick">YAY · GUH · YTD · YZC · YJK</td><td class="num neg">+0,37 … +0,43</td><td class="l">Bunlar <b>zaten ABD teknolojisi satın alıyor</b> — çeşitlendirme sağlamıyor, ücret karşılığı tekrar sunuyor</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout crit">
+    <p class="ct">Bunun pratik anlamı</p>
+    <p>
+      TEFAS'taki "yabancı teknoloji" fonları (YAY, GUH, YTD, YZC, YJK) sana ABD teknoloji
+      maruziyetini <b>daha pahalıya ve daha kötü performansla</b> veriyor: YAY %12,6,
+      GUH %11,6, YZC %8,2, YJK %0,9 yıllık USD getirisi — QQQM %17,2 ve SPYM %15,2 iken.
+      Zaten QQQM ve SPYM'e doğrudan sahipsin. Bu fonlar <b>tekrarın en pahalı biçimi</b>.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="s7">
+  <div class="sec-head"><span class="sec-num">07</span><h2>Tematik Maruziyet Haritası</h2></div>
+
+  <p>
+    Aşağıdaki tablo portföyün gerçek tema dağılımını gösteriyor. Kritik nokta şu:
+    <strong>bir enstrüman birden fazla satırda görünüyor</strong> — çünkü bulgu tam olarak budur.
+    Aynı risk faktörü farklı isimlerle tekrar tekrar satın alınmış.
+  </p>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th class="l">Tema</th><th class="l">Doğrudan</th><th class="l">Dolaylı</th><th>Araç</th></tr></thead>
+      <tbody>
+        <tr><td class="l"><b>YZ / büyük teknoloji / bulut</b></td><td class="l">QQQM, SPYM, CIBR</td><td class="l">YAY, GUH, YJK, YTD, YZC, DRAM, LRCX, QTUM, BOTZ</td><td class="num neg">~12</td></tr>
+        <tr><td class="l">Yarı iletken</td><td class="l">LRCX, DRAM, YJK</td><td class="l">QQQM, SPYM (endeks içi)</td><td class="num">~5</td></tr>
+        <tr><td class="l">Robotik / otomasyon</td><td class="l">BOTZ, ROBT, GPT</td><td class="l">QQQM (%12,5), SPYM (%11,9)</td><td class="num">~5</td></tr>
+        <tr><td class="l">Kuantum</td><td class="l">QTUM, QBTS</td><td class="l">QQQM (%9,0 çakışma)</td><td class="num">~3</td></tr>
+        <tr><td class="l">Siber güvenlik</td><td class="l">CIBR</td><td class="l">QQQM (%9,6 çakışma)</td><td class="num">~2</td></tr>
+        <tr><td class="l">Uzay</td><td class="l">RKLB, NASA</td><td class="l">JEDI (NASA ile %18,1)</td><td class="num">~3</td></tr>
+        <tr><td class="l">Savunma / dron</td><td class="l">JEDI</td><td class="l">NASA (kısmen)</td><td class="num">~2</td></tr>
+        <tr><td class="l">Sağlık (geniş)</td><td class="l">XLV, VHT, AFS</td><td class="l">— (XLV/VHT ρ 0,991)</td><td class="num">3</td></tr>
+        <tr><td class="l">Biyoteknoloji / genetik</td><td class="l">XBI, ARKG</td><td class="l">XLV/VHT içinde kısmen</td><td class="num">2</td></tr>
+        <tr><td class="l"><b>Finans / bankacılık</b></td><td class="l">XLF</td><td class="l">— saf bankacılık aracı <b>yok</b></td><td class="num neg">1</td></tr>
+        <tr><td class="l">Nükleer / uranyum</td><td class="l">URA</td><td class="l">—</td><td class="num">1</td></tr>
+        <tr><td class="l">Geleneksel enerji</td><td class="l">XLE</td><td class="l">—</td><td class="num">1</td></tr>
+        <tr><td class="l">Özel sermaye / VC</td><td class="l">VCX</td><td class="l">—</td><td class="num">1</td></tr>
+        <tr><td class="l">TR hisse (genel)</td><td class="l">PHE, TI2, MAC, GSP, YDI</td><td class="l">iç korelasyon 0,87–0,98</td><td class="num neg">5</td></tr>
+        <tr><td class="l">TR teknoloji</td><td class="l">YHZ (BIST Teknoloji Endeksi)</td><td class="l">CPU, KTJ (katılım/teknoloji)</td><td class="num">3</td></tr>
+        <tr><td class="l">Katılım (İslami) hisse</td><td class="l">KPA, CPU, KTJ</td><td class="l">—</td><td class="num">3</td></tr>
+        <tr><td class="l">Perakende / tüketim (TR)</td><td class="l">PSH</td><td class="l">—</td><td class="num">1</td></tr>
+        <tr><td class="l">Nakit / para piyasası</td><td class="l">PNU</td><td class="l">—</td><td class="num">1</td></tr>
+      </tbody>
+      <caption>Fon kimlikleri TEFAS resmî unvanlarından (20 Tem 2026). TBE doğrulanamadığı için haritada yok.</caption>
+    </table>
+  </div>
+
+  <div class="callout crit">
+    <p class="ct">Tek cümlelik özet</p>
+    <p>
+      Portföy 36 enstrüman taşıyor ama <b>gerçek risk faktörü sayısı bunun çok altında</b>.
+      Yapay zeka/büyük teknoloji temasına doğrudan veya dolaylı maruz kalan araç sayısı
+      <b>12</b> — portföyün üçte biri. Buna karşılık bankacılık <b>1</b>, tüketim <b>1</b>,
+      REIT <b>0</b>, Avrupa <b>0</b>, Japonya <b>0</b>, Hindistan <b>0</b>.
+    </p>
+  </div>
+
+  <h3>Kimlik netleştikten sonra değişen iki yorum</h3>
+  <ul>
+    <li>
+      <strong>YHZ'nin düşük korelasyonu tesadüf değil, yapısal.</strong> Fon
+      <b>BIST Teknoloji Ağırlık Sınırlamalı Endeksi</b>'ni takip ediyor — yani Türk
+      teknoloji hisseleri. ABD ETF'leriyle ρ ≈ −0,006 olması bu yüzden anlamlı ve
+      kalıcı bir çeşitlendirme kaynağı: aynı tema (teknoloji), farklı ülke.
+    </li>
+    <li>
+      <strong>PNU gerçekten nakit benzeri.</strong> Resmî unvanı
+      <b>Pusula İkinci Para Piyasası (TL) Fonu</b>. %2,4 volatilite ve −%0,2 maksimum
+      düşüş bunu doğruluyor. Portföydeki tek denge unsuru ve 21,9 milyar TL büyüklüğünde.
+    </li>
+  </ul>
+
+  <h3>5/10/20 yıl görünümü — tema bazında senaryolar</h3>
+  <p>
+    Aşağıdaki değerlendirmeler <strong>nokta tahmin değildir</strong>. Her biri senaryo
+    çerçevesinde sunulmuştur.
+  </p>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th class="l">Tema</th><th class="l">Baz senaryo (5–10 yıl)</th><th class="l">Ana risk</th><th class="l">20 yıl notu</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="l"><b>YZ / bulut</b></td>
+          <td class="l">Büyüme sürer, marj baskısı ve konsolidasyonla birlikte</td>
+          <td class="l">Aşırı yatırım düzeltmesi; endeks içi mega-cap yoğunlaşması; enerji kısıtı</td>
+          <td class="l">Sektör liderliği tarihsel olarak el değiştirir — bugünün liderlerine bahis riskli</td>
+        </tr>
+        <tr>
+          <td class="l"><b>Kuantum</b></td>
+          <td class="l">Ar-Ge sürer, gelir gerçekleşmesi 2030'ların ortasına kayar</td>
+          <td class="l">Dekoherans/ölçeklenme duvarı; nakit yakma ve seyreltme</td>
+          <td class="l">Kripto/ilaç/lojistikte yapısal dönüşüm <em>ya da</em> klasik hesaplamanın alanı daraltması</td>
+        </tr>
+        <tr>
+          <td class="l"><b>Robotik</b></td>
+          <td class="l">Endüstriyel otomasyon büyür, humanoid yavaş ölçeklenir</td>
+          <td class="l"><b>Hikâye–getiri makası kanıtlanmış:</b> BOTZ 10 yılda Sharpe 0,22</td>
+          <td class="l">Saf-oyun şirketler devler tarafından satın alınabilir; endeks yenilenir, hissedar yakalayamaz</td>
+        </tr>
+        <tr>
+          <td class="l"><b>Sağlık / biyotek</b></td>
+          <td class="l">Demografik talep yapısal olarak güçlü; hangi şirket kazanır belirsiz</td>
+          <td class="l">İlaç fiyat regülasyonu; klinik başarısızlık; faiz duyarlılığı</td>
+          <td class="l">Geniş sepet (XLV/VHT) dar sepetten (ARKG) daha güvenilir taşıyıcı</td>
+        </tr>
+        <tr>
+          <td class="l"><b>Siber güvenlik</b></td>
+          <td class="l">İstikrarlı çift haneli büyüme — 10 yıllık CAGR %18,1 ile kanıtlanmış</td>
+          <td class="l">Yüksek değerleme çarpanı; mimari eskime</td>
+          <td class="l">Dijital ekonomi var oldukça yapısal maliyet kalemi</td>
+        </tr>
+        <tr>
+          <td class="l"><b>Nükleer / uranyum</b></td>
+          <td class="l">Politika desteği sürer; reaktör inşa süreleri getiriyi öteler</td>
+          <td class="l">Emtia döngüselliği; −%61 tarihsel düşüş bu riski bir kez gerçekleştirdi</td>
+          <td class="l">Düşük karbonlu taban yükün yapısal parçası — ama madencilik hissesi ≠ elektrik talebi</td>
+        </tr>
+        <tr>
+          <td class="l"><b>Uzay / savunma</b></td>
+          <td class="l">Bütçe artışları kademeli, uzun sözleşme döngüleriyle yansır</td>
+          <td class="l">Tek fırlatma hatası; aşırı kapasite; ESG dışlaması</td>
+          <td class="l">Erken evre havacılıkta tarihsel konsolidasyon yüksek — tek hisse "hayatta kalan seçilimi" riski</td>
+        </tr>
+        <tr>
+          <td class="l"><b>TR hisse</b></td>
+          <td class="l">Mevcut enflasyon/devalüasyon örüntüsü sürer</td>
+          <td class="l">Kur kaybı nominal getiriyi eritiyor — TI2: TL +%21 → USD +%3,9</td>
+          <td class="l">Disinflasyon başarılı olursa yeniden değerleme potansiyeli</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="assume">
+    <b>Varsayım</b>
+    Yukarıdaki baz senaryolar, mevcut makro rejimin (faiz, sermaye harcaması döngüsü,
+    jeopolitik gerilim seviyesi) kademeli değişeceği varsayımına dayanır. Rejim değişikliği
+    — örneğin kalıcı yüksek faiz ortamı ya da hızlı disinflasyon — bu değerlendirmelerin
+    çoğunu geçersiz kılar. Hiçbiri getiri tahmini değildir.
+  </div>
+</section>
+
+<!-- ============ 8 ============ -->
+<section id="s8">
+  <div class="sec-head"><span class="sec-num">08</span><h2>Eksik Alanlar</h2></div>
+
+  <p>
+    Portföy ACWI'ye göre ölçülüyor ama ACWI'nin coğrafi ve sektörel bileşiminin büyük
+    kısmını hiç içermiyor. Mevcut yapı küresel çeşitlendirmeden çok
+    <strong>"ABD teması + Türkiye" barbell'i</strong>.
+  </p>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th class="l">Eksik alan</th><th class="l">Neden önemli</th><th class="l">Somut öneri</th></tr></thead>
+      <tbody>
+        <tr><td class="l"><b>Saf bankacılık</b></td><td class="l">XLF banka+sigorta+sermaye piyasası karışımı; faiz marjına temiz maruziyet yok</td><td class="l"><b>KBE</b> (geniş banka) veya <b>KRE</b> (bölgesel banka)</td></tr>
+        <tr><td class="l">Sigorta</td><td class="l">Prim geliri + yatırım getirisi farklı bir risk profili; XLF içinde seyrelmiş</td><td class="l"><b>KIE</b></td></tr>
+        <tr><td class="l">Avrupa</td><td class="l">ACWI'nin önemli dilimi; farklı para/faiz rejimi, endüstriyel ve lüks tüketim ağırlığı</td><td class="l"><b>VGK</b> veya <b>IEUR</b></td></tr>
+        <tr><td class="l">Japonya</td><td class="l">Kurumsal yönetim reformu teması; ABD dışı ikinci büyük gelişmiş ekonomi</td><td class="l"><b>EWJ</b> veya <b>BBJP</b> (daha ucuz)</td></tr>
+        <tr><td class="l">Hindistan</td><td class="l">Demografik avantaj, "Çin+1" tedarik zinciri kayması</td><td class="l"><b>INDA</b> veya <b>EPI</b></td></tr>
+        <tr><td class="l">Gelişmekte olan ülkeler</td><td class="l">10–20 yıl ufkunda EM'in küresel GSYH payı artıyor; portföyde sıfır</td><td class="l"><b>VWO</b> / <b>IEMG</b>; Çin riskinden kaçınmak için <b>EMXC</b></td></tr>
+        <tr><td class="l">REIT / gayrimenkul</td><td class="l">Enflasyon koruması, kira geliri, faiz döngüsünde farklı davranış</td><td class="l"><b>VNQ</b> veya <b>SCHH</b></td></tr>
+        <tr><td class="l">Temettü / değer</td><td class="l">Portföy tamamen büyüme ağırlıklı; değere rotasyonda tek taraflı kalır</td><td class="l"><b>SCHD</b>, <b>VYM</b> veya <b>DGRO</b></td></tr>
+        <tr><td class="l">Tüketim</td><td class="l">Döngünün her aşamasında talep gören defansif çekirdek yok</td><td class="l"><b>XLP</b> (temel) + <b>XLY</b> (döngüsel)</td></tr>
+        <tr><td class="l">Endüstriyel</td><td class="l">Otomasyon talebini <em>yaratan</em> sanayi tabanına maruziyet yok</td><td class="l"><b>XLI</b></td></tr>
+        <tr><td class="l">Altyapı</td><td class="l">Enflasyona doğal koruma, düşük korelasyonlu nakit akışı</td><td class="l"><b>IGF</b> veya <b>PAVE</b></td></tr>
+        <tr><td class="l">Su</td><td class="l">Kamu hizmeti benzeri istikrarlı talep, düşük beta</td><td class="l"><b>CGW</b> veya <b>PHO</b></td></tr>
+        <tr><td class="l">Küçük ölçek</td><td class="l">Portföy neredeyse tamamen mega/büyük ölçek</td><td class="l"><b>IWM</b> veya <b>VB</b></td></tr>
+      </tbody>
+      <caption>Öneriler açıklayıcıdır, alım tavsiyesi değildir. Hiçbiri bu çalışmada nicel olarak test edilmemiştir.</caption>
+    </table>
+  </div>
+
+  <div class="callout warn">
+    <p class="ct">Toplam bilanço uyarısı — bu, sıradan bir "eksik alan" değil</p>
+    <p>
+      TR fonları (PHE, TI2, MAC, GSP, YDI, YHZ) portföy <em>içinde</em> gerçekten
+      çeşitlendirme sağlıyor (ABD ile ρ ≈ 0,00–0,06). Ancak Türkiye'de yaşıyor,
+      TL kazanıyor ve muhtemelen TL varlıklara sahipsen, <b>insan sermayen ve
+      gayrimenkulün zaten Türkiye riskine bağlı</b>. Portföy-içi düşük korelasyon,
+      toplam servet düzeyinde çeşitlendirme kanıtı değildir — aksine ülke riskini
+      yoğunlaştırıyor olabilirsin.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 9 ============ -->
+<section id="s9">
+  <div class="sec-head"><span class="sec-num">09</span><h2>Bankacılık ve Sağlık Karşılaştırması</h2></div>
+
+  <p>
+    Özellikle incelenmesini istediğin iki grup. Başlangıç varsayımının düzeltilmesiyle
+    başlıyorum: <strong>bankacılık diye eklediğin AFS ve TI2 bankacılık fonu değil.</strong>
+    AFS bir <em>sağlık</em> fonu, TI2 genel bir TR hisse fonu. Yani bu iki ekleme
+    bankacılık boşluğunu kapatmıyor; AFS sağlık ağırlığını daha da artırıyor.
+  </p>
+
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr><th class="l">Araç</th><th class="l">Gerçek tema</th><th>CAGR</th><th>Vol</th><th>Sharpe</th><th>Maks. düşüş</th><th>Beta</th><th>Alfa</th><th>5 yıl</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="tick">XLV</td><td class="l">Sağlık, geniş, büyük ölçek</td><td class="num">%9,7</td><td class="num pos">0,166</td><td class="num">0,34</td><td class="num pos">−%28</td><td class="num pos">0,74</td><td class="num">−%0,6</td><td class="num">+%34</td></tr>
+        <tr><td class="tick">VHT</td><td class="l">Sağlık, XLV'nin ikizi</td><td class="num">%9,8</td><td class="num pos">0,170</td><td class="num">0,34</td><td class="num pos">−%29</td><td class="num pos">0,80</td><td class="num">−%0,9</td><td class="num">+%29</td></tr>
+        <tr><td class="tick">XBI</td><td class="l">Biyoteknoloji, eşit ağırlık</td><td class="num">%10,2</td><td class="num">0,319</td><td class="num">0,20</td><td class="num neg">−%64</td><td class="num">1,15</td><td class="num neg">−%3,5</td><td class="num">+%19</td></tr>
+        <tr><td class="tick">ARKG</td><td class="l">Genomik, konsantre</td><td class="num">%8,9</td><td class="num neg">0,414</td><td class="num neg">0,12</td><td class="num neg">−%84</td><td class="num neg">1,62</td><td class="num neg">−%8,9</td><td class="num neg">−%55</td></tr>
+        <tr><td class="tick">AFS</td><td class="l"><b>Sağlık</b> (bankacılık değil)</td><td class="num neg">−%1,1</td><td class="num">0,256</td><td class="num neg">−0,20</td><td class="num neg">−%41</td><td class="num">0,49</td><td class="num neg">−%8,3</td><td class="num">—</td></tr>
+        <tr><td class="tick">XLF</td><td class="l">Finans (banka+sigorta+SP)</td><td class="num">%13,4</td><td class="num">0,221</td><td class="num pos">0,43</td><td class="num">−%43</td><td class="num">1,11</td><td class="num">+%0,1</td><td class="num">+%67</td></tr>
+        <tr><td class="tick">TI2</td><td class="l"><b>TR hisse</b> (bankacılık değil)</td><td class="num">%26,2</td><td class="num">0,307</td><td class="num pos">0,72</td><td class="num">−%33</td><td class="num pos">0,26</td><td class="num pos">+%20,5</td><td class="num">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Sorularının doğrudan cevabı</h3>
+
+  <div class="verdict">
+    <div class="vrow v-keep">
+      <div class="vlabel">En defansif</div>
+      <p>
+        <b>XLV ve VHT.</b> Veri setindeki en düşük volatilite (%16,6–17,0), en sığ düşüş
+        (−%28/−%29) ve piyasa altı beta (0,74/0,80). Bedeli: alfa hafif negatif — defansiflik,
+        piyasa üstü getiri üretmeden geliyor. Bu beklenen ve tutarlı bir değiş tokuş.
+      </p>
+    </div>
+    <div class="vrow v-trim">
+      <div class="vlabel">En büyüme odaklı</div>
+      <p>
+        <b>XBI ve ARKG.</b> Sektörün yenilikçi ucu; teorik bileşik büyüme potansiyeli var
+        ama gerçekleşen yol son derece pürüzlü. ARKG'nin 5 yıllık −%55'i, 2021 zirvesi
+        sonrası düzeltmenin doğrudan izi.
+      </p>
+    </div>
+    <div class="vrow v-keep">
+      <div class="vlabel">En sürdürülebilir</div>
+      <p>
+        <b>XLV/VHT.</b> Demografik yaşlanma yapısal ve uzun soluklu; büyük, kârlı,
+        çeşitlendirilmiş şirket tabanı iş riskini azaltıyor. Ancak tanım gereği yüksek
+        alfa beklenmemeli.
+      </p>
+    </div>
+    <div class="vrow v-keep">
+      <div class="vlabel">Krizde dayanıklı</div>
+      <p>
+        Maksimum düşüş sıralaması: <b>XLV (−%28) ≈ VHT (−%29) &lt; TI2 (−%33) &lt;
+        AFS (−%41) &lt; XLF (−%43) &lt; XBI (−%64) &lt; ARKG (−%84)</b>.
+        TI2'nin sığ görünmesi "daha güvenli" demek değil — farklı bir krize
+        (TR makro/kur) maruz, ABD krizleriyle aynı anda düşmüyor.
+      </p>
+    </div>
+    <div class="vrow v-sell">
+      <div class="vlabel">Sorunlu</div>
+      <p>
+        <b>AFS.</b> Volatilitesi (%25,6) XBI/ARKG'den düşük olduğu için "orta risk"
+        görünüyor — bu yanıltıcı. <b>Kalıcı negatif Sharpe (−0,20)</b> taşıyor: riskin
+        karşılığı hiç alınmamış. Tek bir çöküş anıyla açıklanamayan, sürekli bir zayıflık
+        örüntüsü. Düşük volatiliteyle birleşen kalıcı değer kaybı, "düşük risk" görüntüsü
+        veren bir tuzaktır.
+      </p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p class="ct">Sağlık kümesinin yapısı</p>
+    <p>
+      Sağlık teması portföyünde bir <b>barbell</b> oluşturuyor: bir uçta defansif çekirdek
+      (XLV/VHT — birbirinin kopyası), diğer uçta yüksek riskli uçlar (XBI, ARKG).
+      Buna üçüncü ve zayıf gerekçeli bir kol eklenmiş: <b>AFS</b>, ne çekirdeğin
+      istikrarını ne de riskli ucun yukarı potansiyelini taşıyor.
+      Finans tarafında ise barbell bile yok — tek, geniş, orta riskli XLF var.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 10 ============ -->
+<section id="s10">
+  <div class="sec-head"><span class="sec-num">10</span><h2>Aksiyon Planı ve Hedef Portföy</h2></div>
+
+  <h3>Alternatifler — zayıf pozisyonlar için</h3>
+  <div class="scroll">
+    <table>
+      <thead><tr><th class="l">Pozisyon</th><th class="l">Sorun</th><th class="l">Alternatif</th><th class="l">Gerekçe</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="tick">ARKG</td>
+          <td class="l">5 yılda −%55, Sharpe 0,12, düşüş −%84, gider %0,75</td>
+          <td class="l"><b>XBI</b></td>
+          <td class="l">Aynı tema, <b>yarı fiyat</b> (%0,35), 5 yılda +%19 vs −%55, 6× daha likit</td>
+        </tr>
+        <tr>
+          <td class="tick">AFS</td>
+          <td class="l">5 yılda USD bazında negatif, Sharpe −0,20</td>
+          <td class="l"><b>XLV</b> veya <b>VHT</b></td>
+          <td class="l">%0,08–0,09 gider, 10 yıllık pozitif geçmiş. <em>Not: TL→USD geçişi vergi/saklama boyutu doğurur</em></td>
+        </tr>
+        <tr>
+          <td class="tick">QBTS</td>
+          <td class="l">Vol %126, düşüş −%97, Sharpe 0,05 — en kötü profil</td>
+          <td class="l"><b>QTUM</b> (zaten portföyde)</td>
+          <td class="l">Aynı temaya sepet yoluyla: vol %27,6, düşüş −%38, Sharpe 0,81</td>
+        </tr>
+        <tr>
+          <td class="tick">ROBT + BOTZ</td>
+          <td class="l">ρ 0,931 — aynı bahis iki kez; ikisi de 10 yılda ölçütün altında</td>
+          <td class="l">Birine indir veya <b>QQQM</b>'e güven</td>
+          <td class="l">BOTZ 4,5× daha likit. Tema 10 yıldır finansal karşılığını bulamadı</td>
+        </tr>
+        <tr>
+          <td class="tick">XLV + VHT</td>
+          <td class="l">%72,5 çakışma, ρ 0,991 — fiilen tek pozisyon</td>
+          <td class="l">Birini seç</td>
+          <td class="l">Çeşitlendirme kaybı ≈ sıfır, gider tasarrufu net</td>
+        </tr>
+        <tr>
+          <td class="tick">YAY · GUH · YZC · YJK</td>
+          <td class="l">ABD teknolojisini pahalıya ve daha kötü performansla veriyor</td>
+          <td class="l"><b>QQQM</b> (zaten portföyde)</td>
+          <td class="l">QQQM %17,2 vs YAY %12,6 · GUH %11,6 · YZC %8,2 · YJK %0,9</td>
+        </tr>
+        <tr>
+          <td class="tick">RKLB</td>
+          <td class="l">Vol %79, düşüş −%83 — ama getirisi olağanüstü</td>
+          <td class="l">Çıkarma; <b>ağırlık sınırı</b> koy</td>
+          <td class="l">NASA ile çakışma yalnızca %10,6 — gerçekten tamamlayıcı, tekrar değil</td>
+        </tr>
+        <tr>
+          <td class="tick">NKP</td>
+          <td class="l">Hem USD hem TL bazında negatif — nadir bir kırmızı bayrak</td>
+          <td class="l">Gözden geçir</td>
+          <td class="l">TL'nin değer kaybettiği ortamda TL bazında da kaybetmek yapısal sorun işareti</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Portföy sınıflandırması</h3>
+  <div class="verdict">
+    <div class="vrow v-keep">
+      <div class="vlabel">Koru</div>
+      <p>
+        <b>QQQM, SPYM</b> (çekirdek — düşük gider, kanıtlanmış) · <b>CIBR</b> (10 yılda
+        %18,1 CAGR, pozitif alfa) · <b>QTUM</b> (Sharpe 0,81) · <b>YHZ</b> (gerçek
+        çeşitlendirici, ρ≈0) · <b>XLV veya VHT</b> (biri) · <b>PNU</b> (tek denge unsuru) ·
+        <b>PHE, CPU, GPT, KTJ</b> (güçlü risk-ayarlı getiri — ama PHE için içerik teyidi şart)
+      </p>
+    </div>
+    <div class="vrow v-trim">
+      <div class="vlabel">Azalt</div>
+      <p>
+        <b>QBTS, RKLB</b> (ağırlık sınırı koy — tek hisse) · <b>URA, XLE</b> (yüksek
+        döngüsellik, −%61/−%67 düşüş geçmişi) · <b>TI2/MAC/GSP/YDI</b> kümesi
+        (dördü birden gereksiz, ρ 0,87–0,98 — bir veya iki tanesine indir)
+      </p>
+    </div>
+    <div class="vrow v-sell">
+      <div class="vlabel">Çık</div>
+      <p>
+        <b>ARKG</b> (XBI varken savunulamaz) · <b>AFS</b> (kalıcı negatif Sharpe) ·
+        <b>ROBT veya BOTZ</b> (biri) · <b>XLV veya VHT</b> (biri) ·
+        <b>YAY, GUH, YZC, YJK</b> (QQQM'in pahalı ve kötü kopyası) ·
+        <b>VCX</b> (lockup arzı ve NAV primi netleşene dek — en azından yeni alım yapma)
+      </p>
+    </div>
+    <div class="vrow v-add">
+      <div class="vlabel">Ekle</div>
+      <p>
+        <b>VGK</b> (Avrupa) · <b>EWJ/BBJP</b> (Japonya) · <b>INDA</b> (Hindistan) ·
+        <b>VWO/EMXC</b> (EM) · <b>SCHD</b> (temettü/değer) · <b>VNQ</b> (REIT) ·
+        <b>KBE/KRE</b> (gerçek bankacılık — istediğin ama hâlâ almadığın maruziyet) ·
+        <b>XLP/XLI</b> (defansif çekirdek)
+      </p>
+    </div>
+  </div>
+
+  <h3>Örnek hedef dağılım</h3>
+  <div class="assume">
+    <b>Varsayım</b>
+    Aşağıdaki ağırlıklar, 10–20 yıl ufku ve yüksek risk toleransı varsayımıyla
+    <em>örnek</em> bir çerçevedir. Optimizasyon yapılmamıştır — çoğu enstrümanda
+    yalnızca 1–5 yıllık geçmiş olduğu için ortalama-varyans optimizasyonu bu portföyde
+    güvenilmez sonuç verir (tahmin hatası maksimizasyonu). Bunun yerine kısıt tabanlı
+    bir dağılım sunulmuştur. Kişisel durumun, vergi konumun ve gelir yapına göre değişir.
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr><th class="l">Blok</th><th>Hedef</th><th class="l">İçerik</th><th class="l">Gerekçe</th><th>Risk</th></tr></thead>
+      <tbody>
+        <tr><td class="l"><b>Küresel çekirdek</b></td><td class="num">%30</td><td class="l">SPYM ağırlıklı + QQQM</td><td class="l">Düşük gider, kanıtlanmış bileşik getiri; portföyün çapası</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="l">Coğrafi çeşitlendirme</td><td class="num">%15</td><td class="l">VGK, EWJ, INDA, VWO</td><td class="l">Şu an sıfır olan ACWI dilimi — en büyük yapısal boşluk</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="l">Tematik büyüme</td><td class="num">%15</td><td class="l">CIBR, QTUM, BOTZ <em>veya</em> ROBT, XBI</td><td class="l">Yüksek getiri potansiyeli — ama sadeleştirilmiş, tekrarsız</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="l">Defansif / gelir</td><td class="num">%15</td><td class="l">XLV <em>veya</em> VHT, SCHD, XLP, VNQ</td><td class="l">Düşüşlerde tampon; portföyde şu an neredeyse hiç yok</td><td><span class="chip chip-d">Düşük</span></td></tr>
+        <tr><td class="l">Türkiye</td><td class="num">%15</td><td class="l">YHZ + PHE <em>veya</em> TI2 (kümeden bir tane)</td><td class="l">Gerçek düşük korelasyon — ama toplam bilanço riskini gözet</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+        <tr><td class="l">Finans</td><td class="num">%5</td><td class="l">XLF + KBE/KRE</td><td class="l">İstediğin ama henüz gerçekten almadığın bankacılık maruziyeti</td><td><span class="chip chip-o">Orta</span></td></tr>
+        <tr><td class="l">Uydu / spekülatif</td><td class="num">%5</td><td class="l">RKLB, QBTS, NASA, JEDI, URA — <b>toplamda</b></td><td class="l">Yukarı potansiyeli koru, ama katastrofik zarar riskini sınırla</td><td><span class="chip chip-h">Yüksek</span></td></tr>
+      </tbody>
+      <caption>Toplam %100. Tek hisse pozisyonlarının hiçbiri %2'yi aşmamalı; QBTS için önerilen üst sınır %1.</caption>
+    </table>
+  </div>
+
+  <h3>Öncelik sırası</h3>
+  <ol class="body-list">
+    <li><b>Doğrula, sonra işlem yap.</b> TBE kodunu kurucudan teyit et; VCX'in NAV primini ve lockup takvimini kontrol et; PHE'nin KAP'taki portföy dağılımını incele (portföyün en büyük ve en anormal pozisyonu).</li>
+    <li><b>Tekrarları sadeleştir.</b> XLV/VHT, BOTZ/ROBT ve TR hisse kümesinden birer tanesini kapat. Çeşitlendirme kaybı yok, gider tasarrufu var.</li>
+    <li><b>İki net zayıflığı kes.</b> ARKG (XBI varken) ve AFS (kalıcı negatif Sharpe).</li>
+    <li><b>Pahalı kopyaları bırak.</b> YAY, GUH, YZC, YJK — QQQM'in verdiğini daha kötü veriyorlar.</li>
+    <li><b>Boşlukları kapat.</b> Avrupa, Japonya, Hindistan, EM, REIT, temettü ve <em>gerçek</em> bankacılık.</li>
+    <li><b>Tek hisselere ağırlık sınırı koy.</b> QBTS ve RKLB'nin yukarı potansiyeli değerli ama −%97/−%83 düşüş geçmişleri pozisyon disiplini olmadan taşınamaz.</li>
+  </ol>
+</section>
+
+<footer class="end">
+  <p>
+    <b>Yasal uyarı.</b> Bu belge yalnızca bilgilendirme ve eğitim amaçlıdır; yatırım
+    danışmanlığı, aracılık teklifi veya portföy yönetimi hizmeti teşkil etmez.
+    Senaryolar olasılık çerçeveleridir, tahmin veya garanti değildir. Geçmiş performans
+    gelecekteki sonuçların güvenilir göstergesi değildir. Adı geçen ETF ve fonlar
+    açıklayıcı amaçlıdır, alım-satım önerisi değildir. Yatırım kararı öncesi lisanslı
+    bir yatırım ve vergi danışmanına başvurulması önerilir.
+  </p>
+  <p>
+    <b>Veri ve yöntem.</b> Fiyat serileri TEFAS resmî API'si ve Yahoo Finance'ten
+    21 Temmuz 2026 tarihinde programatik olarak çekilmiştir; künye verileri
+    stockanalysis.com'dan, kimlik doğrulamaları SEC/NYSE kayıtları ve kamuya açık
+    kaynaklardan teyit edilmiştir. Tüm metrikler USD bazlı ve haftalık getirilerle
+    hesaplanmıştır. TEFAS fonlarının gider oranları ve hisse bazlı içerikleri
+    kamuya açık API'de yayınlanmadığı için bu rapora dahil edilememiştir.
+  </p>
+</footer>
+
+</div>

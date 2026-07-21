@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portföy Aracı — Karar, Öneri ve Takip</title>
+<meta name="description" content="TEFAS ve ABD ETF portföyü için kural tabanlı al/sat/bekle sinyalleri, kategori genişletme önerileri ve öneri performans takibi.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <h1>Portföy Aracı</h1>
+      <span class="sub">karar · öneri · takip</span>
+    </div>
+    <div class="freshness" id="freshness" data-state="ok" title="Veri tazeliği">
+      <span class="dot"></span><span id="freshText">yükleniyor…</span>
+    </div>
+    <button class="iconbtn" id="themeBtn" type="button" title="Tema değiştir">tema</button>
+    <button class="iconbtn" id="drawerBtn" type="button">veri &amp; yöntem</button>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Bölümler">
+  <ul>
+    <li><button type="button" data-tab="portfoy" aria-selected="true">Portföyüm</button></li>
+    <li><button type="button" data-tab="karar" aria-selected="false">Al / Sat / Bekle<span class="badge" id="bKarar">0</span></button></li>
+    <li><button type="button" data-tab="ekle" aria-selected="false">Ekle / Çıkar</button></li>
+    <li><button type="button" data-tab="oneri" aria-selected="false">Tavsiye Motoru<span class="badge" id="bOneri">0</span></button></li>
+    <li><button type="button" data-tab="takip" aria-selected="false">Öneri Takibi<span class="badge" id="bTakip">0</span></button></li>
+    <li><button type="button" data-tab="pivot" aria-selected="false">Karşılaştır<span class="badge" id="bPivot">0</span></button></li>
+  </ul>
+</nav>
+
+<div class="wrap">
+
+  <!-- ============ PORTFÖYÜM ============ -->
+  <section class="panel" id="p-portfoy">
+    <div class="phead">
+      <div class="t">
+        <h2>Portföyüm</h2>
+        <p>Tuttuğun enstrümanların envanteri ve kategori kapsaman. Kararlar burada değil,
+           <em>Al / Sat / Bekle</em> sekmesinde veriliyor.</p>
+      </div>
+      <button class="btn ghost" id="seedBtn" type="button">Rapordaki portföyü yükle</button>
+    </div>
+    <div class="grid g4" id="portStats"></div>
+    <h4 style="margin:26px 0 10px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)">Kategori kapsaması</h4>
+    <div class="grid g3" id="catCoverage"></div>
+    <h4 style="margin:26px 0 10px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)">Pozisyonlar</h4>
+    <div id="portList"></div>
+  </section>
+
+  <!-- ============ AL/SAT/BEKLE ============ -->
+  <section class="panel" id="p-karar" hidden>
+    <div class="phead">
+      <div class="t">
+        <h2>Al / Sat / Bekle</h2>
+        <p>Her pozisyon için kural tabanlı sinyal ve senin kararın <strong>ayrı ayrı</strong> tutulur.
+           Sinyal bir öneri değil, ölçülebilir kuralların özetidir — kararı sen verirsin.</p>
+      </div>
+      <div class="seg" id="karFilter">
+        <button type="button" data-f="hepsi" aria-pressed="true">Hepsi</button>
+        <button type="button" data-f="AL" aria-pressed="false">Al</button>
+        <button type="button" data-f="SAT" aria-pressed="false">Sat</button>
+        <button type="button" data-f="BEKLE" aria-pressed="false">Bekle</button>
+        <button type="button" data-f="ayrisan" aria-pressed="false">Ayrışan</button>
+      </div>
+    </div>
+    <div class="note">
+      <p class="nt">Sinyal nasıl üretiliyor</p>
+      <p>İki sert kapı önce çalışır: <strong>bir yıldan kısa geçmiş</strong> ve
+         <strong>doğrulanamamış kimlik</strong> doğrudan BEKLE verir — puanla telafi edilemez.
+         Kapılardan geçenler alfa, Sharpe, maksimum düşüş, portföy içi çakışma, korelasyon ve
+         gider oranı üzerinden puanlanır. <strong>Puan ≥ +3 → AL · ≤ −3 → SAT · arası BEKLE.</strong>
+         Her kartta hangi kuralın ne yönde çalıştığı yazılıdır.</p>
+    </div>
+    <div class="grid" id="kararList"></div>
+  </section>
+
+  <!-- ============ EKLE / ÇIKAR ============ -->
+  <section class="panel" id="p-ekle" hidden>
+    <div class="phead">
+      <div class="t">
+        <h2>Ekle / Çıkar</h2>
+        <p>Veri setinde bulunan bir kodu anında ekleyebilirsin. Bulunmayan bir kod istersen
+           izleme listesine alınır ve <strong>ertesi günkü otomatik güncellemede</strong> araştırılıp veri setine katılır.</p>
+      </div>
+    </div>
+
+    <div class="grid g2">
+      <div class="card hi">
+        <label class="fl" for="addInput">Fon / ETF kodu</label>
+        <div style="display:flex;gap:8px">
+          <input type="text" id="addInput" placeholder="örn. VGK, SCHD, TI2" autocomplete="off" spellcheck="false">
+          <button class="btn" id="addBtn" type="button">Ekle</button>
+        </div>
+        <div id="addHint" style="margin-top:10px;font-size:13px;color:var(--muted)"></div>
+        <div id="addResults" style="margin-top:12px"></div>
+      </div>
+      <div class="card">
+        <div class="stat">
+          <div class="k">İzleme listesi</div>
+          <div class="v" id="queueCount">0</div>
+          <div class="s">veri setinde olmayan, araştırılmak üzere kuyruğa alınan kodlar</div>
+        </div>
+        <div id="queueList" style="margin-top:12px"></div>
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn ghost sm" id="queueCopy" type="button">İstek metnini kopyala</button>
+          <button class="btn ghost sm" id="queueExport" type="button">watchlist.json indir</button>
+        </div>
+        <p style="font-size:12.5px;color:var(--muted);margin:10px 0 0">
+          İndirdiğin dosyayı deponun kök dizinindeki <code style="font-family:var(--mono)">watchlist.json</code>
+          ile değiştirip commit'lersen, sonraki günlük çalışma bu kodları otomatik çeker.
+        </p>
+      </div>
+    </div>
+
+    <h4 style="margin:26px 0 10px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)">Çıkarılanlar</h4>
+    <div id="removedList"></div>
+  </section>
+
+  <!-- ============ TAVSİYE MOTORU ============ -->
+  <section class="panel" id="p-oneri" hidden>
+    <div class="phead">
+      <div class="t">
+        <h2>Tavsiye Motoru</h2>
+        <p>Portföyünde <strong>hiç maruziyetin olmayan</strong> kategoriler ve her biri için sıralanmış adaylar.
+           Her istekte o kategoride henüz göstermediğim bir sonraki aday gelir.</p>
+      </div>
+      <button class="btn" id="newRecBtn" type="button">Yeni öneri getir</button>
+    </div>
+    <div class="note">
+      <p class="nt">Sıralama nasıl yapılıyor</p>
+      <p>Aday skoru dört bileşenden oluşur ve her kartta ayrı ayrı gösterilir:
+         <strong>risk-ayarlı getiri</strong> (Sharpe), <strong>maliyet</strong> (gider oranı),
+         <strong>çeşitlendirme katkısı</strong> (portföyünle en yüksek korelasyon — düşük olması iyi) ve
+         <strong>ölçüt üstü getiri</strong> (alfa). Çeşitlendirme katkısına bilerek en yüksek ağırlığı verdim:
+         zaten sahip olduğun bir riski tekrar satın almanın faydası yok.</p>
+    </div>
+    <div id="recCurrent"></div>
+    <h4 style="margin:26px 0 10px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)">Kategori boşlukları</h4>
+    <div class="grid g2" id="gapList"></div>
+  </section>
+
+  <!-- ============ KARŞILAŞTIR (PİVOT) ============ -->
+  <section class="panel" id="p-pivot" hidden>
+    <div class="phead">
+      <div class="t">
+        <h2>Karşılaştır</h2>
+        <p>Portföyündeki ve aday havuzundaki <strong id="pivotTotal">77</strong> enstrümanı serbestçe
+           kesiştir: satıra ve sütuna istediğin boyutu koy, hücreye istediğin metriği ata.
+           Bir hücreye tıklayınca altındaki fonları görürsün.</p>
+      </div>
+      <button class="btn ghost" id="pivotReset" type="button">Filtreleri temizle</button>
+    </div>
+
+    <div class="card" style="margin-bottom:16px">
+      <div class="grid g4" style="margin-bottom:14px">
+        <div>
+          <label class="fl" for="pvRow">Satır</label>
+          <select id="pvRow"></select>
+        </div>
+        <div>
+          <label class="fl" for="pvCol">Sütun</label>
+          <select id="pvCol"></select>
+        </div>
+        <div>
+          <label class="fl" for="pvVal">Değer</label>
+          <select id="pvVal"></select>
+        </div>
+        <div>
+          <label class="fl" for="pvAgg">Toplama</label>
+          <select id="pvAgg">
+            <option value="ort">Ortalama</option>
+            <option value="med">Medyan</option>
+            <option value="top">Toplam</option>
+            <option value="min">Min</option>
+            <option value="mak">Maks</option>
+          </select>
+        </div>
+      </div>
+      <div id="pivotFilters"></div>
+    </div>
+
+    <div id="pivotTableWrap"></div>
+    <div id="pivotDrill" style="margin-top:14px"></div>
+  </section>
+
+  <!-- ============ ÖNERİ TAKİBİ ============ -->
+  <section class="panel" id="p-takip" hidden>
+    <div class="phead">
+      <div class="t">
+        <h2>Öneri Takibi</h2>
+        <p>Sana önerilen ama <strong>portföyüne eklemediğin</strong> fonların o günden bu yana gelişimi.
+           Eklediklerin buradan çıkar — onlar artık bir portföy kararıdır, kaçırılmış bir öneri değil.</p>
+      </div>
+    </div>
+    <div id="trackList"></div>
+  </section>
+
+  <footer class="legal">
+    <p><strong>Yatırım tavsiyesi değildir.</strong> Bu araç yalnızca bilgilendirme ve eğitim amaçlıdır.
+    Üretilen sinyaller, kamuya açık fiyat verisi üzerinde çalışan mekanik kurallardır; bir yatırım
+    danışmanının görüşü değildir. Geçmiş performans gelecekteki sonuçların güvenilir göstergesi değildir.
+    Yatırım kararı öncesi lisanslı bir yatırım ve vergi danışmanına başvur.</p>
+    <p id="footMeta" style="margin-top:8px"></p>
+  </footer>
+</div>
+
+<!-- ============ DRAWER ============ -->
+<div class="drawer" id="drawer">
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="Veri ve yöntem">
+    <div style="display:flex;align-items:flex-start;gap:12px">
+      <div style="margin-right:auto">
+        <h3>Veri &amp; Yöntem</h3>
+        <p style="margin:0;color:var(--muted)" id="drawerMeta"></p>
+      </div>
+      <button class="iconbtn" id="drawerClose" type="button">kapat</button>
+    </div>
+
+    <p><a href="rapor.html" style="font-family:var(--mono);font-size:13px;color:var(--accent)">
+      → 21 Tem 2026 tarihli ayrıntılı analiz raporu (sabit, güncellenmiyor)</a></p>
+
+    <h4>Verinin kaynağı ve tazeliği</h4>
+    <p>Fiyatlar her gece otomatik olarak TEFAS resmî API'sinden (TL cinsi fon fiyatları) ve
+       Yahoo Finance'ten (USD cinsi ETF/hisse kapanışları) çekilir. Bir kaynak çökerse
+       <strong>son başarılı veri korunur</strong> ve yukarıdaki tazelik göstergesi sararır —
+       site boş veriyle bozulmaz.</p>
+    <div id="healthBox"></div>
+
+    <h4>Metodoloji</h4>
+    <ul>
+      <li><strong>Baz para birimi USD.</strong> TEFAS fonlarının TL fiyatları günlük USD/TRY ile
+          bölünür; böylece TL değer kaybı kaynaklı yapay getiri ayrışır.</li>
+      <li><strong>Beta ve korelasyon haftalık.</strong> TEFAS fon fiyatı gecikmeli açıklanır ve
+          BIST/NYSE takvimleri örtüşmez; günlük veri betayı yapay olarak sıfıra çeker.</li>
+      <li><strong>Bir yıldan kısa geçmişte yıllıklandırma yapılmaz.</strong> CAGR, Sharpe, Sortino
+          ve alfa üretilmez — kısa seriyi yıllıklandırmak yanıltıcı sonuç verir.</li>
+      <li><strong>Ölçüt MSCI ACWI</strong>, risksiz oran %4 (varsayım).</li>
+      <li><strong>Çakışma yüzdeleri ilk ~25 varlık üzerinden</strong> hesaplanır, yani alt sınırdır.</li>
+    </ul>
+
+    <h4>Bilinen veri boşlukları</h4>
+    <ul>
+      <li>TEFAS fonlarının <strong>gider oranları</strong> kamuya açık API'de yayınlanmıyor.
+          Bu fonlarda maliyet kuralı puanlamaya girmez — eksik veri ceza olarak yazılmaz.</li>
+      <li>TEFAS fonlarının <strong>hisse bazlı içerikleri</strong> de yayınlanmıyor; bu yüzden
+          TEFAS tarafındaki tekrar, çakışma yerine korelasyonla ölçülür.</li>
+    </ul>
+
+    <h4>Verilerin ve kararlarının saklanması</h4>
+    <p>Portföyün, kararların ve öneri geçmişin <strong>yalnızca senin tarayıcında</strong> saklanır
+       (localStorage). Sunucuya gönderilmez, depoya yazılmaz. Tarayıcı verisini temizlersen kaybolur —
+       düzenli olarak yedek al.</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+      <button class="btn ghost sm" id="exportBtn" type="button">Durumu indir (JSON)</button>
+      <button class="btn ghost sm" id="importBtn" type="button">Yedekten yükle</button>
+      <button class="btn ghost sm" id="resetBtn" type="button">Sıfırla</button>
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+    </div>
+    <p style="margin-top:8px" id="lastExport"></p>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>

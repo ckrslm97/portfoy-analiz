@@ -1,0 +1,1690 @@
+{
+ "QQQM": [
+  [
+   "NVDA",
+   "NVIDIA Corporation",
+   8.09
+  ],
+  [
+   "AAPL",
+   "Apple Inc.",
+   7.89
+  ],
+  [
+   "MSFT",
+   "Microsoft Corporation",
+   4.8
+  ],
+  [
+   "AMZN",
+   "Amazon.com, Inc.",
+   4.33
+  ],
+  [
+   "MU",
+   "Micron Technology, Inc.",
+   4.28
+  ],
+  [
+   "AMD",
+   "Advanced Micro Devices, Inc.",
+   3.63
+  ],
+  [
+   "GOOGL",
+   "Alphabet Inc.",
+   3.33
+  ],
+  [
+   "META",
+   "Meta Platforms, Inc.",
+   3.17
+  ],
+  [
+   "TSLA",
+   "Tesla, Inc.",
+   3.15
+  ],
+  [
+   "GOOG",
+   "Alphabet Inc.",
+   3.11
+  ],
+  [
+   "AVGO",
+   "Broadcom Inc.",
+   2.86
+  ],
+  [
+   "WMT",
+   "Walmart Inc.",
+   2.49
+  ],
+  [
+   "INTC",
+   "Intel Corporation",
+   2.17
+  ],
+  [
+   "AMAT",
+   "Applied Materials, Inc.",
+   1.98
+  ],
+  [
+   "CSCO",
+   "Cisco Systems, Inc.",
+   1.92
+  ],
+  [
+   "COST",
+   "Costco Wholesale Corporation",
+   1.87
+  ],
+  [
+   "LRCX",
+   "Lam Research Corporation",
+   1.79
+  ],
+  [
+   "NFLX",
+   "Netflix, Inc.",
+   1.39
+  ],
+  [
+   "PLTR",
+   "Palantir Technologies Inc.",
+   1.37
+  ],
+  [
+   "PANW",
+   "Palo Alto Networks, Inc.",
+   1.28
+  ],
+  [
+   "KLAC",
+   "KLA Corporation",
+   1.27
+  ],
+  [
+   "TXN",
+   "Texas Instruments Incorporated",
+   1.18
+  ],
+  [
+   "SPCX",
+   "Space Exploration Technologies Corp.",
+   1.12
+  ],
+  [
+   "LIN",
+   "Linde plc",
+   1.07
+  ],
+  [
+   "SNDK",
+   "Sandisk Corporation",
+   0.93
+  ]
+ ],
+ "QTUM": [
+  [
+   "HQ",
+   "Horizon Quantum Holdings Ltd.",
+   2.43
+  ],
+  [
+   "ARQQ",
+   "Arqit Quantum Inc.",
+   1.54
+  ],
+  [
+   "NET",
+   "Cloudflare, Inc.",
+   1.52
+  ],
+  [
+   "AMAT",
+   "Applied Materials, Inc.",
+   1.38
+  ],
+  [
+   "SNOW",
+   "Snowflake Inc.",
+   1.38
+  ],
+  [
+   "NTNX",
+   "Nutanix, Inc.",
+   1.37
+  ],
+  [
+   "AMD",
+   "Advanced Micro Devices, Inc.",
+   1.35
+  ],
+  [
+   "RTX",
+   "RTX Corporation",
+   1.34
+  ],
+  [
+   "RDNT",
+   "RadNet, Inc.",
+   1.32
+  ],
+  [
+   "MKSI",
+   "MKS Inc.",
+   1.28
+  ],
+  [
+   "AMZN",
+   "Amazon.com, Inc.",
+   1.28
+  ],
+  [
+   "ONTO",
+   "Onto Innovation Inc.",
+   1.28
+  ],
+  [
+   "NVDA",
+   "NVIDIA Corporation",
+   1.26
+  ],
+  [
+   "TXN",
+   "Texas Instruments Incorporated",
+   1.26
+  ],
+  [
+   "PLTR",
+   "Palantir Technologies Inc.",
+   1.26
+  ],
+  [
+   "ASML",
+   "ASML Holding N.V.",
+   1.26
+  ],
+  [
+   "KLAC",
+   "KLA Corporation",
+   1.25
+  ],
+  [
+   "ESTC",
+   "Elastic N.V.",
+   1.25
+  ],
+  [
+   "QNT",
+   "Quantinuum Inc.",
+   1.25
+  ],
+  [
+   "TSEM",
+   "Tower Semiconductor Ltd.",
+   1.24
+  ],
+  [
+   "BABA",
+   "Alibaba Group Holding Limited",
+   1.24
+  ]
+ ],
+ "XLE": [
+  [
+   "XOM",
+   "ExxonMobil Holdings Corporation",
+   20.26
+  ],
+  [
+   "CVX",
+   "Chevron Corporation",
+   14.61
+  ],
+  [
+   "COP",
+   "ConocoPhillips",
+   5.86
+  ],
+  [
+   "MPC",
+   "Marathon Petroleum Corporation",
+   4.7
+  ],
+  [
+   "PSX",
+   "Phillips 66",
+   4.61
+  ],
+  [
+   "VLO",
+   "Valero Energy Corporation",
+   4.6
+  ],
+  [
+   "SLB",
+   "SLB N.V.",
+   4.46
+  ],
+  [
+   "EOG",
+   "EOG Resources, Inc.",
+   4.44
+  ],
+  [
+   "WMB",
+   "The Williams Companies, Inc.",
+   4.41
+  ],
+  [
+   "KMI",
+   "Kinder Morgan, Inc.",
+   4.32
+  ],
+  [
+   "TRGP",
+   "Targa Resources Corp.",
+   3.93
+  ],
+  [
+   "OKE",
+   "ONEOK, Inc.",
+   3.83
+  ],
+  [
+   "BKR",
+   "Baker Hughes Company",
+   3.67
+  ],
+  [
+   "DVN",
+   "Devon Energy Corporation",
+   3.24
+  ],
+  [
+   "OXY",
+   "Occidental Petroleum Corporation",
+   2.47
+  ],
+  [
+   "FANG",
+   "Diamondback Energy, Inc.",
+   2.35
+  ],
+  [
+   "EQT",
+   "EQT Corporation",
+   2.25
+  ],
+  [
+   "HAL",
+   "Halliburton Company",
+   1.92
+  ],
+  [
+   "TPL",
+   "Texas Pacific Land Corporation",
+   1.62
+  ],
+  [
+   "EXE",
+   "Expand Energy Corporation",
+   1.48
+  ],
+  [
+   "APA",
+   "APA Corporation",
+   0.8
+  ]
+ ],
+ "SPYM": [
+  [
+   "NVDA",
+   "NVIDIA Corporation",
+   7.75
+  ],
+  [
+   "AAPL",
+   "Apple Inc.",
+   7.55
+  ],
+  [
+   "MSFT",
+   "Microsoft Corporation",
+   4.6
+  ],
+  [
+   "AMZN",
+   "Amazon.com, Inc.",
+   3.77
+  ],
+  [
+   "GOOGL",
+   "Alphabet Inc.",
+   3.21
+  ],
+  [
+   "AVGO",
+   "Broadcom Inc.",
+   2.73
+  ],
+  [
+   "GOOG",
+   "Alphabet Inc.",
+   2.58
+  ],
+  [
+   "META",
+   "Meta Platforms, Inc.",
+   2.25
+  ],
+  [
+   "TSLA",
+   "Tesla, Inc.",
+   1.7
+  ],
+  [
+   "MU",
+   "Micron Technology, Inc.",
+   1.48
+  ],
+  [
+   "LLY",
+   "Eli Lilly and Company",
+   1.43
+  ],
+  [
+   "JPM",
+   "JPMorgan Chase & Co.",
+   1.42
+  ],
+  [
+   "BRK.B",
+   "Berkshire Hathaway Inc.",
+   1.39
+  ],
+  [
+   "AMD",
+   "Advanced Micro Devices, Inc.",
+   1.26
+  ],
+  [
+   "V",
+   "Visa Inc.",
+   0.93
+  ],
+  [
+   "XOM",
+   "ExxonMobil Holdings Corporation",
+   0.93
+  ],
+  [
+   "JNJ",
+   "Johnson & Johnson",
+   0.93
+  ],
+  [
+   "WMT",
+   "Walmart Inc.",
+   0.78
+  ],
+  [
+   "INTC",
+   "Intel Corporation",
+   0.71
+  ],
+  [
+   "ABBV",
+   "AbbVie Inc.",
+   0.69
+  ],
+  [
+   "AMAT",
+   "Applied Materials, Inc.",
+   0.69
+  ],
+  [
+   "MA",
+   "Mastercard Incorporated",
+   0.69
+  ],
+  [
+   "CSCO",
+   "Cisco Systems, Inc.",
+   0.67
+  ],
+  [
+   "COST",
+   "Costco Wholesale Corporation",
+   0.65
+  ],
+  [
+   "CAT",
+   "Caterpillar Inc.",
+   0.62
+  ]
+ ],
+ "CIBR": [
+  [
+   "PANW",
+   "Palo Alto Networks, Inc.",
+   9.76
+  ],
+  [
+   "FTNT",
+   "Fortinet, Inc.",
+   9.05
+  ],
+  [
+   "CRWD",
+   "CrowdStrike Holdings, Inc.",
+   8.66
+  ],
+  [
+   "CSCO",
+   "Cisco Systems, Inc.",
+   7.07
+  ],
+  [
+   "AVGO",
+   "Broadcom Inc.",
+   6.51
+  ],
+  [
+   "NET",
+   "Cloudflare, Inc.",
+   4.38
+  ],
+  [
+   "OKTA",
+   "Okta, Inc.",
+   3.72
+  ],
+  [
+   "FFIV",
+   "F5, Inc.",
+   3.23
+  ],
+  [
+   "ZS",
+   "Zscaler, Inc.",
+   3.09
+  ],
+  [
+   "AKAM",
+   "Akamai Technologies, Inc.",
+   2.79
+  ],
+  [
+   "RBRK",
+   "Rubrik, Inc.",
+   2.59
+  ],
+  [
+   "GEN",
+   "Gen Digital Inc.",
+   2.27
+  ],
+  [
+   "CHKP",
+   "Check Point Software Technologies Ltd.",
+   2.18
+  ],
+  [
+   "DDOG",
+   "Datadog, Inc.",
+   2.06
+  ],
+  [
+   "ANET",
+   "Arista Networks, Inc.",
+   2.05
+  ],
+  [
+   "DT",
+   "Dynatrace, Inc.",
+   2.04
+  ],
+  [
+   "FROG",
+   "JFrog Ltd.",
+   2.03
+  ],
+  [
+   "GOOGL",
+   "Alphabet Inc.",
+   1.81
+  ],
+  [
+   "NTAP",
+   "NetApp, Inc.",
+   1.78
+  ],
+  [
+   "INFY",
+   "Infosys Limited",
+   1.77
+  ],
+  [
+   "MSFT",
+   "Microsoft Corporation",
+   1.73
+  ],
+  [
+   "LDOS",
+   "Leidos Holdings, Inc.",
+   1.65
+  ],
+  [
+   "ACN",
+   "Accenture plc",
+   1.5
+  ],
+  [
+   "IBM",
+   "International Business Machines Corporation",
+   1.43
+  ]
+ ],
+ "URA": [
+  [
+   "CCO.NE",
+   "CAMECO CORP",
+   23.03
+  ],
+  [
+   "OKLO",
+   "Oklo Inc.",
+   5.91
+  ],
+  [
+   "UEC",
+   "Uranium Energy Corp.",
+   5.15
+  ],
+  [
+   "EFR.NE",
+   "ENERGY FUELS INC",
+   3.23
+  ],
+  [
+   "LEU",
+   "Centrus Energy Corp.",
+   3.16
+  ],
+  [
+   "YCA.L",
+   "YELLOW CAKE PLC",
+   2.01
+  ],
+  [
+   "SMR",
+   "NuScale Power Corporation",
+   1.42
+  ]
+ ],
+ "BOTZ": [
+  [
+   "NVDA",
+   "NVIDIA Corporation",
+   9.25
+  ],
+  [
+   "ISRG",
+   "Intuitive Surgical, Inc.",
+   5.82
+  ],
+  [
+   "CGNX",
+   "Cognex Corporation",
+   2.49
+  ],
+  [
+   "GOOGL",
+   "Alphabet Inc.",
+   2.41
+  ],
+  [
+   "AUR",
+   "Aurora Innovation, Inc.",
+   2.33
+  ],
+  [
+   "TSLA",
+   "Tesla, Inc.",
+   1.96
+  ],
+  [
+   "BIDU",
+   "Baidu, Inc.",
+   1.9
+  ],
+  [
+   "AVAV",
+   "AeroVironment, Inc.",
+   1.67
+  ],
+  [
+   "JBTM",
+   "JBT Marel Corporation",
+   1.63
+  ],
+  [
+   "XPEV",
+   "XPeng Inc.",
+   1.46
+  ],
+  [
+   "PATH",
+   "UiPath, Inc.",
+   1.31
+  ],
+  [
+   "SYM",
+   "Symbotic Inc.",
+   1.22
+  ]
+ ],
+ "ROBT": [
+  [
+   "CCC",
+   "CCC Intelligent Solutions Holdings Inc.",
+   2.01
+  ],
+  [
+   "PANW",
+   "Palo Alto Networks, Inc.",
+   1.93
+  ],
+  [
+   "S",
+   "SentinelOne, Inc.",
+   1.82
+  ],
+  [
+   "ILMN",
+   "Illumina, Inc.",
+   1.79
+  ],
+  [
+   "NET",
+   "Cloudflare, Inc.",
+   1.73
+  ],
+  [
+   "APPN",
+   "Appian Corporation",
+   1.72
+  ],
+  [
+   "OII",
+   "Oceaneering International, Inc.",
+   1.7
+  ],
+  [
+   "NSY.DE",
+   "NICE Ltd ADR",
+   1.67
+  ],
+  [
+   "TEM",
+   "Tempus AI, Inc.",
+   1.63
+  ],
+  [
+   "DT",
+   "Dynatrace, Inc.",
+   1.61
+  ],
+  [
+   "META",
+   "Meta Platforms, Inc.",
+   1.61
+  ],
+  [
+   "GNTX",
+   "Gentex Corporation",
+   1.58
+  ],
+  [
+   "PATH",
+   "UiPath, Inc.",
+   1.57
+  ],
+  [
+   "WDAY",
+   "Workday, Inc.",
+   1.53
+  ],
+  [
+   "CDNS",
+   "Cadence Design Systems, Inc.",
+   1.49
+  ],
+  [
+   "ISRG",
+   "Intuitive Surgical, Inc.",
+   1.45
+  ],
+  [
+   "PEGA",
+   "Pegasystems Inc.",
+   1.41
+  ],
+  [
+   "UPST",
+   "Upstart Holdings, Inc.",
+   1.4
+  ],
+  [
+   "CSCO",
+   "Cisco Systems, Inc.",
+   1.4
+  ],
+  [
+   "SYM",
+   "Symbotic Inc.",
+   1.39
+  ],
+  [
+   "CRM",
+   "Salesforce, Inc.",
+   1.39
+  ]
+ ],
+ "XBI": [
+  [
+   "APGE",
+   "Apogee Therapeutics, Inc.",
+   1.55
+  ],
+  [
+   "ERAS",
+   "Erasca, Inc.",
+   1.52
+  ],
+  [
+   "MRNA",
+   "Moderna, Inc.",
+   1.42
+  ],
+  [
+   "KYMR",
+   "Kymera Therapeutics, Inc.",
+   1.39
+  ],
+  [
+   "TWST",
+   "Twist Bioscience Corporation",
+   1.31
+  ],
+  [
+   "VKTX",
+   "Viking Therapeutics, Inc.",
+   1.3
+  ],
+  [
+   "SYRE",
+   "Spyre Therapeutics, Inc.",
+   1.3
+  ],
+  [
+   "ORKA",
+   "Oruka Therapeutics, Inc.",
+   1.29
+  ],
+  [
+   "CGON",
+   "CG Oncology, Inc.",
+   1.27
+  ],
+  [
+   "PRAX",
+   "Praxis Precision Medicines, Inc.",
+   1.26
+  ],
+  [
+   "DNTH",
+   "Dianthus Therapeutics, Inc.",
+   1.25
+  ],
+  [
+   "MIRM",
+   "Mirum Pharmaceuticals, Inc.",
+   1.23
+  ],
+  [
+   "NTRA",
+   "Natera, Inc.",
+   1.22
+  ],
+  [
+   "PTGX",
+   "Protagonist Therapeutics, Inc.",
+   1.22
+  ],
+  [
+   "RYTM",
+   "Rhythm Pharmaceuticals, Inc.",
+   1.22
+  ],
+  [
+   "RVMD",
+   "Revolution Medicines, Inc.",
+   1.22
+  ],
+  [
+   "COGT",
+   "Cogent Biosciences, Inc.",
+   1.2
+  ],
+  [
+   "PCVX",
+   "Vaxcyte, Inc.",
+   1.19
+  ],
+  [
+   "RLAY",
+   "Relay Therapeutics, Inc.",
+   1.18
+  ],
+  [
+   "CYTK",
+   "Cytokinetics, Incorporated",
+   1.18
+  ],
+  [
+   "ROIV",
+   "Roivant Sciences Ltd.",
+   1.17
+  ],
+  [
+   "BBIO",
+   "BridgeBio Pharma, Inc.",
+   1.17
+  ],
+  [
+   "SRRK",
+   "Scholar Rock Holding Corporation",
+   1.17
+  ],
+  [
+   "TVTX",
+   "Travere Therapeutics, Inc.",
+   1.16
+  ],
+  [
+   "TGTX",
+   "TG Therapeutics, Inc.",
+   1.16
+  ]
+ ],
+ "ARKG": [
+  [
+   "TXG",
+   "10x Genomics, Inc.",
+   7.9
+  ],
+  [
+   "TEM",
+   "Tempus AI, Inc.",
+   7.74
+  ],
+  [
+   "TWST",
+   "Twist Bioscience Corporation",
+   7.41
+  ],
+  [
+   "PSNL",
+   "Personalis, Inc.",
+   6.7
+  ],
+  [
+   "CRSP",
+   "CRISPR Therapeutics AG",
+   6.31
+  ],
+  [
+   "ABSI",
+   "Absci Corporation",
+   6.19
+  ],
+  [
+   "GH",
+   "Guardant Health, Inc.",
+   4.41
+  ],
+  [
+   "LLY",
+   "Eli Lilly and Company",
+   4.39
+  ],
+  [
+   "BEAM",
+   "Beam Therapeutics Inc.",
+   4.22
+  ],
+  [
+   "ILMN",
+   "Illumina, Inc.",
+   4.18
+  ],
+  [
+   "NTRA",
+   "Natera, Inc.",
+   4.01
+  ],
+  [
+   "VCYT",
+   "Veracyte, Inc.",
+   3.01
+  ],
+  [
+   "CDNA",
+   "CareDx, Inc.",
+   2.94
+  ],
+  [
+   "CMPS",
+   "COMPASS Pathways plc",
+   2.86
+  ],
+  [
+   "RXRX",
+   "Recursion Pharmaceuticals, Inc.",
+   2.75
+  ],
+  [
+   "BFLY",
+   "Butterfly Network, Inc.",
+   2.36
+  ],
+  [
+   "NRIX",
+   "Nurix Therapeutics, Inc.",
+   2.34
+  ],
+  [
+   "NTLA",
+   "Intellia Therapeutics, Inc.",
+   2.33
+  ],
+  [
+   "ADPT",
+   "Adaptive Biotechnologies Corporation",
+   2.28
+  ],
+  [
+   "SDGR",
+   "SchrÃ¶dinger, Inc.",
+   2.05
+  ],
+  [
+   "WGS",
+   "GeneDx Holdings Corp.",
+   1.74
+  ],
+  [
+   "IONS",
+   "Ionis Pharmaceuticals, Inc.",
+   1.67
+  ],
+  [
+   "ALMR",
+   "Alamar Biosciences, Inc.",
+   1.47
+  ],
+  [
+   "CERS",
+   "Cerus Corporation",
+   1.36
+  ],
+  [
+   "PRME",
+   "Prime Medicine, Inc.",
+   1.31
+  ]
+ ],
+ "NASA": [
+  [
+   "RKLB",
+   "Rocket Lab Corporation",
+   10.64
+  ],
+  [
+   "ECHO",
+   "EchoStar Corporation",
+   9.66
+  ],
+  [
+   "ASTS",
+   "AST SpaceMobile, Inc.",
+   5.75
+  ],
+  [
+   "VSAT",
+   "Viasat, Inc.",
+   5.21
+  ],
+  [
+   "FLY",
+   "Firefly Aerospace Inc.",
+   4.08
+  ],
+  [
+   "LUNR",
+   "Intuitive Machines, Inc.",
+   3.84
+  ],
+  [
+   "FTC.L",
+   "Filtronic PLC",
+   3.51
+  ],
+  [
+   "PL",
+   "Planet Labs PBC",
+   3.24
+  ],
+  [
+   "YSS",
+   "York Space Systems, Inc.",
+   2.99
+  ],
+  [
+   "VOYG",
+   "Voyager Technologies, Inc.",
+   2.94
+  ],
+  [
+   "BKSY",
+   "BlackSky Technology Inc.",
+   2.55
+  ],
+  [
+   "SPCX",
+   "Space Exploration Technologies Corp.",
+   2.46
+  ],
+  [
+   "VPG",
+   "Vishay Precision Group, Inc.",
+   2.09
+  ],
+  [
+   "LPTH",
+   "LightPath Technologies, Inc.",
+   1.79
+  ],
+  [
+   "LASR",
+   "nLIGHT, Inc.",
+   1.62
+  ],
+  [
+   "VELO",
+   "Velo3D, Inc.",
+   0.77
+  ],
+  [
+   "SATL",
+   "Satellogic Inc.",
+   0.72
+  ]
+ ],
+ "DRAM": [
+  [
+   "STX",
+   "Seagate Technology Holdings plc",
+   4.32
+  ],
+  [
+   "SNDK",
+   "Sandisk Corporation",
+   4.3
+  ],
+  [
+   "WDC",
+   "Western Digital Corporation",
+   4.19
+  ],
+  [
+   "MU",
+   "Micron Technology, Inc.",
+   2.6
+  ],
+  [
+   "SKHY",
+   "SK hynix Inc.",
+   0.55
+  ]
+ ],
+ "JEDI": [
+  [
+   "UMAC",
+   "Unusual Machines, Inc.",
+   10.16
+  ],
+  [
+   "RDW",
+   "Redwire Corporation",
+   10.02
+  ],
+  [
+   "ONDS",
+   "Ondas Inc.",
+   6.72
+  ],
+  [
+   "AI",
+   "C3.ai, Inc.",
+   5.9
+  ],
+  [
+   "ACHR",
+   "Archer Aviation Inc.",
+   4.79
+  ],
+  [
+   "LUNR",
+   "Intuitive Machines, Inc.",
+   4.59
+  ],
+  [
+   "RCAT",
+   "Red Cat Holdings, Inc.",
+   4.39
+  ],
+  [
+   "RKLB",
+   "Rocket Lab Corporation",
+   4.36
+  ],
+  [
+   "AVAV",
+   "AeroVironment, Inc.",
+   3.43
+  ],
+  [
+   "ASTS",
+   "AST SpaceMobile, Inc.",
+   3.29
+  ],
+  [
+   "FEIM",
+   "Frequency Electronics, Inc.",
+   3.14
+  ],
+  [
+   "BKSY",
+   "BlackSky Technology Inc.",
+   2.89
+  ],
+  [
+   "IRDM",
+   "Iridium Communications Inc.",
+   2.64
+  ],
+  [
+   "JOBY",
+   "Joby Aviation, Inc.",
+   2.63
+  ],
+  [
+   "PL",
+   "Planet Labs PBC",
+   2.14
+  ],
+  [
+   "SPCX",
+   "Space Exploration Technologies Corp.",
+   1.92
+  ],
+  [
+   "SAIC",
+   "Science Applications International Corporation",
+   1.69
+  ],
+  [
+   "PLTR",
+   "Palantir Technologies Inc.",
+   1.66
+  ],
+  [
+   "PSN",
+   "Parsons Corporation",
+   1.58
+  ],
+  [
+   "KTOS",
+   "Kratos Defense & Security Solutions, Inc.",
+   1.53
+  ],
+  [
+   "SPIR",
+   "Spire Global, Inc.",
+   1.52
+  ],
+  [
+   "MRCY",
+   "Mercury Systems, Inc.",
+   1.52
+  ],
+  [
+   "AIRO",
+   "AIRO Group Holdings, Inc.",
+   1.42
+  ],
+  [
+   "TLS",
+   "Telos Corporation",
+   1.22
+  ]
+ ],
+ "XLV": [
+  [
+   "LLY",
+   "Eli Lilly and Company",
+   16.0
+  ],
+  [
+   "JNJ",
+   "Johnson & Johnson",
+   10.45
+  ],
+  [
+   "ABBV",
+   "AbbVie Inc.",
+   7.71
+  ],
+  [
+   "UNH",
+   "UnitedHealth Group Incorporated",
+   6.64
+  ],
+  [
+   "MRK",
+   "Merck & Co., Inc.",
+   5.4
+  ],
+  [
+   "TMO",
+   "Thermo Fisher Scientific Inc.",
+   3.4
+  ],
+  [
+   "AMGN",
+   "Amgen Inc.",
+   3.39
+  ],
+  [
+   "ABT",
+   "Abbott Laboratories",
+   3.01
+  ],
+  [
+   "GILD",
+   "Gilead Sciences, Inc.",
+   2.86
+  ],
+  [
+   "PFE",
+   "Pfizer Inc.",
+   2.45
+  ],
+  [
+   "CVS",
+   "CVS Health Corporation",
+   2.35
+  ],
+  [
+   "DHR",
+   "Danaher Corporation",
+   2.2
+  ],
+  [
+   "BMY",
+   "Bristol-Myers Squibb Company",
+   2.13
+  ],
+  [
+   "VRTX",
+   "Vertex Pharmaceuticals Incorporated",
+   2.11
+  ],
+  [
+   "ISRG",
+   "Intuitive Surgical, Inc.",
+   2.1
+  ],
+  [
+   "SYK",
+   "Stryker Corporation",
+   1.89
+  ],
+  [
+   "MDT",
+   "Medtronic plc",
+   1.83
+  ],
+  [
+   "MCK",
+   "McKesson Corporation",
+   1.74
+  ],
+  [
+   "ELV",
+   "Elevance Health, Inc.",
+   1.39
+  ],
+  [
+   "CI",
+   "The Cigna Group",
+   1.28
+  ],
+  [
+   "REGN",
+   "Regeneron Pharmaceuticals, Inc.",
+   1.16
+  ],
+  [
+   "BSX",
+   "Boston Scientific Corporation",
+   1.12
+  ],
+  [
+   "COR",
+   "Cencora, Inc.",
+   1.03
+  ],
+  [
+   "HCA",
+   "HCA Healthcare, Inc.",
+   0.99
+  ],
+  [
+   "CAH",
+   "Cardinal Health, Inc.",
+   0.92
+  ]
+ ],
+ "VHT": [
+  [
+   "LLY",
+   "Eli Lilly and Company",
+   14.16
+  ],
+  [
+   "JNJ",
+   "Johnson & Johnson",
+   8.87
+  ],
+  [
+   "ABBV",
+   "AbbVie Inc.",
+   6.54
+  ],
+  [
+   "UNH",
+   "UnitedHealth Group Incorporated",
+   5.55
+  ],
+  [
+   "MRK",
+   "Merck & Co., Inc.",
+   4.67
+  ],
+  [
+   "AMGN",
+   "Amgen Inc.",
+   2.87
+  ],
+  [
+   "TMO",
+   "Thermo Fisher Scientific Inc.",
+   2.74
+  ],
+  [
+   "ABT",
+   "Abbott Laboratories",
+   2.32
+  ],
+  [
+   "GILD",
+   "Gilead Sciences, Inc.",
+   2.31
+  ],
+  [
+   "ISRG",
+   "Intuitive Surgical, Inc.",
+   2.08
+  ],
+  [
+   "PFE",
+   "Pfizer Inc.",
+   2.01
+  ],
+  [
+   "CVS",
+   "CVS Health Corporation",
+   1.93
+  ],
+  [
+   "VRTX",
+   "Vertex Pharmaceuticals Incorporated",
+   1.86
+  ],
+  [
+   "DHR",
+   "Danaher Corporation",
+   1.78
+  ],
+  [
+   "BMY",
+   "Bristol-Myers Squibb Company",
+   1.73
+  ],
+  [
+   "SYK",
+   "Stryker Corporation",
+   1.6
+  ],
+  [
+   "MDT",
+   "Medtronic plc",
+   1.48
+  ],
+  [
+   "MCK",
+   "McKesson Corporation",
+   1.36
+  ],
+  [
+   "ELV",
+   "Elevance Health, Inc.",
+   1.22
+  ],
+  [
+   "CI",
+   "The Cigna Group",
+   1.07
+  ],
+  [
+   "REGN",
+   "Regeneron Pharmaceuticals, Inc.",
+   0.95
+  ],
+  [
+   "BSX",
+   "Boston Scientific Corporation",
+   0.93
+  ],
+  [
+   "HCA",
+   "HCA Healthcare, Inc.",
+   0.9
+  ],
+  [
+   "CAH",
+   "Cardinal Health, Inc.",
+   0.82
+  ],
+  [
+   "COR",
+   "Cencora, Inc.",
+   0.77
+  ]
+ ],
+ "XLF": [
+  [
+   "JPM",
+   "JPMorgan Chase & Co.",
+   11.49
+  ],
+  [
+   "BRK.B",
+   "Berkshire Hathaway Inc.",
+   11.31
+  ],
+  [
+   "V",
+   "Visa Inc.",
+   7.48
+  ],
+  [
+   "MA",
+   "Mastercard Incorporated",
+   5.51
+  ],
+  [
+   "BAC",
+   "Bank of America Corporation",
+   5.03
+  ],
+  [
+   "GS",
+   "The Goldman Sachs Group, Inc.",
+   3.95
+  ],
+  [
+   "WFC",
+   "Wells Fargo & Company",
+   3.37
+  ],
+  [
+   "MS",
+   "Morgan Stanley",
+   3.25
+  ],
+  [
+   "C",
+   "Citigroup Inc.",
+   2.77
+  ],
+  [
+   "AXP",
+   "American Express Company",
+   2.38
+  ],
+  [
+   "SCHW",
+   "The Charles Schwab Corporation",
+   2.09
+  ],
+  [
+   "BLK",
+   "BlackRock, Inc.",
+   1.95
+  ],
+  [
+   "SPGI",
+   "S&P Global Inc.",
+   1.72
+  ],
+  [
+   "COF",
+   "Capital One Financial Corporation",
+   1.63
+  ],
+  [
+   "CB",
+   "Chubb Limited",
+   1.6
+  ],
+  [
+   "PGR",
+   "The Progressive Corporation",
+   1.53
+  ],
+  [
+   "BNY",
+   "The Bank of New York Mellon Corporation",
+   1.36
+  ],
+  [
+   "PNC",
+   "The PNC Financial Services Group, Inc.",
+   1.28
+  ],
+  [
+   "USB",
+   "U.S. Bancorp",
+   1.23
+  ],
+  [
+   "BX",
+   "Blackstone Inc.",
+   1.18
+  ],
+  [
+   "CME",
+   "CME Group Inc.",
+   1.12
+  ],
+  [
+   "MRSH",
+   "Marsh & McLennan Companies, Inc.",
+   1.1
+  ],
+  [
+   "HOOD",
+   "Robinhood Markets, Inc.",
+   0.99
+  ],
+  [
+   "ICE",
+   "Intercontinental Exchange, Inc.",
+   0.99
+  ],
+  [
+   "TRV",
+   "The Travelers Companies, Inc.",
+   0.99
+  ]
+ ],
+ "QBTS": [
+  [
+   "QBTS",
+   "QBTS",
+   100.0
+  ]
+ ],
+ "LRCX": [
+  [
+   "LRCX",
+   "LRCX",
+   100.0
+  ]
+ ],
+ "RKLB": [
+  [
+   "RKLB",
+   "RKLB",
+   100.0
+  ]
+ ]
+}

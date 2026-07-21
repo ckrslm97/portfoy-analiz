@@ -1,0 +1,63 @@
+name: Günlük veri güncelleme ve yayın
+
+on:
+  schedule:
+    # 23:00 UTC = 02:00 TSİ (Türkiye UTC+3, DST yok). NYSE kapanışı ve TEFAS
+    # günlük fon fiyatı yayınından sonra — hem ABD hem TR verisi kesinleşmiş olur.
+    - cron: "0 23 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Aynı anda iki Pages dağıtımı çakışmasın; kuyruğa alınan çalışma iptal edilmez,
+# sırayla biter (yarım kalmış bir deploy'u iptal etmek yerine bekletir).
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  guncelle-ve-yayinla:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu çek
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Bağımlılıkları kur
+        run: pip install -r requirements.txt
+
+      - name: Veri hattını çalıştır
+        working-directory: pipeline
+        run: python run_all.py
+
+      - name: Değişiklikleri commit'le
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site/data/*.json
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok, commit atlanıyor."
+          else
+            git commit -m "veri: günlük güncelleme $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Pages için hazırla
+        uses: actions/configure-pages@v5
+
+      - name: Site dosyalarını yükle
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Yayınla
+        id: deployment
+        uses: actions/deploy-pages@v4

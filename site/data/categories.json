@@ -1,0 +1,71 @@
+{
+ "Avrupa": [
+  "VGK",
+  "IEUR",
+  "IEV"
+ ],
+ "Japonya": [
+  "EWJ",
+  "BBJP",
+  "DXJ"
+ ],
+ "Hindistan": [
+  "INDA",
+  "EPI",
+  "INDY"
+ ],
+ "Gelişmekte olan": [
+  "VWO",
+  "IEMG",
+  "EMXC"
+ ],
+ "REIT": [
+  "VNQ",
+  "SCHH",
+  "REET"
+ ],
+ "Temettü/değer": [
+  "SCHD",
+  "VYM",
+  "DGRO",
+  "VTV"
+ ],
+ "Bankacılık": [
+  "KBE",
+  "KRE",
+  "IAT"
+ ],
+ "Sigorta": [
+  "KIE"
+ ],
+ "Tüketim": [
+  "XLP",
+  "XLY"
+ ],
+ "Endüstriyel": [
+  "XLI",
+  "PAVE"
+ ],
+ "Altyapı": [
+  "IGF",
+  "NFRA"
+ ],
+ "Su": [
+  "CGW",
+  "PHO",
+  "FIW"
+ ],
+ "Küçük ölçek": [
+  "IWM",
+  "VB",
+  "AVUV"
+ ],
+ "Biyoteknoloji": [
+  "IBB"
+ ],
+ "Küresel Çekirdek": [
+  "VT",
+  "VXUS",
+  "ACWI"
+ ]
+}
