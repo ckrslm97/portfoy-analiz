@@ -1,0 +1,23 @@
+{
+  "_cekim_tarihi": "2026-07-22",
+  "_not": "TEFAS bu veriyi kamuya açık bir API'de yayınlamıyor; yalnızca gerçek tarayıcı navigasyonuyla çekilebiliyor. Otomatik gece pipeline'ı bunu yenileyemez — bu dosya elle/ajanla periyodik güncellenmeli.",
+  "YZC": {"Yabancı Hisse Senedi": 63.96, "Hisse Senedi": 20.34, "Yatırım Fonları Katılma Payları": 14.44, "Ters-Repo": 1.14, "Vadeli İşlemler Nakit Teminatları": 0.12},
+  "YJK": {"Yabancı Borsa Yatırım Fonları": 66.66, "Yatırım Fonları Katılma Payları": 30.79, "Ters-Repo": 2.48, "Vadeli İşlemler Nakit Teminatları": 0.07},
+  "YHZ": {"Hisse Senedi": 92.54, "Yatırım Fonları Katılma Payları": 5.67, "Takasbank Para Piyasası": 1.32, "Vadeli İşlemler Nakit Teminatları": 0.47},
+  "CPU": {"Yabancı Hisse Senedi": 65.43, "Hisse Senedi": 26.29, "Yatırım Fonları Katılma Payları": 8.28},
+  "GPT": {"Yabancı Hisse Senedi": 68.33, "Hisse Senedi": 30.18, "Yatırım Fonları Katılma Payları": 1.49},
+  "GSP": {"Hisse Senedi": 84.77, "Yatırım Fonları Katılma Payları": 10.20, "Borsa Yatırım Fonları Katılma Payları": 3.95, "Diğer": 0.80, "Vadeli İşlemler Nakit Teminatları": 0.28},
+  "GUH": {"Yabancı Hisse Senedi": 92.73, "Ters-Repo": 2.61, "Vadeli İşlemler Nakit Teminatları": 2.07, "Mevduat (Döviz)": 1.86, "Takasbank Para Piyasası": 0.73},
+  "KPA": {"Hisse Senedi": 90.62, "BİST Taahhütlü İşlem Pazarı Satım": 8.64, "Yatırım Fonları Katılma Payları": 0.74},
+  "KTJ": {"Yabancı Hisse Senedi": 73.91, "BİST Taahhütlü İşlem Pazarı Satım": 11.89, "Hisse Senedi": 9.97, "Yatırım Fonları Katılma Payları": 4.23},
+  "NKP": {"Yabancı Hisse Senedi": 66.12, "Hisse Senedi": 18.69, "Finansman Bonosu": 9.49, "Yatırım Fonları Katılma Payları": 4.66, "Vadeli İşlemler Nakit Teminatları": 1.04},
+  "PHE": {"Hisse Senedi": 80.36, "Yatırım Fonları Katılma Payları": 17.70, "Borsa İstanbul Para Piyasası": 1.00, "Vadeli İşlemler Nakit Teminatları": 0.94},
+  "PNU": {"Ters-Repo": 51.37, "Borsa İstanbul Para Piyasası": 19.09, "Mevduat (TL)": 11.33, "Devlet Tahvili": 10.20, "Varlığa Dayalı Menkul Kıymetler": 4.15, "Finansman Bonosu": 2.65, "Özel Sektör Kira Sertifikaları": 0.93, "Diğer": 0.28},
+  "PSH": {"Hisse Senedi": 92.41, "Takasbank Para Piyasası": 6.22, "Mevduat (TL)": 1.37},
+  "YDI": {"Hisse Senedi": 92.29, "Yatırım Fonları Katılma Payları": 3.95, "Takasbank Para Piyasası": 3.42, "Vadeli İşlemler Nakit Teminatları": 0.34},
+  "YAY": {"Yabancı Hisse Senedi": 95.11, "Mevduat (Döviz)": 2.55, "Yatırım Fonları Katılma Payları": 2.34},
+  "YTD": {"Yabancı Borsa Yatırım Fonları": 90.05, "Yatırım Fonları Katılma Payları": 7.93, "Vadeli İşlemler Nakit Teminatları": 1.34, "Mevduat (Döviz)": 0.68},
+  "AFS": {"Yabancı Hisse Senedi": 97.63, "Ters-Repo": 1.75, "Yatırım Fonları Katılma Payları": 0.58, "Takasbank Para Piyasası": 0.04},
+  "TI2": {"Hisse Senedi": 94.53, "Vadeli İşlemler Nakit Teminatları": 2.05, "Ters-Repo": 1.77, "Yatırım Fonları Katılma Payları": 1.65},
+  "MAC": {"Hisse Senedi": 96.22, "Takasbank Para Piyasası": 3.78}
+}

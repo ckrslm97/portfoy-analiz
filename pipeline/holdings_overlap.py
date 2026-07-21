@@ -18,6 +18,18 @@ import requests
 
 from universe import ETFS, STOCKS
 
+
+def _aday_etf_kodlari() -> list[str]:
+    """Kategori genişletme adaylarının ETF sembolleri (fetch_candidates.py'nin
+    yazdığı categories.json'dan) — böylece Tavsiye Motoru'nda önerilen
+    ETF'lerin de gerçek holdings verisi olur, yalnızca portföy ETF'leri değil.
+    Modül yüklenirken değil, main() çalışırken çağrılır (DATA o an tanımlı)."""
+    p = DATA / "categories.json"
+    if not p.exists():
+        return []
+    cats = json.loads(p.read_text())
+    return sorted({s for v in cats.values() for s in v})
+
 HERE = pathlib.Path(__file__).parent
 DATA = pathlib.Path(os.environ.get("DATA_DIR", pathlib.Path(__file__).parent.parent / "site" / "data"))
 DATA.mkdir(parents=True, exist_ok=True)
@@ -56,7 +68,12 @@ def fetch_holdings(symbol: str):
         if len(cells) < 4:
             continue
         sym = cells[1].upper()
-        if not re.fullmatch(r"[A-Z][A-Z.\-]{0,6}", sym):
+        # Uluslararası (Avrupa/Japonya/vb.) holdings "BORSA: KOD" biçiminde gelir
+        # (ör. "AMS: ASML", "LON: HSBA") — düz ABD ticker deseninden farklı,
+        # ayrıca kabul edilmezse bu ETF'lerin holdings'i tamamen boş kalır.
+        duz = re.fullmatch(r"[A-Z][A-Z.\-]{0,6}", sym)
+        borsali = re.fullmatch(r"[A-Z]{2,5}:\s*[A-Z0-9.\-]{1,10}", sym)
+        if not (duz or borsali):
             continue
         pct = None
         for c in cells[2:5]:
@@ -89,7 +106,10 @@ def main():
             pass
 
     holdings = dict(onceki)
-    for sym in ETFS:
+    hedef_etfler = sorted(set(ETFS) | set(_aday_etf_kodlari()))
+    print(f"  {len(hedef_etfler)} ETF için holdings çekiliyor "
+          f"({len(ETFS)} portföy + {len(hedef_etfler) - len(ETFS)} aday)")
+    for sym in hedef_etfler:
         h = fetch_holdings(sym)
         if h:
             holdings[sym] = h

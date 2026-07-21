@@ -109,6 +109,15 @@ function karsilastirmaTabloHTML(kodlar, opts) {
   opts = opts || {};
   const satirlar = kodlar.map(kod => Object.assign({ kod }, kayit(kod) || {})).filter(r => r.ad !== undefined || r.kod);
   if (!satirlar.length) return '<p style="font-size:13px;color:var(--muted)">Henüz fon seçmedin.</p>';
+  // Odak enstrüman (varsa, ör. emsal tablosunda "kendisi") hep ilk satır;
+  // geri kalanı takip etmesi kolay olsun diye alfabetik.
+  satirlar.sort((a, b) => {
+    if (opts.merkez) {
+      if (a.kod === opts.merkez) return -1;
+      if (b.kod === opts.merkez) return 1;
+    }
+    return a.kod.localeCompare(b.kod);
+  });
   // [anahtar, başlık, biçimleyici, hizalama('l'|''), renkli mi (diverging işaret rengi)]
   const kolonlar = [
     ['ad', 'Ad', r => r.ad || '—', 'l', false],
@@ -283,7 +292,7 @@ function cizPortfoy() {
     return;
   }
 
-  const rows = akt.map(c => {
+  const rows = akt.slice().sort().map(c => {
     const r = kayit(c) || {};
     const d = S.decisions[c];
     return '<tr><td>' + tickBtn(c) + '</td>' +
@@ -323,11 +332,14 @@ function cizKarar() {
     liste = liste.filter(c => { const r = kayit(c); return r && r.sinyal === kararFiltre; });
   }
 
+  // Önce sinyal grubu (gözden geçirmesi gereken SAT en üstte), grup İÇİNDE
+  // alfabetik — böylece sıra günden güne puan değişse bile kararlı kalır,
+  // aynı fonu her seferinde aynı yerde bulursun.
   const sira = { SAT: 0, AL: 1, BEKLE: 2 };
   liste.sort((a, b) => {
     const ra = kayit(a) || {}, rb = kayit(b) || {};
     const d = (sira[ra.sinyal] ?? 3) - (sira[rb.sinyal] ?? 3);
-    return d !== 0 ? d : (ra.puan || 0) - (rb.puan || 0);
+    return d !== 0 ? d : a.localeCompare(b);
   });
 
   if (!liste.length) {
@@ -379,7 +391,7 @@ function cizEkle() {
         '<button class="btn ghost sm" data-unqueue="' + esc(x.code) + '" type="button">sil</button></div>').join('')
     : '<p style="font-size:13px;color:var(--muted);margin:0">Kuyruk boş.</p>';
 
-  const rem = S.positions.filter(p => p.status === 'removed');
+  const rem = S.positions.filter(p => p.status === 'removed').slice().sort((a, b) => a.code.localeCompare(b.code));
   $('#removedList').innerHTML = rem.length
     ? '<div class="scroll"><table><thead><tr><th>Kod</th><th class="l">Ad</th><th>Çıkarıldı</th><th></th></tr></thead><tbody>' +
       rem.map(p => { const r = kayit(p.code) || {};
@@ -430,7 +442,7 @@ function oner(codeRaw) {
   const hepsi = Object.assign({}, DB.portfoy, DB.aday);
   const hit = Object.keys(hepsi)
     .filter(c => c.indexOf(q) === 0 || (hepsi[c].ad || '').toUpperCase().indexOf(q) >= 0)
-    .filter(c => akt.indexOf(c) < 0).slice(0, 6);
+    .filter(c => akt.indexOf(c) < 0).sort().slice(0, 6);
   $('#addResults').innerHTML = hit.length
     ? hit.map(c => { const r = hepsi[c];
         return '<div style="display:flex;align-items:center;gap:9px;padding:6px 0;border-bottom:1px solid var(--rule)">' +
@@ -459,7 +471,7 @@ function cmpAra(q) {
     .filter(c => cmpSecili.indexOf(c) < 0)
     .filter(c => c.indexOf(q) === 0 || (hepsi[c].ad || '').toUpperCase().indexOf(q) >= 0
       || (hepsi[c].tema || '').toUpperCase().indexOf(q) >= 0)
-    .slice(0, 8);
+    .sort().slice(0, 8);
   box.innerHTML = hit.length
     ? '<div class="cmp-dropdown">' + hit.map(c => {
         const r = hepsi[c];
@@ -494,8 +506,12 @@ function cizCmp() {
 
 /* ---------------- pivot / karşılaştırma ---------------- */
 
-//: Satır/sütun için seçilebilir kategorik boyutlar.
+//: Satır/sütun için seçilebilir kategorik boyutlar. "kod" özel bir boyuttur:
+//: her enstrüman kendi grubu olur — Satır=Fon VE Sütun=Fon seçilirse ve
+//: Değer=Korelasyon (ikili) ise pivotHesapla() bunu tamamen farklı, ikili bir
+//: yoldan hesaplar (bkz. aşağıda pkorel).
 const PDIMS = {
+  kod:     { label: 'Fon / ETF',         get: r => r.code },
   tema:    { label: 'Tema',              get: r => r.tema || 'Diğer' },
   tip:     { label: 'Tip',               get: r => r.tip || '—' },
   sinyal:  { label: 'Sinyal',            get: r => r.sinyal || '—' },
@@ -503,7 +519,7 @@ const PDIMS = {
   kapsam:  { label: 'Kapsam',            get: r => r.__kapsam },
   yeterli: { label: 'Geçmiş yeterli mi', get: r => r.yillik_gecerli ? 'Evet' : 'Hayır' },
 };
-const PDIM_ORDER = ['tema', 'tip', 'sinyal', 'risk', 'kapsam', 'yeterli'];
+const PDIM_ORDER = ['kod', 'tema', 'tip', 'sinyal', 'risk', 'kapsam', 'yeterli'];
 
 //: Hücreye atanabilecek sayısal metrikler. polarity: diverging (0 merkezli,
 //: yeşil/kırmızı) | sequential (0..maks, aksan tonu) | negonly (yalnız ≤0, kırmızı).
@@ -522,11 +538,15 @@ const PMETRICS = {
   puan:   { label: 'Kural puanı',       get: r => r.puan,          fmt: 'int',   polarity: 'diverging' },
   oskor:  { label: 'Öneri skoru',       get: r => r.oneri_skoru,   fmt: 'num2',  polarity: 'sequential' },
   cakisma:{ label: 'En yüksek çakışma', get: r => r.en_yuksek_cakisma !== undefined ? r.en_yuksek_cakisma / 100 : null, fmt: 'pct1', polarity: 'sequential' },
-  korel:  { label: 'En yüksek korelasyon', get: r => r.en_yuksek_korelasyon, fmt: 'num2', polarity: 'sequential' },
+  korel:  { label: 'En yüksek korelasyon (herhangi biriyle)', get: r => r.en_yuksek_korelasyon, fmt: 'num2', polarity: 'sequential' },
+  // İkili (pairwise) korelasyon — TEK enstrümanın özelliği DEĞİL, bir ÇİFTİN
+  // özelliği; bu yüzden get() burada anlamsız (null döner) ve pivotHesapla()
+  // Satır=Fon + Sütun=Fon olduğunda bunu tamamen ayrı bir yoldan hesaplar.
+  pkorel: { label: 'Korelasyon (ikili — Fon × Fon)', get: () => null, fmt: 'num2', polarity: 'korelasyon' },
   adet:   { label: 'Adet',              get: () => 1,              fmt: 'int',   polarity: 'sequential', countOnly: true },
 };
 const PMETRIC_ORDER = ['adet', 'cagr', 'sharpe', 'sortino', 'vol', 'maxdd', 'beta', 'alpha',
-  'r1y', 'r3y', 'r5y', 'gider', 'puan', 'oskor', 'cakisma', 'korel'];
+  'r1y', 'r3y', 'r5y', 'gider', 'puan', 'oskor', 'cakisma', 'korel', 'pkorel'];
 
 //: Filtre durumu: her boyut için seçili değer kümesi. Boş küme = filtre yok.
 const pvFilter = { tema: new Set(), tip: new Set(), sinyal: new Set(), risk: new Set(), kapsam: new Set() };
@@ -574,8 +594,38 @@ function toplama(vals, agg) {
   return vals.reduce((a, b) => a + b, 0) / vals.length; // ortalama
 }
 
+//: İkili korelasyon (pkorel) yalnızca Satır=Fon/ETF VE Sütun=Fon/ETF iken
+//: anlamlıdır — DB.korelasyon_matrisi'nden doğrudan okur, item bazlı
+//: toplama mantığının tamamen dışındadır.
+function pivotHesaplaIkili(items) {
+  const kodlar = Array.from(new Set(items.map(it => it.code)))
+    .filter(c => DB.korelasyon_matrisi && DB.korelasyon_matrisi[c])
+    .sort();
+  const grid = {};
+  let maxAbs = 0;
+  kodlar.forEach(a => {
+    grid[a] = {};
+    kodlar.forEach(b => {
+      const v = a === b ? 1 : (DB.korelasyon_matrisi[a] || {})[b];
+      const agg = (v === undefined) ? null : v;
+      grid[a][b] = { agg, n: agg === null ? 0 : 1, codes: [a, b] };
+      if (agg !== null) maxAbs = Math.max(maxAbs, Math.abs(agg));
+    });
+  });
+  return { rowKeys: kodlar, colKeys: kodlar, grid, itemCount: kodlar.length, maxAbs: maxAbs || 1, maxMag: maxAbs || 1 };
+}
+
 function pivotHesapla() {
   const items = pivotFiltrele(pivotEvren());
+
+  if (pvVal === 'pkorel') {
+    if (pvRow !== 'kod' || pvCol !== 'kod') {
+      return { rowKeys: [], colKeys: [], grid: {}, itemCount: items.length, maxAbs: 1, maxMag: 1,
+        hataMesaji: 'Korelasyon (ikili) yalnızca Satır = Fon/ETF ve Sütun = Fon/ETF seçiliyken hesaplanır.' };
+    }
+    return pivotHesaplaIkili(items);
+  }
+
   const rowGet = PDIMS[pvRow].get, colGet = pvCol === 'none' ? null : PDIMS[pvCol].get;
   const metrik = PMETRICS[pvVal];
 
@@ -612,6 +662,14 @@ function pivotHesapla() {
 
 function heatStyle(agg, polarity, maxAbs, maxMag) {
   if (agg === null || agg === undefined) return '';
+  if (polarity === 'korelasyon') {
+    // Yüksek ρ = konsantrasyon riski (kırmızı), düşük/negatif ρ = çeşitlendirme (yeşil).
+    // Getiri metriklerindeki "pozitif=iyi" mantığının TERSİ — burada pozitif
+    // yüksek korelasyon istenmeyen bir şeydir.
+    const t = Math.min(1, Math.abs(agg));
+    const tok = agg >= 0.5 ? '--neg-bg' : (agg <= 0 ? '--pos-bg' : '--warn-bg');
+    return 'background:color-mix(in srgb, var(' + tok + ') ' + (t * 100).toFixed(0) + '%, var(--surface))';
+  }
   if (polarity === 'negonly') {
     const t = Math.min(1, Math.abs(agg) / (maxAbs || 1));
     return 'background:color-mix(in srgb, var(--neg-bg) ' + (t * 100).toFixed(0) + '%, var(--surface))';
@@ -640,6 +698,9 @@ function pivotSecenekleriDoldur() {
   valSel.addEventListener('change', () => {
     pvVal = valSel.value;
     if (PMETRICS[pvVal].countOnly) { pvAgg = 'top'; $('#pvAgg').value = 'top'; }
+    if (pvVal === 'pkorel') {
+      pvRow = 'kod'; pvCol = 'kod'; rowSel.value = 'kod'; colSel.value = 'kod';
+    }
     cizPivot();
   });
   $('#pvAgg').addEventListener('change', () => { pvAgg = $('#pvAgg').value; cizPivot(); });
@@ -674,14 +735,24 @@ function cizPivot() {
 
   cizPivotFiltreler();
 
-  const { rowKeys, colKeys, grid, maxAbs, maxMag } = pivotHesapla();
+  const { rowKeys, colKeys, grid, maxAbs, maxMag, hataMesaji } = pivotHesapla();
   const metrik = PMETRICS[pvVal];
 
+  if (hataMesaji) {
+    $('#pivotTableWrap').innerHTML = '<div class="empty"><strong>Bu kombinasyon desteklenmiyor</strong>' + esc(hataMesaji) + '</div>';
+    $('#pivotDrill').innerHTML = '';
+    return;
+  }
   if (!rowKeys.length) {
     $('#pivotTableWrap').innerHTML = '<div class="empty"><strong>Bu filtrede enstrüman yok</strong>Filtreleri gevşet.</div>';
     $('#pivotDrill').innerHTML = '';
     return;
   }
+  const buyukMatrisUyari = (pvRow === 'kod' && pvCol === 'kod' && rowKeys.length > 20 && !Object.values(pvFilter).some(s => s.size))
+    ? '<div class="note warn" style="margin-bottom:14px"><p class="nt">Büyük matris</p>' +
+      '<p>' + rowKeys.length + '×' + colKeys.length + ' hücre — okunması zor olabilir. Yukarıdan bir Tema veya Tip ' +
+      'filtresi uygulayarak matrisi küçültmeni öneririm.</p></div>'
+    : '';
 
   let html = '<div class="scroll"><table class="pivot-table"><thead><tr><th class="corner rowhead">' +
     esc(PDIMS[pvRow].label) + ' \\ ' + esc(pvCol === 'none' ? metrik.label : PDIMS[pvCol].label) + '</th>';
@@ -706,7 +777,7 @@ function cizPivot() {
     html += '</tr>';
   });
   html += '</tbody></table></div>';
-  $('#pivotTableWrap').innerHTML = html;
+  $('#pivotTableWrap').innerHTML = buyukMatrisUyari + html;
 
   if (pvSelected) cizDrill(pvSelected.rk, pvSelected.ck, grid);
   else $('#pivotDrill').innerHTML = '<p style="font-size:12.5px;color:var(--muted)">Bir hücreye tıkla — altındaki fonları listeleyeyim.</p>';
@@ -715,6 +786,18 @@ function cizPivot() {
 function cizDrill(rk, ck, grid) {
   const cell = grid && grid[rk] && grid[rk][ck];
   if (!cell || !cell.codes.length) { $('#pivotDrill').innerHTML = ''; return; }
+
+  // İkili korelasyon hücresi: genel "grup içeriği" listesi değil, iki fonun
+  // tam metrik karşılaştırması daha faydalı — mevcut karşılaştırma tablosunu kullan.
+  if (pvVal === 'pkorel') {
+    const ro = cell.agg !== null ? num(cell.agg, 3) : '—';
+    $('#pivotDrill').innerHTML =
+      '<h4 style="font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:0 0 8px">' +
+      esc(rk) + ' × ' + esc(ck) + ' — ρ = ' + ro + '</h4>' +
+      karsilastirmaTabloHTML(rk === ck ? [rk] : [rk, ck], {});
+    return;
+  }
+
   const metrik = PMETRICS[pvVal];
   const satirlar = cell.codes.map(c => {
     const r = kayit(c) || {};
@@ -854,6 +937,43 @@ function acDetay(kod) {
   $('#detailDrawer').setAttribute('open', '');
 }
 
+//: "Hangi hisselere yatırım yapıyor, dağılımı nasıl" isteğine cevap.
+//: ABD ETF'leri için stockanalysis.com'dan çekilmiş gerçek holdings; TEFAS
+//: fonları için TEFAS sitesinden (yalnızca tarayıcı navigasyonuyla erişilebilen,
+//: kamuya açık API'si olmayan) varlık türü dağılımı. İkisi de yoksa nedenini
+//: açıkça söyler — sessizce boş bırakmaz veya veri uydurmaz.
+function detailIcerikHTML(kod) {
+  const r = kayit(kod);
+  if (r.holdings && r.holdings.length) {
+    const satirlar = r.holdings.map(h =>
+      '<tr><td class="tick">' + esc(h.kod) + '</td><td class="l">' + esc(h.ad) + '</td>' +
+      '<td class="num">%' + num(h.agirlik, 2) + '</td></tr>'
+    ).join('');
+    return '<div class="scroll"><table><thead><tr><th class="l">Kod</th><th class="l">Şirket</th><th>Ağırlık</th></tr></thead>' +
+      '<tbody>' + satirlar + '</tbody></table></div>' +
+      '<p style="font-size:12px;color:var(--muted);margin-top:8px">İlk ' + r.holdings.length +
+      ' pozisyon, fonun toplam ağırlığının yaklaşık %' + num(r.holdings_kapsama, 1) +
+      '\'ini kapsıyor (stockanalysis.com, resmi tam portföy değil).</p>';
+  }
+  if (r.varlik_dagilim) {
+    const toplam = Object.values(r.varlik_dagilim).reduce((a, b) => a + b, 0);
+    const satirlar = Object.entries(r.varlik_dagilim)
+      .sort((a, b) => b[1] - a[1])
+      .map(([tur, oran]) => '<tr><td class="l">' + esc(tur) + '</td><td class="num">%' + num(oran, 2) + '</td></tr>')
+      .join('');
+    return '<div class="scroll"><table><thead><tr><th class="l">Varlık Türü</th><th>Oran</th></tr></thead>' +
+      '<tbody>' + satirlar + '</tbody></table></div>' +
+      '<p style="font-size:12px;color:var(--muted);margin-top:8px">Toplam %' + num(toplam, 1) +
+      '. Kaynak: TEFAS — bu veri kamuya açık bir API\'de yayınlanmıyor, ' +
+      (r.varlik_dagilim_tarih ? trTarih(r.varlik_dagilim_tarih) + ' tarihinde' : 'periyodik olarak') +
+      ' elle/tarayıcı ile çekildi. Her gece otomatik tazelenmez.</p>';
+  }
+  const neden = r.tip === 'TEFAS'
+    ? 'TEFAS, fon içeriğini (hangi hisseler, hangi ağırlık) kamuya açık bir API\'de yayınlamıyor.'
+    : 'Bu enstrümanın içerik verisi henüz çekilmedi — bir sonraki güncellemede eklenebilir.';
+  return '<p style="font-size:13px;color:var(--muted)">İçerik verisi yok. ' + neden + '</p>';
+}
+
 function renderDetailBody(kod) {
   const r = kayit(kod);
   const akt = aktifKodlar().indexOf(kod) >= 0;
@@ -877,6 +997,8 @@ function renderDetailBody(kod) {
     '</div>' +
     '<h4 ' + h4 + '>Risk ve getiri (tüm geçmiş, USD)</h4>' +
     '<div class="grid g4" style="margin-bottom:24px">' + metrikler + '</div>' +
+    '<h4 ' + h4 + '>İçerik — hangi hisselere yatırım yapıyor</h4>' +
+    '<div style="margin-bottom:24px">' + detailIcerikHTML(kod) + '</div>' +
     (r.sinyal ? '<h4 ' + h4 + '>Al / Sat / Bekle sinyali</h4>' + detailSinyalHTML(kod) : '') +
     '<h4 ' + h4 + '>Temandaki emsalleri</h4>' + detailEmsalHTML(kod) +
     '<div style="margin-top:22px">' + eylem + '</div>';
@@ -999,6 +1121,9 @@ function kartOneri(rec, aktif) {
     '<div style="font-size:13.5px;color:var(--ink-2);margin-bottom:12px">' + esc(r.ad || '') +
       (r.aum ? ' · AUM ' + esc(r.aum) : '') + '</div>' +
     '<div class="grid g4" style="margin-bottom:12px">' + bilesen + '</div>' +
+    '<ul style="margin:0 0 14px;padding-left:18px;font-size:13px;color:var(--ink-2)">' +
+      (r.oneri_nedenleri || []).map(n => '<li>' + esc(n) + '</li>').join('') +
+    '</ul>' +
     (aktif ? '<div style="display:flex;gap:8px">' +
       '<button class="btn" data-add="' + esc(rec.code) + '" type="button">Portföye ekle</button>' +
       '<button class="btn ghost" data-dismiss="' + esc(rec.id) + '" type="button">İlgilenmiyorum</button></div>' : '') +

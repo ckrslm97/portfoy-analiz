@@ -190,6 +190,11 @@ def main():
     meta_t = json.loads((DATA / "meta_tefas.json").read_text())
     cats = json.loads((DATA / "categories.json").read_text())
     profiles = {**prof_p, **prof_c}
+    holdings = json.loads((DATA / "holdings.json").read_text()) if (DATA / "holdings.json").exists() else {}
+    tefas_varlik_p = DATA / "tefas_varlik.json"
+    tefas_varlik = json.loads(tefas_varlik_p.read_text()) if tefas_varlik_p.exists() else {}
+    tefas_varlik_tarih = tefas_varlik.pop("_cekim_tarihi", None)
+    tefas_varlik.pop("_not", None)
 
     portfoy = list(TEFAS) + ETFS + STOCKS
     aday = sorted({s for v in cats.values() for s in v} - set(portfoy))
@@ -204,6 +209,18 @@ def main():
     cov = wr.notna().sum()
     kolon = [c for c in panel.columns if cov[c] >= 52 and c not in ("SPY", "QQQ", "XU100.IS")]
     corr = wr[kolon].dropna(how="any").corr()
+
+    # Tam korelasyon matrisi — pivotta "Satır=Fon, Sütun=Fon" seçilip Değer
+    # olarak Korelasyon istendiğinde gerçek ikili (pairwise) değeri döner.
+    # Yalnızca portföy+aday havuzunda GERÇEKTEN var olan kodlarla sınırla —
+    # ACWI gibi ölçüt serileri dahil edilmez (kolon'da olsa da).
+    gecerli_kodlar = set(portfoy) | set(aday)
+    korelasyon_kodlar = [c for c in kolon if c in gecerli_kodlar]
+    korelasyon_matrisi = {
+        a: {b: (round(float(corr.loc[a, b]), 3) if pd.notna(corr.loc[a, b]) else None)
+            for b in korelasyon_kodlar}
+        for a in korelasyon_kodlar
+    }
 
     def er_of(kod):
         p = profiles.get(kod, {})
@@ -235,7 +252,24 @@ def main():
            "veri_tarihi": panel.index.max().strftime("%Y-%m-%d"),
            "olcut": "ACWI", "risksiz_oran": RF,
            "portfoy": {}, "aday": {}, "kategoriler": cats,
-           "uyusmazlik": MISMATCH}
+           "uyusmazlik": MISMATCH,
+           "korelasyon_matrisi": korelasyon_matrisi,
+           "korelasyon_not": ("Haftalık getirilerle, ortak ≥52 haftalık pencerede hesaplanır. "
+                              "Bu pencereye girmeyen (çok kısa geçmişli) enstrümanlar matriste yok.")}
+
+    def icerik_ekle(m: dict, kod: str) -> None:
+        """Fonun/ETF'in içeriğini ekler: ABD ETF'leri için gerçek holdings
+        (stockanalysis.com), TEFAS fonları için varlık dağılımı (yalnızca
+        gerçek tarayıcı navigasyonuyla elle/ajanla çekilebiliyor — otomatik
+        gece pipeline'ı bunu üretemez, bu yüzden ayrı, periyodik güncellenen
+        bir dosyadan okunur ve çekim tarihiyle birlikte damgalanır)."""
+        if kod in holdings and holdings[kod]:
+            top = holdings[kod][:10]
+            m["holdings"] = [{"kod": s, "ad": n, "agirlik": w} for s, n, w in top]
+            m["holdings_kapsama"] = round(sum(w for _, _, w in holdings[kod]), 1)
+        if kod in tefas_varlik and tefas_varlik[kod]:
+            m["varlik_dagilim"] = tefas_varlik[kod]
+            m["varlik_dagilim_tarih"] = tefas_varlik_tarih
 
     for kod in portfoy:
         if kod not in panel.columns:
@@ -254,6 +288,7 @@ def main():
                    or (profiles.get(kod, {}).get("tam_ad")))
         m["tip"] = "TEFAS" if kod in tefas_kod else (US.get(kod, ("ETF",))[0])
         m["tema"] = THEMES.get(kod, "Diğer")
+        icerik_ekle(m, kod)
         if kod in meta_t:
             m["aum_try"] = meta_t[kod].get("portBuyukluk")
             m["yatirimci"] = meta_t[kod].get("yatirimciSayi")
@@ -279,13 +314,31 @@ def main():
         # adaylarda "tema" = boşluk kategorisi (Avrupa, Bankacılık, ...) ya da
         # kullanıcının kendi eklediği bir kodsa "İzleme Listem".
         m["tema"] = m["kategori"] or "Diğer"
+        icerik_ekle(m, kod)
         # öneri skoru: ucuz + likit + iyi Sharpe + portföye düşük korelasyon
         sk = 0.0
-        if m.get("sharpe"): sk += min(m["sharpe"], 1.5) * 2
-        if m.get("gider") is not None: sk += max(0, 1 - m["gider"] / 0.5)
+        nedenler = []
+        if m.get("sharpe"):
+            sk += min(m["sharpe"], 1.5) * 2
+            if m["sharpe"] > 0.4:
+                nedenler.append(f"Güçlü risk-ayarlı getiri (Sharpe {m['sharpe']:.2f})")
+        if m.get("gider") is not None:
+            sk += max(0, 1 - m["gider"] / 0.5)
+            if m["gider"] <= 0.15:
+                nedenler.append(f"Çok düşük gider oranı (%{m['gider']:.2f})")
         sk += (1 - min(c, 1.0)) * 3
-        if m.get("alpha"): sk += max(-2, min(2, m["alpha"] * 20))
+        if c < 0.3:
+            nedenler.append(f"Portföyünle düşük korelasyon (en yüksek ρ={c:.2f}) — gerçek çeşitlendirme")
+        elif c < 0.6:
+            nedenler.append(f"Portföyünle orta düzey korelasyon (en yüksek ρ={c:.2f})")
+        if m.get("alpha"):
+            sk += max(-2, min(2, m["alpha"] * 20))
+            if m["alpha"] > 0.01:
+                nedenler.append(f"Ölçüt üstü alfa (+%{m['alpha']*100:.1f})")
+        if m.get("aum"):
+            nedenler.append(f"Likit: AUM {m['aum']}")
         m["oneri_skoru"] = round(sk, 2)
+        m["oneri_nedenleri"] = nedenler or ["Kategori boşluğunu kapatan tek/en iyi aday"]
         out["aday"][kod] = m
 
     # --- İkinci geçiş: her enstrümana AYNI TEMADAKİ emsallerini ekle ---
