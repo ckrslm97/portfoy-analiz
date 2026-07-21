@@ -21,7 +21,7 @@
   "longName": "Invesco S&P Global Water Index ETF",
   "currency": "USD",
   "firstTradeDate": "2007-05-14",
-  "price": 64.6
+  "price": 64.531
  },
  "DGRO": {
   "longName": "iShares Core Dividend Growth ETF",
@@ -111,7 +111,7 @@
   "longName": "iShares Russell 2000 ETF",
   "currency": "USD",
   "firstTradeDate": "2000-05-26",
-  "price": 296.56
+  "price": 296.54
  },
  "KBE": {
   "longName": "State Street SPDR S&P Bank ETF",
