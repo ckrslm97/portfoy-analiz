@@ -288,6 +288,31 @@ def main():
         m["oneri_skoru"] = round(sk, 2)
         out["aday"][kod] = m
 
+    # --- İkinci geçiş: her enstrümana AYNI TEMADAKİ emsallerini ekle ---
+    # "Al/Sat/Bekle sinyali üretirken hangisiyle kıyaslandığını görebileyim"
+    # isteğine cevap: gider oranı, Sharpe, CAGR ve bu enstrümana korelasyonuyla
+    # birlikte, portföy+aday havuzunun TAMAMINDAN (havuz sınırı yok) toplanır.
+    tum = {**out["portfoy"], **out["aday"]}
+    for kod, m in tum.items():
+        tema = m.get("tema")
+        if m.get("yetersiz") or not tema:
+            continue
+        emsaller = []
+        for k2, m2 in tum.items():
+            if k2 == kod or m2.get("yetersiz") or m2.get("tema") != tema:
+                continue
+            ro = None
+            if kod in corr.columns and k2 in corr.columns:
+                v = corr.loc[kod, k2]
+                ro = round(float(v), 3) if pd.notna(v) else None
+            emsaller.append({
+                "kod": k2, "ad": m2.get("ad"), "tip": m2.get("tip"),
+                "sharpe": m2.get("sharpe"), "cagr": m2.get("cagr"),
+                "gider": m2.get("gider"), "korelasyon": ro,
+            })
+        emsaller.sort(key=lambda e: (e["sharpe"] is None, -(e["sharpe"] or -999)))
+        m["emsaller"] = emsaller[:8]
+
     (DATA / "app_data.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
 
     print(f"portföy: {len(out['portfoy'])} | aday: {len(out['aday'])}")

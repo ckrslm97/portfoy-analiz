@@ -96,6 +96,58 @@ function esc(s) {
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 function signClass(x) { return x === null || x === undefined ? '' : (x >= 0 ? 'pos' : 'neg'); }
+//: Her yerde tekrar eden tıklanabilir fon kodu — detay panelini açar.
+function tickBtn(kod, styleAttr) {
+  return '<button type="button" class="tick tick-btn"' + (styleAttr ? ' style="' + styleAttr + '"' : '') +
+    ' data-detail="' + esc(kod) + '">' + esc(kod) + '</button>';
+}
+
+//: Birden fazla enstrümanı tek tabloda yan yana gösterir. Hem "fonları serbest
+//: karşılaştır" aracı hem de detay panelindeki "temandaki emsalleri" tablosu
+//: BUNU kullanır — tek doğruluk kaynağı, iki farklı çağıran.
+function karsilastirmaTabloHTML(kodlar, opts) {
+  opts = opts || {};
+  const satirlar = kodlar.map(kod => Object.assign({ kod }, kayit(kod) || {})).filter(r => r.ad !== undefined || r.kod);
+  if (!satirlar.length) return '<p style="font-size:13px;color:var(--muted)">Henüz fon seçmedin.</p>';
+  // [anahtar, başlık, biçimleyici, hizalama('l'|''), renkli mi (diverging işaret rengi)]
+  const kolonlar = [
+    ['ad', 'Ad', r => r.ad || '—', 'l', false],
+    ['tip', 'Tip', r => r.tip || '—', '', false],
+    ['cagr', 'CAGR', r => pct(r.cagr), '', true],
+    ['vol', 'Vol', r => pct(r.vol), '', false],
+    ['sharpe', 'Sharpe', r => num(r.sharpe), '', false],
+    ['maxdd', 'Maks. düşüş', r => pct(r.maxdd, 0), '', 'neg'],
+    ['beta', 'Beta', r => num(r.beta), '', false],
+    ['alpha', 'Alfa', r => pct(r.alpha), '', true],
+    ['gider', 'Gider', r => r.gider != null ? '%' + num(r.gider) : '—', '', false],
+    ['sinyal', 'Sinyal', r => r.sinyal
+      ? '<span class="chip chip-' + r.sinyal.toLowerCase() + '">' + esc(r.sinyal) + '</span>' : '—', '', false],
+  ];
+  if (opts.korelasyonGoster) {
+    kolonlar.push(['korelasyon', 'ρ (' + esc(opts.merkez || '') + ')', r => {
+      const e = (kayit(opts.merkez) || {}).emsaller || [];
+      const f = e.find(x => x.kod === r.kod);
+      return f && f.korelasyon !== null && f.korelasyon !== undefined ? num(f.korelasyon, 3) : '—';
+    }, '', false]);
+  }
+  const th = '<th class="l">Kod</th>' + kolonlar.map(k =>
+    '<th' + (k[3] === 'l' ? ' class="l"' : '') + '>' + esc(k[1]) + '</th>').join('') +
+    (opts.kaldirilabilir ? '<th></th>' : '');
+  const tr = satirlar.map(r => {
+    const kendisi = opts.merkez === r.kod;
+    const hucreler = kolonlar.map(k => {
+      const [anahtar, , bicim, hiza, renkli] = k;
+      let cls = hiza === 'l' ? 'l' : 'num';
+      if (renkli === true) cls += ' ' + signClass(r[anahtar]);
+      else if (renkli === 'neg' && r[anahtar] != null) cls += ' neg';
+      return '<td class="' + cls + '">' + bicim(r) + '</td>';
+    }).join('');
+    return '<tr' + (kendisi ? ' class="cmp-row-self"' : '') + '><td>' + tickBtn(r.kod) + '</td>' + hucreler +
+      (opts.kaldirilabilir ? '<td><button type="button" class="cmp-remove" data-cmp-remove="' + esc(r.kod) + '" title="Kaldır">×</button></td>' : '') +
+      '</tr>';
+  }).join('');
+  return '<div class="scroll"><table><thead><tr>' + th + '</tr></thead><tbody>' + tr + '</tbody></table></div>';
+}
 function gunFarki(iso) {
   const d = new Date(iso + 'T00:00:00Z');
   return Math.floor((Date.now() - d.getTime()) / 86400000);
@@ -234,7 +286,7 @@ function cizPortfoy() {
   const rows = akt.map(c => {
     const r = kayit(c) || {};
     const d = S.decisions[c];
-    return '<tr><td class="tick">' + esc(c) + '</td>' +
+    return '<tr><td>' + tickBtn(c) + '</td>' +
       '<td class="l" style="max-width:280px">' + esc(r.ad || '—') + '</td>' +
       '<td><span class="chip chip-n">' + esc(r.tip || '—') + '</span></td>' +
       '<td class="num ' + signClass(r.cagr) + '">' + pct(r.cagr) + '</td>' +
@@ -292,7 +344,7 @@ function cizKarar() {
     const secili = o => 'aria-pressed="' + (d.override === o ? 'true' : 'false') + '"';
     return '<div class="decision" data-sig="' + esc(r.sinyal || '') + '">' +
       '<div><div class="hd">' +
-        '<span class="tick" style="font-size:15px">' + esc(c) + '</span>' +
+        tickBtn(c, 'font-size:15px') +
         '<span class="chip chip-' + String(r.sinyal || 'n').toLowerCase() + '">Kural: ' + esc(r.sinyal || '—') + '</span>' +
         (r.puan !== undefined && !r.kapi ? '<span class="chip chip-n">puan ' + (r.puan > 0 ? '+' : '') + r.puan + '</span>' : '') +
         kapi +
@@ -331,7 +383,7 @@ function cizEkle() {
   $('#removedList').innerHTML = rem.length
     ? '<div class="scroll"><table><thead><tr><th>Kod</th><th class="l">Ad</th><th>Çıkarıldı</th><th></th></tr></thead><tbody>' +
       rem.map(p => { const r = kayit(p.code) || {};
-        return '<tr><td class="tick">' + esc(p.code) + '</td><td class="l">' + esc(r.ad || '—') + '</td>' +
+        return '<tr><td>' + tickBtn(p.code) + '</td><td class="l">' + esc(r.ad || '—') + '</td>' +
         '<td class="num">' + trTarih(p.removedAt) + '</td>' +
         '<td><button class="btn ghost sm" data-restore="' + esc(p.code) + '" type="button">geri al</button></td></tr>';
       }).join('') + '</tbody></table></div>'
@@ -382,13 +434,62 @@ function oner(codeRaw) {
   $('#addResults').innerHTML = hit.length
     ? hit.map(c => { const r = hepsi[c];
         return '<div style="display:flex;align-items:center;gap:9px;padding:6px 0;border-bottom:1px solid var(--rule)">' +
-        '<span class="tick">' + esc(c) + '</span>' +
+        tickBtn(c) +
         '<span style="font-size:12.5px;color:var(--muted);margin-right:auto;overflow:hidden;text-overflow:ellipsis">' + esc(r.ad || '') + '</span>' +
         (r.kategori ? '<span class="chip chip-n">' + esc(r.kategori) + '</span>' : '') +
         '<button class="btn sm" data-add="' + esc(c) + '" type="button">ekle</button></div>';
       }).join('')
     : '<p style="font-size:12.5px;color:var(--muted);margin:6px 0 0">Veri setinde eşleşme yok — ' +
       '“Ekle”ye basarsan izleme listesine alınır.</p>';
+}
+
+/* ---------------- fonları serbest karşılaştır ---------------- */
+
+//: "Karşılaştır" sekmesinde kullanıcının elle seçtiği fon listesi — ephemeral,
+//: sayfa yenilenince sıfırlanır (kalıcı bir karar değil, geçici bir inceleme).
+let cmpSecili = [];
+const CMP_MAX = 6;
+
+function cmpAra(q) {
+  const box = $('#cmpDropdown');
+  q = String(q || '').trim().toUpperCase();
+  if (!q) { box.innerHTML = ''; return; }
+  const hepsi = Object.assign({}, DB.portfoy, DB.aday);
+  const hit = Object.keys(hepsi)
+    .filter(c => cmpSecili.indexOf(c) < 0)
+    .filter(c => c.indexOf(q) === 0 || (hepsi[c].ad || '').toUpperCase().indexOf(q) >= 0
+      || (hepsi[c].tema || '').toUpperCase().indexOf(q) >= 0)
+    .slice(0, 8);
+  box.innerHTML = hit.length
+    ? '<div class="cmp-dropdown">' + hit.map(c => {
+        const r = hepsi[c];
+        return '<button type="button" class="item" data-cmp-add="' + esc(c) + '">' +
+          '<span class="tick">' + esc(c) + '</span>' +
+          '<span class="nm2">' + esc(r.ad || '') + '</span>' +
+          '<span class="chip chip-n">' + esc(r.tema || '') + '</span></button>';
+      }).join('') + '</div>'
+    : '<div class="cmp-dropdown"><div class="item" style="color:var(--muted);cursor:default">Eşleşme yok</div></div>';
+}
+
+function cmpEkle(kod) {
+  if (cmpSecili.length >= CMP_MAX || cmpSecili.indexOf(kod) >= 0) return;
+  cmpSecili.push(kod);
+  $('#cmpInput').value = '';
+  $('#cmpDropdown').innerHTML = '';
+  cizCmp();
+}
+
+function cmpCikar(kod) {
+  cmpSecili = cmpSecili.filter(c => c !== kod);
+  cizCmp();
+}
+
+function cizCmp() {
+  $('#cmpCount').textContent = cmpSecili.length + '/' + CMP_MAX + ' seçili';
+  $('#cmpInput').disabled = cmpSecili.length >= CMP_MAX;
+  $('#cmpTable').innerHTML = cmpSecili.length
+    ? karsilastirmaTabloHTML(cmpSecili, { kaldirilabilir: true })
+    : '<div class="empty">Yukarıdan fon ara ve ekle — en fazla ' + CMP_MAX + ' tane.</div>';
 }
 
 /* ---------------- pivot / karşılaştırma ---------------- */
@@ -625,10 +726,185 @@ function cizDrill(rk, ck, grid) {
     '<h4 style="font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:0 0 8px">' +
     esc(rk) + (ck !== 'Tümü' ? ' · ' + esc(ck) : '') + ' — ' + satirlar.length + ' fon</h4>' +
     '<div class="drill-list">' + satirlar.map(s =>
-      '<div class="drill-row"><span class="tick">' + esc(s.c) + '</span>' +
+      '<div class="drill-row">' + tickBtn(s.c) +
       '<span class="nm">' + esc(s.ad) + '</span>' +
       '<span class="num ' + (metrik.polarity === 'diverging' ? signClass(s.v) : '') + '">' + fmtDeger(s.v, metrik.fmt) + '</span></div>'
     ).join('') + '</div>';
+}
+
+/* ---------------- enstrüman detayı ---------------- */
+
+//: 1H/1A/3A/6A/12A aralık seçici tanımları (takvim günü, geriye doğru).
+const ARALIKLAR = {
+  '1H': { gun: 7, ad: '1 Hafta' }, '1A': { gun: 30, ad: '1 Ay' },
+  '3A': { gun: 91, ad: '3 Ay' }, '6A': { gun: 182, ad: '6 Ay' },
+  '12A': { gun: 365, ad: '12 Ay' },
+};
+
+let detailKod = null;
+let detailAralik = '1A';
+let GUNLUK_EPOCH_MS = null; // init()'te DB yüklenince doldurulur
+
+function epochToDate(g) { return new Date(GUNLUK_EPOCH_MS + g * 86400000); }
+function trTarihKisa(d) { return d.toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', year: 'numeric' }); }
+
+//: Günlük seriyi seçili aralığa göre diler; baz nokta = kesim tarihine en
+//: yakın (≥) ilk gözlem. Seri kısaysa (ör. yeni kurulmuş fon) elindekiyle yetinir.
+function aralikDilimle(kod, ak) {
+  const s = DB.gunluk && DB.gunluk[kod];
+  if (!s || !s.g || s.g.length < 2) return null;
+  const sonGun = s.g[s.g.length - 1];
+  const istenenGun = ARALIKLAR[ak].gun;
+  const kesim = sonGun - istenenGun;
+  let baz = s.g.findIndex(g => g >= kesim);
+  if (baz < 0) baz = 0;
+  const g = s.g.slice(baz), f = s.f.slice(baz);
+  if (f.length < 2) return null;
+  const bazF = f[0], sonF = f[f.length - 1];
+  const kapsananGun = g[g.length - 1] - g[0];
+  return {
+    g, f, delta: bazF > 0 ? (sonF / bazF - 1) : null,
+    bazTarih: epochToDate(g[0]), sonTarih: epochToDate(g[g.length - 1]),
+    // 5 günlük tolerans (haftasonu/tatil kaymaları) sonrası hâlâ istenen aralığın
+    // gerisindeyse, bu "yetersiz geçmiş" demektir — sessizce kısa aralığı
+    // "12A" diye sunmak yanıltıcı olur (ör. 4 aylık NASA için "12A" göstermek gibi).
+    kisitli: kapsananGun < istenenGun - 5,
+  };
+}
+
+//: Sparkline'dan daha büyük, ızgaralı ve pozitif/negatife göre renklenen çizgi grafiği.
+function detailChartSVG(fiyatlar, neg) {
+  const W = 640, H = 150, pad = 6;
+  const lo = Math.min.apply(null, fiyatlar), hi = Math.max.apply(null, fiyatlar);
+  const span = (hi - lo) || 1;
+  const X = i => pad + (i / (fiyatlar.length - 1)) * (W - pad * 2);
+  const Y = v => pad + (1 - (v - lo) / span) * (H - pad * 2);
+  let d = '';
+  fiyatlar.forEach((v, i) => { d += (i ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(v).toFixed(1) + ' '; });
+  const area = d + 'L' + X(fiyatlar.length - 1).toFixed(1) + ' ' + (H - pad) + ' L' + pad + ' ' + (H - pad) + ' Z';
+  let grid = '';
+  for (let i = 1; i <= 2; i++) {
+    const y = (pad + (H - pad * 2) * i / 3).toFixed(1);
+    grid += '<line class="grid-line" x1="0" y1="' + y + '" x2="' + W + '" y2="' + y + '"/>';
+  }
+  const c1 = neg ? ' neg-line' : '', c2 = neg ? ' neg-area' : '', c3 = neg ? ' neg-end' : '';
+  return '<svg class="detail-chart" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" aria-hidden="true">' +
+    grid + '<path class="area' + c2 + '" d="' + area + '"/>' +
+    '<path class="line' + c1 + '" d="' + d.trim() + '"/>' +
+    '<circle class="end' + c3 + '" cx="' + X(fiyatlar.length - 1).toFixed(1) + '" cy="' + Y(fiyatlar[fiyatlar.length - 1]).toFixed(1) + '" r="3.2"/>' +
+    '</svg>';
+}
+
+function statCard(k, v, colorVal) {
+  return '<div class="stat"><div class="k">' + k + '</div><div class="v" style="font-size:19px' +
+    '"><span class="' + (colorVal !== undefined && colorVal !== null ? signClass(colorVal) : '') + '">' + v + '</span></div></div>';
+}
+
+function detailSinyalHTML(kod) {
+  const r = kayit(kod);
+  if (!r || !r.sinyal) return '';
+  const d = S.decisions[kod] || {};
+  const nedenler = (r.nedenler || []).map(n => '<li>' + esc(n) + '</li>').join('');
+  return '<div class="decision" data-sig="' + esc(r.sinyal) + '" style="margin-bottom:22px">' +
+    '<div><div class="hd">' +
+      '<span class="chip chip-' + r.sinyal.toLowerCase() + '">Kural: ' + esc(r.sinyal) + '</span>' +
+      (r.puan !== undefined && !r.kapi ? '<span class="chip chip-n">puan ' + (r.puan > 0 ? '+' : '') + r.puan + '</span>' : '') +
+      (r.kapi ? '<span class="chip chip-n">kapı: ' + esc(r.kapi) + '</span>' : '') +
+      (d.override ? '<span class="chip chip-acc">Senin kararın: ' + esc(d.override) + '</span>' : '') +
+    '</div><ul>' + nedenler + '</ul></div></div>';
+}
+
+//: "Hangisiyle kıyaslandığını görebileyim" isteğine cevap: aynı temadaki
+//: emsaller, gider oranı dahil, tek tabloda. Gider oranı en yüksekse ayrıca uyarır.
+function detailEmsalHTML(kod) {
+  const r = kayit(kod);
+  const emsaller = (r && r.emsaller) || [];
+  if (!emsaller.length) {
+    return '<p style="font-size:13px;color:var(--muted)">Bu temada karşılaştırılacak başka enstrüman bulunamadı.</p>';
+  }
+  const kodlar = [kod].concat(emsaller.map(e => e.kod));
+  let uyari = '';
+  if (r.gider != null) {
+    const digerGiderler = emsaller.filter(e => e.gider != null).map(e => e.gider);
+    if (digerGiderler.length && r.gider > Math.max.apply(null, digerGiderler)) {
+      uyari = '<p class="fee-flag">Bu enstrüman temandaki emsaller arasında en yüksek gider oranına sahip ' +
+        '(%' + num(r.gider) + ' — diğerleri: %' + digerGiderler.map(g => num(g)).join(', %') + ').</p>';
+    }
+  }
+  return karsilastirmaTabloHTML(kodlar, { merkez: kod, korelasyonGoster: true }) + uyari;
+}
+
+function acDetay(kod) {
+  const r = kayit(kod);
+  if (!r) { toast(kod + ' veri setinde yok.', 3000); return; }
+  detailKod = kod;
+  detailAralik = '1A';
+
+  $('#detailHead').innerHTML =
+    '<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">' +
+      '<span class="tick" style="font-size:22px">' + esc(kod) + '</span>' +
+      '<span class="chip chip-n">' + esc(r.tip || '') + '</span>' +
+      (r.tema ? '<span class="chip chip-acc">' + esc(r.tema) + '</span>' : '') +
+    '</div>' +
+    '<div style="font-size:14px;color:var(--muted);margin-top:5px">' + esc(r.ad || '') +
+      (r.aum ? ' · AUM ' + esc(r.aum) : (r.aum_try ? ' · AUM ' + Math.round(r.aum_try / 1e6).toLocaleString('tr-TR') + ' mn ₺' : '')) +
+      '</div>';
+
+  renderDetailBody(kod);
+  $('#detailDrawer').setAttribute('open', '');
+}
+
+function renderDetailBody(kod) {
+  const r = kayit(kod);
+  const akt = aktifKodlar().indexOf(kod) >= 0;
+  const metrikler =
+    statCard('CAGR', pct(r.cagr), r.cagr) + statCard('Volatilite', pct(r.vol)) +
+    statCard('Sharpe', num(r.sharpe)) + statCard('Sortino', num(r.sortino)) +
+    statCard('Maks. düşüş', pct(r.maxdd, 0), r.maxdd) + statCard('Beta', num(r.beta)) +
+    statCard('Alfa', pct(r.alpha), r.alpha) +
+    statCard('Gider', r.gider != null ? '%' + num(r.gider) : '—');
+  const eylem = akt
+    ? '<button class="btn ghost" data-remove="' + esc(kod) + '" type="button">Portföyden çıkar</button>'
+    : '<button class="btn" data-add="' + esc(kod) + '" type="button">Portföye ekle</button>';
+  const h4 = 'style="font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:0 0 10px"';
+
+  $('#detailBody').innerHTML =
+    '<div class="range-headline" id="detailHeadline"></div>' +
+    '<div id="detailChartArea"></div>' +
+    '<div class="seg" id="detailRangeSeg" style="margin:12px 0 24px">' +
+      Object.keys(ARALIKLAR).map(a => '<button type="button" data-range="' + a + '" aria-pressed="' +
+        (a === detailAralik) + '">' + a + '</button>').join('') +
+    '</div>' +
+    '<h4 ' + h4 + '>Risk ve getiri (tüm geçmiş, USD)</h4>' +
+    '<div class="grid g4" style="margin-bottom:24px">' + metrikler + '</div>' +
+    (r.sinyal ? '<h4 ' + h4 + '>Al / Sat / Bekle sinyali</h4>' + detailSinyalHTML(kod) : '') +
+    '<h4 ' + h4 + '>Temandaki emsalleri</h4>' + detailEmsalHTML(kod) +
+    '<div style="margin-top:22px">' + eylem + '</div>';
+
+  detailAralikCiz(detailAralik);
+}
+
+function detailAralikCiz(aralik) {
+  detailAralik = aralik;
+  const seg = $('#detailRangeSeg');
+  if (seg) $$('button', seg).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.range === aralik)));
+
+  const dilim = aralikDilimle(detailKod, aralik);
+  const hl = $('#detailHeadline'), ca = $('#detailChartArea');
+  if (!hl || !ca) return;
+  if (!dilim) {
+    hl.innerHTML = '<span style="font-size:13px;color:var(--muted)">' + ARALIKLAR[aralik].ad +
+      ' için yeterli veri yok.</span>';
+    ca.innerHTML = '';
+    return;
+  }
+  const neg = dilim.delta !== null && dilim.delta < 0;
+  hl.innerHTML =
+    '<span class="big ' + (dilim.delta !== null ? signClass(dilim.delta) : '') + '">' +
+    (dilim.delta !== null ? pct(dilim.delta) : '—') + '</span>' +
+    '<span class="lbl">' + trTarihKisa(dilim.bazTarih) + ' → ' + trTarihKisa(dilim.sonTarih) +
+    (dilim.kisitli ? ' · yetersiz geçmiş, kuruluştan beri gösteriliyor' : '') + '</span>';
+  ca.innerHTML = detailChartSVG(dilim.f, neg);
 }
 
 /* ---------------- öneri motoru ---------------- */
@@ -694,7 +970,7 @@ function cizOneri() {
         '<span class="chip chip-n">' + (b.adaylar.length - b.kalan.length) + '/' + b.adaylar.length + ' gösterildi</span>' +
       '</div>' +
       (r ? '<div style="display:flex;align-items:center;gap:9px">' +
-        '<span class="tick">' + esc(ilk) + '</span>' +
+        tickBtn(ilk) +
         '<span style="font-size:12.5px;color:var(--muted);margin-right:auto">' + esc(r.ad || '') + '</span>' +
         '<button class="btn ghost sm" data-add="' + esc(ilk) + '" type="button">ekle</button></div>'
         : '<p style="margin:0;font-size:13px;color:var(--muted)">Aday kalmadı.</p>') +
@@ -715,7 +991,7 @@ function kartOneri(rec, aktif) {
 
   return '<div class="card hi" style="border-left:3px solid var(--accent)">' +
     '<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px">' +
-      '<span class="tick" style="font-size:17px">' + esc(rec.code) + '</span>' +
+      tickBtn(rec.code, 'font-size:17px') +
       '<span class="chip chip-acc">' + esc(rec.category) + '</span>' +
       '<span class="chip chip-n">skor ' + num(r.oneri_skoru) + '</span>' +
       '<span style="margin-left:auto;font-size:12px;color:var(--muted)">' + trTarih(rec.proposedDataDate) + ' verisiyle önerildi</span>' +
@@ -763,7 +1039,7 @@ function cizTakip() {
 
     return '<div class="card">' +
       '<div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:8px">' +
-        '<span class="tick" style="font-size:15px">' + esc(rec.code) + '</span>' +
+        tickBtn(rec.code, 'font-size:15px') +
         '<span class="chip chip-acc">' + esc(rec.category) + '</span>' +
         (rec.status === 'dismissed' ? '<span class="chip chip-n">ilgilenmedin</span>' : '') +
         '<span style="margin-left:auto;font-size:11.5px;color:var(--muted)">' + trTarih(rec.proposedDataDate) + '’den beri</span>' +
@@ -825,6 +1101,13 @@ function baglaOlaylar() {
   $('#addInput').addEventListener('input', e => oner(e.target.value));
   $('#addInput').addEventListener('keydown', e => { if (e.key === 'Enter') ekle(e.target.value); });
   $('#newRecBtn').addEventListener('click', yeniOneri);
+  $('#cmpInput').addEventListener('input', e => cmpAra(e.target.value));
+  $('#cmpInput').addEventListener('focus', e => { if (e.target.value) cmpAra(e.target.value); });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.cmp-results')) $('#cmpDropdown').innerHTML = '';
+  });
+  $('#detailClose').addEventListener('click', () => { $('#detailDrawer').removeAttribute('open'); });
+  $('#detailDrawer').addEventListener('click', e => { if (e.target.id === 'detailDrawer') $('#detailDrawer').removeAttribute('open'); });
   $('#queueExport').addEventListener('click', watchlistIndir);
   $('#queueCopy').addEventListener('click', () => {
     const k = S.queue.filter(x => x.status === 'queued').map(x => x.code);
@@ -870,6 +1153,11 @@ function baglaOlaylar() {
     const t = e.target.closest('button'); if (!t) return;
 
     if (t.dataset.add) { ekle(t.dataset.add); return; }
+
+    if (t.dataset.detail) { acDetay(t.dataset.detail); return; }
+    if (t.dataset.cmpAdd) { cmpEkle(t.dataset.cmpAdd); return; }
+    if (t.dataset.cmpRemove) { cmpCikar(t.dataset.cmpRemove); return; }
+    if (t.dataset.range) { detailAralikCiz(t.dataset.range); return; }
 
     if (t.dataset.fd) {
       const d = t.dataset.fd, k = t.dataset.fk;
@@ -934,7 +1222,12 @@ function baglaOlaylar() {
 /* ---------------- çizim ---------------- */
 
 function ciz() {
-  cizPortfoy(); cizKarar(); cizEkle(); cizOneri(); cizTakip(); cizPivot();
+  cizPortfoy(); cizKarar(); cizEkle(); cizOneri(); cizTakip(); cizPivot(); cizCmp();
+  // Detay paneli açıksa (ör. içeriden ekle/çıkar yapıldıysa) senkron kal —
+  // ama seçili aralığı sıfırlamadan (acDetay değil, renderDetailBody).
+  if ($('#detailDrawer').hasAttribute('open') && detailKod && kayit(detailKod)) {
+    renderDetailBody(detailKod);
+  }
   const le = $('#lastExport');
   if (le) {
     le.innerHTML = S.meta.lastExportAt
@@ -989,6 +1282,7 @@ function cizSaglik() {
   } catch (e) { /* sağlık dosyası yoksa sorun değil */ }
 
   S = yukle();
+  GUNLUK_EPOCH_MS = new Date((DB.gunluk_epoch || '2020-01-01') + 'T00:00:00Z').getTime();
   $('#drawerMeta').textContent = 'Veri kesiti ' + trTarih(DB.veri_tarihi) +
     ' · ' + Object.keys(DB.portfoy || {}).length + ' portföy, ' +
     Object.keys(DB.aday || {}).length + ' aday enstrüman';

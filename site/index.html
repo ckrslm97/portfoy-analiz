@@ -19,6 +19,7 @@
     <div class="freshness" id="freshness" data-state="ok" title="Veri tazeliği">
       <span class="dot"></span><span id="freshText">yükleniyor…</span>
     </div>
+    <a class="iconbtn" href="ozet.html" style="text-decoration:none;display:inline-block" title="Maile eklemek için sabit link">günlük özet</a>
     <button class="iconbtn" id="themeBtn" type="button" title="Tema değiştir">tema</button>
     <button class="iconbtn" id="drawerBtn" type="button">veri &amp; yöntem</button>
   </div>
@@ -158,6 +159,23 @@
       <button class="btn ghost" id="pivotReset" type="button">Filtreleri temizle</button>
     </div>
 
+    <h3 style="margin:0 0 10px">Fonları yan yana karşılaştır</h3>
+    <p style="margin:0 0 12px;color:var(--muted);font-size:13.5px">
+      Birkaç fon seç, tüm metrikleri tek tabloda yan yana gör. Bir kodun üstüne tıklayınca
+      tam geçmişini ve emsal karşılaştırmasını gösteren detay paneli açılır.
+    </p>
+    <div class="card" style="margin-bottom:24px">
+      <div class="cmp-pick-row">
+        <div class="cmp-results" style="flex:1">
+          <input type="text" id="cmpInput" placeholder="Fon veya ETF ara (örn. QQQM, sağlık, Avrupa)" autocomplete="off" spellcheck="false">
+          <div id="cmpDropdown"></div>
+        </div>
+        <span style="font-size:12px;color:var(--muted)" id="cmpCount">0/6 seçili</span>
+      </div>
+      <div id="cmpTable"></div>
+    </div>
+
+    <h3 style="margin:0 0 10px">Grup karşılaştırma (pivot)</h3>
     <div class="card" style="margin-bottom:16px">
       <div class="grid g4" style="margin-bottom:14px">
         <div>
@@ -263,6 +281,17 @@
       <input type="file" id="importFile" accept="application/json,.json" hidden>
     </div>
     <p style="margin-top:8px" id="lastExport"></p>
+  </div>
+</div>
+
+<!-- ============ ENSTRÜMAN DETAYI ============ -->
+<div class="drawer" id="detailDrawer">
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="Enstrüman detayı">
+    <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px">
+      <div id="detailHead" style="margin-right:auto"></div>
+      <button class="iconbtn" id="detailClose" type="button">kapat</button>
+    </div>
+    <div id="detailBody"></div>
   </div>
 </div>
 

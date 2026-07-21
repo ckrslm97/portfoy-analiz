@@ -5,6 +5,7 @@ al/sat/bekle sinyalleri, kategori genişletme önerileri ve öneri performans
 takibi. Veriler her gece otomatik olarak tazelenir.
 
 **Canlı site:** `https://<kullanıcı>.github.io/<repo>/`
+**Günlük özet (maile link için):** `https://<kullanıcı>.github.io/<repo>/ozet.html`
 **Sabit analiz raporu:** `https://<kullanıcı>.github.io/<repo>/rapor.html`
 
 ## Nasıl çalışıyor
@@ -15,13 +16,24 @@ pipeline/          Python veri hattı — her gece GitHub Actions ile çalışı
   fetch_candidates.py Kategori genişletme adaylarının fiyat/künye verisi
   holdings_overlap.py ETF içerik çakışması (stockanalysis.com)
   etf_profile.py      AUM / gider oranı (stockanalysis.com)
-  build_app_data.py   Hepsini tek app_data.json'da birleştirir, sinyalleri üretir
-  add_sparks.py       Grafikler için kompakt fiyat serisi ekler
+  build_app_data.py   Hepsini tek app_data.json'da birleştirir, sinyalleri +
+                       aynı temadaki emsal karşılaştırma listelerini üretir
+  add_sparks.py       Öneri Takibi grafikleri için 2 yıllık haftalık seri
+  add_daily.py        Detay panelindeki 1H/1A/3A/6A/12A aralıkları için
+                       ~400 günlük günlük fiyat serisi
+  build_ozet.py       Sunucu tarafında önceden render edilmiş günlük özet
+                       sayfası (ozet.html) — JS/localStorage'a bağımlı değil
   run_all.py          Yukarıdakileri sırayla çalıştıran orkestratör
 
 site/               Statik site — GitHub Pages'te yayınlanan tam olarak bu klasör
   index.html           Uygulama: Portföyüm / Al-Sat-Bekle / Ekle-Çıkar /
-                        Tavsiye Motoru / Öneri Takibi / Karşılaştır
+                        Tavsiye Motoru / Öneri Takibi / Karşılaştır. Herhangi
+                        bir fon koduna tıklamak geçmişini, aralık seçicili
+                        grafiğini ve aynı temadaki emsallerini gösteren bir
+                        detay paneli açar.
+  ozet.html             Her gece yeniden üretilen, statik günlük özet — bir
+                        e-postaya link olarak yapıştırılabilir, tıklandığında
+                        anında (JS state'e bağlı olmadan) doğru içerikle açılır.
   rapor.html            21 Temmuz 2026 tarihli sabit analiz raporu
   app.js, styles.css    Uygulama mantığı ve tasarımı
   data/*.json           Pipeline'ın ürettiği veri — bu dosyalar commit'lenir

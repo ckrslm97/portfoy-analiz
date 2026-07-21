@@ -73,7 +73,7 @@
   "gider_orani": "0.25%",
   "kurulus": "Jul 18, 2017",
   "endeks": "MSCI Emerging Markets ex China",
-  "temettu_verimi": "2.02%"
+  "temettu_verimi": "2.03%"
  },
  "EPI": {
   "sembol": "EPI",
@@ -116,7 +116,7 @@
   "gider_orani": "0.38%",
   "kurulus": "May 1, 2006",
   "endeks": "DJ US Select / Regional Banks",
-  "temettu_verimi": "2.55%"
+  "temettu_verimi": "2.54%"
  },
  "IBB": {
   "sembol": "IBB",
@@ -171,7 +171,7 @@
   "gider_orani": "0.39%",
   "kurulus": "Dec 10, 2007",
   "endeks": "S&P Global Infrastructure Index",
-  "temettu_verimi": "2.90%"
+  "temettu_verimi": "2.89%"
  },
  "INDA": {
   "sembol": "INDA",
@@ -302,7 +302,7 @@
   "gider_orani": "0.07%",
   "kurulus": "Jan 13, 2011",
   "endeks": "Dow Jones Equity All REIT Capped",
-  "temettu_verimi": "2.70%"
+  "temettu_verimi": "2.69%"
  },
  "VB": {
   "sembol": "VB",
@@ -412,7 +412,7 @@
   "gider_orani": "0.08%",
   "kurulus": "Dec 16, 1998",
   "endeks": "S&P Consumer Staples Select Sector",
-  "temettu_verimi": "2.62%"
+  "temettu_verimi": "2.61%"
  },
  "XLY": {
   "sembol": "XLY",

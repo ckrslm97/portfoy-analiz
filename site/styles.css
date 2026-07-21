@@ -187,6 +187,12 @@ td.l, th.l { text-align: left; white-space: normal; }
 tbody tr:last-child td { border-bottom: none; }
 tbody tr:hover { background: var(--surface-2); }
 .tick { font-family: var(--mono); font-weight: 650; font-size: 12.5px; }
+.tick-btn {
+  background: none; border: none; padding: 0; margin: 0; cursor: pointer;
+  color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px;
+}
+.tick-btn:hover { color: var(--accent); text-decoration: underline; }
+.tick-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 
 /* ---------- karar satırı ---------- */
 .decision {
@@ -271,6 +277,8 @@ label.fl {
   background: var(--surface); border-left: 1px solid var(--rule-strong);
   padding: 22px; overflow-y: auto;
 }
+/* Detay paneli geniş bir emsal karşılaştırma tablosu taşıyor — daha geniş. */
+#detailDrawer .sheet { width: min(760px, 96vw); }
 .drawer h3 { font-family: var(--serif); font-size: 19px; margin: 0 0 4px; }
 .drawer h4 {
   font-size: 11.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
@@ -281,6 +289,54 @@ label.fl {
   font-family: var(--mono); font-size: 12px; background: var(--surface-2);
   padding: 1px 5px; border-radius: 3px; word-break: break-all;
 }
+
+/* ---------- detay paneli: aralık grafiği ---------- */
+.detail-chart { width: 100%; height: 150px; display: block; overflow: visible; }
+.detail-chart .grid-line { stroke: var(--rule); stroke-width: 1; }
+.detail-chart .line { fill: none; stroke: var(--accent); stroke-width: 1.8; }
+.detail-chart .line.neg-line { stroke: var(--neg); }
+.detail-chart .area { fill: var(--accent); opacity: .09; stroke: none; }
+.detail-chart .area.neg-area { fill: var(--neg); }
+.detail-chart .end { fill: var(--accent); }
+.detail-chart .end.neg-end { fill: var(--neg); }
+.detail-chart .axlab { font-family: var(--mono); font-size: 10px; fill: var(--muted); }
+.range-headline {
+  display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; flex-wrap: wrap;
+}
+.range-headline .big { font-family: var(--mono); font-variant-numeric: tabular-nums;
+  font-size: 32px; font-weight: 650; letter-spacing: -.02em; }
+.range-headline .lbl { font-size: 12.5px; color: var(--muted); }
+
+/* ---------- emsal / karşılaştırma tablosu ---------- */
+.cmp-row-self { background: var(--accent-soft); }
+.cmp-row-self td:first-child { font-weight: 700; }
+.fee-flag { font-size: 12px; color: var(--warn); margin-top: 8px; }
+.cmp-remove {
+  border: none; background: none; color: var(--muted); cursor: pointer;
+  font-size: 15px; line-height: 1; padding: 2px 4px;
+}
+.cmp-remove:hover { color: var(--neg); }
+.cmp-pick-row { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; }
+.cmp-pick-row input { flex: 1; }
+.cmp-results {
+  position: relative;
+}
+.cmp-dropdown {
+  position: absolute; top: calc(100% + 4px); left: 0; right: 0; z-index: 10;
+  background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 8px;
+  box-shadow: var(--shadow); max-height: 260px; overflow-y: auto;
+}
+.cmp-dropdown .item {
+  display: flex; align-items: center; gap: 9px; padding: 8px 12px; cursor: pointer;
+  border-bottom: 1px solid var(--rule);
+  background: none; border-left: none; border-right: none; border-top: none;
+  width: 100%; text-align: left; font: inherit; color: inherit;
+}
+.cmp-dropdown .item:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.cmp-dropdown .item:last-child { border-bottom: none; }
+.cmp-dropdown .item:hover { background: var(--surface-2); }
+.cmp-dropdown .nm2 { font-size: 12.5px; color: var(--muted); overflow: hidden;
+  text-overflow: ellipsis; white-space: nowrap; margin-right: auto; }
 
 /* ---------- pivot: filtre çipleri ---------- */
 .filtergrp { margin-bottom: 12px; }
