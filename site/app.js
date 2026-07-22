@@ -379,14 +379,156 @@ function cizKarar() {
   }).join('');
 }
 
+/* ---------------- GitHub otomatik yazma ---------------- */
+//: Jeton BİLEREK ayrı bir localStorage anahtarında tutulur — `S` nesnesinin
+//: (ana durum) bir parçası DEĞİL. disaAktar() yalnızca `S`'yi serialize eder,
+//: bu yüzden jeton "durumu indir"e asla karışmaz. Tek yazma/okuma/silme yolu
+//: burasıdır — başka hiçbir fonksiyon bu anahtara dokunmaz.
+
+const GH_KEY = KEY + ':gh';
+const GH_OWNER = 'ckrslm97', GH_REPO = 'portfoy-analiz';
+const GH_API = 'https://api.github.com';
+
+function ghOku() {
+  try { const raw = localStorage.getItem(GH_KEY); return raw ? JSON.parse(raw) : null; }
+  catch (e) { return null; }
+}
+function ghKaydetToken(obj) {
+  try { localStorage.setItem(GH_KEY, JSON.stringify(obj)); } catch (e) { /* sandbox kapalıysa sessiz düş */ }
+}
+function ghSil() { try { localStorage.removeItem(GH_KEY); } catch (e) { /* yok say */ } }
+
+function ghDurumGoster() {
+  const g = ghOku();
+  const setup = $('#ghSetup'), conn = $('#ghConnected');
+  if (!setup || !conn) return;
+  if (g && g.token) { setup.hidden = true; conn.hidden = false; }
+  else { setup.hidden = false; conn.hidden = true; }
+}
+
+async function ghDogrula(token) {
+  try {
+    const r = await fetch(GH_API + '/repos/' + GH_OWNER + '/' + GH_REPO, {
+      headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' }
+    });
+    if (r.status === 200) return { ok: true };
+    if (r.status === 401) return { ok: false, mesaj: 'Jeton geçersiz — doğru kopyaladığından emin ol.' };
+    if (r.status === 403 || r.status === 404) {
+      return { ok: false, mesaj: 'Jeton bu depoya erişemiyor — oluştururken "portfoy-analiz" deposunu seçtiğine emin ol.' };
+    }
+    return { ok: false, mesaj: 'Beklenmedik hata (HTTP ' + r.status + ')' };
+  } catch (e) {
+    return { ok: false, mesaj: 'Bağlantı hatası: ' + e.message };
+  }
+}
+
+function b64EncodeUtf8(str) { return btoa(unescape(encodeURIComponent(str))); }
+function b64DecodeUtf8(str) { return decodeURIComponent(escape(atob(str.replace(/\n/g, '')))); }
+
+async function ghWatchlistOku(token) {
+  const r = await fetch(GH_API + '/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/watchlist.json', {
+    headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' }
+  });
+  if (r.status === 401) { const e = new Error('Jeton geçersiz/süresi dolmuş'); e.gh401 = true; throw e; }
+  if (!r.ok) throw new Error('watchlist.json okunamadı (HTTP ' + r.status + ')');
+  const j = await r.json();
+  return { icerik: JSON.parse(b64DecodeUtf8(j.content)), sha: j.sha };
+}
+
+async function ghWatchlistYaz(token, kod) {
+  const { icerik, sha } = await ghWatchlistOku(token);
+  const liste = icerik.ekle || [];
+  if (liste.indexOf(kod) < 0) liste.push(kod);
+  icerik.ekle = liste;
+  const r = await fetch(GH_API + '/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/watchlist.json', {
+    method: 'PUT',
+    headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      message: 'izleme listesi: ' + kod + ' eklendi (site)',
+      content: b64EncodeUtf8(JSON.stringify(icerik, null, 2)),
+      sha, branch: 'main'
+    })
+  });
+  if (r.status === 401) { const e = new Error('Jeton geçersiz/süresi dolmuş'); e.gh401 = true; throw e; }
+  if (!r.ok) {
+    const t = await r.text().catch(() => '');
+    throw new Error('Commit başarısız (HTTP ' + r.status + ') ' + t.slice(0, 200));
+  }
+}
+
+async function ghActionsBaslat(token) {
+  const r = await fetch(GH_API + '/repos/' + GH_OWNER + '/' + GH_REPO + '/actions/workflows/daily.yml/dispatches', {
+    method: 'POST',
+    headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ref: 'main' })
+  });
+  return r.status === 204;
+}
+
+async function ghRunBul(token, t0) {
+  const r = await fetch(GH_API + '/repos/' + GH_OWNER + '/' + GH_REPO + '/actions/workflows/daily.yml/runs?event=workflow_dispatch&per_page=5', {
+    headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' }
+  });
+  if (!r.ok) return null;
+  const j = await r.json();
+  return (j.workflow_runs || []).find(x => new Date(x.created_at).getTime() >= t0 - 5000) || null;
+}
+
+async function ghRunDurum(token, runId) {
+  const r = await fetch(GH_API + '/repos/' + GH_OWNER + '/' + GH_REPO + '/actions/runs/' + runId, {
+    headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' }
+  });
+  return r.ok ? r.json() : null;
+}
+
+//: Dispatch sonrası gerçek Actions durumunu 10-12sn aralıklarla sorgular —
+//: sahte bir "yükleniyor" animasyonu DEĞİL, GitHub'ın kendi run durumu.
+async function ghDurumTakipEt(token, t0, kod, hintEl) {
+  let run = null, deneme = 0;
+  while (!run && deneme < 6) {
+    await new Promise(res => setTimeout(res, 10000));
+    run = await ghRunBul(token, t0).catch(() => null);
+    deneme++;
+  }
+  if (!run) {
+    hintEl.innerHTML = '<strong>' + esc(kod) + '</strong> kaydedildi — çalışmayı bulamadım ama gece 02:00\'de işlenecek. ' +
+      '<a href="https://github.com/' + GH_OWNER + '/' + GH_REPO + '/actions" target="_blank" rel="noopener" style="color:var(--accent)">Actions\'ı kontrol et</a>.';
+    return;
+  }
+  const runUrl = run.html_url;
+  let durum = run, tur = 0;
+  while (durum && durum.status !== 'completed' && tur < 30) {
+    hintEl.innerHTML = '<strong>' + esc(kod) + '</strong> — GitHub Actions çalışıyor (' + esc(durum.status) + ')… ' +
+      '<a href="' + esc(runUrl) + '" target="_blank" rel="noopener" style="color:var(--accent)">canlı log</a>';
+    await new Promise(res => setTimeout(res, 12000));
+    durum = await ghRunDurum(token, run.id).catch(() => durum);
+    tur++;
+  }
+  if (durum && durum.status === 'completed') {
+    if (durum.conclusion === 'success') {
+      hintEl.innerHTML = '<strong>' + esc(kod) + '</strong> işlendi — sayfayı yenile, veri setinde olmalı. ' +
+        '<a href="' + esc(runUrl) + '" target="_blank" rel="noopener" style="color:var(--accent)">çalışma logu</a>';
+    } else {
+      hintEl.innerHTML = '<strong>' + esc(kod) + '</strong> — otomatik çalışma hata verdi (kod bulunamamış olabilir). ' +
+        '<a href="' + esc(runUrl) + '" target="_blank" rel="noopener" style="color:var(--accent)">logu incele</a>';
+    }
+  } else {
+    hintEl.innerHTML = '<strong>' + esc(kod) + '</strong> kaydedildi, işleniyor — birkaç dakika sonra ' +
+      '<a href="' + esc(runUrl) + '" target="_blank" rel="noopener" style="color:var(--accent)">çalışma logundan</a> kontrol edebilirsin.';
+  }
+}
+
 /* ---------------- ekle / çıkar ---------------- */
 
 function cizEkle() {
-  const q = S.queue.filter(x => x.status === 'queued');
-  $('#queueCount').textContent = q.length;
+  ghDurumGoster();
+  const bekleyen = S.queue.filter(x => x.status === 'queued');
+  const q = S.queue.filter(x => x.status === 'queued' || x.status === 'sent');
+  $('#queueCount').textContent = bekleyen.length;
   $('#queueList').innerHTML = q.length
     ? q.map(x => '<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--rule)">' +
         '<span class="tick">' + esc(x.code) + '</span>' +
+        (x.status === 'sent' ? '<span class="chip chip-al">GitHub\'a gönderildi</span>' : '') +
         '<span style="font-size:12px;color:var(--muted);margin-right:auto">' + trTarih(x.requestedAt) + '</span>' +
         '<button class="btn ghost sm" data-unqueue="' + esc(x.code) + '" type="button">sil</button></div>').join('')
     : '<p style="font-size:13px;color:var(--muted);margin:0">Kuyruk boş.</p>';
@@ -402,7 +544,7 @@ function cizEkle() {
     : '<div class="empty">Henüz hiçbir pozisyonu çıkarmadın.</div>';
 }
 
-function ekle(codeRaw) {
+async function ekle(codeRaw) {
   const code = String(codeRaw || '').trim().toUpperCase();
   if (!code) return;
   const hint = $('#addHint');
@@ -421,17 +563,52 @@ function ekle(codeRaw) {
     kaydet(); ciz();
     hint.innerHTML = '<span class="pos">' + esc(code) + ' eklendi.</span> ' + esc(r.ad || '');
     $('#addInput').value = '';
-  } else {
-    if (S.queue.some(x => x.code === code && x.status === 'queued')) {
-      hint.innerHTML = '<span class="warnc">' + esc(code) + ' zaten izleme listesinde.</span>';
-      return;
-    }
-    S.queue.push({ code, requestedAt: new Date().toISOString(), status: 'queued' });
-    kaydet(); ciz();
+    return;
+  }
+
+  if (S.queue.some(x => x.code === code && (x.status === 'queued' || x.status === 'sent'))) {
+    hint.innerHTML = '<span class="warnc">' + esc(code) + ' zaten izleme listesinde.</span>';
+    return;
+  }
+  const kuyrukKaydi = { code, requestedAt: new Date().toISOString(), status: 'queued' };
+  S.queue.push(kuyrukKaydi);
+  kaydet(); ciz();
+  $('#addInput').value = '';
+
+  const g = ghOku();
+  if (!g || !g.token) {
     hint.innerHTML = '<strong>' + esc(code) + '</strong> veri setinde yok — izleme listesine alındı. ' +
-      'Bu kodu depodaki <code style="font-family:var(--mono)">watchlist.json</code> dosyasına eklersen ' +
-      'sonraki gece otomatik araştırılıp veri setine katılır.';
-    $('#addInput').value = '';
+      'GitHub bağlantısı kurarsan (yukarıdaki kart) bu otomatik olur, ya da ' +
+      '<code style="font-family:var(--mono)">watchlist.json</code> indirip elle commit\'leyebilirsin.';
+    return;
+  }
+
+  hint.innerHTML = '<strong>' + esc(code) + '</strong> GitHub\'a kaydediliyor…';
+  try {
+    await ghWatchlistYaz(g.token, code);
+    kuyrukKaydi.status = 'sent';
+    kaydet(); ciz();
+    hint.innerHTML = '<strong>' + esc(code) + '</strong> GitHub\'a kaydedildi.';
+
+    const t0 = Date.now();
+    const dispatchOk = await ghActionsBaslat(g.token).catch(() => false);
+    if (dispatchOk) {
+      hint.innerHTML += ' Otomatik güncelleme tetiklendi, izleniyor…';
+      ghDurumTakipEt(g.token, t0, code, hint);
+    } else {
+      hint.innerHTML += ' Bu gece 02:00\'de otomatik işlenecek.';
+    }
+  } catch (e) {
+    kuyrukKaydi.status = 'queued';
+    kaydet();
+    if (e.gh401) {
+      ghSil(); ghDurumGoster();
+      hint.innerHTML = '<strong>' + esc(code) + '</strong> — GitHub jetonun geçersiz veya süresi dolmuş, bağlantı kaldırıldı. ' +
+        'Yeniden bağlanabilirsin (yukarıdaki kart) ya da izleme listesine alındı, elle commit\'leyebilirsin.';
+    } else {
+      hint.innerHTML = '<strong>' + esc(code) + '</strong> kaydedilemedi (' + esc(e.message) + '). ' +
+        'İzleme listesine alındı — watchlist.json indirip elle commit\'leyebilirsin.';
+    }
   }
 }
 
@@ -1223,6 +1400,27 @@ function baglaOlaylar() {
 
   $('#seedBtn').addEventListener('click', seed);
   $('#addBtn').addEventListener('click', () => ekle($('#addInput').value));
+  $('#ghSaveBtn').addEventListener('click', async () => {
+    const inp = $('#ghTokenInput'), status = $('#ghStatus'), btn = $('#ghSaveBtn');
+    const token = inp.value.trim();
+    if (!token) return;
+    btn.disabled = true;
+    status.textContent = 'Doğrulanıyor…'; status.style.color = 'var(--muted)';
+    const sonuc = await ghDogrula(token);
+    btn.disabled = false;
+    if (sonuc.ok) {
+      ghKaydetToken({ token, owner: GH_OWNER, repo: GH_REPO, savedAt: new Date().toISOString() });
+      inp.value = ''; status.textContent = '';
+      ghDurumGoster();
+      toast('GitHub bağlantısı kuruldu.');
+    } else {
+      status.textContent = sonuc.mesaj; status.style.color = 'var(--neg)';
+    }
+  });
+  $('#ghDisconnectBtn').addEventListener('click', () => {
+    ghSil(); ghDurumGoster();
+    toast('Bağlantı bu tarayıcıdan kaldırıldı — GitHub\'daki jeton hâlâ geçerli, iptal etmek için jeton ayarlarına git.', 6000);
+  });
   $('#addInput').addEventListener('input', e => oner(e.target.value));
   $('#addInput').addEventListener('keydown', e => { if (e.key === 'Enter') ekle(e.target.value); });
   $('#newRecBtn').addEventListener('click', yeniOneri);
