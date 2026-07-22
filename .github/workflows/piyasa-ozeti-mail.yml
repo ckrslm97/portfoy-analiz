@@ -1,10 +1,10 @@
-name: Piyasa özeti maili (hafta içi 11:00 TSİ)
+name: Piyasa özeti maili (hafta içi 09:00 TSİ)
 
 on:
   schedule:
-    # 08:00 UTC = 11:00 TSİ (Türkiye UTC+3, DST yok). Gece 02:00 TSİ'deki
-    # veri güncellemesinden çok sonra — o günün fiyatları kesinleşmiş olur.
-    - cron: "0 8 * * 1-5"
+    # 06:00 UTC = 09:00 TSİ (Türkiye UTC+3, DST yok). Gece 02:00 TSİ'deki
+    # veri güncellemesinden sonra — o günün fiyatları kesinleşmiş olur.
+    - cron: "0 6 * * 1-5"
   workflow_dispatch: {}
 
 permissions:
