@@ -1,0 +1,30 @@
+name: Piyasa özeti maili (hafta içi 11:00 TSİ)
+
+on:
+  schedule:
+    # 08:00 UTC = 11:00 TSİ (Türkiye UTC+3, DST yok). Gece 02:00 TSİ'deki
+    # veri güncellemesinden çok sonra — o günün fiyatları kesinleşmiş olur.
+    - cron: "0 8 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  mail-gonder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu çek
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Maili gönder
+        working-directory: pipeline
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python send_mail.py

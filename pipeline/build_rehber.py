@@ -114,6 +114,7 @@ def main():
     schd = db["aday"].get("SCHD", {})
     spym = p.get("SPYM", {})
     qtum = p.get("QTUM", {})
+    nkp = p.get("NKP", {})
 
     kur = kur_etkisi_ornegi()
     gider = gider_ornegi(0.02, 0.75)
@@ -346,9 +347,18 @@ def main():
         "Her bileşen kendi eşiğine göre 0 (Düşük), 1 (Orta) veya 2 (Yüksek) puan alır; üç puanın "
         "medyanı nihai kademeyi belirler. İlk 10 pozisyonun toplam ağırlığı %60'ı aşıyorsa "
         "(yoğunlaşma cezası) kademe bir seviye yükseltilir.",
-        "",
+        f'<div class="grid g3">'
+        f'<div class="card stat"><div class="k">NKP · vol {pct(nkp.get("vol"))} · β {num(nkp.get("beta"))}</div>'
+        f'<div class="v pos">Düşük</div></div>'
+        f'<div class="card stat"><div class="k">SPYM · vol {pct(spym.get("vol"))} · β {num(spym.get("beta"))}</div>'
+        f'<div class="v">Orta</div></div>'
+        f'<div class="card stat"><div class="k">QBTS · vol {pct(qbts.get("vol"))} · β {num(qbts.get("beta"))}</div>'
+        f'<div class="v neg">Yüksek</div></div>'
+        f'</div>',
         "Bu üçlü bakış, tek bir metriğin yanıltmasını engeller — ör. düşük volatiliteli ama yüksek "
-        "beta'lı bir enstrüman yalnızca volatiliteye bakılsaydı \"Düşük\" görünebilirdi."
+        "beta'lı bir enstrüman yalnızca volatiliteye bakılsaydı \"Düşük\" görünebilirdi. Yukarıdaki "
+        "üçü de kendi kademesinin bariz örneği: NKP'nin hem oynaklığı hem beta'sı düşük, QBTS'inki "
+        "her ikisi de aşırı yüksek."
     ))
 
     html = f"""<!doctype html>
