@@ -24,7 +24,7 @@
   "AVUV": 17.4,
   "CGW": 81.3,
   "DGRO": 47.8,
-  "EMXC": 49.3,
+  "EMXC": 48.5,
   "FIW": 82.3,
   "IAT": 94.8,
   "IBB": 64.5,
@@ -166,8 +166,8 @@
    "ortak_hisse": 13
   },
   "EMXC|VWO": {
-   "overlap_pct": 22.67,
-   "ortak_hisse": 12
+   "overlap_pct": 22.21,
+   "ortak_hisse": 11
   },
   "PAVE|XLI": {
    "overlap_pct": 20.73,
@@ -194,7 +194,7 @@
    "ortak_hisse": 5
   },
   "DRAM|EMXC": {
-   "overlap_pct": 15.81,
+   "overlap_pct": 15.7,
    "ortak_hisse": 2
   },
   "VHT|SCHD": {
@@ -521,6 +521,18 @@
    "overlap_pct": 3.42,
    "ortak_hisse": 2
   },
+  "EMXC|INDA": {
+   "overlap_pct": 3.39,
+   "ortak_hisse": 4
+  },
+  "EMXC|INDY": {
+   "overlap_pct": 3.39,
+   "ortak_hisse": 4
+  },
+  "EMXC|EPI": {
+   "overlap_pct": 3.39,
+   "ortak_hisse": 4
+  },
   "VT|VYM": {
    "overlap_pct": 3.39,
    "ortak_hisse": 4
@@ -536,18 +548,6 @@
   "ACWI|IEMG": {
    "overlap_pct": 3.31,
    "ortak_hisse": 3
-  },
-  "EMXC|INDA": {
-   "overlap_pct": 3.27,
-   "ortak_hisse": 4
-  },
-  "EMXC|INDY": {
-   "overlap_pct": 3.27,
-   "ortak_hisse": 4
-  },
-  "EMXC|EPI": {
-   "overlap_pct": 3.27,
-   "ortak_hisse": 4
   },
   "VT|XLY": {
    "overlap_pct": 3.26,
@@ -1057,11 +1057,11 @@
    "overlap_pct": 0.62,
    "ortak_hisse": 1
   },
-  "XLE|ACWI": {
-   "overlap_pct": 0.59,
+  "EMXC|NFRA": {
+   "overlap_pct": 0.62,
    "ortak_hisse": 1
   },
-  "EMXC|NFRA": {
+  "XLE|ACWI": {
    "overlap_pct": 0.59,
    "ortak_hisse": 1
   },

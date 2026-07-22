@@ -19,7 +19,7 @@
   "gider_orani": "0.40%",
   "kurulus": "Sep 5, 2018",
   "endeks": "BlueStar Quantum Computing and Machine Learning Index",
-  "temettu_verimi": "0.81%"
+  "temettu_verimi": "0.80%"
  },
  "XLE": {
   "sembol": "XLE",
@@ -30,7 +30,7 @@
   "gider_orani": "0.08%",
   "kurulus": "Dec 16, 1998",
   "endeks": "S&P Energy Select Sector",
-  "temettu_verimi": "2.59%"
+  "temettu_verimi": "2.57%"
  },
  "SPYM": {
   "sembol": "SPYM",
@@ -52,7 +52,7 @@
   "gider_orani": "0.58%",
   "kurulus": "Jul 7, 2015",
   "endeks": "Nasdaq CTA Cybersecurity Index",
-  "temettu_verimi": "0.43%"
+  "temettu_verimi": "0.44%"
  },
  "URA": {
   "sembol": "URA",
@@ -63,7 +63,7 @@
   "gider_orani": "0.69%",
   "kurulus": "Nov 4, 2010",
   "endeks": "Solactive Global Uranium & Nuclear Components Index",
-  "temettu_verimi": "5.18%"
+  "temettu_verimi": "5.04%"
  },
  "BOTZ": {
   "sembol": "BOTZ",
@@ -155,7 +155,7 @@
   "gider_orani": "0.09%",
   "kurulus": "Jan 26, 2004",
   "endeks": "MSCI US IMI 25/50 Health Care",
-  "temettu_verimi": "1.56%"
+  "temettu_verimi": "1.57%"
  },
  "XLF": {
   "sembol": "XLF",
