@@ -56,6 +56,12 @@ def html_govde(db: dict) -> str:
       <p style="color:#777;font-size:13px;margin-top:0">Veri kesiti {esc(db['veri_tarihi'])} ·
         Referans portföy ({len(portfoy)} enstrüman)</p>
 
+      <p style="margin:12px 0 18px;font-size:13.5px">
+        <a href="{SITE_BASE}/ozet.html" style="color:#0b6b63;font-weight:600">→ Tam günlük özet</a> ·
+        <a href="{SITE_BASE}/index.html" style="color:#0b6b63">→ İnteraktif araç</a> ·
+        <a href="{SITE_BASE}/rehber.html" style="color:#0b6b63">→ Kavram rehberi</a>
+      </p>
+
       <table style="width:100%;border-collapse:collapse;margin:16px 0">
         <tr>
           <td style="text-align:center;padding:10px;background:#f5f6f9;border-radius:6px 0 0 6px">
@@ -76,11 +82,6 @@ def html_govde(db: dict) -> str:
       <h3 style="font-size:15px;margin:18px 0 6px">Öne çıkan — Al sinyali</h3>
       <table style="width:100%;border-collapse:collapse;font-size:13px">{al_html}</table>
 
-      <p style="margin-top:22px">
-        <a href="{SITE_BASE}/ozet.html" style="color:#0b6b63">→ Tam günlük özet</a> ·
-        <a href="{SITE_BASE}/index.html" style="color:#0b6b63">→ İnteraktif araç</a> ·
-        <a href="{SITE_BASE}/rehber.html" style="color:#0b6b63">→ Kavram rehberi</a>
-      </p>
       <p style="font-size:11px;color:#999;margin-top:20px;border-top:1px solid #eee;padding-top:10px">
         Yatırım tavsiyesi değildir. Sinyaller kamuya açık fiyat verisi üzerinde çalışan mekanik
         kurallardır. Bu mail her hafta içi sabahı otomatik gönderilir.
