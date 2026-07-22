@@ -2,7 +2,7 @@
  "QQQM": {
   "sembol": "QQQM",
   "kaynak": "https://stockanalysis.com/etf/qqqm/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "Invesco NASDAQ 100 ETF (QQQM)",
   "aum": "$97.49B",
   "gider_orani": "0.15%",
@@ -13,7 +13,7 @@
  "QTUM": {
   "sembol": "QTUM",
   "kaynak": "https://stockanalysis.com/etf/qtum/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "Defiance Quantum ETF (QTUM)",
   "aum": "$5.32B",
   "gider_orani": "0.40%",
@@ -24,7 +24,7 @@
  "XLE": {
   "sembol": "XLE",
   "kaynak": "https://stockanalysis.com/etf/xle/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "State Street Energy Select Sector SPDR ETF (XLE)",
   "aum": "$38.17B",
   "gider_orani": "0.08%",
@@ -35,7 +35,7 @@
  "SPYM": {
   "sembol": "SPYM",
   "kaynak": "https://stockanalysis.com/etf/spym/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "State Street SPDR Portfolio S&P 500 ETF (SPYM)",
   "aum": "$157.41B",
   "gider_orani": "0.02%",
@@ -46,7 +46,7 @@
  "CIBR": {
   "sembol": "CIBR",
   "kaynak": "https://stockanalysis.com/etf/cibr/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "First Trust NASDAQ Cybersecurity ETF (CIBR)",
   "aum": "$14.39B",
   "gider_orani": "0.58%",
@@ -57,7 +57,7 @@
  "URA": {
   "sembol": "URA",
   "kaynak": "https://stockanalysis.com/etf/ura/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "Global X Uranium ETF (URA)",
   "aum": "$5.38B",
   "gider_orani": "0.69%",
@@ -68,7 +68,7 @@
  "BOTZ": {
   "sembol": "BOTZ",
   "kaynak": "https://stockanalysis.com/etf/botz/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "Global X Robotics & Artificial Intelligence ETF (BOTZ)",
   "aum": "$3.20B",
   "gider_orani": "0.68%",
@@ -79,7 +79,7 @@
  "ROBT": {
   "sembol": "ROBT",
   "kaynak": "https://stockanalysis.com/etf/robt/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "First Trust Nasdaq Artificial Intelligence & Robotics ETF (ROBT)",
   "aum": "$704.30M",
   "gider_orani": "0.65%",
@@ -90,7 +90,7 @@
  "XBI": {
   "sembol": "XBI",
   "kaynak": "https://stockanalysis.com/etf/xbi/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "State Street SPDR S&P Biotech ETF (XBI)",
   "aum": "$10.53B",
   "gider_orani": "0.35%",
@@ -101,7 +101,7 @@
  "ARKG": {
   "sembol": "ARKG",
   "kaynak": "https://stockanalysis.com/etf/arkg/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "ARK Genomic Revolution ETF (ARKG)",
   "aum": "$1.62B",
   "gider_orani": "0.75%",
@@ -110,7 +110,7 @@
  "NASA": {
   "sembol": "NASA",
   "kaynak": "https://stockanalysis.com/etf/nasa/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "Tema Space Innovators ETF (NASA)",
   "aum": "$1.33B",
   "gider_orani": "0.75%",
@@ -119,7 +119,7 @@
  "DRAM": {
   "sembol": "DRAM",
   "kaynak": "https://stockanalysis.com/etf/dram/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "Roundhill Memory ETF (DRAM)",
   "aum": "$23.36B",
   "gider_orani": "0.65%",
@@ -128,7 +128,7 @@
  "JEDI": {
   "sembol": "JEDI",
   "kaynak": "https://stockanalysis.com/etf/jedi/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "Defiance Drone and Modern Warfare ETF (JEDI)",
   "aum": "$130.11M",
   "gider_orani": "0.69%",
@@ -138,7 +138,7 @@
  "XLV": {
   "sembol": "XLV",
   "kaynak": "https://stockanalysis.com/etf/xlv/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "State Street Health Care Select Sector SPDR ETF (XLV)",
   "aum": "$41.81B",
   "gider_orani": "0.08%",
@@ -149,7 +149,7 @@
  "VHT": {
   "sembol": "VHT",
   "kaynak": "https://stockanalysis.com/etf/vht/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "Vanguard Health Care ETF (VHT)",
   "aum": "$18.15B",
   "gider_orani": "0.09%",
@@ -160,7 +160,7 @@
  "XLF": {
   "sembol": "XLF",
   "kaynak": "https://stockanalysis.com/etf/xlf/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "State Street Financial Select Sector SPDR ETF (XLF)",
   "aum": "$56.29B",
   "gider_orani": "0.08%",
@@ -171,19 +171,19 @@
  "QBTS": {
   "sembol": "QBTS",
   "kaynak": "https://stockanalysis.com/stocks/qbts/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "D-Wave Quantum Inc. (QBTS)"
  },
  "LRCX": {
   "sembol": "LRCX",
   "kaynak": "https://stockanalysis.com/stocks/lrcx/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "Lam Research Corporation (LRCX)"
  },
  "RKLB": {
   "sembol": "RKLB",
   "kaynak": "https://stockanalysis.com/stocks/rklb/",
-  "cekim": "2026-07-21",
+  "cekim": "2026-07-22",
   "tam_ad": "Rocket Lab Corporation (RKLB)"
  }
 }
