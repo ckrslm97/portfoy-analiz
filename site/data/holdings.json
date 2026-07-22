@@ -2439,32 +2439,32 @@
   [
    "TPE: 2330",
    "Taiwan Semiconductor Manufacturing Company Limited",
-   19.97
+   19.44
   ],
   [
    "KRX: 005930",
    "Samsung Electronics Co., Ltd.",
-   8.53
+   8.47
   ],
   [
    "KRX: 000660",
    "SK hynix Inc.",
-   7.28
+   7.23
   ],
   [
    "TPE: 2454",
    "MediaTek Inc.",
-   1.75
+   1.64
   ],
   [
    "TPE: 2308",
    "Delta Electronics, Inc.",
-   1.21
+   1.13
   ],
   [
    "NSE: HDFCBANK",
    "HDFC Bank Limited",
-   1.0
+   0.99
   ],
   [
    "TPE: 2317",
@@ -2474,12 +2474,12 @@
   [
    "NSE: RELIANCE",
    "Reliance Industries Limited",
-   0.86
+   0.91
   ],
   [
    "NSE: ICICIBANK",
    "ICICI Bank Limited",
-   0.82
+   0.87
   ],
   [
    "KRX: 402340",
@@ -2489,62 +2489,62 @@
   [
    "TPE: 3711",
    "ASE Technology Holding Co., Ltd.",
-   0.75
-  ],
-  [
-   "TPE: 2303",
-   "United Microelectronics Corporation",
-   0.59
+   0.68
   ],
   [
    "NSE: BHARTIARTL",
    "Bharti Airtel Limited",
-   0.59
-  ],
-  [
-   "BVMF: VALE3",
-   "Vale S.A.",
-   0.54
+   0.62
   ],
   [
    "NU",
    "Nu Holdings Ltd.",
-   0.53
+   0.56
+  ],
+  [
+   "BVMF: VALE3",
+   "Vale S.A.",
+   0.55
   ],
   [
    "KRX: 009150",
    "Samsung Electro-Mechanics Co., Ltd.",
-   0.51
+   0.53
+  ],
+  [
+   "TPE: 2303",
+   "United Microelectronics Corporation",
+   0.5
   ],
   [
    "BVMF: ITUB4",
    "ItaÃº Unibanco Holding S.A.",
-   0.47
-  ],
-  [
-   "TPE: 2383",
-   "Elite Material Co., Ltd.",
-   0.47
+   0.49
   ],
   [
    "KRX: 105560",
    "KB Financial Group Inc.",
-   0.46
+   0.44
   ],
   [
    "JSE: NPN",
    "Naspers Limited",
+   0.44
+  ],
+  [
+   "TPE: 2383",
+   "Elite Material Co., Ltd.",
    0.43
   ],
   [
-   "AU",
+   "JSE: ANG",
    "AngloGold Ashanti plc",
    0.41
   ],
   [
    "KRX: 005380",
    "Hyundai Motor Company",
-   0.4
+   0.39
   ]
  ],
  "FIW": [

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yatırım Kavramları Rehberi — 2026-07-21</title>
+<title>Yatırım Kavramları Rehberi — 2026-07-22</title>
 <meta name="description" content="Uygulamadaki her metriği bu portföyün gerçek verileriyle örnekleyen kavram rehberi.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
 <link rel="stylesheet" href="styles.css">
@@ -35,7 +35,7 @@
     <h1>Yatırım Kavramları Rehberi</h1>
     <p>Uygulamada gördüğün her metriğin ne anlama geldiğini, bu portföyün <strong>gerçek, güncel</strong>
        verileriyle örnekliyoruz — genel bir ders kitabı değil, senin fonlarından çıkan sayılar.
-       Veri kesiti 2026-07-21 ·
+       Veri kesiti 2026-07-22 ·
        <a href="index.html" style="color:var(--accent)">→ İnteraktif araç</a> ·
        <a href="rapor.html" style="color:var(--accent)">→ Tam analiz raporu</a></p>
   </header>
@@ -51,7 +51,7 @@
       <h4>Nasıl hesaplanır</h4>
       <p><code>(Son fiyat / İlk fiyat) ^ (1 / yıl sayısı) − 1</code>. Bir yıldan kısa geçmişte yıllıklandırma yapılmaz — 2-3 aylık bir getiriyi yıla yaymak yanıltıcı sonuç verir (uygulama bunu otomatik olarak engeller, bkz. "Geçmiş yeterli mi" kuralı aşağıda).</p>
       <h4>Bu portföyden gerçek örnek</h4>
-      <div class="grid g3"><div class="card stat"><div class="k">XLV · 10 yıl</div><div class="v pos">+9.7%</div></div><div class="card stat"><div class="k">ARKG · 10 yıl</div><div class="v">+8.9%</div></div><div class="card stat"><div class="k">SCHD · 10.0 yıl</div><div class="v pos">+12.4%</div></div></div>
+      <div class="grid g3"><div class="card stat"><div class="k">XLV · 10 yıl</div><div class="v pos">+9.7%</div></div><div class="card stat"><div class="k">ARKG · 10 yıl</div><div class="v">+8.8%</div></div><div class="card stat"><div class="k">SCHD · 10.0 yıl</div><div class="v pos">+12.4%</div></div></div>
       <h4>Nasıl okunur</h4>
       <p>Yüksek CAGR tek başına "iyi" demek değildir — hangi risk seviyesinde elde edildiği önemlidir (aşağıdaki Sharpe/Sortino bölümlerine bakın).</p>
     </section>
@@ -62,7 +62,7 @@
       <h4>Nasıl hesaplanır</h4>
       <p><code>(1 + TL getirisi) = (1 + USD getirisi) × (1 + kur değişimi)</code>. Yani TL getiri, gerçek varlık performansı ile kur kaybının çarpımıdır — toplamı değil.</p>
       <h4>Bu portföyden gerçek örnek</h4>
-      <div class="grid g3"><div class="card stat"><div class="k">YZC · TL getiri (1y)</div><div class="v pos">+47.4%</div></div><div class="card stat"><div class="k">YZC · USD getiri (1y)</div><div class="v pos">+26.2%</div></div><div class="card stat"><div class="k">USD/TRY değişim (1y)</div><div class="v neg">+16.8%</div></div></div><p style="font-size:12.5px;color:var(--muted);margin-top:8px">2025-07-21 → 2026-07-21 aralığı, o günün gerçek TEFAS ve USD/TRY verisinden hesaplandı.</p>
+      <div class="grid g3"><div class="card stat"><div class="k">YZC · TL getiri (1y)</div><div class="v pos">+47.4%</div></div><div class="card stat"><div class="k">YZC · USD getiri (1y)</div><div class="v pos">+26.3%</div></div><div class="card stat"><div class="k">USD/TRY değişim (1y)</div><div class="v neg">+16.8%</div></div></div><p style="font-size:12.5px;color:var(--muted);margin-top:8px">2025-07-22 → 2026-07-22 aralığı, o günün gerçek TEFAS ve USD/TRY verisinden hesaplandı.</p>
       <h4>Nasıl okunur</h4>
       <p>YZC'nin "%47 kazandırdı" başlığı yanıltıcı — gerçek varlık performansı %26, geri kalanı TL'nin değer kaybı. TL bazlı getirilere hep şüpheyle yaklaşın, bu aracın gösterdiği USD rakamlarına bakın.</p>
     </section>
@@ -117,7 +117,7 @@
       <h4>Nasıl hesaplanır</h4>
       <p><code>(Yıllık getiri − risksiz oran) / Aşağı yönlü volatilite</code> — paydada yalnız negatif günlerin standart sapması kullanılır.</p>
       <h4>Bu portföyden gerçek örnek</h4>
-      <div class="grid g2"><div class="card stat"><div class="k">SCHD</div><div class="v pos">0.62</div></div><div class="card stat"><div class="k">ARKG</div><div class="v neg">0.19</div></div></div>
+      <div class="grid g2"><div class="card stat"><div class="k">SCHD</div><div class="v pos">0.63</div></div><div class="card stat"><div class="k">ARKG</div><div class="v neg">0.18</div></div></div>
       <h4>Nasıl okunur</h4>
       <p>Sharpe ile Sortino arasında büyük fark varsa, fonun oynaklığının çoğu YUKARI yönlü demektir — bu genelde iyi bir işarettir, sert ama tek yönlü hareket eden fonlarda görülür.</p>
     </section>
@@ -128,7 +128,7 @@
       <h4>Nasıl hesaplanır</h4>
       <p><code>Gerçekleşen getiri − [risksiz oran + beta × (ölçüt getirisi − risksiz oran)]</code> — yani "bu beta ile beklenen getiri neydi" ile "gerçekte ne oldu" arasındaki fark.</p>
       <h4>Bu portföyden gerçek örnek</h4>
-      <div class="grid g2"><div class="card stat"><div class="k">SPYM — ölçütü hafif geçti</div><div class="v pos">+2.6%</div></div><div class="card stat"><div class="k">ARKG — ölçütün belirgin altında</div><div class="v neg">-8.8%</div></div></div>
+      <div class="grid g2"><div class="card stat"><div class="k">SPYM — ölçütü hafif geçti</div><div class="v pos">+2.6%</div></div><div class="card stat"><div class="k">ARKG — ölçütün belirgin altında</div><div class="v neg">-8.9%</div></div></div>
       <h4>Nasıl okunur</h4>
       <p>Al/Sat/Bekle puanlamasında: <b>alfa &gt; %2 ise +2 puan, alfa &lt; −%3 ise −2 puan.</b> Pozitif alfa, ödenen gider oranını haklı çıkarır; negatif alfa + yüksek gider oranı bir arada görülüyorsa (ör. ARKG %0,75 gider + negatif alfa) bu ücretin karşılığının alınmadığı anlamına gelir.</p>
     </section>
@@ -203,7 +203,7 @@
   <footer class="legal">
     <p><strong>Yatırım tavsiyesi değildir.</strong> Bu sayfa yalnızca eğitim amaçlıdır; burada
     anlatılan metrikler kamuya açık fiyat verisi üzerinde çalışan mekanik hesaplardır. Örnek sayılar
-    2026-07-21 tarihli gerçek veriden alınmıştır ve her gece otomatik güncellenir.</p>
+    2026-07-22 tarihli gerçek veriden alınmıştır ve her gece otomatik güncellenir.</p>
   </footer>
 </div>
 </body>
