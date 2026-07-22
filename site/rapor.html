@@ -1,10 +1,17 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Portföy Analiz Raporu — Temmuz 2026</title>
+<meta name="description" content="36 enstrümanlık TEFAS + ABD ETF portföyünün USD bazlı performans, risk, çakışma ve tematik analizi.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
 <style>
   :root {
     --bg: #FBFBFD; --surface: #FFFFFF; --surface-2: #F5F6F9;
     --ink: #131720; --ink-2: #3D4453; --muted: #6B7385;
     --rule: #E2E5EC; --rule-strong: #C9CEDA;
-    --accent: #0B6B63; --accent-soft: #E4F0EE;
+    --accent: #0B6B63; --accent-ink: #FFFFFF; --accent-soft: #E4F0EE;
     --pos: #0E7256; --neg: #A93520; --warn: #8A5A00;
     --pos-bg: #E6F2ED; --neg-bg: #FAEAE6; --warn-bg: #F8EFDC;
     --shadow: 0 1px 2px rgba(19,23,32,.05), 0 8px 24px -12px rgba(19,23,32,.12);
@@ -14,7 +21,7 @@
       --bg: #0B0E13; --surface: #121722; --surface-2: #171D29;
       --ink: #E7EAF1; --ink-2: #B9C0CE; --muted: #868FA1;
       --rule: #222A38; --rule-strong: #333D4E;
-      --accent: #46C9BC; --accent-soft: #10302E;
+      --accent: #46C9BC; --accent-ink: #06231F; --accent-soft: #10302E;
       --pos: #4FD198; --neg: #FF8E72; --warn: #EDB544;
       --pos-bg: #102A22; --neg-bg: #2E1712; --warn-bg: #2B2110;
       --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
@@ -24,7 +31,7 @@
     --bg: #0B0E13; --surface: #121722; --surface-2: #171D29;
     --ink: #E7EAF1; --ink-2: #B9C0CE; --muted: #868FA1;
     --rule: #222A38; --rule-strong: #333D4E;
-    --accent: #46C9BC; --accent-soft: #10302E;
+    --accent: #46C9BC; --accent-ink: #06231F; --accent-soft: #10302E;
     --pos: #4FD198; --neg: #FF8E72; --warn: #EDB544;
     --pos-bg: #102A22; --neg-bg: #2E1712; --warn-bg: #2B2110;
     --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
@@ -33,7 +40,7 @@
     --bg: #FBFBFD; --surface: #FFFFFF; --surface-2: #F5F6F9;
     --ink: #131720; --ink-2: #3D4453; --muted: #6B7385;
     --rule: #E2E5EC; --rule-strong: #C9CEDA;
-    --accent: #0B6B63; --accent-soft: #E4F0EE;
+    --accent: #0B6B63; --accent-ink: #FFFFFF; --accent-soft: #E4F0EE;
     --pos: #0E7256; --neg: #A93520; --warn: #8A5A00;
     --pos-bg: #E6F2ED; --neg-bg: #FAEAE6; --warn-bg: #F8EFDC;
     --shadow: 0 1px 2px rgba(19,23,32,.05), 0 8px 24px -12px rgba(19,23,32,.12);
@@ -240,7 +247,17 @@
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
   }
+
+  .btn {
+    border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink);
+    border-radius: 7px; padding: 8px 15px; font-weight: 600; font-size: 13.5px;
+  }
+  .btn:hover { filter: brightness(1.08); }
+  .btn.ghost { background: var(--surface); color: var(--ink); border-color: var(--rule-strong); }
+  .btn.ghost:hover { background: var(--surface-2); }
 </style>
+</head>
+<body>
 
 <div class="wrap">
 
@@ -260,11 +277,10 @@
     <span>Kaynaklar: <b>TEFAS API · Yahoo Finance · stockanalysis.com</b></span>
   </div>
   <p style="margin-top:16px">
-    <a href="index.html" style="font-family:var(--mono);font-size:13px;color:var(--accent)">
-      → Canlı portföy aracı: karar, öneri ve takip (her gece güncellenir)</a>
-    &nbsp;·&nbsp;
-    <a href="rehber.html" style="font-family:var(--mono);font-size:13px;color:var(--accent)">
-      → Kavram rehberi: metrikler gerçek örneklerle</a>
+    <a href="index.html" class="btn" style="text-decoration:none;display:inline-block;margin:0 8px 8px 0"
+       title="Karar, öneri ve takip — her gece güncellenir">Canlı Portföy Aracı</a>
+    <a href="rehber.html" class="btn ghost" style="text-decoration:none;display:inline-block;margin:0 8px 8px 0"
+       title="Metrikler gerçek örneklerle">Kavram Rehberi</a>
   </p>
 </header>
 
@@ -1195,3 +1211,5 @@
 </footer>
 
 </div>
+</body>
+</html>

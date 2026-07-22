@@ -398,9 +398,11 @@ def main():
     <h1>Yatırım Kavramları Rehberi</h1>
     <p>Uygulamada gördüğün her metriğin ne anlama geldiğini, bu portföyün <strong>gerçek, güncel</strong>
        verileriyle örnekliyoruz — genel bir ders kitabı değil, senin fonlarından çıkan sayılar.
-       Veri kesiti {esc(db['veri_tarihi'])} ·
-       <a href="index.html" style="color:var(--accent)">→ İnteraktif araç</a> ·
-       <a href="rapor.html" style="color:var(--accent)">→ Tam analiz raporu</a></p>
+       Veri kesiti {esc(db['veri_tarihi'])}</p>
+    <p style="margin-top:12px">
+      <a href="index.html" class="btn" style="text-decoration:none;display:inline-block;margin:0 8px 8px 0">İnteraktif Araç</a>
+      <a href="rapor.html" class="btn ghost" style="text-decoration:none;display:inline-block;margin:0 8px 8px 0">Tam Analiz Raporu</a>
+    </p>
   </header>
 
   <nav class="toc-guide">
