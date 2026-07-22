@@ -56,11 +56,20 @@ def html_govde(db: dict) -> str:
       <p style="color:#777;font-size:13px;margin-top:0">Veri kesiti {esc(db['veri_tarihi'])} ·
         Referans portföy ({len(portfoy)} enstrüman)</p>
 
-      <p style="margin:12px 0 18px;font-size:13.5px">
-        <a href="{SITE_BASE}/ozet.html" style="color:#0b6b63;font-weight:600">→ Tam günlük özet</a> ·
-        <a href="{SITE_BASE}/index.html" style="color:#0b6b63">→ İnteraktif araç</a> ·
-        <a href="{SITE_BASE}/rehber.html" style="color:#0b6b63">→ Kavram rehberi</a>
-      </p>
+      <div style="margin:14px 0 22px">
+        <a href="{SITE_BASE}/ozet.html"
+           style="display:inline-block;background:#0b6b63;color:#ffffff;text-decoration:none;
+                  font-weight:600;font-size:13.5px;padding:10px 18px;border-radius:8px;
+                  margin:0 8px 8px 0">Tam Günlük Özet</a>
+        <a href="{SITE_BASE}/index.html"
+           style="display:inline-block;background:#ffffff;color:#0b6b63;text-decoration:none;
+                  font-weight:600;font-size:13.5px;padding:9px 17px;border-radius:8px;
+                  border:1px solid #cfd8dc;margin:0 8px 8px 0">İnteraktif Araç</a>
+        <a href="{SITE_BASE}/rehber.html"
+           style="display:inline-block;background:#ffffff;color:#0b6b63;text-decoration:none;
+                  font-weight:600;font-size:13.5px;padding:9px 17px;border-radius:8px;
+                  border:1px solid #cfd8dc;margin:0 8px 8px 0">Kavram Rehberi</a>
+      </div>
 
       <table style="width:100%;border-collapse:collapse;margin:16px 0">
         <tr>
