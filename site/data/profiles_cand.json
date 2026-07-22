@@ -192,7 +192,7 @@
   "gider_orani": "0.65%",
   "kurulus": "Nov 18, 2009",
   "endeks": "Nifty 50",
-  "temettu_verimi": "9.61%"
+  "temettu_verimi": "9.60%"
  },
  "IWM": {
   "sembol": "IWM",
@@ -302,7 +302,7 @@
   "gider_orani": "0.07%",
   "kurulus": "Jan 13, 2011",
   "endeks": "Dow Jones Equity All REIT Capped",
-  "temettu_verimi": "2.71%"
+  "temettu_verimi": "2.70%"
  },
  "VB": {
   "sembol": "VB",
@@ -313,7 +313,7 @@
   "gider_orani": "0.03%",
   "kurulus": "Jan 26, 2004",
   "endeks": "CRSP US Small Cap",
-  "temettu_verimi": "1.21%"
+  "temettu_verimi": "1.22%"
  },
  "VGK": {
   "sembol": "VGK",
@@ -335,7 +335,7 @@
   "gider_orani": "0.13%",
   "kurulus": "Sep 23, 2004",
   "endeks": "MSCI US IMI/Real Estate 25-50",
-  "temettu_verimi": "3.51%"
+  "temettu_verimi": "3.50%"
  },
  "VT": {
   "sembol": "VT",
@@ -390,7 +390,7 @@
   "gider_orani": "0.04%",
   "kurulus": "Nov 10, 2006",
   "endeks": "FTSE Custom High Dividend Yield",
-  "temettu_verimi": "2.24%"
+  "temettu_verimi": "2.25%"
  },
  "XLI": {
   "sembol": "XLI",
