@@ -116,7 +116,8 @@ def main():
   <header class="ozet-head">
     <h1>Günlük Fon Özeti</h1>
     <p>Veri kesiti {esc(db['veri_tarihi'])} · Referans portföy (rapordaki {len(portfoy)} enstrüman) ·
-       <a href="index.html" style="color:var(--accent)">→ İnteraktif araç, kendi portföyün için</a></p>
+       <a href="index.html" style="color:var(--accent)">→ İnteraktif araç, kendi portföyün için</a> ·
+       <a href="rehber.html" style="color:var(--accent)">→ Kavram rehberi</a></p>
   </header>
 
   <div class="ozet-sec">

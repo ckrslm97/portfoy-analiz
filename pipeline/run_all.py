@@ -15,14 +15,15 @@ import sys
 
 
 ADIMLAR = [
-    ("fetch_data", "1/8 — TEFAS + Yahoo Finance (portföy fiyatları)"),
-    ("fetch_candidates", "2/8 — Aday enstrüman fiyatları ve künyeleri"),
-    ("holdings_overlap", "3/8 — ETF içerik / çakışma"),
-    ("etf_profile", "4/8 — Portföy ETF/hisse künyeleri"),
-    ("build_app_data", "5/8 — Uygulama veri paketi (app_data.json)"),
-    ("add_sparks", "6/8 — Sparkline serileri (2 yıl, haftalık)"),
-    ("add_daily", "7/8 — Günlük fiyat serisi (detay paneli aralıkları)"),
-    ("build_ozet", "8/8 — Günlük özet sayfası (ozet.html)"),
+    ("fetch_data", "1/9 — TEFAS + Yahoo Finance (portföy fiyatları)"),
+    ("fetch_candidates", "2/9 — Aday enstrüman fiyatları ve künyeleri"),
+    ("holdings_overlap", "3/9 — ETF içerik / çakışma"),
+    ("etf_profile", "4/9 — Portföy ETF/hisse künyeleri"),
+    ("build_app_data", "5/9 — Uygulama veri paketi (app_data.json)"),
+    ("add_sparks", "6/9 — Sparkline serileri (2 yıl, haftalık)"),
+    ("add_daily", "7/9 — Günlük fiyat serisi (detay paneli aralıkları)"),
+    ("build_ozet", "8/9 — Günlük özet sayfası (ozet.html)"),
+    ("build_rehber", "9/9 — Kavram rehberi (rehber.html)"),
 ]
 
 

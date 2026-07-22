@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yatırım Kavramları Rehberi — 2026-07-21</title>
+<meta name="description" content="Uygulamadaki her metriği bu portföyün gerçek verileriyle örnekleyen kavram rehberi.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .wrap { max-width: 880px; }
+  .ozet-head { padding: 44px 0 22px; border-bottom: 1px solid var(--rule-strong); margin-bottom: 28px; }
+  .ozet-head h1 { font-family: var(--serif); font-size: 30px; margin: 0 0 8px; letter-spacing: -.01em; }
+  .ozet-head p { color: var(--muted); font-size: 14px; margin: 0; max-width: 68ch; }
+  .ozet-sec { margin-bottom: 40px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+  .ozet-sec:last-of-type { border-bottom: none; }
+  .ozet-sec h2 { font-family: var(--serif); font-size: 20px; margin: 0 0 10px; letter-spacing: -.005em; }
+  .ozet-sec > p { font-size: 14.5px; color: var(--ink-2); max-width: 70ch; margin: 0 0 14px; }
+  .ozet-sec h4 {
+    font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+    color: var(--muted); margin: 18px 0 8px;
+  }
+  .ozet-sec code { font-family: var(--mono); font-size: 12.5px; background: var(--surface-2); padding: 1px 5px; border-radius: 3px; }
+  .toc-guide { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 32px; }
+  .toc-guide a {
+    font-family: var(--mono); font-size: 11.5px; padding: 5px 10px; border-radius: 100px;
+    border: 1px solid var(--rule); color: var(--ink-2); text-decoration: none; background: var(--surface);
+  }
+  .toc-guide a:hover { background: var(--surface-2); color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="ozet-head">
+    <h1>Yatırım Kavramları Rehberi</h1>
+    <p>Uygulamada gördüğün her metriğin ne anlama geldiğini, bu portföyün <strong>gerçek, güncel</strong>
+       verileriyle örnekliyoruz — genel bir ders kitabı değil, senin fonlarından çıkan sayılar.
+       Veri kesiti 2026-07-21 ·
+       <a href="index.html" style="color:var(--accent)">→ İnteraktif araç</a> ·
+       <a href="rapor.html" style="color:var(--accent)">→ Tam analiz raporu</a></p>
+  </header>
+
+  <nav class="toc-guide">
+    <a href="#cagr-bilesik-yillik-buyume-orani">CAGR — Bileşik Yıllık Büyüme Oranı</a><a href="#kur-etkisi-tl-getirisi-neden-yaniltabilir">Kur Etkisi — TL Getirisi Neden Yanıltabilir</a><a href="#volatilite">Volatilite</a><a href="#maksimum-dusus-max-drawdown">Maksimum Düşüş (Max Drawdown)</a><a href="#beta">Beta</a><a href="#sharpe-orani">Sharpe Oranı</a><a href="#sortino-orani">Sortino Oranı</a><a href="#alfa">Alfa</a><a href="#korelasyon">Korelasyon (ρ)</a><a href="#cakisma-holdings-overlap">Çakışma (Holdings Overlap)</a><a href="#gider-orani-expense-ratio-bilesik-etkisi">Gider Oranı (Expense Ratio) — Bileşik Etkisi</a><a href="#aum-ve-likidite">AUM ve Likidite</a><a href="#al-sat-bekle-sinyali-nasil-uretiliyor">Al / Sat / Bekle Sinyali Nasıl Üretiliyor</a><a href="#risk-kademesi-dusuk-orta-yuksek">Risk Kademesi (Düşük / Orta / Yüksek)</a>
+  </nav>
+
+  
+    <section class="ozet-sec">
+      <h2 id="cagr-bilesik-yillik-buyume-orani">CAGR — Bileşik Yıllık Büyüme Oranı</h2>
+      <p>Bir enstrümanın, dönem içindeki iniş çıkışları yok sayıp "her yıl sabit oranda büyüseydi" hangi orana denk geldiğini gösterir. Tek yıllık bir getiri yüzdesi değil, tüm geçmişin yıllıklandırılmış özetidir.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p><code>(Son fiyat / İlk fiyat) ^ (1 / yıl sayısı) − 1</code>. Bir yıldan kısa geçmişte yıllıklandırma yapılmaz — 2-3 aylık bir getiriyi yıla yaymak yanıltıcı sonuç verir (uygulama bunu otomatik olarak engeller, bkz. "Geçmiş yeterli mi" kuralı aşağıda).</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g3"><div class="card stat"><div class="k">XLV · 10 yıl</div><div class="v pos">+9.7%</div></div><div class="card stat"><div class="k">ARKG · 10 yıl</div><div class="v">+8.9%</div></div><div class="card stat"><div class="k">SCHD · 10.0 yıl</div><div class="v pos">+12.4%</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>Yüksek CAGR tek başına "iyi" demek değildir — hangi risk seviyesinde elde edildiği önemlidir (aşağıdaki Sharpe/Sortino bölümlerine bakın).</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="kur-etkisi-tl-getirisi-neden-yaniltabilir">Kur Etkisi — TL Getirisi Neden Yanıltabilir</h2>
+      <p>TEFAS fonları TL cinsinden fiyatlanır. TL, USD karşısında değer kaybettikçe TL getiri yapay şekilde şişer — fonun gerçek varlık performansıyla hiç ilgisi olmayan bir etki. Bu uygulama bu yüzden tüm karşılaştırmaları USD bazında yapar.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p><code>(1 + TL getirisi) = (1 + USD getirisi) × (1 + kur değişimi)</code>. Yani TL getiri, gerçek varlık performansı ile kur kaybının çarpımıdır — toplamı değil.</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g3"><div class="card stat"><div class="k">YZC · TL getiri (1y)</div><div class="v pos">+47.4%</div></div><div class="card stat"><div class="k">YZC · USD getiri (1y)</div><div class="v pos">+26.2%</div></div><div class="card stat"><div class="k">USD/TRY değişim (1y)</div><div class="v neg">+16.8%</div></div></div><p style="font-size:12.5px;color:var(--muted);margin-top:8px">2025-07-21 → 2026-07-21 aralığı, o günün gerçek TEFAS ve USD/TRY verisinden hesaplandı.</p>
+      <h4>Nasıl okunur</h4>
+      <p>YZC'nin "%47 kazandırdı" başlığı yanıltıcı — gerçek varlık performansı %26, geri kalanı TL'nin değer kaybı. TL bazlı getirilere hep şüpheyle yaklaşın, bu aracın gösterdiği USD rakamlarına bakın.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="volatilite">Volatilite</h2>
+      <p>Getirilerin ortalama etrafında ne kadar sert salındığının ölçüsüdür — fiyatın ne kadar "gürültülü" hareket ettiğini gösterir, yön belirtmez (yükselirken de sert olabilir).</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p>Günlük getirilerin standart sapması, <code>√252</code> ile çarpılarak yıllıklandırılır (252 ≈ bir yıldaki işlem günü sayısı).</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g3"><div class="card stat"><div class="k">XLV — geniş sağlık sepeti</div><div class="v">+16.6%</div></div><div class="card stat"><div class="k">ARKG — konsantre tema</div><div class="v neg">+41.4%</div></div><div class="card stat"><div class="k">QBTS — tek hisse</div><div class="v neg">+126.0%</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>Uygulamadaki risk kademesi eşiği: <b>%12 altı Düşük, %12–25 Orta, %25 üstü Yüksek.</b> QBTS'in oynaklığı bu ölçekte sınırların çok dışında — tek hisseye yoğunlaşmanın bedeli budur.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="maksimum-dusus-max-drawdown">Maksimum Düşüş (Max Drawdown)</h2>
+      <p>Enstrümanın tüm geçmişindeki en yüksek noktadan en düşük noktaya kadar yaşadığı en sert değer kaybı. "En kötü anda ne kadar kaybettirebilirdi" sorusunun cevabı.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p>Her gün için <code>(o günkü fiyat / o güne kadarki en yüksek fiyat) − 1</code> hesaplanır, en düşük (en negatif) değer alınır.</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g3"><div class="card stat"><div class="k">XLV</div><div class="v neg">-28%</div></div><div class="card stat"><div class="k">ARKG</div><div class="v neg">-84%</div></div><div class="card stat"><div class="k">QBTS</div><div class="v neg">-97%</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>Risk kademesi eşiği: <b>−%15'ten sığ Düşük, −%15…−%35 arası Orta, −%35'ten derin Yüksek.</b> QBTS'in -97% düşüşü, o pozisyona konan paranın neredeyse tamamının bir dönem silinmiş olabileceği anlamına geliyor.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="beta">Beta</h2>
+      <p>Enstrümanın, seçilen ölçüte (bu uygulamada MSCI ACWI) göre ne kadar duyarlı hareket ettiğini gösterir. Beta 1 = ölçütle aynı hareket. Beta 1'in üstü = ölçütten daha sert iniş-çıkış; altı = daha yumuşak.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p>Haftalık getiriler üzerinden hesaplanır (günlük değil — TEFAS fonlarında NAV gecikmesi günlük veride betayı yapay olarak sıfıra çeker, bu yüzden bu uygulama haftalık kullanır).</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g3"><div class="card stat"><div class="k">XLV — defansif</div><div class="v">0.74</div></div><div class="card stat"><div class="k">QTUM — agresif</div><div class="v">1.30</div></div><div class="card stat"><div class="k">QBTS — çok agresif</div><div class="v">1.95</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>Risk kademesi eşiği: <b>0,70 altı Düşük, 0,70–1,30 Orta, 1,30 üstü Yüksek.</b> Düşük beta, "az kazandırır" demek değil — küresel piyasa çöküşlerinde daha az birlikte düşer demektir.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="sharpe-orani">Sharpe Oranı</h2>
+      <p>"Alınan her birim riske karşılık ne kadar getiri elde edildi" sorusunun cevabı. İki enstrüman aynı getiriyi verse bile, azıcık oynaklıkla verenin Sharpe'ı daha yüksektir — bu yüzden ham getiriden daha adil bir karşılaştırma aracıdır.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p><code>(Yıllık getiri − risksiz oran) / Yıllık volatilite</code>. Bu uygulamada risksiz oran %4 varsayılıyor (ABD kısa vadeli hazine getirisi yaklaşımı).</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g3"><div class="card stat"><div class="k">SCHD — düşük gider, iyi Sharpe</div><div class="v pos">0.50</div></div><div class="card stat"><div class="k">ARKG — riski karşılıksız</div><div class="v neg">0.12</div></div><div class="card stat"><div class="k">QBTS — riski hiç karşılıksız</div><div class="v neg">0.05</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>Al/Sat/Bekle puanlamasında: <b>Sharpe &gt; 0,6 ise +2 puan (güçlü), Sharpe &lt; 0 ise −3 puan (risk karşılıksız), 0–0,25 arası −1 puan (zayıf).</b> ARKG ve QBTS'nin SAT sinyali almasının başlıca sebeplerinden biri budur.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="sortino-orani">Sortino Oranı</h2>
+      <p>Sharpe'a çok benzer, ama tek farkla: yalnızca <em>aşağı yönlü</em> oynaklığı cezalandırır. Bir fon sert yükselişlerle oynaksa Sharpe'ı düşük görünebilir; Sortino bunu "kötü risk" saymaz.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p><code>(Yıllık getiri − risksiz oran) / Aşağı yönlü volatilite</code> — paydada yalnız negatif günlerin standart sapması kullanılır.</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g2"><div class="card stat"><div class="k">SCHD</div><div class="v pos">0.62</div></div><div class="card stat"><div class="k">ARKG</div><div class="v neg">0.19</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>Sharpe ile Sortino arasında büyük fark varsa, fonun oynaklığının çoğu YUKARI yönlü demektir — bu genelde iyi bir işarettir, sert ama tek yönlü hareket eden fonlarda görülür.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="alfa">Alfa</h2>
+      <p>Enstrümanın, taşıdığı beta (piyasa duyarlılığı) hesaba katıldıktan SONRA, ölçütün üstünde mi altında mı kaldığının ölçüsü. "Yönetim/seçim becerisi ölçüte değer kattı mı" sorusunun cevabına en yakın rakam.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p><code>Gerçekleşen getiri − [risksiz oran + beta × (ölçüt getirisi − risksiz oran)]</code> — yani "bu beta ile beklenen getiri neydi" ile "gerçekte ne oldu" arasındaki fark.</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g2"><div class="card stat"><div class="k">SPYM — ölçütü hafif geçti</div><div class="v pos">+2.6%</div></div><div class="card stat"><div class="k">ARKG — ölçütün belirgin altında</div><div class="v neg">-8.8%</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>Al/Sat/Bekle puanlamasında: <b>alfa &gt; %2 ise +2 puan, alfa &lt; −%3 ise −2 puan.</b> Pozitif alfa, ödenen gider oranını haklı çıkarır; negatif alfa + yüksek gider oranı bir arada görülüyorsa (ör. ARKG %0,75 gider + negatif alfa) bu ücretin karşılığının alınmadığı anlamına gelir.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="korelasyon">Korelasyon (ρ)</h2>
+      <p>İki enstrümanın fiyat hareketlerinin ne kadar "birlikte" gittiğinin ölçüsü. +1 = birebir aynı yönde hareket, 0 = ilişkisiz, −1 = tam ters yönde. Çeşitlendirmenin temel taşı: korelasyonu düşük iki varlık bir arada tutulduğunda toplam risk azalır.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p>Haftalık getiriler üzerinden Pearson korelasyon katsayısı, en az 52 haftalık ortak pencerede hesaplanır. Bu uygulamada Karşılaştır sekmesinde Satır=Fon/ETF, Sütun=Fon/ETF seçip tam bir korelasyon matrisi görebilirsiniz.</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g2"><div class="card stat"><div class="k">XLV ↔ VHT — pratikte ikiz</div><div class="v neg">0.992</div></div><div class="card stat"><div class="k">Emsal sayısı (XLV teması)</div><div class="v">2</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>0,85 üstü korelasyon "fiilen aynı pozisyon" demektir — ikisini birden tutmak çeşitlendirme değil, aynı riski iki kez ödemektir. 0,3 altı korelasyon gerçek çeşitlendirme sağlar.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="cakisma-holdings-overlap">Çakışma (Holdings Overlap)</h2>
+      <p>Korelasyondan farklı olarak, iki ETF'in GERÇEKTEN aynı hisseleri ne oranda taşıdığının doğrudan ölçüsü. İki fon farklı hisseler taşısa bile makro bir faktör yüzünden yüksek korelasyonlu olabilir — çakışma bunu ayırt eder.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p>İki fonun ortak taşıdığı her hisse için <code>min(ağırlık_A, ağırlık_B)</code> toplanır. Yalnızca ilk ~25 varlık üzerinden hesaplandığı için sonuç bir ALT SINIRDIR.</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g2"><div class="card stat"><div class="k">XLV ↔ VHT çakışma</div><div class="v neg">%72.5</div></div><div class="card stat"><div class="k">XLV holdings kapsaması</div><div class="v">%85.5</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>Al/Sat/Bekle puanlamasında: <b>çakışma %85 üstüyse −2 puan, %60–85 arası −1 puan.</b> Detay panelindeki "İçerik" bölümünden hangi hisselerin ortak olduğunu tek tek görebilirsiniz.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="gider-orani-expense-ratio-bilesik-etkisi">Gider Oranı (Expense Ratio) — Bileşik Etkisi</h2>
+      <p>Fonun yıllık yönetim/işletme maliyeti, varlık değerinden otomatik düşülür — hiçbir zaman ayrı bir fatura görmezsiniz ama getiriyi her yıl aşındırır. Küçük bir yüzde farkı, uzun vadede büyük bir paraya dönüşür.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p>Basit görünse de etkisi BİLEŞİK büyür. Aşağıdaki örnek gerçek bir hesap:</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g3"><div class="card stat"><div class="k">10.000$, %10 brüt getiri, 20 yıl<br>%0,02 gider (SPYM gibi)</div><div class="v pos">$67,031</div></div><div class="card stat"><div class="k">Aynı senaryo<br>%0,75 gider (ARKG gibi)</div><div class="v">$58,672</div></div><div class="card stat"><div class="k">Fark — sadece gider yüzünden</div><div class="v neg">$8,359</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>Yüksek gider oranı yalnızca yüksek alfa (yönetim becerisi ölçütü aşıyorsa) ile savunulabilir. Bu uygulama gider oranını puanlamada tek başına değil, alfa ile birlikte değerlendirir — "pahalı ama iyi" ile "pahalı ve kötü" ayrımı buradan gelir.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="aum-ve-likidite">AUM ve Likidite</h2>
+      <p>Fonun toplam yönetilen varlık büyüklüğü. Çok küçük bir AUM, düşük işlem hacmi ve geniş alış-satış makas riski taşıyabilir; fon kapatılma riski de büyük fonlara göre daha yüksektir.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p>ABD ETF'lerinde dolar cinsinden, TEFAS fonlarında TL cinsinden ("portföy büyüklüğü") kamuya açık verilerden alınır.</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <div class="grid g2"><div class="card stat"><div class="k">SCHD — büyük, likit</div><div class="v">$100.79B</div></div><div class="card stat"><div class="k">ROBT — küçük ölçekli ETF</div><div class="v neg">$704.30M</div></div></div>
+      <h4>Nasıl okunur</h4>
+      <p>Kesin bir alt sınır yoktur ama birkaç yüz milyon doların altındaki ETF'lerde ve birkaç yüz milyon TL'nin altındaki TEFAS fonlarında likidite ve kapanma riskini ayrıca sorgulayın.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="al-sat-bekle-sinyali-nasil-uretiliyor">Al / Sat / Bekle Sinyali Nasıl Üretiliyor</h2>
+      <p>Bu bir yatırım tavsiyesi değil, ölçülebilir kuralların mekanik özetidir. İki "kapı" önce çalışır ve puanlamayı tamamen devre dışı bırakabilir; kapılardan geçen enstrümanlar puanlanır.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p><b>Kapı 1 — Veri yeterliliği:</b> bir yıldan kısa geçmişte doğrudan BEKLE, puanlama yapılmaz. <b>Kapı 2 — Kimlik doğrulaması:</b> kullanıcının varsaydığı kategori ile resmi unvan çelişiyorsa (ör. bir fon bankacılık sanılıp aslında sağlık fonuysa) doğrudan BEKLE. Kapılardan geçenler alfa, Sharpe, maksimum düşüş, çakışma, korelasyon ve gider oranı üzerinden puanlanır; <b>puan ≥ +3 → AL, puan ≤ −3 → SAT, arası BEKLE.</b></p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      <p style="font-size:13.5px;color:var(--ink-2)">Her enstrümanın detay panelindeki "Al / Sat / Bekle Sinyali" kartında, o enstrüman için hangi kuralın ne yönde çalıştığı tek tek listelenir — kara kutu değildir.</p>
+      <h4>Nasıl okunur</h4>
+      <p>Sinyal, senin kararının yerine geçmez — Al/Sat/Bekle sekmesinde kendi kararını ayrı olarak kaydedebilir, kuralın önerdiğinden farklı bir yol seçebilirsin.</p>
+    </section>
+    
+    <section class="ozet-sec">
+      <h2 id="risk-kademesi-dusuk-orta-yuksek">Risk Kademesi (Düşük / Orta / Yüksek)</h2>
+      <p>Volatilite, maksimum düşüş ve beta'nın üçünün ortak (medyan) sonucudur — tek bir metriğe değil, üçüne birden bakar.</p>
+      <h4>Nasıl hesaplanır</h4>
+      <p>Her bileşen kendi eşiğine göre 0 (Düşük), 1 (Orta) veya 2 (Yüksek) puan alır; üç puanın medyanı nihai kademeyi belirler. İlk 10 pozisyonun toplam ağırlığı %60'ı aşıyorsa (yoğunlaşma cezası) kademe bir seviye yükseltilir.</p>
+      <h4>Bu portföyden gerçek örnek</h4>
+      
+      <h4>Nasıl okunur</h4>
+      <p>Bu üçlü bakış, tek bir metriğin yanıltmasını engeller — ör. düşük volatiliteli ama yüksek beta'lı bir enstrüman yalnızca volatiliteye bakılsaydı "Düşük" görünebilirdi.</p>
+    </section>
+    
+
+  <footer class="legal">
+    <p><strong>Yatırım tavsiyesi değildir.</strong> Bu sayfa yalnızca eğitim amaçlıdır; burada
+    anlatılan metrikler kamuya açık fiyat verisi üzerinde çalışan mekanik hesaplardır. Örnek sayılar
+    2026-07-21 tarihli gerçek veriden alınmıştır ve her gece otomatik güncellenir.</p>
+  </footer>
+</div>
+</body>
+</html>
