@@ -393,16 +393,20 @@ def main():
 </style>
 </head>
 <body>
+<nav class="sitenav">
+  <div class="sitenav-in">
+    <a href="index.html" class="sitenav-item">Araç</a>
+    <a href="ozet.html" class="sitenav-item">Günlük Özet</a>
+    <a href="rehber.html" class="sitenav-item active">Kavram Rehberi</a>
+    <a href="rapor.html" class="sitenav-item">Analiz Raporu</a>
+  </div>
+</nav>
 <div class="wrap">
   <header class="ozet-head">
     <h1>Yatırım Kavramları Rehberi</h1>
     <p>Uygulamada gördüğün her metriğin ne anlama geldiğini, bu portföyün <strong>gerçek, güncel</strong>
        verileriyle örnekliyoruz — genel bir ders kitabı değil, senin fonlarından çıkan sayılar.
        Veri kesiti {esc(db['veri_tarihi'])}</p>
-    <p style="margin-top:12px">
-      <a href="index.html" class="btn" style="text-decoration:none;display:inline-block;margin:0 8px 8px 0">İnteraktif Araç</a>
-      <a href="rapor.html" class="btn ghost" style="text-decoration:none;display:inline-block;margin:0 8px 8px 0">Tam Analiz Raporu</a>
-    </p>
   </header>
 
   <nav class="toc-guide">

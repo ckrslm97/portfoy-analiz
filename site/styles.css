@@ -405,6 +405,22 @@ footer.legal {
   font-size: 13.5px; z-index: 80; box-shadow: var(--shadow);
 }
 .toast[hidden] { display: none; }
+
+/* ---------- site geneli sayfa gezinme şeridi (4 sayfanın hepsinde aynı) ---------- */
+.sitenav { border-bottom: 1px solid var(--rule-strong); background: var(--surface); }
+.sitenav-in {
+  max-width: 1180px; margin: 0 auto; padding: 9px 20px;
+  display: flex; gap: 5px; flex-wrap: wrap; align-items: center;
+  overflow-x: auto;
+}
+.sitenav-item {
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: .01em;
+  padding: 6px 12px; border-radius: 100px; white-space: nowrap;
+  color: var(--muted); text-decoration: none; border: 1px solid transparent;
+}
+.sitenav-item:hover { background: var(--surface-2); color: var(--ink); }
+.sitenav-item:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.sitenav-item.active { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); font-weight: 650; }
 /* inline style yerine :not([hidden]) — [hidden]{display:none}'ı ezmesin diye */
 #ghConnected:not([hidden]) { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
 

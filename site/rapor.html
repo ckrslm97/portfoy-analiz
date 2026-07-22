@@ -255,9 +255,31 @@
   .btn:hover { filter: brightness(1.08); }
   .btn.ghost { background: var(--surface); color: var(--ink); border-color: var(--rule-strong); }
   .btn.ghost:hover { background: var(--surface-2); }
+
+  .sitenav { border-bottom: 1px solid var(--rule-strong); background: var(--surface); }
+  .sitenav-in {
+    max-width: 1140px; margin: 0 auto; padding: 9px 24px;
+    display: flex; gap: 5px; flex-wrap: wrap; align-items: center; overflow-x: auto;
+  }
+  .sitenav-item {
+    font-family: var(--mono); font-size: 11.5px; letter-spacing: .01em;
+    padding: 6px 12px; border-radius: 100px; white-space: nowrap;
+    color: var(--muted); text-decoration: none; border: 1px solid transparent;
+  }
+  .sitenav-item:hover { background: var(--surface-2); color: var(--ink); }
+  .sitenav-item.active { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); font-weight: 650; }
 </style>
 </head>
 <body>
+
+<nav class="sitenav">
+  <div class="sitenav-in">
+    <a href="index.html" class="sitenav-item">Araç</a>
+    <a href="ozet.html" class="sitenav-item">Günlük Özet</a>
+    <a href="rehber.html" class="sitenav-item">Kavram Rehberi</a>
+    <a href="rapor.html" class="sitenav-item active">Analiz Raporu</a>
+  </div>
+</nav>
 
 <div class="wrap">
 
@@ -276,12 +298,6 @@
     <span>USD/TRY: <b>47,20</b></span>
     <span>Kaynaklar: <b>TEFAS API · Yahoo Finance · stockanalysis.com</b></span>
   </div>
-  <p style="margin-top:16px">
-    <a href="index.html" class="btn" style="text-decoration:none;display:inline-block;margin:0 8px 8px 0"
-       title="Karar, öneri ve takip — her gece güncellenir">Canlı Portföy Aracı</a>
-    <a href="rehber.html" class="btn ghost" style="text-decoration:none;display:inline-block;margin:0 8px 8px 0"
-       title="Metrikler gerçek örneklerle">Kavram Rehberi</a>
-  </p>
 </header>
 
 <nav class="toc" aria-label="Bölümler">
