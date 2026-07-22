@@ -618,127 +618,127 @@
   [
    "CCO.NE",
    "CAMECO CORP",
-   23.03
+   23.05
   ],
   [
    "TSX: NXE",
    "NexGen Energy Ltd.",
-   6.3
+   6.31
   ],
   [
    "OKLO",
    "Oklo Inc.",
-   5.91
+   6.03
   ],
   [
    "TSX: U.UN",
    "Sprott Physical Uranium Trust Fund",
-   5.41
-  ],
-  [
-   "LON: KAP",
-   "National Atomic Company Kazatomprom JSC",
-   5.23
+   5.42
   ],
   [
    "UEC",
    "Uranium Energy Corp.",
-   5.15
+   5.27
+  ],
+  [
+   "LON: KAP",
+   "National Atomic Company Kazatomprom JSC",
+   5.26
   ],
   [
    "ASX: BHP",
    "BHP Group Limited",
-   3.29
-  ],
-  [
-   "KRX: 028260",
-   "Samsung C&T Corporation",
-   3.25
+   3.33
   ],
   [
    "EFR.NE",
    "ENERGY FUELS INC",
-   3.23
+   3.33
   ],
   [
    "LEU",
    "Centrus Energy Corp.",
-   3.16
+   3.2
   ],
   [
    "ASX: PDN",
    "Paladin Energy Ltd",
-   3.13
+   3.19
   ],
   [
    "TSX: DML",
    "Denison Mines Corp.",
-   3.04
+   3.08
+  ],
+  [
+   "KRX: 028260",
+   "Samsung C&T Corporation",
+   3.02
   ],
   [
    "TSX: ARE",
    "Aecon Group Inc.",
-   2.87
+   2.7
   ],
   [
    "KRX: 000720",
    "Hyundai Engineering & Construction Co.,Ltd.",
-   2.66
+   2.47
   ],
   [
    "KRX: 047040",
    "Daewoo Engineering & Construction Co., Ltd.",
-   2.52
+   2.44
   ],
   [
    "TYO: 8001",
    "ITOCHU Corporation",
-   2.39
-  ],
-  [
-   "KRX: 034020",
-   "Doosan Enerbility Co., Ltd.",
-   2.09
-  ],
-  [
-   "TYO: 7011",
-   "Mitsubishi Heavy Industries, Ltd.",
-   2.02
+   2.41
   ],
   [
    "YCA.L",
    "YELLOW CAKE PLC",
-   2.01
+   2.06
   ],
   [
-   "KRX: 006360",
-   "GS Engineering & Construction Corporation",
-   1.46
+   "TYO: 7011",
+   "Mitsubishi Heavy Industries, Ltd.",
+   2.04
+  ],
+  [
+   "KRX: 034020",
+   "Doosan Enerbility Co., Ltd.",
+   1.97
   ],
   [
    "SMR",
    "NuScale Power Corporation",
-   1.42
+   1.48
+  ],
+  [
+   "KRX: 006360",
+   "GS Engineering & Construction Corporation",
+   1.4
   ],
   [
    "KRX: 052690",
    "KEPCO Engineering & Construction Company, Inc.",
-   1.4
+   1.33
   ],
   [
    "JSE: SSW",
    "Sibanye Stillwater Limited",
-   1.23
+   1.25
   ],
   [
    "ASX: DYL",
    "Deep Yellow Limited",
-   0.94
+   1.0
   ],
   [
    "HKG: 1164",
    "CGN Mining Company Limited",
-   0.87
+   0.9
   ]
  ],
  "BOTZ": [
@@ -2188,104 +2188,114 @@
  ],
  "CGW": [
   [
-   "AWK",
-   "American Water Works Company, Inc.",
-   7.96
-  ],
-  [
    "XYL",
    "Xylem Inc.",
-   7.71
+   7.8
+  ],
+  [
+   "AWK",
+   "American Water Works Company, Inc.",
+   7.78
   ],
   [
    "BVMF: SBSP3",
    "Companhia de Saneamento BÃ¡sico do Estado de SÃ£o Paulo - SABESP",
-   7.27
+   7.71
   ],
   [
    "WTRG",
    "Essential Utilities, Inc.",
-   5.93
-  ],
-  [
-   "VLTO",
-   "Veralto Corporation",
-   5.55
+   5.47
   ],
   [
    "LON: UU",
    "United Utilities Group PLC",
-   4.4
+   5.27
   ],
   [
    "LON: SVT",
    "Severn Trent PLC",
-   4.14
+   4.81
+  ],
+  [
+   "VLTO",
+   "Veralto Corporation",
+   4.38
   ],
   [
    "ECL",
    "Ecolab Inc.",
-   4.01
+   3.76
   ],
   [
    "WMS",
    "Advanced Drainage Systems, Inc.",
-   3.36
+   3.34
   ],
   [
    "SWX: GEBN",
    "Geberit AG",
-   3.25
+   3.29
   ],
   [
    "WTS",
    "Watts Water Technologies, Inc.",
-   3.02
+   3.05
   ],
   [
-   "AWR",
-   "American States Water Company",
-   2.83
-  ],
-  [
-   "CWT",
-   "California Water Service Group",
-   2.53
+   "AGPXX",
+   "Short-Term Investment Trust - Invesco Government & Agency Portfolio",
+   2.57
   ],
   [
    "ZWS",
    "Zurn Elkay Water Solutions Corporation",
-   2.25
+   2.32
   ],
   [
-   "CNM",
-   "Core & Main, Inc.",
-   2.04
-  ],
-  [
-   "HTO",
-   "H2O America",
-   2.0
+   "AWR",
+   "American States Water Company",
+   2.26
   ],
   [
    "BVMF: CSMG3",
    "Companhia de Saneamento de Minas Gerais",
-   1.93
+   2.02
   ],
   [
-   "WTTR",
-   "Select Water Solutions, Inc.",
-   1.88
+   "CNM",
+   "Core & Main, Inc.",
+   2.02
+  ],
+  [
+   "CWT",
+   "California Water Service Group",
+   2.01
   ],
   [
    "TYO: 6370",
    "Kurita Water Industries Ltd.",
-   1.82
+   1.86
+  ],
+  [
+   "LON: PNN",
+   "Pennon Group Plc",
+   1.75
+  ],
+  [
+   "HTO",
+   "H2O America",
+   1.66
   ],
   [
    "PNR",
    "Pentair plc",
-   1.62
+   1.64
+  ],
+  [
+   "WTTR",
+   "Select Water Solutions, Inc.",
+   1.57
   ],
   [
    "SWX: BEAN",
@@ -2295,17 +2305,7 @@
   [
    "BMI",
    "Badger Meter, Inc.",
-   1.4
-  ],
-  [
-   "FELE",
-   "Franklin Electric Co., Inc.",
-   1.29
-  ],
-  [
-   "LON: PNN",
-   "Pennon Group Plc",
-   1.28
+   1.41
   ]
  ],
  "DGRO": [

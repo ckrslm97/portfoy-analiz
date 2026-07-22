@@ -6,7 +6,7 @@
   "XLE": 99.8,
   "SPYM": 51.4,
   "CIBR": 86.9,
-  "URA": 94.0,
+  "URA": 93.9,
   "BOTZ": 83.2,
   "ROBT": 39.5,
   "XBI": 31.6,
@@ -22,7 +22,7 @@
   "RKLB": 100.0,
   "ACWI": 34.2,
   "AVUV": 17.4,
-  "CGW": 81.0,
+  "CGW": 81.3,
   "DGRO": 47.8,
   "EMXC": 49.3,
   "FIW": 82.3,
@@ -133,13 +133,13 @@
    "overlap_pct": 28.92,
    "ortak_hisse": 21
   },
-  "CGW|FIW": {
-   "overlap_pct": 28.34,
+  "CGW|PHO": {
+   "overlap_pct": 27.87,
    "ortak_hisse": 10
   },
-  "CGW|PHO": {
-   "overlap_pct": 28.12,
-   "ortak_hisse": 10
+  "CGW|FIW": {
+   "overlap_pct": 27.09,
+   "ortak_hisse": 9
   },
   "SPYM|VT": {
    "overlap_pct": 26.44,
