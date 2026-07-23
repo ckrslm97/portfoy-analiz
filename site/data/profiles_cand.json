@@ -2,18 +2,18 @@
  "ACWI": {
   "sembol": "ACWI",
   "kaynak": "https://stockanalysis.com/etf/acwi/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares MSCI ACWI ETF (ACWI)",
   "aum": "$32.80B",
   "gider_orani": "0.32%",
   "kurulus": "Mar 26, 2008",
   "endeks": "MSCI AC World",
-  "temettu_verimi": "1.43%"
+  "temettu_verimi": "1.44%"
  },
  "AVUV": {
   "sembol": "AVUV",
   "kaynak": "https://stockanalysis.com/etf/avuv/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Avantis U.S. Small Cap Value ETF (AVUV)",
   "aum": "$29.85B",
   "gider_orani": "0.25%",
@@ -23,18 +23,18 @@
  "BBJP": {
   "sembol": "BBJP",
   "kaynak": "https://stockanalysis.com/etf/bbjp/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "JPMorgan BetaBuilders Japan ETF (BBJP)",
   "aum": "$17.12B",
   "gider_orani": "0.19%",
   "kurulus": "Jun 15, 2018",
   "endeks": "Morningstar Japan Target Market Exposure Index",
-  "temettu_verimi": "4.73%"
+  "temettu_verimi": "4.75%"
  },
  "CGW": {
   "sembol": "CGW",
   "kaynak": "https://stockanalysis.com/etf/cgw/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Invesco S&P Global Water Index ETF (CGW)",
   "aum": "$1.07B",
   "gider_orani": "0.58%",
@@ -45,18 +45,18 @@
  "DGRO": {
   "sembol": "DGRO",
   "kaynak": "https://stockanalysis.com/etf/dgro/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares Core Dividend Growth ETF (DGRO)",
   "aum": "$42.19B",
   "gider_orani": "0.08%",
   "kurulus": "Jun 10, 2014",
   "endeks": "Morningstar US Dividend Growth Index",
-  "temettu_verimi": "1.91%"
+  "temettu_verimi": "1.92%"
  },
  "DXJ": {
   "sembol": "DXJ",
   "kaynak": "https://stockanalysis.com/etf/dxj/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "WisdomTree Japan Hedged Equity Fund (DXJ)",
   "aum": "$6.98B",
   "gider_orani": "0.48%",
@@ -67,7 +67,7 @@
  "EMXC": {
   "sembol": "EMXC",
   "kaynak": "https://stockanalysis.com/etf/emxc/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares MSCI Emerging Markets ex China ETF (EMXC)",
   "aum": "$23.48B",
   "gider_orani": "0.25%",
@@ -78,7 +78,7 @@
  "EPI": {
   "sembol": "EPI",
   "kaynak": "https://stockanalysis.com/etf/epi/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "WisdomTree India Earnings Fund (EPI)",
   "aum": "$2.04B",
   "gider_orani": "0.84%",
@@ -88,18 +88,18 @@
  "EWJ": {
   "sembol": "EWJ",
   "kaynak": "https://stockanalysis.com/etf/ewj/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares MSCI Japan ETF (EWJ)",
   "aum": "$21.58B",
   "gider_orani": "0.49%",
   "kurulus": "Mar 12, 1996",
   "endeks": "MSCI Japan Index",
-  "temettu_verimi": "3.85%"
+  "temettu_verimi": "3.86%"
  },
  "FIW": {
   "sembol": "FIW",
   "kaynak": "https://stockanalysis.com/etf/fiw/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "First Trust Water ETF (FIW)",
   "aum": "$1.85B",
   "gider_orani": "0.50%",
@@ -110,18 +110,18 @@
  "IAT": {
   "sembol": "IAT",
   "kaynak": "https://stockanalysis.com/etf/iat/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares U.S. Regional Banks ETF (IAT)",
   "aum": "$684.13M",
   "gider_orani": "0.38%",
   "kurulus": "May 1, 2006",
   "endeks": "DJ US Select / Regional Banks",
-  "temettu_verimi": "2.54%"
+  "temettu_verimi": "2.53%"
  },
  "IBB": {
   "sembol": "IBB",
   "kaynak": "https://stockanalysis.com/etf/ibb/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares Biotechnology ETF (IBB)",
   "aum": "$9.39B",
   "gider_orani": "0.44%",
@@ -132,40 +132,40 @@
  "IEMG": {
   "sembol": "IEMG",
   "kaynak": "https://stockanalysis.com/etf/iemg/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares Core MSCI Emerging Markets ETF (IEMG)",
   "aum": "$149.33B",
   "gider_orani": "0.09%",
   "kurulus": "Oct 18, 2012",
   "endeks": "MSCI Emerging Markets IMI",
-  "temettu_verimi": "2.27%"
+  "temettu_verimi": "2.28%"
  },
  "IEUR": {
   "sembol": "IEUR",
   "kaynak": "https://stockanalysis.com/etf/ieur/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares Core MSCI Europe ETF (IEUR)",
   "aum": "$8.76B",
   "gider_orani": "0.09%",
   "kurulus": "Jun 10, 2014",
   "endeks": "MSCI Europe IMI",
-  "temettu_verimi": "3.16%"
+  "temettu_verimi": "3.17%"
  },
  "IEV": {
   "sembol": "IEV",
   "kaynak": "https://stockanalysis.com/etf/iev/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares Europe ETF (IEV)",
   "aum": "$1.63B",
   "gider_orani": "0.60%",
   "kurulus": "Jul 25, 2000",
   "endeks": "S&P Europe 350",
-  "temettu_verimi": "2.77%"
+  "temettu_verimi": "2.78%"
  },
  "IGF": {
   "sembol": "IGF",
   "kaynak": "https://stockanalysis.com/etf/igf/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares Global Infrastructure ETF (IGF)",
   "aum": "$10.88B",
   "gider_orani": "0.39%",
@@ -176,7 +176,7 @@
  "INDA": {
   "sembol": "INDA",
   "kaynak": "https://stockanalysis.com/etf/inda/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares MSCI India ETF (INDA)",
   "aum": "$6.81B",
   "gider_orani": "0.61%",
@@ -186,18 +186,18 @@
  "INDY": {
   "sembol": "INDY",
   "kaynak": "https://stockanalysis.com/etf/indy/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares India 50 ETF (INDY)",
   "aum": "$558.94M",
   "gider_orani": "0.65%",
   "kurulus": "Nov 18, 2009",
   "endeks": "Nifty 50",
-  "temettu_verimi": "9.60%"
+  "temettu_verimi": "9.63%"
  },
  "IWM": {
   "sembol": "IWM",
   "kaynak": "https://stockanalysis.com/etf/iwm/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares Russell 2000 ETF (IWM)",
   "aum": "$82.12B",
   "gider_orani": "0.19%",
@@ -208,7 +208,7 @@
  "KBE": {
   "sembol": "KBE",
   "kaynak": "https://stockanalysis.com/etf/kbe/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "State Street SPDR S&P Bank ETF (KBE)",
   "aum": "$1.68B",
   "gider_orani": "0.35%",
@@ -219,7 +219,7 @@
  "KIE": {
   "sembol": "KIE",
   "kaynak": "https://stockanalysis.com/etf/kie/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "State Street SPDR S&P Insurance ETF (KIE)",
   "aum": "$644.85M",
   "gider_orani": "0.35%",
@@ -230,7 +230,7 @@
  "KRE": {
   "sembol": "KRE",
   "kaynak": "https://stockanalysis.com/etf/kre/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "State Street SPDR S&P Regional Banking ETF (KRE)",
   "aum": "$5.04B",
   "gider_orani": "0.35%",
@@ -241,7 +241,7 @@
  "NFRA": {
   "sembol": "NFRA",
   "kaynak": "https://stockanalysis.com/etf/nfra/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "FlexShares STOXX Global Broad Infrastructure Index Fund (NFRA)",
   "aum": "$3.01B",
   "gider_orani": "0.47%",
@@ -252,7 +252,7 @@
  "PAVE": {
   "sembol": "PAVE",
   "kaynak": "https://stockanalysis.com/etf/pave/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Global X U.S. Infrastructure Development ETF (PAVE)",
   "aum": "$13.91B",
   "gider_orani": "0.47%",
@@ -263,7 +263,7 @@
  "PHO": {
   "sembol": "PHO",
   "kaynak": "https://stockanalysis.com/etf/pho/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Invesco Water Resources ETF (PHO)",
   "aum": "$1.98B",
   "gider_orani": "0.59%",
@@ -274,40 +274,40 @@
  "REET": {
   "sembol": "REET",
   "kaynak": "https://stockanalysis.com/etf/reet/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "iShares Global REIT ETF (REET)",
   "aum": "$5.05B",
   "gider_orani": "0.14%",
   "kurulus": "Jul 8, 2014",
   "endeks": "FTSE EPRA Nareit Global REITs",
-  "temettu_verimi": "3.25%"
+  "temettu_verimi": "3.27%"
  },
  "SCHD": {
   "sembol": "SCHD",
   "kaynak": "https://stockanalysis.com/etf/schd/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Schwab US Dividend Equity ETF (SCHD)",
   "aum": "$100.79B",
   "gider_orani": "0.06%",
   "kurulus": "Oct 20, 2011",
   "endeks": "Dow Jones U.S. Dividend 100",
-  "temettu_verimi": "3.18%"
+  "temettu_verimi": "3.19%"
  },
  "SCHH": {
   "sembol": "SCHH",
   "kaynak": "https://stockanalysis.com/etf/schh/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Schwab U.S. REIT ETF (SCHH)",
   "aum": "$11.62B",
   "gider_orani": "0.07%",
   "kurulus": "Jan 13, 2011",
   "endeks": "Dow Jones Equity All REIT Capped",
-  "temettu_verimi": "2.70%"
+  "temettu_verimi": "2.71%"
  },
  "VB": {
   "sembol": "VB",
   "kaynak": "https://stockanalysis.com/etf/vb/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Vanguard Small-Cap ETF (VB)",
   "aum": "$79.89B",
   "gider_orani": "0.03%",
@@ -318,7 +318,7 @@
  "VGK": {
   "sembol": "VGK",
   "kaynak": "https://stockanalysis.com/etf/vgk/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Vanguard FTSE Europe ETF (VGK)",
   "aum": "$30.05B",
   "gider_orani": "0.06%",
@@ -329,18 +329,18 @@
  "VNQ": {
   "sembol": "VNQ",
   "kaynak": "https://stockanalysis.com/etf/vnq/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Vanguard Real Estate ETF (VNQ)",
   "aum": "$39.68B",
   "gider_orani": "0.13%",
   "kurulus": "Sep 23, 2004",
   "endeks": "MSCI US IMI/Real Estate 25-50",
-  "temettu_verimi": "3.50%"
+  "temettu_verimi": "3.51%"
  },
  "VT": {
   "sembol": "VT",
   "kaynak": "https://stockanalysis.com/etf/vt/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Vanguard Total World Stock ETF (VT)",
   "aum": "$77.73B",
   "gider_orani": "0.06%",
@@ -351,18 +351,18 @@
  "VTV": {
   "sembol": "VTV",
   "kaynak": "https://stockanalysis.com/etf/vtv/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Vanguard Value ETF (VTV)",
   "aum": "$185.88B",
   "gider_orani": "0.03%",
   "kurulus": "Jan 26, 2004",
   "endeks": "CRSP US Large Value",
-  "temettu_verimi": "1.86%"
+  "temettu_verimi": "1.87%"
  },
  "VWO": {
   "sembol": "VWO",
   "kaynak": "https://stockanalysis.com/etf/vwo/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Vanguard FTSE Emerging Markets ETF (VWO)",
   "aum": "$119.55B",
   "gider_orani": "0.06%",
@@ -373,7 +373,7 @@
  "VXUS": {
   "sembol": "VXUS",
   "kaynak": "https://stockanalysis.com/etf/vxus/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Vanguard Total International Stock ETF (VXUS)",
   "aum": "$153.88B",
   "gider_orani": "0.05%",
@@ -384,7 +384,7 @@
  "VYM": {
   "sembol": "VYM",
   "kaynak": "https://stockanalysis.com/etf/vym/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "Vanguard High Dividend Yield Index ETF (VYM)",
   "aum": "$80.38B",
   "gider_orani": "0.04%",
@@ -395,7 +395,7 @@
  "XLI": {
   "sembol": "XLI",
   "kaynak": "https://stockanalysis.com/etf/xli/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "State Street Industrial Select Sector SPDR ETF (XLI)",
   "aum": "$33.15B",
   "gider_orani": "0.08%",
@@ -406,7 +406,7 @@
  "XLP": {
   "sembol": "XLP",
   "kaynak": "https://stockanalysis.com/etf/xlp/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "State Street Consumer Staples Select Sector SPDR ETF (XLP)",
   "aum": "$14.43B",
   "gider_orani": "0.08%",
@@ -417,7 +417,7 @@
  "XLY": {
   "sembol": "XLY",
   "kaynak": "https://stockanalysis.com/etf/xly/",
-  "cekim": "2026-07-22",
+  "cekim": "2026-07-23",
   "tam_ad": "State Street Consumer Discretionary Select Sector SPDR ETF (XLY)",
   "aum": "$22.63B",
   "gider_orani": "0.08%",
