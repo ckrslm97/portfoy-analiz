@@ -3,67 +3,67 @@
   [
    "NVDA",
    "NVIDIA Corporation",
-   8.09
+   8.05
   ],
   [
    "AAPL",
    "Apple Inc.",
-   7.89
-  ],
-  [
-   "MSFT",
-   "Microsoft Corporation",
-   4.8
-  ],
-  [
-   "AMZN",
-   "Amazon.com, Inc.",
-   4.33
+   7.72
   ],
   [
    "MU",
    "Micron Technology, Inc.",
-   4.28
+   4.85
+  ],
+  [
+   "MSFT",
+   "Microsoft Corporation",
+   4.74
+  ],
+  [
+   "AMZN",
+   "Amazon.com, Inc.",
+   4.27
   ],
   [
    "AMD",
    "Advanced Micro Devices, Inc.",
-   3.63
+   3.93
   ],
   [
    "GOOGL",
    "Alphabet Inc.",
-   3.33
+   3.24
   ],
   [
    "META",
    "Meta Platforms, Inc.",
-   3.17
+   3.06
   ],
   [
    "TSLA",
    "Tesla, Inc.",
-   3.15
+   3.04
   ],
   [
    "GOOG",
    "Alphabet Inc.",
-   3.11
+   3.03
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   2.86
+   2.94
   ],
   [
    "WMT",
    "Walmart Inc.",
-   2.49
+   2.38
   ],
   [
    "INTC",
    "Intel Corporation",
-   2.17
+   2.35
   ],
   [
    "AMAT",
@@ -73,57 +73,57 @@
   [
    "CSCO",
    "Cisco Systems, Inc.",
-   1.92
+   1.96
   ],
   [
    "COST",
    "Costco Wholesale Corporation",
-   1.87
+   1.83
   ],
   [
    "LRCX",
    "Lam Research Corporation",
-   1.79
-  ],
-  [
-   "NFLX",
-   "Netflix, Inc.",
-   1.39
+   1.78
   ],
   [
    "PLTR",
    "Palantir Technologies Inc.",
-   1.37
+   1.35
   ],
   [
-   "PANW",
-   "Palo Alto Networks, Inc.",
+   "NFLX",
+   "Netflix, Inc.",
    1.28
   ],
   [
    "KLAC",
    "KLA Corporation",
-   1.27
+   1.26
+  ],
+  [
+   "PANW",
+   "Palo Alto Networks, Inc.",
+   1.24
   ],
   [
    "TXN",
    "Texas Instruments Incorporated",
-   1.18
+   1.17
   ],
   [
    "SPCX",
    "Space Exploration Technologies Corp.",
-   1.12
-  ],
-  [
-   "LIN",
-   "Linde plc",
-   1.07
+   1.05
   ],
   [
    "SNDK",
    "Sandisk Corporation",
-   0.93
+   1.04
+  ],
+  [
+   "LIN",
+   "Linde plc",
+   1.03
   ]
  ],
  "QTUM": [
@@ -2188,176 +2188,181 @@
  ],
  "CGW": [
   [
-   "XYL",
-   "Xylem Inc.",
-   7.8
-  ],
-  [
    "AWK",
    "American Water Works Company, Inc.",
-   7.78
+   7.95
   ],
   [
    "BVMF: SBSP3",
    "Companhia de Saneamento BÃ¡sico do Estado de SÃ£o Paulo - SABESP",
-   7.71
+   7.91
+  ],
+  [
+   "XYL",
+   "Xylem Inc.",
+   7.86
   ],
   [
    "WTRG",
    "Essential Utilities, Inc.",
-   5.47
+   5.61
   ],
   [
    "LON: UU",
    "United Utilities Group PLC",
-   5.27
+   5.43
   ],
   [
    "LON: SVT",
    "Severn Trent PLC",
-   4.81
+   4.95
   ],
   [
    "VLTO",
    "Veralto Corporation",
-   4.38
+   4.41
   ],
   [
    "ECL",
    "Ecolab Inc.",
-   3.76
-  ],
-  [
-   "WMS",
-   "Advanced Drainage Systems, Inc.",
-   3.34
+   3.84
   ],
   [
    "SWX: GEBN",
    "Geberit AG",
-   3.29
+   3.41
+  ],
+  [
+   "WMS",
+   "Advanced Drainage Systems, Inc.",
+   3.37
   ],
   [
    "WTS",
    "Watts Water Technologies, Inc.",
-   3.05
-  ],
-  [
-   "AGPXX",
-   "Short-Term Investment Trust - Invesco Government & Agency Portfolio",
-   2.57
+   3.18
   ],
   [
    "ZWS",
    "Zurn Elkay Water Solutions Corporation",
-   2.32
+   2.38
   ],
   [
    "AWR",
    "American States Water Company",
-   2.26
+   2.3
   ],
   [
    "BVMF: CSMG3",
    "Companhia de Saneamento de Minas Gerais",
-   2.02
+   2.08
   ],
   [
    "CNM",
    "Core & Main, Inc.",
-   2.02
+   2.07
   ],
   [
    "CWT",
    "California Water Service Group",
-   2.01
+   2.05
   ],
   [
    "TYO: 6370",
    "Kurita Water Industries Ltd.",
-   1.86
+   1.99
   ],
   [
    "LON: PNN",
    "Pennon Group Plc",
-   1.75
+   1.8
   ],
   [
    "HTO",
    "H2O America",
-   1.66
-  ],
-  [
-   "PNR",
-   "Pentair plc",
-   1.64
-  ],
-  [
-   "WTTR",
-   "Select Water Solutions, Inc.",
-   1.57
+   1.71
   ],
   [
    "SWX: BEAN",
    "BELIMO Holding AG",
-   1.54
+   1.7
+  ],
+  [
+   "PNR",
+   "Pentair plc",
+   1.68
+  ],
+  [
+   "WTTR",
+   "Select Water Solutions, Inc.",
+   1.63
   ],
   [
    "BMI",
    "Badger Meter, Inc.",
-   1.41
+   1.44
+  ],
+  [
+   "FELE",
+   "Franklin Electric Co., Inc.",
+   1.34
+  ],
+  [
+   "MWA",
+   "Mueller Water Products, Inc.",
+   1.32
   ]
  ],
  "DGRO": [
   [
-   "AAPL",
-   "Apple Inc.",
-   3.13
-  ],
-  [
    "JPM",
    "JPMorgan Chase & Co.",
-   3.1
+   3.17
   ],
   [
    "JNJ",
    "Johnson & Johnson",
-   3.06
+   3.09
+  ],
+  [
+   "AAPL",
+   "Apple Inc.",
+   3.05
   ],
   [
    "ABBV",
    "AbbVie Inc.",
-   3.03
-  ],
-  [
-   "MSFT",
-   "Microsoft Corporation",
-   2.78
+   3.02
   ],
   [
    "XOM",
    "ExxonMobil Holdings Corporation",
+   2.89
+  ],
+  [
+   "MSFT",
+   "Microsoft Corporation",
    2.75
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   2.46
+   2.63
   ],
   [
    "PG",
    "The Procter & Gamble Company",
-   2.28
-  ],
-  [
-   "HD",
-   "The Home Depot, Inc.",
-   2.21
+   2.26
   ],
   [
    "PM",
    "Philip Morris International Inc.",
-   2.18
+   2.19
+  ],
+  [
+   "HD",
+   "The Home Depot, Inc.",
+   2.16
   ],
   [
    "MRK",
@@ -2367,22 +2372,22 @@
   [
    "KO",
    "The Coca-Cola Company",
+   1.86
+  ],
+  [
+   "UNH",
+   "UnitedHealth Group Incorporated",
    1.85
   ],
   [
    "BAC",
    "Bank of America Corporation",
-   1.83
-  ],
-  [
-   "UNH",
-   "UnitedHealth Group Incorporated",
-   1.83
+   1.84
   ],
   [
    "PEP",
    "PepsiCo, Inc.",
-   1.65
+   1.63
   ],
   [
    "CSCO",
@@ -2392,7 +2397,7 @@
   [
    "WFC",
    "Wells Fargo & Company",
-   1.3
+   1.28
   ],
   [
    "AMGN",
@@ -2402,32 +2407,32 @@
   [
    "LLY",
    "Eli Lilly and Company",
-   1.24
-  ],
-  [
-   "NEE",
-   "NextEra Energy, Inc.",
-   1.19
+   1.22
   ],
   [
    "GS",
    "The Goldman Sachs Group, Inc.",
-   1.18
+   1.21
+  ],
+  [
+   "NEE",
+   "NextEra Energy, Inc.",
+   1.2
   ],
   [
    "MCD",
    "McDonald's Corporation",
-   1.11
-  ],
-  [
-   "V",
-   "Visa Inc.",
    1.09
   ],
   [
    "MS",
    "Morgan Stanley",
-   1.06
+   1.08
+  ],
+  [
+   "V",
+   "Visa Inc.",
+   1.07
   ],
   [
    "ABT",
@@ -4309,52 +4314,52 @@
   [
    "WELL",
    "Welltower Inc.",
-   8.99
+   9.21
   ],
   [
    "PLD",
    "Prologis, Inc.",
-   7.14
+   7.31
   ],
   [
    "EQIX",
    "Equinix, Inc.",
-   5.44
+   5.33
   ],
   [
    "SPG",
    "Simon Property Group, Inc.",
-   3.8
+   3.88
   ],
   [
    "DLR",
    "Digital Realty Trust, Inc.",
-   3.47
+   3.39
   ],
   [
    "O",
    "Realty Income Corporation",
-   3.21
+   3.24
   ],
   [
    "PSA",
    "Public Storage",
-   2.76
+   2.65
   ],
   [
    "VTR",
    "Ventas, Inc.",
-   2.43
+   2.48
   ],
   [
    "ASX: GMG",
    "Goodman Group",
-   2.27
+   2.17
   ],
   [
    "IRM",
    "Iron Mountain Incorporated",
-   1.85
+   1.95
   ],
   [
    "EXR",
@@ -4364,22 +4369,22 @@
   [
    "VICI",
    "VICI Properties Inc.",
-   1.54
+   1.55
   ],
   [
    "AVB",
    "AvalonBay Communities, Inc.",
-   1.43
+   1.42
   ],
   [
    "EQR",
    "Equity Residential",
-   1.38
+   1.36
   ],
   [
    "ESS",
    "Essex Property Trust, Inc.",
-   1.01
+   1.0
   ],
   [
    "INVH",
@@ -4389,27 +4394,27 @@
   [
    "KIM",
    "Kimco Realty Corporation",
-   0.9
-  ],
-  [
-   "MAA",
-   "Mid-America Apartment Communities, Inc.",
-   0.87
-  ],
-  [
-   "LON: SGRO",
-   "SEGRO Plc",
-   0.85
+   0.91
   ],
   [
    "WPC",
    "W. P. Carey Inc.",
-   0.85
+   0.88
+  ],
+  [
+   "LON: SGRO",
+   "SEGRO Plc",
+   0.87
   ],
   [
    "HST",
    "Host Hotels & Resorts, Inc.",
-   0.84
+   0.87
+  ],
+  [
+   "MAA",
+   "Mid-America Apartment Communities, Inc.",
+   0.82
   ],
   [
    "DOC",
@@ -4417,19 +4422,19 @@
    0.82
   ],
   [
+   "REG",
+   "Regency Centers Corporation",
+   0.79
+  ],
+  [
    "OHI",
    "Omega Healthcare Investors, Inc.",
-   0.8
+   0.79
   ],
   [
    "SUI",
    "Sun Communities, Inc.",
-   0.79
-  ],
-  [
-   "REG",
-   "Regency Centers Corporation",
-   0.79
+   0.78
   ]
  ],
  "SCHD": [
@@ -4563,47 +4568,47 @@
   [
    "WELL",
    "Welltower Inc.",
-   10.64
+   11.03
   ],
   [
    "PLD",
    "Prologis, Inc.",
-   8.55
+   8.77
   ],
   [
    "SPG",
    "Simon Property Group, Inc.",
-   4.64
+   4.75
   ],
   [
    "DLR",
    "Digital Realty Trust, Inc.",
-   4.33
-  ],
-  [
-   "EQIX",
-   "Equinix, Inc.",
-   4.22
+   4.15
   ],
   [
    "O",
    "Realty Income Corporation",
-   4.08
+   4.12
+  ],
+  [
+   "EQIX",
+   "Equinix, Inc.",
+   4.0
   ],
   [
    "AMT",
    "American Tower Corporation",
-   4.0
+   3.88
   ],
   [
    "PSA",
    "Public Storage",
-   3.5
+   3.38
   ],
   [
    "VTR",
    "Ventas, Inc.",
-   3.04
+   3.17
   ],
   [
    "IRM",
@@ -4613,37 +4618,42 @@
   [
    "CCI",
    "Crown Castle Inc.",
-   2.4
+   2.31
   ],
   [
    "EXR",
    "Extra Space Storage Inc.",
-   2.1
+   2.11
   ],
   [
    "VICI",
    "VICI Properties Inc.",
-   1.96
+   1.99
   ],
   [
    "AVB",
    "AvalonBay Communities, Inc.",
-   1.84
+   1.8
   ],
   [
    "EQR",
    "Equity Residential",
-   1.62
+   1.59
   ],
   [
    "SBAC",
    "SBA Communications Corporation",
-   1.39
+   1.31
   ],
   [
    "ESS",
    "Essex Property Trust, Inc.",
-   1.3
+   1.28
+  ],
+  [
+   "KIM",
+   "Kimco Realty Corporation",
+   1.19
   ],
   [
    "WY",
@@ -4651,39 +4661,34 @@
    1.17
   ],
   [
-   "KIM",
-   "Kimco Realty Corporation",
-   1.16
+   "WPC",
+   "W. P. Carey Inc.",
+   1.13
   ],
   [
    "INVH",
    "Invitation Homes Inc.",
-   1.12
-  ],
-  [
-   "WPC",
-   "W. P. Carey Inc.",
-   1.1
+   1.11
   ],
   [
    "MAA",
    "Mid-America Apartment Communities, Inc.",
-   1.09
+   1.05
   ],
   [
    "DOC",
    "Healthpeak Properties, Inc.",
-   1.03
+   1.04
   ],
   [
    "HST",
    "Host Hotels & Resorts, Inc.",
-   1.02
+   1.04
   ],
   [
    "OHI",
    "Omega Healthcare Investors, Inc.",
-   0.99
+   1.0
   ]
  ],
  "VB": [
