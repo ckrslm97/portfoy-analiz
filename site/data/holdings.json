@@ -362,99 +362,99 @@
  ],
  "SPYM": [
   [
-   "NVDA",
-   "NVIDIA Corporation",
-   7.86
-  ],
-  [
    "AAPL",
    "Apple Inc.",
-   7.67
+   7.81
+  ],
+  [
+   "NVDA",
+   "NVIDIA Corporation",
+   7.47
   ],
   [
    "MSFT",
    "Microsoft Corporation",
-   4.45
+   4.57
   ],
   [
    "AMZN",
    "Amazon.com, Inc.",
-   3.56
+   3.54
   ],
   [
    "GOOGL",
    "Alphabet Inc.",
-   2.94
+   3.06
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   2.84
+   2.82
   ],
   [
    "GOOG",
    "Alphabet Inc.",
-   2.36
+   2.46
   ],
   [
    "META",
    "Meta Platforms, Inc.",
-   2.05
-  ],
-  [
-   "MU",
-   "Micron Technology, Inc.",
-   1.63
-  ],
-  [
-   "JPM",
-   "JPMorgan Chase & Co.",
-   1.48
+   2.04
   ],
   [
    "LLY",
    "Eli Lilly and Company",
-   1.48
+   1.51
+  ],
+  [
+   "JPM",
+   "JPMorgan Chase & Co.",
+   1.5
   ],
   [
    "BRK.B",
    "Berkshire Hathaway Inc.",
-   1.42
+   1.47
+  ],
+  [
+   "MU",
+   "Micron Technology, Inc.",
+   1.45
   ],
   [
    "TSLA",
    "Tesla, Inc.",
-   1.38
+   1.35
   ],
   [
    "AMD",
    "Advanced Micro Devices, Inc.",
-   1.33
-  ],
-  [
-   "XOM",
-   "ExxonMobil Holdings Corporation",
-   1.02
+   1.16
   ],
   [
    "JNJ",
    "Johnson & Johnson",
+   1.0
+  ],
+  [
+   "XOM",
+   "ExxonMobil Holdings Corporation",
    0.99
   ],
   [
    "V",
    "Visa Inc.",
-   0.93
+   0.95
   ],
   [
    "WMT",
    "Walmart Inc.",
-   0.75
+   0.78
   ],
   [
    "ABBV",
    "AbbVie Inc.",
-   0.72
+   0.73
   ],
   [
    "CSCO",
@@ -462,29 +462,29 @@
    0.71
   ],
   [
-   "INTC",
-   "Intel Corporation",
-   0.68
-  ],
-  [
    "MA",
    "Mastercard Incorporated",
-   0.68
-  ],
-  [
-   "AMAT",
-   "Applied Materials, Inc.",
-   0.67
+   0.71
   ],
   [
    "COST",
    "Costco Wholesale Corporation",
-   0.65
+   0.67
   ],
   [
-   "CAT",
-   "Caterpillar Inc.",
+   "BAC",
+   "Bank of America Corporation",
    0.64
+  ],
+  [
+   "INTC",
+   "Intel Corporation",
+   0.64
+  ],
+  [
+   "UNH",
+   "UnitedHealth Group Incorporated",
+   0.61
   ]
  ],
  "CIBR": [
@@ -1803,102 +1803,102 @@
   [
    "JPM",
    "JPMorgan Chase & Co.",
-   11.89
+   11.77
   ],
   [
    "BRK.B",
    "Berkshire Hathaway Inc.",
-   11.4
+   11.55
   ],
   [
    "V",
    "Visa Inc.",
-   7.42
+   7.48
   ],
   [
    "MA",
    "Mastercard Incorporated",
-   5.47
+   5.58
   ],
   [
    "BAC",
    "Bank of America Corporation",
-   5.09
+   5.03
   ],
   [
    "GS",
    "The Goldman Sachs Group, Inc.",
-   3.93
+   3.75
   ],
   [
    "WFC",
    "Wells Fargo & Company",
-   3.32
+   3.27
   ],
   [
    "MS",
    "Morgan Stanley",
-   3.23
+   3.12
   ],
   [
    "C",
    "Citigroup Inc.",
-   2.83
+   2.78
   ],
   [
    "AXP",
    "American Express Company",
-   2.18
+   2.2
   ],
   [
    "SCHW",
    "The Charles Schwab Corporation",
-   2.09
+   2.13
   ],
   [
    "BLK",
    "BlackRock, Inc.",
-   1.91
-  ],
-  [
-   "CB",
-   "Chubb Limited",
-   1.63
-  ],
-  [
-   "SPGI",
-   "S&P Global Inc.",
-   1.62
+   1.95
   ],
   [
    "COF",
    "Capital One Financial Corporation",
-   1.59
+   1.63
+  ],
+  [
+   "CB",
+   "Chubb Limited",
+   1.61
+  ],
+  [
+   "SPGI",
+   "S&P Global Inc.",
+   1.58
   ],
   [
    "PGR",
    "The Progressive Corporation",
-   1.57
+   1.58
   ],
   [
    "BNY",
    "The Bank of New York Mellon Corporation",
-   1.37
+   1.32
   ],
   [
    "PNC",
    "The PNC Financial Services Group, Inc.",
-   1.27
+   1.24
   ],
   [
    "USB",
    "U.S. Bancorp",
-   1.25
+   1.23
   ],
   [
    "BX",
    "Blackstone Inc.",
-   1.21
+   1.22
   ],
   [
    "CME",
@@ -1908,22 +1908,22 @@
   [
    "MRSH",
    "Marsh & McLennan Companies, Inc.",
-   1.09
+   1.14
   ],
   [
    "ICE",
    "Intercontinental Exchange, Inc.",
-   1.04
+   1.06
   ],
   [
    "TRV",
    "The Travelers Companies, Inc.",
-   1.03
+   1.04
   ],
   [
    "AON",
    "Aon plc",
-   0.97
+   1.0
   ]
  ],
  "QBTS": [
@@ -2571,127 +2571,127 @@
   [
    "WAT",
    "Waters Corporation",
-   5.1
+   4.89
   ],
   [
    "A",
    "Agilent Technologies, Inc.",
-   4.9
+   4.71
   ],
   [
    "ROP",
    "Roper Technologies, Inc.",
-   4.33
+   4.55
   ],
   [
    "AWK",
    "American Water Works Company, Inc.",
-   4.21
-  ],
-  [
-   "MAS",
-   "Masco Corporation",
-   4.02
+   4.13
   ],
   [
    "VLTO",
    "Veralto Corporation",
-   4.0
+   4.11
+  ],
+  [
+   "MAS",
+   "Masco Corporation",
+   4.06
   ],
   [
    "MLI",
    "Mueller Industries, Inc.",
-   3.99
-  ],
-  [
-   "IEX",
-   "IDEX Corporation",
-   3.95
+   4.01
   ],
   [
    "XYL",
    "Xylem Inc.",
-   3.84
+   3.92
   ],
   [
-   "FERG",
-   "Ferguson Enterprises Inc.",
-   3.74
+   "IEX",
+   "IDEX Corporation",
+   3.82
   ],
   [
    "ECL",
    "Ecolab Inc.",
-   3.63
+   3.73
   ],
   [
    "J",
    "Jacobs Solutions Inc.",
-   3.57
+   3.63
+  ],
+  [
+   "FERG",
+   "Ferguson Enterprises Inc.",
+   3.62
   ],
   [
    "IDXX",
    "IDEXX Laboratories, Inc.",
-   3.5
+   3.53
   ],
   [
    "WTS",
    "Watts Water Technologies, Inc.",
-   3.34
+   3.22
   ],
   [
    "WMS",
    "Advanced Drainage Systems, Inc.",
-   3.06
+   3.01
   ],
   [
    "TTEK",
    "Tetra Tech, Inc.",
-   2.72
+   2.85
   ],
   [
    "PNR",
    "Pentair plc",
-   2.67
+   2.74
   ],
   [
    "CNM",
    "Core & Main, Inc.",
-   2.54
+   2.48
   ],
   [
    "TSX: STN",
    "Stantec Inc.",
-   2.3
-  ],
-  [
-   "VMI",
-   "Valmont Industries, Inc.",
-   2.26
-  ],
-  [
-   "FELE",
-   "Franklin Electric Co., Inc.",
-   2.26
+   2.36
   ],
   [
    "ACM",
    "AECOM",
-   2.21
+   2.32
+  ],
+  [
+   "ITRI",
+   "Itron, Inc.",
+   2.32
+  ],
+  [
+   "FELE",
+   "Franklin Electric Co., Inc.",
+   2.24
+  ],
+  [
+   "VMI",
+   "Valmont Industries, Inc.",
+   2.13
   ],
   [
    "PRMB",
    "Primo Brands Corporation",
-   2.14
+   2.11
   ],
   [
    "ZWS",
    "Zurn Elkay Water Solutions Corporation",
-   2.02
-  ],
-  [
-   "FBIN",
-   "Fortune Brands Innovations, Inc.",
-   1.95
+   1.97
   ]
  ],
  "IAT": [
@@ -3570,9 +3570,34 @@
    1.12
   ],
   [
+   "PRK",
+   "Park National Corporation",
+   1.1
+  ],
+  [
+   "NMIH",
+   "NMI Holdings, Inc.",
+   1.09
+  ],
+  [
+   "MTG",
+   "MGIC Investment Corporation",
+   1.09
+  ],
+  [
    "NIC",
    "Nicolet Bankshares, Inc.",
    1.08
+  ],
+  [
+   "WSBC",
+   "WesBanco, Inc.",
+   1.07
+  ],
+  [
+   "CRBG",
+   "Corebridge Financial, Inc.",
+   1.07
   ],
   [
    "FBP",
@@ -3580,58 +3605,33 @@
    1.07
   ],
   [
-   "NMIH",
-   "NMI Holdings, Inc.",
+   "ESNT",
+   "Essent Group Ltd.",
    1.06
   ],
   [
-   "WSBC",
-   "WesBanco, Inc.",
-   1.06
-  ],
-  [
-   "MTG",
-   "MGIC Investment Corporation",
-   1.06
-  ],
-  [
-   "CRBG",
-   "Corebridge Financial, Inc.",
+   "CFR",
+   "Cullen/Frost Bankers, Inc.",
    1.06
   ],
   [
    "EQH",
    "Equitable Holdings, Inc.",
+   1.06
+  ],
+  [
+   "RDN",
+   "Radian Group Inc.",
    1.05
-  ],
-  [
-   "JPM",
-   "JPMorgan Chase & Co.",
-   1.05
-  ],
-  [
-   "BAC",
-   "Bank of America Corporation",
-   1.05
-  ],
-  [
-   "BNY",
-   "The Bank of New York Mellon Corporation",
-   1.05
-  ],
-  [
-   "CFR",
-   "Cullen/Frost Bankers, Inc.",
-   1.04
-  ],
-  [
-   "USB",
-   "U.S. Bancorp",
-   1.03
   ],
   [
    "HOMB",
    "Home BancShares, Inc.",
+   1.04
+  ],
+  [
+   "JXN",
+   "Jackson Financial Inc.",
    1.03
   ],
   [
@@ -3640,14 +3640,24 @@
    1.03
   ],
   [
-   "JXN",
-   "Jackson Financial Inc.",
+   "PNFP",
+   "Pinnacle Financial Partners, Inc.",
    1.03
   ],
   [
-   "ESNT",
-   "Essent Group Ltd.",
+   "UMBF",
+   "UMB Financial Corporation",
    1.03
+  ],
+  [
+   "BAC",
+   "Bank of America Corporation",
+   1.02
+  ],
+  [
+   "SFBS",
+   "ServisFirst Bancshares, Inc.",
+   1.02
   ],
   [
    "MTB",
@@ -3655,33 +3665,23 @@
    1.02
   ],
   [
-   "RDN",
-   "Radian Group Inc.",
+   "JPM",
+   "JPMorgan Chase & Co.",
    1.02
   ],
   [
-   "CFG",
-   "Citizens Financial Group, Inc.",
+   "AX",
+   "Axos Financial, Inc.",
    1.02
   ],
   [
    "VOYA",
    "Voya Financial, Inc.",
-   1.02
-  ],
-  [
-   "PNFP",
-   "Pinnacle Financial Partners, Inc.",
    1.01
   ],
   [
-   "BPOP",
-   "Popular, Inc.",
-   1.01
-  ],
-  [
-   "SSB",
-   "SouthState Bank Corporation",
+   "TOWN",
+   "TowneBank",
    1.01
   ],
   [
@@ -4456,12 +4456,17 @@
   [
    "ABT",
    "Abbott Laboratories",
-   4.56
+   4.67
+  ],
+  [
+   "AMGN",
+   "Amgen Inc.",
+   4.41
   ],
   [
    "MRK",
    "Merck & Co., Inc.",
-   4.41
+   4.36
   ],
   [
    "UNH",
@@ -4469,114 +4474,109 @@
    4.31
   ],
   [
-   "AMGN",
-   "Amgen Inc.",
-   4.29
+   "KO",
+   "The Coca-Cola Company",
+   4.25
   ],
   [
    "HD",
    "The Home Depot, Inc.",
-   4.11
+   4.17
   ],
   [
    "PG",
    "The Procter & Gamble Company",
-   4.06
-  ],
-  [
-   "KO",
-   "The Coca-Cola Company",
    4.03
-  ],
-  [
-   "CVX",
-   "Chevron Corporation",
-   3.96
   ],
   [
    "VZ",
    "Verizon Communications Inc.",
-   3.84
-  ],
-  [
-   "COP",
-   "ConocoPhillips",
-   3.72
+   3.92
   ],
   [
    "PEP",
    "PepsiCo, Inc.",
-   3.7
+   3.8
+  ],
+  [
+   "CVX",
+   "Chevron Corporation",
+   3.75
+  ],
+  [
+   "COP",
+   "ConocoPhillips",
+   3.47
   ],
   [
    "TXN",
    "Texas Instruments Incorporated",
-   3.5
+   3.4
   ],
   [
    "BMY",
    "Bristol-Myers Squibb Company",
-   3.22
+   3.24
   ],
   [
    "MO",
    "Altria Group, Inc.",
-   3.1
+   3.12
   ],
   [
    "LMT",
    "Lockheed Martin Corporation",
-   3.0
-  ],
-  [
-   "QCOM",
-   "QUALCOMM Incorporated",
-   2.58
+   2.94
   ],
   [
    "ADP",
    "Automatic Data Processing, Inc.",
-   2.54
-  ],
-  [
-   "BX",
-   "Blackstone Inc.",
-   2.46
+   2.64
   ],
   [
    "ACN",
    "Accenture plc",
-   2.29
+   2.52
   ],
   [
-   "UPS",
-   "United Parcel Service, Inc.",
-   2.18
+   "BX",
+   "Blackstone Inc.",
+   2.48
+  ],
+  [
+   "QCOM",
+   "QUALCOMM Incorporated",
+   2.47
   ],
   [
    "CMCSA",
    "Comcast Corporation",
-   2.02
+   2.15
+  ],
+  [
+   "UPS",
+   "United Parcel Service, Inc.",
+   1.97
   ],
   [
    "SLB",
    "SLB N.V.",
-   1.99
+   1.87
   ],
   [
    "EOG",
    "EOG Resources, Inc.",
-   1.98
+   1.86
   ],
   [
    "TGT",
    "Target Corporation",
-   1.58
+   1.64
   ],
   [
-   "OKE",
-   "ONEOK, Inc.",
-   1.49
+   "F",
+   "Ford Motor Company",
+   1.46
   ]
  ],
  "SCHH": [
