@@ -491,67 +491,62 @@
   [
    "PANW",
    "Palo Alto Networks, Inc.",
-   8.97
+   9.16
   ],
   [
    "FTNT",
    "Fortinet, Inc.",
-   8.93
+   8.85
   ],
   [
    "CRWD",
    "CrowdStrike Holdings, Inc.",
-   7.9
+   8.03
   ],
   [
    "CSCO",
    "Cisco Systems, Inc.",
-   7.51
+   7.47
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   6.67
+   6.87
   ],
   [
    "NET",
    "Cloudflare, Inc.",
-   4.5
+   4.64
   ],
   [
    "OKTA",
    "Okta, Inc.",
-   3.57
+   3.61
   ],
   [
    "ZS",
    "Zscaler, Inc.",
-   3.36
+   3.19
   ],
   [
    "FFIV",
    "F5, Inc.",
-   3.21
+   3.17
   ],
   [
    "AKAM",
    "Akamai Technologies, Inc.",
-   2.61
+   2.72
   ],
   [
    "RBRK",
    "Rubrik, Inc.",
-   2.42
+   2.37
   ],
   [
    "GEN",
    "Gen Digital Inc.",
-   2.4
-  ],
-  [
-   "CHKP",
-   "Check Point Software Technologies Ltd.",
-   2.31
+   2.33
   ],
   [
    "DDOG",
@@ -559,59 +554,64 @@
    2.15
   ],
   [
+   "ANET",
+   "Arista Networks, Inc.",
+   2.12
+  ],
+  [
+   "CHKP",
+   "Check Point Software Technologies Ltd.",
+   2.09
+  ],
+  [
    "DT",
    "Dynatrace, Inc.",
-   2.07
+   2.05
   ],
   [
    "EPA: HO",
    "Thales S.A.",
-   2.02
-  ],
-  [
-   "INFY",
-   "Infosys Limited",
    2.0
-  ],
-  [
-   "NTAP",
-   "NetApp, Inc.",
-   2.0
-  ],
-  [
-   "ANET",
-   "Arista Networks, Inc.",
-   1.99
-  ],
-  [
-   "ACN",
-   "Accenture plc",
-   1.86
-  ],
-  [
-   "LDOS",
-   "Leidos Holdings, Inc.",
-   1.8
-  ],
-  [
-   "FROG",
-   "JFrog Ltd.",
-   1.78
-  ],
-  [
-   "GOOGL",
-   "Alphabet Inc.",
-   1.78
   ],
   [
    "MSFT",
    "Microsoft Corporation",
+   1.98
+  ],
+  [
+   "NTAP",
+   "NetApp, Inc.",
+   1.98
+  ],
+  [
+   "FROG",
+   "JFrog Ltd.",
+   1.88
+  ],
+  [
+   "INFY",
+   "Infosys Limited",
+   1.87
+  ],
+  [
+   "LDOS",
+   "Leidos Holdings, Inc.",
    1.74
+  ],
+  [
+   "GOOGL",
+   "Alphabet Inc.",
+   1.74
+  ],
+  [
+   "ACN",
+   "Accenture plc",
+   1.73
   ],
   [
    "IBM",
    "International Business Machines Corporation",
-   1.53
+   1.47
   ]
  ],
  "URA": [
@@ -2325,64 +2325,64 @@
  ],
  "DGRO": [
   [
+   "MSFT",
+   "Microsoft Corporation",
+   3.24
+  ],
+  [
    "JPM",
    "JPMorgan Chase & Co.",
-   3.2
+   3.16
   ],
   [
    "JNJ",
    "Johnson & Johnson",
-   3.17
-  ],
-  [
-   "AAPL",
-   "Apple Inc.",
-   3.12
+   3.07
   ],
   [
    "ABBV",
    "AbbVie Inc.",
-   3.02
+   2.96
   ],
   [
    "XOM",
    "ExxonMobil Holdings Corporation",
-   2.85
+   2.87
   ],
   [
-   "MSFT",
-   "Microsoft Corporation",
-   2.71
+   "AAPL",
+   "Apple Inc.",
+   2.86
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   2.51
+   2.55
   ],
   [
    "PG",
    "The Procter & Gamble Company",
-   2.22
-  ],
-  [
-   "PM",
-   "Philip Morris International Inc.",
-   2.18
+   2.17
   ],
   [
    "HD",
    "The Home Depot, Inc.",
-   2.16
+   2.14
   ],
   [
-   "MRK",
-   "Merck & Co., Inc.",
-   1.92
+   "PM",
+   "Philip Morris International Inc.",
+   2.13
   ],
   [
    "KO",
    "The Coca-Cola Company",
-   1.88
+   1.96
+  ],
+  [
+   "MRK",
+   "Merck & Co., Inc.",
+   1.91
   ],
   [
    "BAC",
@@ -2392,7 +2392,7 @@
   [
    "UNH",
    "UnitedHealth Group Incorporated",
-   1.77
+   1.76
   ],
   [
    "PEP",
@@ -2402,7 +2402,12 @@
   [
    "CSCO",
    "Cisco Systems, Inc.",
-   1.31
+   1.33
+  ],
+  [
+   "AMGN",
+   "Amgen Inc.",
+   1.3
   ],
   [
    "WFC",
@@ -2410,24 +2415,19 @@
    1.27
   ],
   [
-   "AMGN",
-   "Amgen Inc.",
-   1.27
-  ],
-  [
    "LLY",
    "Eli Lilly and Company",
-   1.24
+   1.19
   ],
   [
    "NEE",
    "NextEra Energy, Inc.",
-   1.18
+   1.15
   ],
   [
    "GS",
    "The Goldman Sachs Group, Inc.",
-   1.14
+   1.11
   ],
   [
    "MCD",
@@ -2437,17 +2437,17 @@
   [
    "ABT",
    "Abbott Laboratories",
-   1.09
+   1.1
   ],
   [
    "V",
    "Visa Inc.",
-   1.08
+   1.1
   ],
   [
    "IBM",
    "International Business Machines Corporation",
-   1.04
+   1.08
   ]
  ],
  "EMXC": [
@@ -3074,7 +3074,7 @@
   [
    "NEE",
    "NextEra Energy, Inc.",
-   4.8
+   4.81
   ],
   [
    "TSX: ENB",
@@ -3085,11 +3085,6 @@
    "BME: IBE",
    "Iberdrola, S.A.",
    3.94
-  ],
-  [
-   "PAC",
-   "Grupo Aeroportuario del PacÃ­fico, S.A.B. de C.V.",
-   3.38
   ],
   [
    "NZE: AIA",
@@ -3127,11 +3122,6 @@
    2.35
   ],
   [
-   "AUD",
-   "AUD CASH",
-   2.34
-  ],
-  [
    "CEG",
    "Constellation Energy Corporation",
    2.2
@@ -3159,7 +3149,7 @@
   [
    "TRGP",
    "Targa Resources Corp.",
-   1.94
+   1.93
   ],
   [
    "OKE",
@@ -3689,7 +3679,12 @@
   [
    "BWIN",
    "The Baldwin Insurance Group, Inc.",
-   2.34
+   2.44
+  ],
+  [
+   "RYAN",
+   "Ryan Specialty Holdings, Inc.",
+   2.17
   ],
   [
    "WTW",
@@ -3697,14 +3692,9 @@
    2.16
   ],
   [
-   "RYAN",
-   "Ryan Specialty Holdings, Inc.",
-   2.16
-  ],
-  [
    "LNC",
    "Lincoln National Corporation",
-   2.16
+   2.14
   ],
   [
    "TRV",
@@ -3717,28 +3707,23 @@
    2.08
   ],
   [
-   "PLMR",
-   "Palomar Holdings, Inc.",
-   2.04
-  ],
-  [
    "ALL",
    "The Allstate Corporation",
-   2.02
+   2.01
+  ],
+  [
+   "PLMR",
+   "Palomar Holdings, Inc.",
+   2.01
+  ],
+  [
+   "THG",
+   "The Hanover Insurance Group, Inc.",
+   2.01
   ],
   [
    "BRO",
    "Brown & Brown, Inc.",
-   2.0
-  ],
-  [
-   "KMPR",
-   "Kemper Corporation",
-   2.0
-  ],
-  [
-   "PRI",
-   "Primerica, Inc.",
    1.99
   ],
   [
@@ -3747,34 +3732,19 @@
    1.98
   ],
   [
-   "THG",
-   "The Hanover Insurance Group, Inc.",
-   1.98
-  ],
-  [
-   "AJG",
-   "Arthur J. Gallagher & Co.",
-   1.98
+   "PRI",
+   "Primerica, Inc.",
+   1.97
   ],
   [
    "RGA",
    "Reinsurance Group of America, Incorporated",
-   1.97
+   1.96
   ],
   [
-   "MRSH",
-   "Marsh & McLennan Companies, Inc.",
-   1.94
-  ],
-  [
-   "FAF",
-   "First American Financial Corporation",
-   1.94
-  ],
-  [
-   "RLI",
-   "RLI Corp.",
-   1.93
+   "KMPR",
+   "Kemper Corporation",
+   1.95
   ],
   [
    "KNSL",
@@ -3782,14 +3752,29 @@
    1.93
   ],
   [
+   "RLI",
+   "RLI Corp.",
+   1.93
+  ],
+  [
+   "MRSH",
+   "Marsh & McLennan Companies, Inc.",
+   1.93
+  ],
+  [
+   "FAF",
+   "First American Financial Corporation",
+   1.93
+  ],
+  [
+   "AJG",
+   "Arthur J. Gallagher & Co.",
+   1.93
+  ],
+  [
    "ORI",
    "Old Republic International Corporation",
    1.92
-  ],
-  [
-   "MET",
-   "MetLife, Inc.",
-   1.91
   ],
   [
    "GL",
@@ -3799,6 +3784,11 @@
   [
    "OSCR",
    "Oscar Health, Inc.",
+   1.91
+  ],
+  [
+   "MET",
+   "MetLife, Inc.",
    1.9
   ],
   [
@@ -3807,8 +3797,8 @@
    1.89
   ],
   [
-   "GNW",
-   "Genworth Financial, Inc.",
+   "CNO",
+   "CNO Financial Group, Inc.",
    1.89
   ]
  ],
@@ -5552,29 +5542,24 @@
  ],
  "XLI": [
   [
-   "CAT",
-   "Caterpillar Inc.",
-   6.73
-  ],
-  [
    "GE",
    "GE Aerospace",
-   6.68
+   6.71
+  ],
+  [
+   "CAT",
+   "Caterpillar Inc.",
+   6.7
   ],
   [
    "RTX",
    "RTX Corporation",
-   5.21
+   5.17
   ],
   [
    "GEV",
    "GE Vernova Inc.",
-   4.76
-  ],
-  [
-   "BA",
-   "The Boeing Company",
-   3.14
+   4.75
   ],
   [
    "UNP",
@@ -5582,34 +5567,39 @@
    3.1
   ],
   [
-   "DE",
-   "Deere & Company",
-   2.72
+   "BA",
+   "The Boeing Company",
+   3.04
   ],
   [
    "ETN",
    "Eaton Corporation plc",
-   2.71
+   2.88
+  ],
+  [
+   "DE",
+   "Deere & Company",
+   2.66
   ],
   [
    "UBER",
    "Uber Technologies, Inc.",
-   2.59
+   2.56
   ],
   [
    "PH",
    "Parker-Hannifin Corporation",
-   2.19
+   2.2
   ],
   [
    "LMT",
    "Lockheed Martin Corporation",
-   2.1
+   2.11
   ],
   [
    "HWM",
    "Howmet Aerospace Inc.",
-   2.0
+   2.02
   ],
   [
    "ADP",
@@ -5617,49 +5607,44 @@
    1.9
   ],
   [
-   "PWR",
-   "Quanta Services, Inc.",
-   1.78
-  ],
-  [
    "TT",
    "Trane Technologies plc",
-   1.76
+   1.8
+  ],
+  [
+   "PWR",
+   "Quanta Services, Inc.",
+   1.79
   ],
   [
    "GD",
    "General Dynamics Corporation",
-   1.75
+   1.74
   ],
   [
    "CSX",
    "CSX Corporation",
-   1.68
-  ],
-  [
-   "MMM",
-   "3M Company",
-   1.66
-  ],
-  [
-   "JCI",
-   "Johnson Controls International plc",
-   1.58
+   1.67
   ],
   [
    "VRT",
    "Vertiv Holdings Co",
-   1.58
+   1.66
+  ],
+  [
+   "MMM",
+   "3M Company",
+   1.64
+  ],
+  [
+   "JCI",
+   "Johnson Controls International plc",
+   1.6
   ],
   [
    "CMI",
    "Cummins Inc.",
-   1.58
-  ],
-  [
-   "WM",
-   "Waste Management, Inc.",
-   1.51
+   1.56
   ],
   [
    "EMR",
@@ -5667,14 +5652,19 @@
    1.5
   ],
   [
+   "WM",
+   "Waste Management, Inc.",
+   1.49
+  ],
+  [
    "UPS",
    "United Parcel Service, Inc.",
-   1.42
+   1.39
   ],
   [
    "HON",
    "Honeywell International Inc.",
-   1.38
+   1.37
   ]
  ],
  "XLP": [
