@@ -362,99 +362,94 @@
  ],
  "SPYM": [
   [
-   "AAPL",
-   "Apple Inc.",
-   7.89
-  ],
-  [
    "NVDA",
    "NVIDIA Corporation",
-   7.31
+   7.54
+  ],
+  [
+   "AAPL",
+   "Apple Inc.",
+   7.04
   ],
   [
    "MSFT",
    "Microsoft Corporation",
-   4.61
+   5.36
   ],
   [
    "AMZN",
    "Amazon.com, Inc.",
-   3.52
+   4.13
   ],
   [
    "GOOGL",
    "Alphabet Inc.",
-   3.14
+   3.24
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   2.79
+   2.86
   ],
   [
    "GOOG",
    "Alphabet Inc.",
-   2.52
+   2.62
   ],
   [
    "META",
    "Meta Platforms, Inc.",
-   2.04
-  ],
-  [
-   "LLY",
-   "Eli Lilly and Company",
-   1.52
-  ],
-  [
-   "BRK.B",
-   "Berkshire Hathaway Inc.",
-   1.48
+   1.9
   ],
   [
    "JPM",
    "JPMorgan Chase & Co.",
-   1.47
+   1.46
   ],
   [
-   "TSLA",
-   "Tesla, Inc.",
-   1.33
+   "BRK.B",
+   "Berkshire Hathaway Inc.",
+   1.46
   ],
   [
    "MU",
    "Micron Technology, Inc.",
-   1.32
+   1.44
+  ],
+  [
+   "LLY",
+   "Eli Lilly and Company",
+   1.41
+  ],
+  [
+   "TSLA",
+   "Tesla, Inc.",
+   1.36
   ],
   [
    "AMD",
    "Advanced Micro Devices, Inc.",
-   1.11
+   1.2
   ],
   [
    "XOM",
    "ExxonMobil Holdings Corporation",
-   1.03
+   1.0
   ],
   [
    "JNJ",
    "Johnson & Johnson",
-   1.02
+   0.96
   ],
   [
    "V",
    "Visa Inc.",
-   0.97
+   0.94
   ],
   [
    "WMT",
    "Walmart Inc.",
-   0.8
-  ],
-  [
-   "ABBV",
-   "AbbVie Inc.",
-   0.74
+   0.76
   ],
   [
    "MA",
@@ -467,9 +462,19 @@
    0.71
   ],
   [
+   "ABBV",
+   "AbbVie Inc.",
+   0.69
+  ],
+  [
+   "INTC",
+   "Intel Corporation",
+   0.66
+  ],
+  [
    "COST",
    "Costco Wholesale Corporation",
-   0.69
+   0.66
   ],
   [
    "BAC",
@@ -477,14 +482,9 @@
    0.63
   ],
   [
-   "INTC",
-   "Intel Corporation",
-   0.61
-  ],
-  [
-   "UNH",
-   "UnitedHealth Group Incorporated",
-   0.61
+   "AMAT",
+   "Applied Materials, Inc.",
+   0.63
   ]
  ],
  "CIBR": [
@@ -989,17 +989,17 @@
   [
    "APGE",
    "Apogee Therapeutics, Inc.",
-   1.6
+   1.65
   ],
   [
    "ORKA",
    "Oruka Therapeutics, Inc.",
-   1.51
+   1.53
   ],
   [
    "DNTH",
    "Dianthus Therapeutics, Inc.",
-   1.45
+   1.42
   ],
   [
    "ERAS",
@@ -1007,9 +1007,14 @@
    1.38
   ],
   [
+   "TWST",
+   "Twist Bioscience Corporation",
+   1.37
+  ],
+  [
    "KYMR",
    "Kymera Therapeutics, Inc.",
-   1.35
+   1.34
   ],
   [
    "SYRE",
@@ -1017,44 +1022,39 @@
    1.33
   ],
   [
-   "TWST",
-   "Twist Bioscience Corporation",
-   1.33
-  ],
-  [
    "RVMD",
    "Revolution Medicines, Inc.",
-   1.31
+   1.32
   ],
   [
    "CGON",
    "CG Oncology, Inc.",
-   1.31
-  ],
-  [
-   "COGT",
-   "Cogent Biosciences, Inc.",
-   1.3
+   1.32
   ],
   [
    "PTGX",
    "Protagonist Therapeutics, Inc.",
-   1.29
+   1.31
   ],
   [
    "PRAX",
    "Praxis Precision Medicines, Inc.",
-   1.26
+   1.3
   ],
   [
-   "MRNA",
-   "Moderna, Inc.",
-   1.24
+   "REGN",
+   "Regeneron Pharmaceuticals, Inc.",
+   1.29
+  ],
+  [
+   "COGT",
+   "Cogent Biosciences, Inc.",
+   1.26
   ],
   [
    "NTRA",
    "Natera, Inc.",
-   1.23
+   1.26
   ],
   [
    "ARWR",
@@ -1062,13 +1062,13 @@
    1.22
   ],
   [
-   "RYTM",
-   "Rhythm Pharmaceuticals, Inc.",
-   1.22
+   "TVTX",
+   "Travere Therapeutics, Inc.",
+   1.21
   ],
   [
-   "PCVX",
-   "Vaxcyte, Inc.",
+   "ROIV",
+   "Roivant Sciences Ltd.",
    1.21
   ],
   [
@@ -1077,111 +1077,106 @@
    1.21
   ],
   [
-   "REGN",
-   "Regeneron Pharmaceuticals, Inc.",
+   "MRNA",
+   "Moderna, Inc.",
    1.21
   ],
   [
-   "TVTX",
-   "Travere Therapeutics, Inc.",
+   "PCVX",
+   "Vaxcyte, Inc.",
    1.21
   ],
   [
    "BBIO",
    "BridgeBio Pharma, Inc.",
-   1.2
+   1.21
   ],
   [
-   "ROIV",
-   "Roivant Sciences Ltd.",
-   1.2
+   "HALO",
+   "Halozyme Therapeutics, Inc.",
+   1.19
+  ],
+  [
+   "RYTM",
+   "Rhythm Pharmaceuticals, Inc.",
+   1.18
   ],
   [
    "CYTK",
    "Cytokinetics, Incorporated",
-   1.18
-  ],
-  [
-   "MIRM",
-   "Mirum Pharmaceuticals, Inc.",
-   1.18
+   1.17
   ],
   [
    "VKTX",
    "Viking Therapeutics, Inc.",
-   1.18
+   1.16
   ]
  ],
  "ARKG": [
   [
    "TXG",
    "10x Genomics, Inc.",
-   9.52
+   9.41
   ],
   [
    "TWST",
    "Twist Bioscience Corporation",
-   7.78
+   7.74
   ],
   [
    "TEM",
    "Tempus AI, Inc.",
-   6.86
+   6.57
   ],
   [
    "CRSP",
    "CRISPR Therapeutics AG",
-   6.2
-  ],
-  [
-   "ABSI",
-   "Absci Corporation",
-   5.31
+   6.3
   ],
   [
    "PSNL",
    "Personalis, Inc.",
-   5.27
+   5.48
   ],
   [
-   "LLY",
-   "Eli Lilly and Company",
-   4.82
-  ],
-  [
-   "ILMN",
-   "Illumina, Inc.",
-   4.53
+   "ABSI",
+   "Absci Corporation",
+   5.15
   ],
   [
    "GH",
    "Guardant Health, Inc.",
-   4.38
+   4.75
   ],
   [
-   "NTRA",
-   "Natera, Inc.",
-   4.07
+   "ILMN",
+   "Illumina, Inc.",
+   4.75
   ],
   [
-   "BEAM",
-   "Beam Therapeutics Inc.",
-   3.82
+   "LLY",
+   "Eli Lilly and Company",
+   4.69
   ],
   [
    "CDNA",
    "CareDx, Inc.",
-   3.69
+   4.31
+  ],
+  [
+   "NTRA",
+   "Natera, Inc.",
+   4.14
+  ],
+  [
+   "BEAM",
+   "Beam Therapeutics Inc.",
+   3.78
   ],
   [
    "CMPS",
    "COMPASS Pathways plc",
-   3.27
-  ],
-  [
-   "VCYT",
-   "Veracyte, Inc.",
-   3.17
+   3.26
   ],
   [
    "RXRX",
@@ -1189,54 +1184,59 @@
    2.63
   ],
   [
-   "NRIX",
-   "Nurix Therapeutics, Inc.",
-   2.56
-  ],
-  [
    "ADPT",
    "Adaptive Biotechnologies Corporation",
-   2.53
+   2.58
+  ],
+  [
+   "VCYT",
+   "Veracyte, Inc.",
+   2.55
+  ],
+  [
+   "NRIX",
+   "Nurix Therapeutics, Inc.",
+   2.51
   ],
   [
    "BFLY",
    "Butterfly Network, Inc.",
-   2.02
-  ],
-  [
-   "NTLA",
-   "Intellia Therapeutics, Inc.",
-   2.0
+   2.18
   ],
   [
    "SDGR",
    "SchrÃ¶dinger, Inc.",
-   1.98
-  ],
-  [
-   "IONS",
-   "Ionis Pharmaceuticals, Inc.",
-   1.9
+   1.99
   ],
   [
    "WGS",
    "GeneDx Holdings Corp.",
-   1.81
+   1.87
+  ],
+  [
+   "NTLA",
+   "Intellia Therapeutics, Inc.",
+   1.83
+  ],
+  [
+   "IONS",
+   "Ionis Pharmaceuticals, Inc.",
+   1.77
   ],
   [
    "ALMR",
    "Alamar Biosciences, Inc.",
-   1.59
+   1.56
   ],
   [
    "PRME",
    "Prime Medicine, Inc.",
-   1.43
+   1.41
   ],
   [
-   "CERS",
-   "Cerus Corporation",
-   1.33
+   "GENB",
+   "Generate Biomedicines, Inc.",
+   1.12
   ]
  ],
  "NASA": [
@@ -4568,57 +4568,57 @@
   [
    "WELL",
    "Welltower Inc.",
-   10.74
+   10.58
   ],
   [
    "PLD",
    "Prologis, Inc.",
-   8.56
+   8.64
   ],
   [
    "SPG",
    "Simon Property Group, Inc.",
-   4.85
+   4.81
   ],
   [
    "DLR",
    "Digital Realty Trust, Inc.",
-   4.38
-  ],
-  [
-   "AMT",
-   "American Tower Corporation",
-   4.12
-  ],
-  [
-   "O",
-   "Realty Income Corporation",
-   4.09
+   4.54
   ],
   [
    "EQIX",
    "Equinix, Inc.",
-   3.92
+   4.09
+  ],
+  [
+   "AMT",
+   "American Tower Corporation",
+   4.05
+  ],
+  [
+   "O",
+   "Realty Income Corporation",
+   4.04
   ],
   [
    "PSA",
    "Public Storage",
-   3.7
+   3.74
   ],
   [
    "VTR",
    "Ventas, Inc.",
-   3.18
+   3.02
   ],
   [
    "IRM",
    "Iron Mountain Incorporated",
-   2.41
+   2.52
   ],
   [
    "CCI",
    "Crown Castle Inc.",
-   2.31
+   2.29
   ],
   [
    "EXR",
@@ -4628,7 +4628,7 @@
   [
    "VICI",
    "VICI Properties Inc.",
-   1.99
+   1.98
   ],
   [
    "AVB",
@@ -4643,17 +4643,17 @@
   [
    "SBAC",
    "SBA Communications Corporation",
-   1.32
+   1.3
   ],
   [
    "ESS",
    "Essex Property Trust, Inc.",
-   1.28
+   1.25
   ],
   [
    "WY",
    "Weyerhaeuser Company",
-   1.18
+   1.24
   ],
   [
    "KIM",
@@ -4661,14 +4661,14 @@
    1.17
   ],
   [
+   "INVH",
+   "Invitation Homes Inc.",
+   1.14
+  ],
+  [
    "WPC",
    "W. P. Carey Inc.",
    1.11
-  ],
-  [
-   "INVH",
-   "Invitation Homes Inc.",
-   1.1
   ],
   [
    "HST",
@@ -4678,17 +4678,17 @@
   [
    "MAA",
    "Mid-America Apartment Communities, Inc.",
-   1.07
+   1.06
   ],
   [
    "DOC",
    "Healthpeak Properties, Inc.",
-   1.04
+   1.02
   ],
   [
    "OHI",
    "Omega Healthcare Investors, Inc.",
-   1.02
+   1.0
   ]
  ],
  "VB": [
@@ -6423,47 +6423,47 @@
   [
    "AMS: ASML",
    "ASML Holding N.V.",
-   4.4
+   4.03
   ],
   [
    "LON: HSBA",
    "HSBC Holdings plc",
-   2.27
+   2.29
   ],
   [
    "SWX: ROP",
    "Roche Holding AG",
-   1.94
+   1.92
   ],
   [
    "SWX: NOVN",
    "Novartis AG",
-   1.81
-  ],
-  [
-   "LON: AZN",
-   "AstraZeneca PLC",
-   1.63
+   1.8
   ],
   [
    "SWX: NESN",
    "NestlÃ© S.A.",
+   1.65
+  ],
+  [
+   "LON: AZN",
+   "AstraZeneca PLC",
    1.62
   ],
   [
    "LON: SHEL",
    "Shell plc",
-   1.57
+   1.56
   ],
   [
    "ETR: SIE",
    "Siemens Aktiengesellschaft",
-   1.47
+   1.51
   ],
   [
    "BME: SAN",
    "Banco Santander, S.A.",
-   1.24
+   1.26
   ],
   [
    "ETR: ALV",
@@ -6471,19 +6471,19 @@
    1.18
   ],
   [
-   "EPA: TTE",
-   "TotalEnergies SE",
-   1.09
+   "ETR: SAP",
+   "SAP SE",
+   1.17
   ],
   [
    "EPA: SU",
    "Schneider Electric S.E.",
-   1.07
+   1.12
   ],
   [
-   "ETR: SAP",
-   "SAP SE",
-   1.06
+   "EPA: TTE",
+   "TotalEnergies SE",
+   1.07
   ],
   [
    "SWX: UBSG",
@@ -6493,57 +6493,57 @@
   [
    "LON: RR",
    "Rolls-Royce Holdings plc",
-   1.01
+   1.03
   ],
   [
    "CPH: NOVO.B",
    "Novo Nordisk A/S",
-   1.0
-  ],
-  [
-   "SWX: ABBN",
-   "ABB Ltd",
-   0.98
-  ],
-  [
-   "BME: IBE",
-   "Iberdrola, S.A.",
-   0.94
+   1.03
   ],
   [
    "BME: BBVA",
    "Banco Bilbao Vizcaya Argentaria, S.A.",
-   0.93
+   0.97
   ],
   [
-   "EPA: AIR",
-   "Airbus SE",
-   0.89
+   "SWX: ABBN",
+   "ABB Ltd",
+   0.95
   ],
   [
-   "ETR: ENR",
-   "Siemens Energy AG",
-   0.85
+   "BME: IBE",
+   "Iberdrola, S.A.",
+   0.92
   ],
   [
    "LON: ULVR",
    "Unilever PLC",
+   0.89
+  ],
+  [
+   "EPA: AIR",
+   "Airbus SE",
+   0.87
+  ],
+  [
+   "EPA: SAF",
+   "Safran SA",
    0.85
   ],
   [
    "EPA: MC",
    "LVMH MoÃ«t Hennessy - Louis Vuitton, SociÃ©tÃ© EuropÃ©enne",
-   0.83
+   0.85
   ],
   [
-   "EPA: SAF",
-   "Safran SA",
-   0.83
+   "ETR: ENR",
+   "Siemens Energy AG",
+   0.82
   ],
   [
-   "EPA: AI",
-   "Air Liquide S.A.",
-   0.81
+   "BIT: UCG",
+   "UniCredit S.p.A.",
+   0.8
   ]
  ],
  "IEV": [
