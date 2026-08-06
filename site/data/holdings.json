@@ -133,124 +133,124 @@
    1.69
   ],
   [
-   "NET",
-   "Cloudflare, Inc.",
-   1.62
-  ],
-  [
-   "TYO: 6701",
-   "NEC Corporation",
-   1.57
-  ],
-  [
    "HQ",
    "Horizon Quantum Holdings Ltd.",
-   1.57
+   1.65
+  ],
+  [
+   "NET",
+   "Cloudflare, Inc.",
+   1.54
   ],
   [
    "SNOW",
    "Snowflake Inc.",
-   1.56
-  ],
-  [
-   "RTX",
-   "RTX Corporation",
-   1.51
+   1.54
   ],
   [
    "NTNX",
    "Nutanix, Inc.",
-   1.49
-  ],
-  [
-   "TYO: 6702",
-   "Fujitsu Limited",
-   1.46
-  ],
-  [
-   "EPA: AIR",
-   "Airbus SE",
-   1.45
+   1.47
   ],
   [
    "MSFT",
    "Microsoft Corporation",
-   1.42
+   1.47
   ],
   [
-   "TYO: 6501",
-   "Hitachi, Ltd.",
-   1.39
+   "RTX",
+   "RTX Corporation",
+   1.46
   ],
   [
-   "NVEC",
-   "NVE Corporation",
-   1.37
-  ],
-  [
-   "LMT",
-   "Lockheed Martin Corporation",
-   1.37
-  ],
-  [
-   "RDNT",
-   "RadNet, Inc.",
-   1.35
-  ],
-  [
-   "TYO: 9432",
-   "NTT, Inc.",
-   1.35
-  ],
-  [
-   "BIT: REY",
-   "Reply S.p.A.",
-   1.34
-  ],
-  [
-   "AMD",
-   "Advanced Micro Devices, Inc.",
-   1.34
-  ],
-  [
-   "ESTC",
-   "Elastic N.V.",
-   1.32
-  ],
-  [
-   "TER",
-   "Teradyne, Inc.",
-   1.32
-  ],
-  [
-   "AVGO",
-   "Broadcom Inc.",
-   1.31
-  ],
-  [
-   "HPE",
-   "Hewlett Packard Enterprise Company",
-   1.3
-  ],
-  [
-   "AMAT",
-   "Applied Materials, Inc.",
-   1.26
-  ],
-  [
-   "BABA",
-   "Alibaba Group Holding Limited",
-   1.26
+   "TYO: 6701",
+   "NEC Corporation",
+   1.45
   ],
   [
    "AMZN",
    "Amazon.com, Inc.",
-   1.24
+   1.43
   ],
   [
-   "TXN",
-   "Texas Instruments Incorporated",
-   1.24
+   "EPA: AIR",
+   "Airbus SE",
+   1.42
+  ],
+  [
+   "NVEC",
+   "NVE Corporation",
+   1.41
+  ],
+  [
+   "BIT: REY",
+   "Reply S.p.A.",
+   1.38
+  ],
+  [
+   "RDNT",
+   "RadNet, Inc.",
+   1.38
+  ],
+  [
+   "TYO: 6501",
+   "Hitachi, Ltd.",
+   1.36
+  ],
+  [
+   "ESTC",
+   "Elastic N.V.",
+   1.36
+  ],
+  [
+   "LMT",
+   "Lockheed Martin Corporation",
+   1.34
+  ],
+  [
+   "HPE",
+   "Hewlett Packard Enterprise Company",
+   1.32
+  ],
+  [
+   "BABA",
+   "Alibaba Group Holding Limited",
+   1.32
+  ],
+  [
+   "AMD",
+   "Advanced Micro Devices, Inc.",
+   1.28
+  ],
+  [
+   "TYO: 6702",
+   "Fujitsu Limited",
+   1.28
+  ],
+  [
+   "AVGO",
+   "Broadcom Inc.",
+   1.26
+  ],
+  [
+   "TER",
+   "Teradyne, Inc.",
+   1.26
+  ],
+  [
+   "TYO: 9432",
+   "NTT, Inc.",
+   1.26
+  ],
+  [
+   "GOOGL",
+   "Alphabet Inc.",
+   1.26
+  ],
+  [
+   "AMAT",
+   "Applied Materials, Inc.",
+   1.25
   ]
  ],
  "XLE": [
@@ -4441,32 +4441,37 @@
   [
    "ABT",
    "Abbott Laboratories",
-   4.71
+   4.66
   ],
   [
    "AMGN",
    "Amgen Inc.",
-   4.35
+   4.37
   ],
   [
    "MRK",
    "Merck & Co., Inc.",
-   4.32
+   4.36
   ],
   [
    "KO",
    "The Coca-Cola Company",
-   4.29
+   4.27
   ],
   [
    "UNH",
    "UnitedHealth Group Incorporated",
-   4.24
+   4.22
   ],
   [
    "HD",
    "The Home Depot, Inc.",
-   4.1
+   4.07
+  ],
+  [
+   "CVX",
+   "Chevron Corporation",
+   3.98
   ],
   [
    "PG",
@@ -4476,52 +4481,47 @@
   [
    "VZ",
    "Verizon Communications Inc.",
-   3.84
-  ],
-  [
-   "CVX",
-   "Chevron Corporation",
-   3.84
+   3.85
   ],
   [
    "PEP",
    "PepsiCo, Inc.",
-   3.82
+   3.76
   ],
   [
    "COP",
    "ConocoPhillips",
-   3.6
+   3.71
   ],
   [
    "TXN",
    "Texas Instruments Incorporated",
-   3.34
+   3.43
   ],
   [
    "BMY",
    "Bristol-Myers Squibb Company",
-   3.22
-  ],
-  [
-   "MO",
-   "Altria Group, Inc.",
-   3.13
+   3.37
   ],
   [
    "LMT",
    "Lockheed Martin Corporation",
+   2.99
+  ],
+  [
+   "MO",
+   "Altria Group, Inc.",
    2.89
   ],
   [
    "ADP",
    "Automatic Data Processing, Inc.",
-   2.73
+   2.69
   ],
   [
    "ACN",
    "Accenture plc",
-   2.66
+   2.58
   ],
   [
    "BX",
@@ -4531,27 +4531,27 @@
   [
    "QCOM",
    "QUALCOMM Incorporated",
-   2.36
+   2.27
   ],
   [
    "CMCSA",
    "Comcast Corporation",
-   2.19
-  ],
-  [
-   "UPS",
-   "United Parcel Service, Inc.",
-   1.95
+   2.16
   ],
   [
    "EOG",
    "EOG Resources, Inc.",
-   1.94
+   2.0
+  ],
+  [
+   "UPS",
+   "United Parcel Service, Inc.",
+   1.97
   ],
   [
    "SLB",
    "SLB N.V.",
-   1.83
+   1.87
   ],
   [
    "TGT",
@@ -4561,7 +4561,7 @@
   [
    "F",
    "Ford Motor Company",
-   1.5
+   1.45
   ]
  ],
  "SCHH": [
@@ -5671,127 +5671,127 @@
   [
    "WMT",
    "Walmart Inc.",
-   10.39
+   10.38
   ],
   [
    "COST",
    "Costco Wholesale Corporation",
-   8.97
-  ],
-  [
-   "KO",
-   "The Coca-Cola Company",
-   7.16
+   8.93
   ],
   [
    "PG",
    "The Procter & Gamble Company",
-   7.06
+   7.32
+  ],
+  [
+   "KO",
+   "The Coca-Cola Company",
+   7.12
   ],
   [
    "PM",
    "Philip Morris International Inc.",
-   6.42
+   6.18
   ],
   [
    "CL",
    "Colgate-Palmolive Company",
-   4.57
-  ],
-  [
-   "MO",
-   "Altria Group, Inc.",
-   4.5
+   4.63
   ],
   [
    "MDLZ",
    "Mondelez International, Inc.",
-   4.45
+   4.35
   ],
   [
    "PEP",
    "PepsiCo, Inc.",
-   4.37
-  ],
-  [
-   "MNST",
-   "Monster Beverage Corporation",
-   4.3
+   4.33
   ],
   [
    "TGT",
    "Target Corporation",
-   4.1
+   4.26
+  ],
+  [
+   "MNST",
+   "Monster Beverage Corporation",
+   4.26
+  ],
+  [
+   "MO",
+   "Altria Group, Inc.",
+   4.19
   ],
   [
    "KDP",
    "Keurig Dr Pepper Inc.",
-   2.65
+   2.68
   ],
   [
    "SYY",
    "Sysco Corporation",
-   2.53
+   2.51
   ],
   [
    "ADM",
    "Archer-Daniels-Midland Company",
-   2.4
+   2.44
   ],
   [
    "KVUE",
    "Kenvue Inc.",
-   2.35
+   2.38
   ],
   [
    "KMB",
    "Kimberly-Clark Corporation",
-   2.33
+   2.35
   ],
   [
    "KR",
    "The Kroger Co.",
-   2.1
+   2.08
   ],
   [
    "CASY",
    "Casey's General Stores, Inc.",
-   1.98
+   1.99
   ],
   [
    "DG",
    "Dollar General Corporation",
-   1.75
+   1.77
   ],
   [
    "HSY",
    "The Hershey Company",
-   1.69
+   1.68
   ],
   [
    "CHD",
    "Church & Dwight Co., Inc.",
-   1.46
-  ],
-  [
-   "KHC",
-   "The Kraft Heinz Company",
-   1.46
+   1.55
   ],
   [
    "DLTR",
    "Dollar Tree, Inc.",
-   1.45
+   1.5
+  ],
+  [
+   "KHC",
+   "The Kraft Heinz Company",
+   1.44
   ],
   [
    "EL",
    "The EstÃ©e Lauder Companies Inc.",
-   1.29
+   1.36
   ],
   [
    "GIS",
    "General Mills, Inc.",
-   1.25
+   1.22
   ]
  ],
  "XLY": [
