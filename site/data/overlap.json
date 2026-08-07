@@ -10,9 +10,9 @@
   "BOTZ": 83.5,
   "ROBT": 40.0,
   "XBI": 32.3,
-  "ARKG": 94.3,
+  "ARKG": 94.5,
   "NASA": 80.0,
-  "DRAM": 50.9,
+  "DRAM": 51.5,
   "JEDI": 87.7,
   "XLV": 85.4,
   "VHT": 72.5,
@@ -22,26 +22,26 @@
   "RKLB": 100.0,
   "ACWI": 34.1,
   "AVUV": 17.7,
-  "CGW": 84.0,
+  "CGW": 83.7,
   "DGRO": 48.0,
   "EMXC": 46.1,
   "FIW": 82.6,
-  "IAT": 94.8,
+  "IAT": 94.9,
   "IBB": 65.6,
   "IEMG": 37.1,
   "IGF": 63.6,
   "INDA": 52.2,
   "INDY": 77.8,
-  "IWM": 7.6,
+  "IWM": 7.2,
   "KBE": 26.2,
   "KIE": 50.0,
   "KRE": 34.0,
   "NFRA": 50.1,
-  "PAVE": 65.3,
+  "PAVE": 63.1,
   "PHO": 92.9,
   "REET": 57.1,
   "SCHD": 78.9,
-  "SCHH": 71.2,
+  "SCHH": 71.3,
   "VB": 10.0,
   "VNQ": 72.5,
   "VT": 30.1,
@@ -50,9 +50,9 @@
   "VXUS": 19.5,
   "VYM": 42.5,
   "XLI": 65.0,
-  "XLP": 92.9,
+  "XLP": 93.0,
   "XLY": 89.5,
-  "BBJP": 50.4,
+  "BBJP": 50.6,
   "DXJ": 49.8,
   "EPI": 51.0,
   "EWJ": 50.4,
@@ -70,24 +70,24 @@
    "ortak_hisse": 21
   },
   "SCHH|VNQ": {
-   "overlap_pct": 54.75,
+   "overlap_pct": 54.84,
    "ortak_hisse": 23
   },
   "REET|SCHH": {
-   "overlap_pct": 51.01,
+   "overlap_pct": 51.1,
    "ortak_hisse": 21
   },
   "INDA|INDY": {
    "overlap_pct": 50.15,
    "ortak_hisse": 22
   },
-  "BBJP|EWJ": {
-   "overlap_pct": 48.92,
-   "ortak_hisse": 25
-  },
   "REET|VNQ": {
    "overlap_pct": 48.31,
    "ortak_hisse": 19
+  },
+  "BBJP|EWJ": {
+   "overlap_pct": 47.59,
+   "ortak_hisse": 24
   },
   "QQQM|SPYM": {
    "overlap_pct": 42.1,
@@ -117,13 +117,13 @@
    "overlap_pct": 29.73,
    "ortak_hisse": 22
   },
+  "CGW|FIW": {
+   "overlap_pct": 29.42,
+   "ortak_hisse": 10
+  },
   "ACWI|VT": {
    "overlap_pct": 29.32,
    "ortak_hisse": 22
-  },
-  "CGW|FIW": {
-   "overlap_pct": 29.25,
-   "ortak_hisse": 10
   },
   "EMXC|IEMG": {
    "overlap_pct": 28.9,
@@ -133,17 +133,17 @@
    "overlap_pct": 28.84,
    "ortak_hisse": 21
   },
-  "BBJP|DXJ": {
-   "overlap_pct": 28.68,
-   "ortak_hisse": 14
-  },
   "DXJ|EWJ": {
    "overlap_pct": 28.11,
    "ortak_hisse": 14
   },
   "CGW|PHO": {
-   "overlap_pct": 27.73,
+   "overlap_pct": 27.83,
    "ortak_hisse": 10
+  },
+  "BBJP|DXJ": {
+   "overlap_pct": 26.92,
+   "ortak_hisse": 13
   },
   "DGRO|VYM": {
    "overlap_pct": 26.76,
@@ -174,11 +174,11 @@
    "ortak_hisse": 15
   },
   "IAT|KRE": {
-   "overlap_pct": 20.08,
+   "overlap_pct": 20.06,
    "ortak_hisse": 15
   },
   "PAVE|XLI": {
-   "overlap_pct": 19.62,
+   "overlap_pct": 19.38,
    "ortak_hisse": 9
   },
   "XLV|SCHD": {
@@ -445,20 +445,20 @@
    "overlap_pct": 4.78,
    "ortak_hisse": 6
   },
-  "ARKG|XLV": {
-   "overlap_pct": 4.69,
-   "ortak_hisse": 1
-  },
-  "ARKG|VHT": {
-   "overlap_pct": 4.69,
-   "ortak_hisse": 1
-  },
   "QQQM|XLP": {
    "overlap_pct": 4.43,
    "ortak_hisse": 2
   },
   "IBB|SCHD": {
    "overlap_pct": 4.37,
+   "ortak_hisse": 1
+  },
+  "ARKG|XLV": {
+   "overlap_pct": 4.32,
+   "ortak_hisse": 1
+  },
+  "ARKG|VHT": {
+   "overlap_pct": 4.32,
    "ortak_hisse": 1
   },
   "JEDI|RKLB": {
@@ -537,6 +537,10 @@
    "overlap_pct": 3.28,
    "ortak_hisse": 2
   },
+  "NFRA|BBJP": {
+   "overlap_pct": 3.27,
+   "ortak_hisse": 2
+  },
   "VT|XLY": {
    "overlap_pct": 3.26,
    "ortak_hisse": 2
@@ -547,6 +551,10 @@
   },
   "NFRA|EWJ": {
    "overlap_pct": 3.25,
+   "ortak_hisse": 2
+  },
+  "URA|BBJP": {
+   "overlap_pct": 3.17,
    "ortak_hisse": 2
   },
   "XLF|KBE": {
@@ -565,10 +573,6 @@
    "overlap_pct": 3.09,
    "ortak_hisse": 3
   },
-  "NFRA|BBJP": {
-   "overlap_pct": 3.07,
-   "ortak_hisse": 2
-  },
   "SPYM|XLV": {
    "overlap_pct": 3.06,
    "ortak_hisse": 3
@@ -576,10 +580,6 @@
   "SPYM|VHT": {
    "overlap_pct": 3.06,
    "ortak_hisse": 3
-  },
-  "URA|BBJP": {
-   "overlap_pct": 3.06,
-   "ortak_hisse": 2
   },
   "VYM|XLI": {
    "overlap_pct": 3.06,
@@ -613,20 +613,20 @@
    "overlap_pct": 2.67,
    "ortak_hisse": 2
   },
-  "QQQM|DRAM": {
-   "overlap_pct": 2.63,
-   "ortak_hisse": 1
-  },
   "XBI|ARKG": {
    "overlap_pct": 2.63,
    "ortak_hisse": 2
   },
-  "DRAM|VTV": {
-   "overlap_pct": 2.63,
-   "ortak_hisse": 1
-  },
   "NFRA|SCHD": {
    "overlap_pct": 2.62,
+   "ortak_hisse": 1
+  },
+  "QQQM|DRAM": {
+   "overlap_pct": 2.57,
+   "ortak_hisse": 1
+  },
+  "DRAM|VTV": {
+   "overlap_pct": 2.57,
    "ortak_hisse": 1
   },
   "CIBR|VTV": {
@@ -729,6 +729,10 @@
    "overlap_pct": 1.81,
    "ortak_hisse": 1
   },
+  "BOTZ|BBJP": {
+   "overlap_pct": 1.8,
+   "ortak_hisse": 1
+  },
   "XLF|VT": {
    "overlap_pct": 1.78,
    "ortak_hisse": 3
@@ -746,10 +750,6 @@
    "ortak_hisse": 1
   },
   "CIBR|SCHD": {
-   "overlap_pct": 1.73,
-   "ortak_hisse": 1
-  },
-  "BOTZ|BBJP": {
    "overlap_pct": 1.73,
    "ortak_hisse": 1
   },
@@ -1033,13 +1033,13 @@
    "overlap_pct": 0.66,
    "ortak_hisse": 1
   },
-  "IWM|KRE": {
-   "overlap_pct": 0.65,
-   "ortak_hisse": 2
-  },
   "KBE|VT": {
    "overlap_pct": 0.65,
    "ortak_hisse": 1
+  },
+  "IWM|KRE": {
+   "overlap_pct": 0.64,
+   "ortak_hisse": 2
   },
   "XLE|ACWI": {
    "overlap_pct": 0.63,
@@ -1061,12 +1061,12 @@
    "overlap_pct": 0.63,
    "ortak_hisse": 1
   },
-  "XBI|IWM": {
-   "overlap_pct": 0.61,
+  "AVUV|IWM": {
+   "overlap_pct": 0.6,
    "ortak_hisse": 2
   },
-  "AVUV|IWM": {
-   "overlap_pct": 0.59,
+  "XBI|IWM": {
+   "overlap_pct": 0.58,
    "ortak_hisse": 2
   },
   "BOTZ|IEMG": {
@@ -1109,14 +1109,6 @@
    "overlap_pct": 0.48,
    "ortak_hisse": 1
   },
-  "INDA|IWM": {
-   "overlap_pct": 0.46,
-   "ortak_hisse": 1
-  },
-  "INDY|IWM": {
-   "overlap_pct": 0.46,
-   "ortak_hisse": 1
-  },
   "NFRA|VWO": {
    "overlap_pct": 0.46,
    "ortak_hisse": 1
@@ -1145,20 +1137,24 @@
    "overlap_pct": 0.37,
    "ortak_hisse": 1
   },
-  "IAT|IWM": {
-   "overlap_pct": 0.35,
-   "ortak_hisse": 1
-  },
   "VB|XLP": {
    "overlap_pct": 0.35,
    "ortak_hisse": 1
   },
   "NASA|IWM": {
-   "overlap_pct": 0.32,
+   "overlap_pct": 0.34,
+   "ortak_hisse": 1
+  },
+  "IAT|IWM": {
+   "overlap_pct": 0.34,
    "ortak_hisse": 1
   },
   "CIBR|IWM": {
-   "overlap_pct": 0.27,
+   "overlap_pct": 0.29,
+   "ortak_hisse": 1
+  },
+  "IWM|KBE": {
+   "overlap_pct": 0.26,
    "ortak_hisse": 1
   }
  }
