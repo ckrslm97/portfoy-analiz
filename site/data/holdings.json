@@ -1119,89 +1119,89 @@
  ],
  "ARKG": [
   [
-   "TXG",
-   "10x Genomics, Inc.",
-   9.03
-  ],
-  [
    "TWST",
    "Twist Bioscience Corporation",
-   7.97
+   8.82
+  ],
+  [
+   "TXG",
+   "10x Genomics, Inc.",
+   8.65
   ],
   [
    "TEM",
    "Tempus AI, Inc.",
-   6.68
+   6.58
   ],
   [
    "CRSP",
    "CRISPR Therapeutics AG",
-   6.6
+   6.45
   ],
   [
    "PSNL",
    "Personalis, Inc.",
-   5.55
+   5.38
   ],
   [
    "ABSI",
    "Absci Corporation",
-   5.32
-  ],
-  [
-   "ILMN",
-   "Illumina, Inc.",
-   4.45
-  ],
-  [
-   "GH",
-   "Guardant Health, Inc.",
-   4.44
-  ],
-  [
-   "CDNA",
-   "CareDx, Inc.",
-   4.4
+   5.23
   ],
   [
    "LLY",
    "Eli Lilly and Company",
-   4.32
+   4.64
+  ],
+  [
+   "GH",
+   "Guardant Health, Inc.",
+   4.4
+  ],
+  [
+   "ILMN",
+   "Illumina, Inc.",
+   4.27
+  ],
+  [
+   "CDNA",
+   "CareDx, Inc.",
+   4.2
   ],
   [
    "NTRA",
    "Natera, Inc.",
-   4.03
+   3.9
   ],
   [
    "BEAM",
    "Beam Therapeutics Inc.",
-   3.98
+   3.85
   ],
   [
    "CMPS",
    "COMPASS Pathways plc",
-   3.21
+   3.71
   ],
   [
    "RXRX",
    "Recursion Pharmaceuticals, Inc.",
-   2.75
-  ],
-  [
-   "ADPT",
-   "Adaptive Biotechnologies Corporation",
    2.66
-  ],
-  [
-   "BFLY",
-   "Butterfly Network, Inc.",
-   2.56
   ],
   [
    "NRIX",
    "Nurix Therapeutics, Inc.",
-   2.53
+   2.6
+  ],
+  [
+   "ADPT",
+   "Adaptive Biotechnologies Corporation",
+   2.57
+  ],
+  [
+   "BFLY",
+   "Butterfly Network, Inc.",
+   2.43
   ],
   [
    "VCYT",
@@ -1209,39 +1209,39 @@
    2.42
   ],
   [
-   "WGS",
-   "GeneDx Holdings Corp.",
-   2.01
-  ],
-  [
    "SDGR",
    "SchrÃ¶dinger, Inc.",
-   1.95
+   2.28
+  ],
+  [
+   "WGS",
+   "GeneDx Holdings Corp.",
+   2.14
   ],
   [
    "NTLA",
    "Intellia Therapeutics, Inc.",
-   1.84
+   1.89
   ],
   [
    "IONS",
    "Ionis Pharmaceuticals, Inc.",
-   1.78
+   1.77
   ],
   [
    "ALMR",
    "Alamar Biosciences, Inc.",
-   1.58
+   1.65
   ],
   [
    "PRME",
    "Prime Medicine, Inc.",
-   1.37
+   1.36
   ],
   [
    "GENB",
    "Generate Biomedicines, Inc.",
-   1.08
+   1.05
   ]
  ],
  "NASA": [
@@ -1370,47 +1370,47 @@
   [
    "KRX: 005930",
    "Samsung Electronics Co., Ltd.",
-   17.98
+   18.46
   ],
   [
    "KRX: 000660",
    "SK hynix Inc.",
-   15.79
-  ],
-  [
-   "WDC",
-   "Western Digital Corporation",
-   5.04
+   15.21
   ],
   [
    "STX",
    "Seagate Technology Holdings plc",
-   5.02
+   5.08
+  ],
+  [
+   "WDC",
+   "Western Digital Corporation",
+   4.2
   ],
   [
    "SNDK",
    "Sandisk Corporation",
-   4.45
+   3.97
   ],
   [
    "MU",
    "Micron Technology, Inc.",
-   2.57
+   2.63
   ],
   [
    "SKHY",
    "SK hynix Inc.",
-   0.53
+   0.49
   ],
   [
    "KRX: 005935",
    "Samsung Electronics Co., Ltd.",
-   0.07
+   0.1
   ],
   [
    "KRW",
    "SOUTH KOREA WON",
-   0.01
+   0.02
   ],
   [
    "TWD",
@@ -2332,7 +2332,7 @@
   [
    "MSFT",
    "Microsoft Corporation",
-   3.44
+   3.43
   ],
   [
    "JPM",
@@ -2342,42 +2342,42 @@
   [
    "JNJ",
    "Johnson & Johnson",
-   3.03
+   3.05
   ],
   [
    "AAPL",
    "Apple Inc.",
-   2.86
+   2.85
   ],
   [
    "ABBV",
    "AbbVie Inc.",
-   2.84
+   2.85
   ],
   [
    "XOM",
    "ExxonMobil Holdings Corporation",
-   2.82
+   2.78
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   2.72
+   2.76
   ],
   [
    "HD",
    "The Home Depot, Inc.",
-   2.22
+   2.25
   ],
   [
    "PG",
    "The Procter & Gamble Company",
-   2.18
+   2.15
   ],
   [
    "PM",
    "Philip Morris International Inc.",
-   2.07
+   2.08
   ],
   [
    "KO",
@@ -2392,12 +2392,12 @@
   [
    "BAC",
    "Bank of America Corporation",
-   1.84
+   1.83
   ],
   [
    "UNH",
    "UnitedHealth Group Incorporated",
-   1.69
+   1.7
   ],
   [
    "PEP",
@@ -2412,22 +2412,17 @@
   [
    "AMGN",
    "Amgen Inc.",
-   1.35
+   1.36
   ],
   [
    "WFC",
    "Wells Fargo & Company",
-   1.27
+   1.26
   ],
   [
    "LLY",
    "Eli Lilly and Company",
-   1.22
-  ],
-  [
-   "MCD",
-   "McDonald's Corporation",
-   1.12
+   1.21
   ],
   [
    "IBM",
@@ -2437,12 +2432,7 @@
   [
    "GS",
    "The Goldman Sachs Group, Inc.",
-   1.11
-  ],
-  [
-   "ABT",
-   "Abbott Laboratories",
-   1.11
+   1.12
   ],
   [
    "NEE",
@@ -2450,9 +2440,19 @@
    1.11
   ],
   [
+   "MCD",
+   "McDonald's Corporation",
+   1.1
+  ],
+  [
+   "ABT",
+   "Abbott Laboratories",
+   1.1
+  ],
+  [
    "V",
    "Visa Inc.",
-   1.09
+   1.07
   ]
  ],
  "EMXC": [
@@ -3186,41 +3186,36 @@
   [
    "NSE: HDFCBANK",
    "HDFC Bank Limited",
-   6.22
+   6.19
   ],
   [
    "NSE: RELIANCE",
    "Reliance Industries Limited",
-   6.0
+   6.05
   ],
   [
    "NSE: ICICIBANK",
    "ICICI Bank Limited",
-   5.74
+   5.6
   ],
   [
    "NSE: BHARTIARTL",
    "Bharti Airtel Limited",
-   3.97
+   4.0
+  ],
+  [
+   "XTSLA",
+   "BlackRock Cash Funds Treasury SL Agency",
+   2.99
   ],
   [
    "NSE: INFY",
    "Infosys Limited",
-   2.63
-  ],
-  [
-   "XTSLA",
-   "BLK CSH FND TREASURY SL AGENCY",
-   2.61
+   2.66
   ],
   [
    "NSE: AXISBANK",
    "Axis Bank Limited",
-   2.15
-  ],
-  [
-   "NSE: BAJFINANCE",
-   "Bajaj Finance Limited",
    2.12
   ],
   [
@@ -3229,24 +3224,29 @@
    2.03
   ],
   [
+   "NSE: BAJFINANCE",
+   "Bajaj Finance Limited",
+   2.0
+  ],
+  [
    "NSE: KOTAKBANK",
    "Kotak Mahindra Bank Limited",
-   1.6
+   1.59
   ],
   [
    "NSE: SBIN",
    "State Bank of India",
-   1.49
+   1.51
   ],
   [
    "NSE: TCS",
    "Tata Consultancy Services Limited",
-   1.44
+   1.49
   ],
   [
    "NSE: TITAN",
    "Titan Company Limited",
-   1.32
+   1.3
   ],
   [
    "NSE: SUNPHARMA",
@@ -3261,32 +3261,32 @@
   [
    "NSE: SHRIRAMFIN",
    "Shriram Finance Limited",
-   1.2
+   1.17
   ],
   [
    "NSE: NTPC",
    "NTPC Limited",
-   1.12
+   1.11
   ],
   [
    "NSE: HINDUNILVR",
    "Hindustan Unilever Limited",
-   1.09
+   1.1
   ],
   [
    "NSE: TATASTEEL",
    "Tata Steel Limited",
-   1.05
+   1.04
   ],
   [
    "NSE: BEL",
    "Bharat Electronics Limited",
-   1.03
+   1.04
   ],
   [
    "NSE: HINDALCO",
    "Hindalco Industries Limited",
-   0.99
+   1.02
   ],
   [
    "NSE: ULTRACEMCO",
@@ -3296,54 +3296,54 @@
   [
    "NSE: HCLTECH",
    "HCL Technologies Limited",
-   0.88
+   0.89
   ],
   [
    "NSE: POWERGRID",
    "Power Grid Corporation of India Limited",
-   0.84
+   0.85
   ]
  ],
  "INDY": [
   [
    "NSE: HDFCBANK",
    "HDFC Bank Limited",
-   10.34
+   9.92
   ],
   [
    "NSE: ICICIBANK",
    "ICICI Bank Limited",
-   9.2
+   9.02
   ],
   [
    "NSE: RELIANCE",
    "Reliance Industries Limited",
-   7.83
+   7.99
   ],
   [
    "NSE: BHARTIARTL",
    "Bharti Airtel Limited",
-   5.33
+   5.28
   ],
   [
    "NSE: LT",
    "Larsen & Toubro Limited",
-   4.13
+   4.21
   ],
   [
    "NSE: SBIN",
    "State Bank of India",
-   3.81
+   4.02
+  ],
+  [
+   "XTSLA",
+   "BlackRock Cash Funds Treasury SL Agency",
+   3.95
   ],
   [
    "NSE: INFY",
    "Infosys Limited",
-   3.63
-  ],
-  [
-   "XTSLA",
-   "BLK CSH FND TREASURY SL AGENCY",
-   3.54
+   3.65
   ],
   [
    "NSE: AXISBANK",
@@ -3351,79 +3351,79 @@
    3.15
   ],
   [
-   "NSE: KOTAKBANK",
-   "Kotak Mahindra Bank Limited",
-   2.59
-  ],
-  [
    "NSE: BAJFINANCE",
    "Bajaj Finance Limited",
-   2.53
+   2.56
+  ],
+  [
+   "NSE: KOTAKBANK",
+   "Kotak Mahindra Bank Limited",
+   2.55
   ],
   [
    "NSE: ITC",
    "ITC Limited",
-   2.46
+   2.44
   ],
   [
    "NSE: TCS",
    "Tata Consultancy Services Limited",
-   2.23
+   2.22
   ],
   [
    "NSE: ETERNAL",
    "Eternal Limited",
-   2.01
+   2.02
   ],
   [
    "NSE: SUNPHARMA",
    "Sun Pharmaceutical Industries Limited",
-   1.9
+   1.83
   ],
   [
    "NSE: TITAN",
    "Titan Company Limited",
-   1.8
+   1.81
   ],
   [
    "NSE: HINDUNILVR",
    "Hindustan Unilever Limited",
-   1.68
+   1.65
   ],
   [
    "NSE: MARUTI",
    "Maruti Suzuki India Limited",
-   1.66
+   1.62
   ],
   [
    "NSE: NTPC",
    "NTPC Limited",
-   1.47
-  ],
-  [
-   "NSE: TATASTEEL",
-   "Tata Steel Limited",
-   1.39
+   1.44
   ],
   [
    "NSE: SHRIRAMFIN",
    "Shriram Finance Limited",
-   1.29
+   1.38
   ],
   [
-   "NSE: HCLTECH",
-   "HCL Technologies Limited",
-   1.28
-  ],
-  [
-   "NSE: ULTRACEMCO",
-   "UltraTech Cement Limited",
-   1.26
+   "NSE: TATASTEEL",
+   "Tata Steel Limited",
+   1.37
   ],
   [
    "NSE: HINDALCO",
    "Hindalco Industries Limited",
-   1.26
+   1.36
+  ],
+  [
+   "NSE: BEL",
+   "Bharat Electronics Limited",
+   1.27
+  ],
+  [
+   "NSE: ULTRACEMCO",
+   "UltraTech Cement Limited",
+   1.27
   ]
  ],
  "IWM": [
@@ -4065,87 +4065,87 @@
   [
    "NUE",
    "Nucor Corporation",
-   3.34
-  ],
-  [
-   "EMR",
-   "Emerson Electric Co.",
-   3.22
+   3.32
   ],
   [
    "FAST",
    "Fastenal Company",
-   3.17
+   3.3
   ],
   [
-   "ETN",
-   "Eaton Corporation plc",
-   3.15
-  ],
-  [
-   "PWR",
-   "Quanta Services, Inc.",
-   3.12
-  ],
-  [
-   "DE",
-   "Deere & Company",
-   2.97
-  ],
-  [
-   "URI",
-   "United Rentals, Inc.",
-   2.97
-  ],
-  [
-   "CRH",
-   "CRH plc",
-   2.96
+   "EMR",
+   "Emerson Electric Co.",
+   3.21
   ],
   [
    "PH",
    "Parker-Hannifin Corporation",
-   2.96
+   3.2
   ],
   [
-   "HWM",
-   "Howmet Aerospace Inc.",
-   2.95
+   "ETN",
+   "Eaton Corporation plc",
+   3.17
+  ],
+  [
+   "PWR",
+   "Quanta Services, Inc.",
+   3.02
+  ],
+  [
+   "CRH",
+   "CRH plc",
+   3.01
+  ],
+  [
+   "URI",
+   "United Rentals, Inc.",
+   2.99
+  ],
+  [
+   "DE",
+   "Deere & Company",
+   2.99
   ],
   [
    "TT",
    "Trane Technologies plc",
-   2.89
+   2.95
   ],
   [
-   "NSC",
-   "Norfolk Southern Corporation",
+   "HWM",
+   "Howmet Aerospace Inc.",
    2.88
   ],
   [
    "UNP",
    "Union Pacific Corporation",
-   2.86
+   2.83
+  ],
+  [
+   "NSC",
+   "Norfolk Southern Corporation",
+   2.81
   ],
   [
    "ROK",
    "Rockwell Automation, Inc.",
-   2.84
+   2.81
   ],
   [
    "CSX",
    "CSX Corporation",
-   2.84
+   2.79
   ],
   [
    "SRE",
    "Sempra",
-   2.73
+   2.63
   ],
   [
    "STLD",
    "Steel Dynamics, Inc.",
-   2.1
+   2.08
   ],
   [
    "VMC",
@@ -4155,17 +4155,17 @@
   [
    "EME",
    "EMCOR Group, Inc.",
-   2.0
+   1.99
   ],
   [
    "MLM",
    "Martin Marietta Materials, Inc.",
-   1.83
+   1.81
   ],
   [
-   "AMRZ",
-   "Amrize AG",
-   1.58
+   "ATI",
+   "ATI Inc.",
+   1.71
   ],
   [
    "CRS",
@@ -4173,19 +4173,19 @@
    1.56
   ],
   [
-   "ATI",
-   "ATI Inc.",
-   1.5
-  ],
-  [
    "HUBB",
    "Hubbell Incorporated",
-   1.46
+   1.49
   ],
   [
-   "WWD",
-   "Woodward, Inc.",
-   1.22
+   "AMRZ",
+   "Amrize AG",
+   1.42
+  ],
+  [
+   "RS",
+   "Reliance, Inc.",
+   1.19
   ]
  ],
  "PHO": [
