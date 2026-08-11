@@ -130,111 +130,111 @@
   [
    "ARQQ",
    "Arqit Quantum Inc.",
-   1.87
+   2.01
   ],
   [
    "HQ",
    "Horizon Quantum Holdings Ltd.",
-   1.75
-  ],
-  [
-   "NET",
-   "Cloudflare, Inc.",
-   1.56
+   1.62
   ],
   [
    "SNOW",
    "Snowflake Inc.",
-   1.54
+   1.58
   ],
   [
-   "RTX",
-   "RTX Corporation",
-   1.46
-  ],
-  [
-   "EPA: AIR",
-   "Airbus SE",
-   1.43
-  ],
-  [
-   "NTNX",
-   "Nutanix, Inc.",
-   1.43
-  ],
-  [
-   "MSFT",
-   "Microsoft Corporation",
-   1.43
+   "NET",
+   "Cloudflare, Inc.",
+   1.57
   ],
   [
    "PLTR",
    "Palantir Technologies Inc.",
-   1.42
+   1.52
   ],
   [
-   "NVEC",
-   "NVE Corporation",
-   1.41
+   "NTNX",
+   "Nutanix, Inc.",
+   1.45
+  ],
+  [
+   "MSFT",
+   "Microsoft Corporation",
+   1.44
+  ],
+  [
+   "RTX",
+   "RTX Corporation",
+   1.44
+  ],
+  [
+   "RDNT",
+   "RadNet, Inc.",
+   1.43
+  ],
+  [
+   "ESTC",
+   "Elastic N.V.",
+   1.42
   ],
   [
    "TYO: 6701",
    "NEC Corporation",
+   1.41
+  ],
+  [
+   "EPA: AIR",
+   "Airbus SE",
+   1.4
+  ],
+  [
+   "NVEC",
+   "NVE Corporation",
+   1.38
+  ],
+  [
+   "TYO: 6501",
+   "Hitachi, Ltd.",
    1.37
   ],
   [
    "HPE",
    "Hewlett Packard Enterprise Company",
-   1.37
-  ],
-  [
-   "TYO: 6501",
-   "Hitachi, Ltd.",
-   1.36
+   1.34
   ],
   [
    "BIT: REY",
    "Reply S.p.A.",
-   1.35
-  ],
-  [
-   "RDNT",
-   "RadNet, Inc.",
-   1.35
-  ],
-  [
-   "ESTC",
-   "Elastic N.V.",
-   1.34
+   1.33
   ],
   [
    "AMZN",
    "Amazon.com, Inc.",
-   1.34
+   1.32
   ],
   [
    "AVGO",
    "Broadcom Inc.",
+   1.32
+  ],
+  [
+   "MDB",
+   "MongoDB, Inc.",
    1.31
   ],
   [
-   "TER",
-   "Teradyne, Inc.",
+   "ONTO",
+   "Onto Innovation Inc.",
    1.31
-  ],
-  [
-   "BABA",
-   "Alibaba Group Holding Limited",
-   1.3
-  ],
-  [
-   "LMT",
-   "Lockheed Martin Corporation",
-   1.28
   ],
   [
    "TPE: 3443",
    "Global Unichip Corp.",
+   1.29
+  ],
+  [
+   "LMT",
+   "Lockheed Martin Corporation",
    1.28
   ],
   [
@@ -243,14 +243,14 @@
    1.28
   ],
   [
-   "MDB",
-   "MongoDB, Inc.",
-   1.26
+   "BABA",
+   "Alibaba Group Holding Limited",
+   1.28
   ],
   [
-   "AMAT",
-   "Applied Materials, Inc.",
-   1.26
+   "TYO: 6702",
+   "Fujitsu Limited",
+   1.27
   ]
  ],
  "XLE": [
@@ -1801,49 +1801,49 @@
  ],
  "XLF": [
   [
-   "BRK.B",
-   "Berkshire Hathaway Inc.",
-   11.78
-  ],
-  [
    "JPM",
    "JPMorgan Chase & Co.",
-   11.69
+   11.76
+  ],
+  [
+   "BRK.B",
+   "Berkshire Hathaway Inc.",
+   11.75
   ],
   [
    "V",
    "Visa Inc.",
-   7.53
+   7.39
   ],
   [
    "MA",
    "Mastercard Incorporated",
-   5.69
+   5.58
   ],
   [
    "BAC",
    "Bank of America Corporation",
-   5.04
+   5.06
   ],
   [
    "GS",
    "The Goldman Sachs Group, Inc.",
-   3.73
+   3.77
   ],
   [
    "WFC",
    "Wells Fargo & Company",
-   3.26
+   3.28
   ],
   [
    "MS",
    "Morgan Stanley",
-   3.14
+   3.18
   ],
   [
    "C",
    "Citigroup Inc.",
-   2.8
+   2.83
   ],
   [
    "AXP",
@@ -1858,17 +1858,17 @@
   [
    "BLK",
    "BlackRock, Inc.",
-   2.0
+   2.01
   ],
   [
    "COF",
    "Capital One Financial Corporation",
-   1.68
+   1.66
   ],
   [
    "CB",
    "Chubb Limited",
-   1.56
+   1.55
   ],
   [
    "PGR",
@@ -1878,27 +1878,27 @@
   [
    "SPGI",
    "S&P Global Inc.",
-   1.5
+   1.52
   ],
   [
    "BNY",
    "The Bank of New York Mellon Corporation",
-   1.34
-  ],
-  [
-   "PNC",
-   "The PNC Financial Services Group, Inc.",
-   1.24
+   1.33
   ],
   [
    "BX",
    "Blackstone Inc.",
-   1.21
+   1.25
+  ],
+  [
+   "PNC",
+   "The PNC Financial Services Group, Inc.",
+   1.25
   ],
   [
    "USB",
    "U.S. Bancorp",
-   1.21
+   1.22
   ],
   [
    "CME",
@@ -1908,7 +1908,7 @@
   [
    "MRSH",
    "Marsh & McLennan Companies, Inc.",
-   1.14
+   1.13
   ],
   [
    "ICE",
@@ -1918,7 +1918,7 @@
   [
    "TRV",
    "The Travelers Companies, Inc.",
-   1.01
+   1.0
   ],
   [
    "AON",
