@@ -745,62 +745,72 @@
   [
    "TYO: 6861",
    "Keyence Corporation",
-   10.69
+   10.81
   ],
   [
    "NVDA",
    "NVIDIA Corporation",
-   9.39
+   9.37
   ],
   [
    "SWX: ABBN",
    "ABB Ltd",
-   9.2
+   9.14
   ],
   [
    "TYO: 6954",
    "Fanuc Corporation",
-   7.87
+   7.78
   ],
   [
    "ISRG",
    "Intuitive Surgical, Inc.",
-   6.17
+   6.06
   ],
   [
    "TYO: 6273",
    "SMC Corporation",
-   4.77
+   4.72
+  ],
+  [
+   "SHE: 300124",
+   "Shenzhen Inovance Technology Co.,Ltd",
+   3.82
   ],
   [
    "TYO: 6383",
    "Daifuku Co., Ltd.",
-   3.23
+   3.22
   ],
   [
    "AUR",
    "Aurora Innovation, Inc.",
-   2.4
+   2.45
   ],
   [
-   "GOOGL",
-   "Alphabet Inc.",
-   2.2
+   "SHE: 300757",
+   "RoboTechnik Intelligent Technology Co., LTD",
+   2.35
   ],
   [
    "CGNX",
    "Cognex Corporation",
+   2.33
+  ],
+  [
+   "GOOGL",
+   "Alphabet Inc.",
    2.19
   ],
   [
    "AVAV",
    "AeroVironment, Inc.",
-   2.03
+   2.06
   ],
   [
    "TYO: 6506",
    "YASKAWA Electric Corporation",
-   1.97
+   1.95
   ],
   [
    "TYO: 6645",
@@ -810,47 +820,47 @@
   [
    "HKG: 9660",
    "Horizon Robotics",
-   1.73
+   1.71
   ],
   [
    "BIDU",
    "Baidu, Inc.",
-   1.7
-  ],
-  [
-   "PATH",
-   "UiPath, Inc.",
-   1.65
+   1.68
   ],
   [
    "TSLA",
    "Tesla, Inc.",
-   1.6
+   1.61
+  ],
+  [
+   "PATH",
+   "UiPath, Inc.",
+   1.58
   ],
   [
    "HKG: 1810",
    "Xiaomi Corporation",
-   1.53
+   1.51
   ],
   [
    "JBTM",
    "JBT Marel Corporation",
-   1.31
+   1.33
   ],
   [
    "OSL: AUTO",
    "AutoStore Holdings Ltd.",
-   1.28
+   1.32
   ],
   [
    "XPEV",
    "XPeng Inc.",
-   1.16
+   1.15
   ],
   [
    "SYM",
    "Symbotic Inc.",
-   1.13
+   1.15
   ]
  ],
  "ROBT": [
@@ -4563,62 +4573,62 @@
   [
    "WELL",
    "Welltower Inc.",
-   10.73
+   10.75
   ],
   [
    "PLD",
    "Prologis, Inc.",
-   8.68
+   8.65
   ],
   [
    "DLR",
    "Digital Realty Trust, Inc.",
-   4.73
+   4.78
   ],
   [
    "SPG",
    "Simon Property Group, Inc.",
-   4.68
+   4.63
   ],
   [
    "EQIX",
    "Equinix, Inc.",
-   4.29
+   4.39
   ],
   [
    "AMT",
    "American Tower Corporation",
-   4.11
+   4.14
   ],
   [
    "O",
    "Realty Income Corporation",
-   4.04
+   4.02
   ],
   [
    "PSA",
    "Public Storage",
-   3.79
+   3.75
   ],
   [
    "VTR",
    "Ventas, Inc.",
-   3.02
+   3.05
   ],
   [
    "IRM",
    "Iron Mountain Incorporated",
-   2.59
+   2.64
   ],
   [
    "CCI",
    "Crown Castle Inc.",
-   2.27
+   2.28
   ],
   [
    "EXR",
    "Extra Space Storage Inc.",
-   2.17
+   2.14
   ],
   [
    "VICI",
@@ -4633,12 +4643,12 @@
   [
    "EQR",
    "Equity Residential",
-   1.55
+   1.54
   ],
   [
    "SBAC",
    "SBA Communications Corporation",
-   1.36
+   1.35
   ],
   [
    "ESS",
@@ -4648,7 +4658,7 @@
   [
    "WY",
    "Weyerhaeuser Company",
-   1.23
+   1.22
   ],
   [
    "INVH",
@@ -4678,12 +4688,12 @@
   [
    "DOC",
    "Healthpeak Properties, Inc.",
-   0.99
+   0.98
   ],
   [
    "SUI",
    "Sun Communities, Inc.",
-   0.96
+   0.98
   ]
  ],
  "VB": [
@@ -5798,92 +5808,92 @@
   [
    "AMZN",
    "Amazon.com, Inc.",
-   24.81
+   24.3
   ],
   [
    "TSLA",
    "Tesla, Inc.",
-   15.23
+   15.86
   ],
   [
    "HD",
    "The Home Depot, Inc.",
-   5.65
+   5.55
   ],
   [
    "MCD",
    "McDonald's Corporation",
-   4.22
+   4.16
   ],
   [
    "BKNG",
    "Booking Holdings Inc.",
-   4.07
+   4.06
   ],
   [
    "TJX",
    "The TJX Companies, Inc.",
-   3.92
+   3.91
   ],
   [
    "SBUX",
    "Starbucks Corporation",
-   3.06
+   3.03
   ],
   [
    "LOW",
    "Lowe's Companies, Inc.",
-   3.0
+   3.02
   ],
   [
    "DASH",
    "DoorDash, Inc.",
-   1.99
+   2.03
   ],
   [
    "ROST",
    "Ross Stores, Inc.",
-   1.98
+   1.95
   ],
   [
    "GM",
    "General Motors Company",
-   1.94
+   1.93
   ],
   [
    "MAR",
    "Marriott International, Inc.",
-   1.92
-  ],
-  [
-   "RCL",
-   "Royal Caribbean Cruises Ltd.",
-   1.9
-  ],
-  [
-   "ORLY",
-   "O'Reilly Automotive, Inc.",
-   1.89
+   1.93
   ],
   [
    "ABNB",
    "Airbnb, Inc.",
+   1.9
+  ],
+  [
+   "RCL",
+   "Royal Caribbean Cruises Ltd.",
+   1.88
+  ],
+  [
+   "ORLY",
+   "O'Reilly Automotive, Inc.",
    1.86
   ],
   [
    "HLT",
    "Hilton Worldwide Holdings Inc.",
-   1.82
+   1.84
   ],
   [
    "F",
    "Ford Motor Company",
-   1.34
+   1.39
   ],
   [
    "CVNA",
    "Carvana Co.",
-   1.29
+   1.34
   ],
   [
    "GRMN",
@@ -5893,12 +5903,12 @@
   [
    "AZO",
    "AutoZone, Inc.",
-   1.24
+   1.23
   ],
   [
    "NKE",
    "NIKE, Inc.",
-   1.2
+   1.21
   ],
   [
    "EBAY",
@@ -5908,17 +5918,17 @@
   [
    "CMG",
    "Chipotle Mexican Grill, Inc.",
-   1.04
+   1.06
   ],
   [
    "YUM",
    "Yum! Brands, Inc.",
-   1.03
+   1.01
   ],
   [
    "DHI",
    "D.R. Horton, Inc.",
-   0.95
+   0.97
   ]
  ],
  "BBJP": [

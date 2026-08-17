@@ -7,7 +7,7 @@
   "SPYM": 51.2,
   "CIBR": 87.0,
   "URA": 92.3,
-  "BOTZ": 77.1,
+  "BOTZ": 83.2,
   "ROBT": 41.3,
   "XBI": 33.2,
   "ARKG": 94.9,
@@ -41,7 +41,7 @@
   "PHO": 93.1,
   "REET": 57.6,
   "SCHD": 79.1,
-  "SCHH": 71.6,
+  "SCHH": 71.7,
   "VB": 8.9,
   "VNQ": 72.5,
   "VT": 29.9,
@@ -51,7 +51,7 @@
   "VYM": 42.5,
   "XLI": 64.8,
   "XLP": 92.6,
-  "XLY": 89.7,
+  "XLY": 89.8,
   "BBJP": 51.1,
   "DXJ": 49.4,
   "EPI": 51.0,
@@ -70,11 +70,11 @@
    "ortak_hisse": 21
   },
   "SCHH|VNQ": {
-   "overlap_pct": 54.95,
+   "overlap_pct": 55.05,
    "ortak_hisse": 23
   },
   "REET|SCHH": {
-   "overlap_pct": 51.4,
+   "overlap_pct": 51.5,
    "ortak_hisse": 21
   },
   "INDA|INDY": {
@@ -238,7 +238,7 @@
    "ortak_hisse": 10
   },
   "SPYM|BOTZ": {
-   "overlap_pct": 11.76,
+   "overlap_pct": 11.75,
    "ortak_hisse": 3
   },
   "NASA|RKLB": {
@@ -382,7 +382,7 @@
    "ortak_hisse": 4
   },
   "BOTZ|ROBT": {
-   "overlap_pct": 5.56,
+   "overlap_pct": 5.53,
    "ortak_hisse": 4
   },
   "CIBR|ROBT": {
@@ -709,13 +709,13 @@
    "overlap_pct": 2.07,
    "ortak_hisse": 2
   },
+  "BOTZ|JEDI": {
+   "overlap_pct": 2.06,
+   "ortak_hisse": 1
+  },
   "XLF|KIE": {
    "overlap_pct": 2.06,
    "ortak_hisse": 2
-  },
-  "BOTZ|JEDI": {
-   "overlap_pct": 2.03,
-   "ortak_hisse": 1
   },
   "BOTZ|EWJ": {
    "overlap_pct": 1.91,
@@ -761,11 +761,11 @@
    "overlap_pct": 1.64,
    "ortak_hisse": 1
   },
-  "SPYM|DRAM": {
-   "overlap_pct": 1.6,
+  "BOTZ|XLY": {
+   "overlap_pct": 1.61,
    "ortak_hisse": 1
   },
-  "BOTZ|XLY": {
+  "SPYM|DRAM": {
    "overlap_pct": 1.6,
    "ortak_hisse": 1
   },
