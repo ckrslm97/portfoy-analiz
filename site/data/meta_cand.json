@@ -3,121 +3,121 @@
   "longName": "iShares MSCI ACWI ETF",
   "currency": "USD",
   "firstTradeDate": "2008-03-28",
-  "price": 160.7
+  "price": 159.97
  },
  "AVUV": {
   "longName": "Avantis US Small Cap Value ETF",
   "currency": "USD",
   "firstTradeDate": "2019-09-26",
-  "price": 126.47
+  "price": 125.62
  },
  "BBJP": {
   "longName": "JPMorgan BetaBuilders Japan ETF",
   "currency": "USD",
   "firstTradeDate": "2018-06-18",
-  "price": 76.51
+  "price": 76.13
  },
  "CGW": {
   "longName": "Invesco S&P Global Water Index ETF",
   "currency": "USD",
   "firstTradeDate": "2007-05-14",
-  "price": 65.3425
+  "price": 64.86
  },
  "DGRO": {
   "longName": "iShares Core Dividend Growth ETF",
   "currency": "USD",
   "firstTradeDate": "2014-06-12",
-  "price": 80.04
+  "price": 79.25
  },
  "DXJ": {
   "longName": "WisdomTree Japan Hedged Equity Fund",
   "currency": "USD",
   "firstTradeDate": "2006-06-16",
-  "price": 174.78
+  "price": 175.6
  },
  "EMXC": {
   "longName": "iShares MSCI Emerging Markets ex China ETF",
   "currency": "USD",
   "firstTradeDate": "2017-07-26",
-  "price": 96.14
+  "price": 96.98
  },
  "EPI": {
   "longName": "WisdomTree India Earnings Fund",
   "currency": "USD",
   "firstTradeDate": "2008-02-26",
-  "price": 42.9
+  "price": 42.87
  },
  "EWJ": {
-  "longName": "iShares MSCI Japan ETF",
+  "longName": "iShares MSCI Japan Index Fund",
   "currency": "USD",
   "firstTradeDate": "1996-03-18",
-  "price": 94.78
+  "price": 94.27
  },
  "FIW": {
   "longName": "First Trust Water ETF",
   "currency": "USD",
   "firstTradeDate": "2007-05-11",
-  "price": 111.76
+  "price": 110.45
  },
  "IAT": {
   "longName": "iShares U.S. Regional Banks ETF",
   "currency": "USD",
   "firstTradeDate": "2006-05-05",
-  "price": 62.95
+  "price": 62.17
  },
  "IBB": {
   "longName": "iShares Biotechnology ETF",
   "currency": "USD",
   "firstTradeDate": "2001-02-12",
-  "price": 216.96
+  "price": 210.83
  },
  "IEMG": {
   "longName": "iShares Core MSCI Emerging Markets ETF",
   "currency": "USD",
   "firstTradeDate": "2012-10-24",
-  "price": 80.57
+  "price": 81.05
  },
  "IEUR": {
   "longName": "iShares Core MSCI Europe ETF",
   "currency": "USD",
   "firstTradeDate": "2014-06-12",
-  "price": 78.0
+  "price": 77.8
  },
  "IEV": {
   "longName": "iShares Europe ETF",
   "currency": "USD",
   "firstTradeDate": "2000-07-28",
-  "price": 75.58
+  "price": 75.34
  },
  "IGF": {
   "longName": "iShares Global Infrastructure ETF",
   "currency": "USD",
   "firstTradeDate": "2007-12-12",
-  "price": 66.01
+  "price": 65.81
  },
  "INDA": {
   "longName": "iShares MSCI India ETF",
   "currency": "USD",
   "firstTradeDate": "2012-02-03",
-  "price": 49.54
+  "price": 49.55
  },
  "INDY": {
   "longName": "iShares India 50 ETF",
   "currency": "USD",
   "firstTradeDate": "2009-11-20",
-  "price": 43.433
+  "price": 43.497
  },
  "IWM": {
   "longName": "iShares Russell 2000 ETF",
   "currency": "USD",
   "firstTradeDate": "2000-05-26",
-  "price": 301.72
+  "price": 297.67
  },
  "KBE": {
   "longName": "State Street SPDR S&P Bank ETF",
   "currency": "USD",
   "firstTradeDate": "2005-11-15",
-  "price": 69.12
+  "price": 68.62
  },
  "KIE": {
   "longName": "State Street SPDR S&P Insurance ETF",
@@ -129,108 +129,108 @@
   "longName": "State Street SPDR S&P Regional Banking ETF",
   "currency": "USD",
   "firstTradeDate": "2006-06-22",
-  "price": 75.0
+  "price": 74.71
  },
  "NFRA": {
   "longName": "Northern Trust STOXX Global Broad Infrastructure ETF",
   "currency": "USD",
   "firstTradeDate": "2013-10-09",
-  "price": 65.9697
+  "price": 65.99
  },
  "PAVE": {
   "longName": "Global X U.S. Infrastructure Development ETF",
   "currency": "USD",
   "firstTradeDate": "2017-03-08",
-  "price": 56.78
+  "price": 56.04
  },
  "PHO": {
   "longName": "Invesco Water Resources ETF",
   "currency": "USD",
   "firstTradeDate": "2005-12-06",
-  "price": 72.37
+  "price": 71.65
  },
  "REET": {
   "longName": "iShares Global REIT ETF",
   "currency": "USD",
   "firstTradeDate": "2014-07-10",
-  "price": 28.02
+  "price": 28.08
  },
  "SCHD": {
   "longName": "Schwab U.S. Dividend Equity ETF",
   "currency": "USD",
   "firstTradeDate": "2011-10-20",
-  "price": 35.09
+  "price": 34.83
  },
  "SCHH": {
   "longName": "Schwab U.S. REIT ETF",
   "currency": "USD",
   "firstTradeDate": "2011-01-13",
-  "price": 24.0
+  "price": 24.06
  },
  "VB": {
   "longName": "Vanguard Morningstar Small-Cap ETF",
   "currency": "USD",
   "firstTradeDate": "2004-01-30",
-  "price": 305.95
+  "price": 302.83
  },
  "VGK": {
-  "longName": "Vanguard FTSE Europe ETF",
+  "longName": "Vanguard FTSEEuropean ETF",
   "currency": "USD",
   "firstTradeDate": "2005-03-10",
-  "price": 92.23
+  "price": 92.01
  },
  "VNQ": {
-  "longName": "Vanguard Real Estate Index Fund ETF Shares",
+  "longName": "Vanguard Real Estate ETF",
   "currency": "USD",
   "firstTradeDate": "2004-09-29",
-  "price": 98.61
+  "price": 98.6
  },
  "VT": {
-  "longName": "Vanguard Total World Stock Index Fund ETF Shares",
+  "longName": "Vanguard Total World Stock Inde",
   "currency": "USD",
   "firstTradeDate": "2008-06-26",
-  "price": 160.7
+  "price": 159.93
  },
  "VTV": {
   "longName": "Vanguard Morningstar Value ETF",
   "currency": "USD",
   "firstTradeDate": "2004-01-30",
-  "price": 226.95
+  "price": 225.19
  },
  "VWO": {
   "longName": "Vanguard Emerging Markets Stock Index Fund",
   "currency": "USD",
   "firstTradeDate": "2005-03-10",
-  "price": 60.04
+  "price": 60.02
  },
  "VXUS": {
   "longName": "Vanguard Total International Stock Index Fund ETF Shares",
   "currency": "USD",
   "firstTradeDate": "2011-01-28",
-  "price": 86.97
+  "price": 87.03
  },
  "VYM": {
-  "longName": "Vanguard High Dividend Yield Index Fund ETF Shares",
+  "longName": "Vanguard High Dividend Yield ET",
   "currency": "USD",
   "firstTradeDate": "2006-11-16",
-  "price": 165.34
+  "price": 164.0
  },
  "XLI": {
   "longName": "State Street Industrial Select Sector SPDR ETF",
   "currency": "USD",
   "firstTradeDate": "1998-12-22",
-  "price": 181.95
+  "price": 179.77
  },
  "XLP": {
   "longName": "State Street Consumer Staples Select Sector SPDR ETF",
   "currency": "USD",
   "firstTradeDate": "1998-12-22",
-  "price": 86.54
+  "price": 85.32
  },
  "XLY": {
-  "longName": "State Street Consumer Discretionary Select Sector SPDR ETF",
+  "longName": "State Street Consumer Discretio",
   "currency": "USD",
   "firstTradeDate": "1998-12-22",
-  "price": 118.59
+  "price": 116.68
  }
 }
