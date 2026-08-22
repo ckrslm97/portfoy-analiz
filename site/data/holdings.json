@@ -128,129 +128,129 @@
  ],
  "QTUM": [
   [
-   "ARQQ",
-   "Arqit Quantum Inc.",
-   2.01
-  ],
-  [
    "HQ",
    "Horizon Quantum Holdings Ltd.",
-   1.85
+   2.04
   ],
   [
-   "NET",
-   "Cloudflare, Inc.",
-   1.67
+   "ARQQ",
+   "Arqit Quantum Inc.",
+   1.88
   ],
   [
    "ESTC",
    "Elastic N.V.",
-   1.57
-  ],
-  [
-   "SNOW",
-   "Snowflake Inc.",
-   1.56
+   1.66
   ],
   [
    "TPE: 3443",
    "Global Unichip Corp.",
-   1.54
+   1.65
+  ],
+  [
+   "SNOW",
+   "Snowflake Inc.",
+   1.57
   ],
   [
    "PLTR",
    "Palantir Technologies Inc.",
-   1.53
+   1.57
   ],
   [
    "NTNX",
    "Nutanix, Inc.",
-   1.52
-  ],
-  [
-   "MDB",
-   "MongoDB, Inc.",
-   1.51
+   1.57
   ],
   [
    "RDNT",
    "RadNet, Inc.",
-   1.48
+   1.56
   ],
   [
-   "HPE",
-   "Hewlett Packard Enterprise Company",
-   1.46
-  ],
-  [
-   "ONTO",
-   "Onto Innovation Inc.",
-   1.39
-  ],
-  [
-   "MSFT",
-   "Microsoft Corporation",
-   1.39
-  ],
-  [
-   "RTX",
-   "RTX Corporation",
-   1.38
+   "NET",
+   "Cloudflare, Inc.",
+   1.49
   ],
   [
    "TYO: 6701",
    "NEC Corporation",
-   1.37
+   1.43
   ],
   [
-   "QNT",
-   "Quantinuum Inc.",
-   1.37
+   "MSFT",
+   "Microsoft Corporation",
+   1.42
   ],
   [
-   "EPA: AIR",
-   "Airbus SE",
-   1.35
+   "MDB",
+   "MongoDB, Inc.",
+   1.42
   ],
   [
-   "NBIS",
-   "Nebius Group N.V.",
-   1.34
-  ],
-  [
-   "TYO: 6501",
-   "Hitachi, Ltd.",
-   1.33
-  ],
-  [
-   "TER",
-   "Teradyne, Inc.",
-   1.31
-  ],
-  [
-   "TPE: 2357",
-   "ASUSTeK Computer Inc.",
-   1.3
+   "RTX",
+   "RTX Corporation",
+   1.41
   ],
   [
    "BIT: REY",
    "Reply S.p.A.",
-   1.29
+   1.4
   ],
   [
-   "LMT",
-   "Lockheed Martin Corporation",
-   1.26
+   "EPA: AIR",
+   "Airbus SE",
+   1.39
+  ],
+  [
+   "HPE",
+   "Hewlett Packard Enterprise Company",
+   1.37
+  ],
+  [
+   "TPE: 2357",
+   "ASUSTeK Computer Inc.",
+   1.34
+  ],
+  [
+   "BABA",
+   "Alibaba Group Holding Limited",
+   1.33
   ],
   [
    "TYO: 6702",
    "Fujitsu Limited",
-   1.25
+   1.32
   ],
   [
-   "NVDA",
-   "NVIDIA Corporation",
-   1.25
+   "TYO: 6501",
+   "Hitachi, Ltd.",
+   1.31
+  ],
+  [
+   "ONTO",
+   "Onto Innovation Inc.",
+   1.3
+  ],
+  [
+   "TER",
+   "Teradyne, Inc.",
+   1.3
+  ],
+  [
+   "TYO: 9432",
+   "NTT, Inc.",
+   1.29
+  ],
+  [
+   "AMZN",
+   "Amazon.com, Inc.",
+   1.28
+  ],
+  [
+   "MU",
+   "Micron Technology, Inc.",
+   1.28
   ]
  ],
  "XLE": [
@@ -491,47 +491,47 @@
   [
    "PANW",
    "Palo Alto Networks, Inc.",
-   9.74
-  ],
-  [
-   "CRWD",
-   "CrowdStrike Holdings, Inc.",
-   8.55
+   9.49
   ],
   [
    "FTNT",
    "Fortinet, Inc.",
-   8.25
+   8.36
+  ],
+  [
+   "CRWD",
+   "CrowdStrike Holdings, Inc.",
+   7.96
   ],
   [
    "CSCO",
    "Cisco Systems, Inc.",
-   6.85
+   6.96
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   6.41
+   6.23
   ],
   [
    "NET",
    "Cloudflare, Inc.",
-   4.64
+   4.41
   ],
   [
    "ZS",
    "Zscaler, Inc.",
-   3.65
+   3.63
   ],
   [
    "OKTA",
    "Okta, Inc.",
-   3.39
+   3.33
   ],
   [
    "RBRK",
    "Rubrik, Inc.",
-   3.08
+   3.12
   ],
   [
    "FFIV",
@@ -541,77 +541,77 @@
   [
    "AKAM",
    "Akamai Technologies, Inc.",
-   2.71
-  ],
-  [
-   "ANET",
-   "Arista Networks, Inc.",
-   2.31
+   2.54
   ],
   [
    "GEN",
    "Gen Digital Inc.",
-   2.16
-  ],
-  [
-   "NTAP",
-   "NetApp, Inc.",
-   2.14
-  ],
-  [
-   "FROG",
-   "JFrog Ltd.",
-   2.09
+   2.33
   ],
   [
    "DT",
    "Dynatrace, Inc.",
-   2.04
+   2.21
+  ],
+  [
+   "ANET",
+   "Arista Networks, Inc.",
+   2.2
+  ],
+  [
+   "NTAP",
+   "NetApp, Inc.",
+   2.11
   ],
   [
    "LDOS",
    "Leidos Holdings, Inc.",
-   2.03
+   2.11
   ],
   [
-   "EPA: HO",
-   "Thales S.A.",
-   2.02
-  ],
-  [
-   "MSFT",
-   "Microsoft Corporation",
-   1.95
+   "FROG",
+   "JFrog Ltd.",
+   2.08
   ],
   [
    "CHKP",
    "Check Point Software Technologies Ltd.",
-   1.9
+   2.05
   ],
   [
-   "DDOG",
-   "Datadog, Inc.",
-   1.83
+   "MSFT",
+   "Microsoft Corporation",
+   2.04
   ],
   [
-   "INFY",
-   "Infosys Limited",
-   1.68
+   "EPA: HO",
+   "Thales S.A.",
+   2.03
   ],
   [
    "ACN",
    "Accenture plc",
-   1.66
+   1.85
+  ],
+  [
+   "DDOG",
+   "Datadog, Inc.",
+   1.8
+  ],
+  [
+   "INFY",
+   "Infosys Limited",
+   1.79
   ],
   [
    "GOOGL",
    "Alphabet Inc.",
-   1.65
+   1.71
   ],
   [
    "IBM",
    "International Business Machines Corporation",
-   1.4
+   1.5
   ]
  ],
  "URA": [
@@ -1427,122 +1427,122 @@
   [
    "UMAC",
    "Unusual Machines, Inc.",
-   12.34
+   13.23
   ],
   [
    "RDW",
    "Redwire Corporation",
-   11.61
+   11.25
   ],
   [
    "ONDS",
    "Ondas Inc.",
-   6.68
+   6.88
   ],
   [
    "ACHR",
    "Archer Aviation Inc.",
-   5.52
+   5.27
   ],
   [
    "AI",
    "C3.ai, Inc.",
-   5.0
+   5.26
   ],
   [
    "LUNR",
    "Intuitive Machines, Inc.",
-   4.45
+   4.84
   ],
   [
    "RCAT",
    "Red Cat Holdings, Inc.",
-   4.34
+   4.33
   ],
   [
    "RKLB",
    "Rocket Lab Corporation",
-   3.85
-  ],
-  [
-   "FEIM",
-   "Frequency Electronics, Inc.",
-   3.24
-  ],
-  [
-   "AVAV",
-   "AeroVironment, Inc.",
-   3.23
+   3.76
   ],
   [
    "ASTS",
    "AST SpaceMobile, Inc.",
-   3.17
+   3.04
+  ],
+  [
+   "AVAV",
+   "AeroVironment, Inc.",
+   3.04
   ],
   [
    "BKSY",
    "BlackSky Technology Inc.",
-   3.09
+   2.87
+  ],
+  [
+   "FEIM",
+   "Frequency Electronics, Inc.",
+   2.86
   ],
   [
    "JOBY",
    "Joby Aviation, Inc.",
-   2.2
+   2.12
   ],
   [
    "IRDM",
    "Iridium Communications Inc.",
-   2.1
-  ],
-  [
-   "PL",
-   "Planet Labs PBC",
-   1.78
-  ],
-  [
-   "AIRO",
-   "AIRO Group Holdings, Inc.",
-   1.74
+   2.11
   ],
   [
    "ASX: EOS",
    "Electro Optic Systems Holdings Limited",
-   1.66
+   1.77
+  ],
+  [
+   "PL",
+   "Planet Labs PBC",
+   1.67
   ],
   [
    "PLTR",
    "Palantir Technologies Inc.",
-   1.64
+   1.66
   ],
   [
    "SPCX",
    "Space Exploration Technologies Corp.",
-   1.53
+   1.56
   ],
   [
    "KTOS",
    "Kratos Defense & Security Solutions, Inc.",
-   1.52
+   1.51
   ],
   [
    "SAIC",
    "Science Applications International Corporation",
-   1.38
+   1.45
+  ],
+  [
+   "AIRO",
+   "AIRO Group Holdings, Inc.",
+   1.44
   ],
   [
    "SPIR",
    "Spire Global, Inc.",
-   1.3
+   1.32
   ],
   [
    "MRCY",
    "Mercury Systems, Inc.",
-   1.29
+   1.23
   ],
   [
    "CACI",
    "CACI International Inc",
-   1.07
+   1.09
   ]
  ],
  "XLV": [
@@ -4573,57 +4573,62 @@
   [
    "WELL",
    "Welltower Inc.",
-   10.75
+   10.88
   ],
   [
    "PLD",
    "Prologis, Inc.",
-   8.65
+   8.66
   ],
   [
    "DLR",
    "Digital Realty Trust, Inc.",
-   4.78
+   4.65
   ],
   [
    "SPG",
    "Simon Property Group, Inc.",
-   4.63
+   4.65
   ],
   [
    "EQIX",
    "Equinix, Inc.",
-   4.39
+   4.33
   ],
   [
    "AMT",
    "American Tower Corporation",
-   4.14
+   4.15
   ],
   [
    "O",
    "Realty Income Corporation",
-   4.02
+   4.06
   ],
   [
    "PSA",
    "Public Storage",
-   3.75
+   3.73
+  ],
+  [
+   "EQR",
+   "Equity Residential",
+   3.29
   ],
   [
    "VTR",
    "Ventas, Inc.",
-   3.05
+   3.1
   ],
   [
    "IRM",
    "Iron Mountain Incorporated",
-   2.64
+   2.52
   ],
   [
    "CCI",
    "Crown Castle Inc.",
-   2.28
+   2.27
   ],
   [
    "EXR",
@@ -4633,22 +4638,12 @@
   [
    "VICI",
    "VICI Properties Inc.",
-   1.98
-  ],
-  [
-   "AVB",
-   "AvalonBay Communities, Inc.",
-   1.76
-  ],
-  [
-   "EQR",
-   "Equity Residential",
-   1.54
+   2.0
   ],
   [
    "SBAC",
    "SBA Communications Corporation",
-   1.35
+   1.32
   ],
   [
    "ESS",
@@ -4668,7 +4663,7 @@
   [
    "KIM",
    "Kimco Realty Corporation",
-   1.13
+   1.12
   ],
   [
    "WPC",
@@ -4678,22 +4673,27 @@
   [
    "MAA",
    "Mid-America Apartment Communities, Inc.",
-   1.07
+   1.06
   ],
   [
    "HST",
    "Host Hotels & Resorts, Inc.",
-   1.0
+   1.01
   ],
   [
    "DOC",
    "Healthpeak Properties, Inc.",
-   0.98
+   1.01
   ],
   [
    "SUI",
    "Sun Communities, Inc.",
    0.98
+  ],
+  [
+   "OHI",
+   "Omega Healthcare Investors, Inc.",
+   0.96
   ]
  ],
  "VB": [
