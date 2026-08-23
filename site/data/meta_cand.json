@@ -48,7 +48,7 @@
   "price": 43.0
  },
  "EWJ": {
-  "longName": "iShares MSCI Japan Index Fund",
+  "longName": "iShares MSCI Japan ETF",
   "currency": "USD",
   "firstTradeDate": "1996-03-18",
   "price": 95.18
@@ -174,19 +174,19 @@
   "price": 304.76
  },
  "VGK": {
-  "longName": "Vanguard FTSEEuropean ETF",
+  "longName": "Vanguard FTSE Europe ETF",
   "currency": "USD",
   "firstTradeDate": "2005-03-10",
   "price": 92.72
  },
  "VNQ": {
-  "longName": "Vanguard Real Estate ETF",
+  "longName": "Vanguard Real Estate Index Fund ETF Shares",
   "currency": "USD",
   "firstTradeDate": "2004-09-29",
   "price": 98.5
  },
  "VT": {
-  "longName": "Vanguard Total World Stock Inde",
+  "longName": "Vanguard Total World Stock Index Fund ETF Shares",
   "currency": "USD",
   "firstTradeDate": "2008-06-26",
   "price": 160.77
@@ -210,7 +210,7 @@
   "price": 87.71
  },
  "VYM": {
-  "longName": "Vanguard High Dividend Yield ET",
+  "longName": "Vanguard High Dividend Yield Index Fund ETF Shares",
   "currency": "USD",
   "firstTradeDate": "2006-11-16",
   "price": 164.97
@@ -228,7 +228,7 @@
   "price": 85.99
  },
  "XLY": {
-  "longName": "State Street Consumer Discretio",
+  "longName": "State Street Consumer Discretionary Select Sector SPDR ETF",
   "currency": "USD",
   "firstTradeDate": "1998-12-22",
   "price": 118.02

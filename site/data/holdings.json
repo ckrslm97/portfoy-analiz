@@ -4192,127 +4192,127 @@
   [
    "ROP",
    "Roper Technologies, Inc.",
-   8.97
+   9.34
   ],
   [
    "ECL",
    "Ecolab Inc.",
-   7.93
+   8.15
   ],
   [
    "WAT",
    "Waters Corporation",
-   7.16
+   7.07
   ],
   [
    "FERG",
    "Ferguson Enterprises Inc.",
-   7.08
+   6.89
   ],
   [
    "IDXX",
    "IDEXX Laboratories, Inc.",
-   6.36
+   6.18
   ],
   [
    "VLTO",
    "Veralto Corporation",
-   4.36
-  ],
-  [
-   "AWK",
-   "American Water Works Company, Inc.",
-   4.07
+   4.48
   ],
   [
    "A",
    "Agilent Technologies, Inc.",
-   4.05
+   4.27
+  ],
+  [
+   "AWK",
+   "American Water Works Company, Inc.",
+   4.12
   ],
   [
    "XYL",
    "Xylem Inc.",
-   4.04
+   3.84
   ],
   [
    "IEX",
    "IDEX Corporation",
-   3.7
+   3.64
   ],
   [
    "J",
    "Jacobs Solutions Inc.",
-   3.47
+   3.6
   ],
   [
    "PNR",
    "Pentair plc",
-   3.13
-  ],
-  [
-   "WMS",
-   "Advanced Drainage Systems, Inc.",
-   2.97
+   3.01
   ],
   [
    "TRMB",
    "Trimble Inc.",
+   2.99
+  ],
+  [
+   "WMS",
+   "Advanced Drainage Systems, Inc.",
    2.86
   ],
   [
    "TTEK",
    "Tetra Tech, Inc.",
-   2.63
+   2.66
   ],
   [
    "ACM",
    "AECOM",
-   2.55
+   2.64
   ],
   [
    "CNM",
    "Core & Main, Inc.",
-   2.45
+   2.38
   ],
   [
    "AOS",
    "A. O. Smith Corporation",
-   2.36
+   2.37
   ],
   [
    "BSY",
    "Bentley Systems, Incorporated",
-   2.28
+   2.29
   ],
   [
    "ITRI",
    "Itron, Inc.",
-   2.06
+   2.0
   ],
   [
    "WTS",
    "Watts Water Technologies, Inc.",
-   2.01
-  ],
-  [
-   "MLI",
-   "Mueller Industries, Inc.",
-   1.9
+   1.96
   ],
   [
    "VMI",
    "Valmont Industries, Inc.",
-   1.87
+   1.85
+  ],
+  [
+   "MLI",
+   "Mueller Industries, Inc.",
+   1.78
   ],
   [
    "BMI",
    "Badger Meter, Inc.",
-   1.71
+   1.7
   ],
   [
    "ZWS",
    "Zurn Elkay Water Solutions Corporation",
-   1.15
+   1.12
   ]
  ],
  "REET": [
@@ -4949,122 +4949,117 @@
   [
    "NVDA",
    "NVIDIA Corporation",
-   4.0
+   4.03
   ],
   [
    "AAPL",
    "Apple Inc.",
-   3.58
+   3.84
   ],
   [
    "MSFT",
    "Microsoft Corporation",
-   2.37
+   2.97
   ],
   [
    "AMZN",
    "Amazon.com, Inc.",
-   1.98
+   2.27
   ],
   [
    "GOOGL",
    "Alphabet Inc.",
-   1.81
-  ],
-  [
-   "TPE: 2330",
-   "Taiwan Semiconductor Manufacturing Company Limited",
-   1.64
+   1.82
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   1.51
+   1.56
+  ],
+  [
+   "TPE: 2330",
+   "Taiwan Semiconductor Manufacturing Company Limited",
+   1.55
   ],
   [
    "GOOG",
    "Alphabet Inc.",
-   1.42
-  ],
-  [
-   "MU",
-   "Micron Technology, Inc.",
-   1.11
+   1.43
   ],
   [
    "META",
    "Meta Platforms, Inc.",
-   1.06
-  ],
-  [
-   "TSLA",
-   "Tesla, Inc.",
    1.05
-  ],
-  [
-   "KRX: 005930",
-   "Samsung Electronics Co., Ltd.",
-   0.88
-  ],
-  [
-   "KRX: 000660",
-   "SK hynix Inc.",
-   0.84
-  ],
-  [
-   "LLY",
-   "Eli Lilly and Company",
-   0.82
-  ],
-  [
-   "AMD",
-   "Advanced Micro Devices, Inc.",
-   0.81
-  ],
-  [
-   "BRK.B",
-   "Berkshire Hathaway Inc.",
-   0.7
   ],
   [
    "JPM",
    "JPMorgan Chase & Co.",
+   0.81
+  ],
+  [
+   "MU",
+   "Micron Technology, Inc.",
+   0.8
+  ],
+  [
+   "LLY",
+   "Eli Lilly and Company",
+   0.79
+  ],
+  [
+   "TSLA",
+   "Tesla, Inc.",
+   0.78
+  ],
+  [
+   "BRK.B",
+   "Berkshire Hathaway Inc.",
+   0.72
+  ],
+  [
+   "KRX: 005930",
+   "Samsung Electronics Co., Ltd.",
    0.69
   ],
   [
-   "AMS: ASML",
-   "ASML Holding N.V.",
-   0.66
-  ],
-  [
-   "INTC",
-   "Intel Corporation",
-   0.52
-  ],
-  [
-   "JNJ",
-   "Johnson & Johnson",
-   0.52
-  ],
-  [
-   "AMAT",
-   "Applied Materials, Inc.",
-   0.49
+   "AMD",
+   "Advanced Micro Devices, Inc.",
+   0.67
   ],
   [
    "XOM",
    "ExxonMobil Holdings Corporation",
-   0.49
+   0.56
+  ],
+  [
+   "AMS: ASML",
+   "ASML Holding N.V.",
+   0.55
+  ],
+  [
+   "KRX: 000660",
+   "SK hynix Inc.",
+   0.54
+  ],
+  [
+   "JNJ",
+   "Johnson & Johnson",
+   0.53
   ],
   [
    "V",
    "Visa Inc.",
-   0.49
+   0.52
   ],
   [
-   "LRCX",
-   "Lam Research Corporation",
-   0.46
+   "WMT",
+   "Walmart Inc.",
+   0.42
+  ],
+  [
+   "MA",
+   "Mastercard Incorporated",
+   0.4
   ]
  ],
  "VTV": [
