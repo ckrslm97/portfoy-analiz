@@ -8,28 +8,28 @@
   "gider_orani": "0.32%",
   "kurulus": "Mar 26, 2008",
   "endeks": "MSCI ACWI Index",
-  "temettu_verimi": "1.40%"
+  "temettu_verimi": "1.39%"
  },
  "AVUV": {
   "sembol": "AVUV",
   "kaynak": "https://stockanalysis.com/etf/avuv/",
   "cekim": "2026-08-25",
   "tam_ad": "Avantis U.S. Small Cap Value ETF (AVUV)",
-  "aum": "$31.32B",
+  "aum": "$31.27B",
   "gider_orani": "0.25%",
   "kurulus": "Sep 24, 2019",
-  "temettu_verimi": "1.24%"
+  "temettu_verimi": "1.25%"
  },
  "BBJP": {
   "sembol": "BBJP",
   "kaynak": "https://stockanalysis.com/etf/bbjp/",
   "cekim": "2026-08-25",
   "tam_ad": "JPMorgan BetaBuilders Japan ETF (BBJP)",
-  "aum": "$18.75B",
+  "aum": "$18.90B",
   "gider_orani": "0.19%",
   "kurulus": "Jun 15, 2018",
   "endeks": "Morningstar Japan Target Market Exposure Index",
-  "temettu_verimi": "4.62%"
+  "temettu_verimi": "4.58%"
  },
  "CGW": {
   "sembol": "CGW",
@@ -62,18 +62,18 @@
   "gider_orani": "0.48%",
   "kurulus": "Jun 16, 2006",
   "endeks": "WisdomTree Japan Hedged Equity Index",
-  "temettu_verimi": "0.95%"
+  "temettu_verimi": "0.94%"
  },
  "EMXC": {
   "sembol": "EMXC",
   "kaynak": "https://stockanalysis.com/etf/emxc/",
   "cekim": "2026-08-25",
   "tam_ad": "iShares MSCI Emerging Markets ex China ETF (EMXC)",
-  "aum": "$24.52B",
+  "aum": "$24.42B",
   "gider_orani": "0.25%",
   "kurulus": "Jul 18, 2017",
   "endeks": "MSCI Emerging Markets ex China",
-  "temettu_verimi": "2.00%"
+  "temettu_verimi": "1.96%"
  },
  "EPI": {
   "sembol": "EPI",
@@ -94,7 +94,7 @@
   "gider_orani": "0.49%",
   "kurulus": "Mar 12, 1996",
   "endeks": "MSCI Japan",
-  "temettu_verimi": "3.76%"
+  "temettu_verimi": "3.73%"
  },
  "FIW": {
   "sembol": "FIW",
@@ -116,7 +116,7 @@
   "gider_orani": "0.37%",
   "kurulus": "May 1, 2006",
   "endeks": "DJ US Select / Regional Banks",
-  "temettu_verimi": "2.59%"
+  "temettu_verimi": "2.60%"
  },
  "IBB": {
   "sembol": "IBB",
@@ -138,7 +138,7 @@
   "gider_orani": "0.09%",
   "kurulus": "Oct 18, 2012",
   "endeks": "MSCI Emerging Markets IMI",
-  "temettu_verimi": "2.23%"
+  "temettu_verimi": "2.20%"
  },
  "IEUR": {
   "sembol": "IEUR",
@@ -149,7 +149,7 @@
   "gider_orani": "0.09%",
   "kurulus": "Jun 10, 2014",
   "endeks": "MSCI Europe IMI",
-  "temettu_verimi": "3.05%"
+  "temettu_verimi": "3.04%"
  },
  "IEV": {
   "sembol": "IEV",
@@ -160,7 +160,7 @@
   "gider_orani": "0.60%",
   "kurulus": "Jul 25, 2000",
   "endeks": "S&P Europe 350",
-  "temettu_verimi": "2.68%"
+  "temettu_verimi": "2.66%"
  },
  "IGF": {
   "sembol": "IGF",
@@ -171,7 +171,7 @@
   "gider_orani": "0.37%",
   "kurulus": "Dec 10, 2007",
   "endeks": "S&P Global Infrastructure Index",
-  "temettu_verimi": "2.95%"
+  "temettu_verimi": "2.93%"
  },
  "INDA": {
   "sembol": "INDA",
@@ -192,7 +192,7 @@
   "gider_orani": "0.65%",
   "kurulus": "Nov 18, 2009",
   "endeks": "Nifty 50",
-  "temettu_verimi": "9.45%"
+  "temettu_verimi": "9.29%"
  },
  "IWM": {
   "sembol": "IWM",
@@ -214,7 +214,7 @@
   "gider_orani": "0.35%",
   "kurulus": "Nov 8, 2005",
   "endeks": "S&P Banks Select Industry",
-  "temettu_verimi": "2.13%"
+  "temettu_verimi": "2.14%"
  },
  "KIE": {
   "sembol": "KIE",
@@ -225,7 +225,7 @@
   "gider_orani": "0.35%",
   "kurulus": "Nov 8, 2005",
   "endeks": "S&P Insurance Select Industry",
-  "temettu_verimi": "1.52%"
+  "temettu_verimi": "1.53%"
  },
  "KRE": {
   "sembol": "KRE",
@@ -236,7 +236,7 @@
   "gider_orani": "0.35%",
   "kurulus": "Jun 19, 2006",
   "endeks": "S&P Regional Banks Select Industry",
-  "temettu_verimi": "2.14%"
+  "temettu_verimi": "2.15%"
  },
  "NFRA": {
   "sembol": "NFRA",
@@ -247,7 +247,7 @@
   "gider_orani": "0.47%",
   "kurulus": "Oct 8, 2013",
   "endeks": "STOXX Global Broad Infrastructure Index - Discontinued as of",
-  "temettu_verimi": "5.61%"
+  "temettu_verimi": "5.58%"
  },
  "PAVE": {
   "sembol": "PAVE",
@@ -280,7 +280,7 @@
   "gider_orani": "0.14%",
   "kurulus": "Jul 8, 2014",
   "endeks": "FTSE EPRA Nareit Global REITs",
-  "temettu_verimi": "3.30%"
+  "temettu_verimi": "3.29%"
  },
  "SCHD": {
   "sembol": "SCHD",
@@ -291,7 +291,7 @@
   "gider_orani": "0.06%",
   "kurulus": "Oct 20, 2011",
   "endeks": "Dow Jones U.S. Dividend 100",
-  "temettu_verimi": "2.98%"
+  "temettu_verimi": "2.99%"
  },
  "SCHH": {
   "sembol": "SCHH",
@@ -324,7 +324,7 @@
   "gider_orani": "0.06%",
   "kurulus": "Mar 4, 2005",
   "endeks": "FTSE Developed Europe All Cap",
-  "temettu_verimi": "2.77%"
+  "temettu_verimi": "2.76%"
  },
  "VNQ": {
   "sembol": "VNQ",
@@ -335,7 +335,7 @@
   "gider_orani": "0.13%",
   "kurulus": "Sep 23, 2004",
   "endeks": "MSCI US IMI/Real Estate 25-50",
-  "temettu_verimi": "3.51%"
+  "temettu_verimi": "3.50%"
  },
  "VT": {
   "sembol": "VT",
@@ -346,7 +346,7 @@
   "gider_orani": "0.06%",
   "kurulus": "Jun 24, 2008",
   "endeks": "FTSE Global All Cap Net Tax (US RIC) Index",
-  "temettu_verimi": "1.55%"
+  "temettu_verimi": "1.54%"
  },
  "VTV": {
   "sembol": "VTV",
@@ -368,7 +368,7 @@
   "gider_orani": "0.06%",
   "kurulus": "Mar 4, 2005",
   "endeks": "FTSE Custom Emerging Markets All Cap China A Inclusion Net T",
-  "temettu_verimi": "2.31%"
+  "temettu_verimi": "2.28%"
  },
  "VXUS": {
   "sembol": "VXUS",
@@ -379,7 +379,7 @@
   "gider_orani": "0.05%",
   "kurulus": "Jan 26, 2011",
   "endeks": "FTSE Global All Cap x US",
-  "temettu_verimi": "2.51%"
+  "temettu_verimi": "2.48%"
  },
  "VYM": {
   "sembol": "VYM",
@@ -412,7 +412,7 @@
   "gider_orani": "0.08%",
   "kurulus": "Dec 16, 1998",
   "endeks": "S&P Consumer Staples Select Sector",
-  "temettu_verimi": "2.51%"
+  "temettu_verimi": "2.54%"
  },
  "XLY": {
   "sembol": "XLY",
@@ -423,6 +423,6 @@
   "gider_orani": "0.08%",
   "kurulus": "Dec 16, 1998",
   "endeks": "S&P Consumer Discretionary Select Sector",
-  "temettu_verimi": "0.76%"
+  "temettu_verimi": "0.77%"
  }
 }

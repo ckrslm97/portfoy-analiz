@@ -15,11 +15,11 @@
   "kaynak": "https://stockanalysis.com/etf/qtum/",
   "cekim": "2026-08-25",
   "tam_ad": "Defiance Quantum ETF (QTUM)",
-  "aum": "$5.56B",
+  "aum": "$5.63B",
   "gider_orani": "0.40%",
   "kurulus": "Sep 5, 2018",
   "endeks": "BlueStar Quantum Computing and Machine Learning Index",
-  "temettu_verimi": "0.80%"
+  "temettu_verimi": "0.79%"
  },
  "XLE": {
   "sembol": "XLE",
@@ -30,7 +30,7 @@
   "gider_orani": "0.08%",
   "kurulus": "Dec 16, 1998",
   "endeks": "S&P Energy Select Sector",
-  "temettu_verimi": "2.40%"
+  "temettu_verimi": "2.45%"
  },
  "SPYM": {
   "sembol": "SPYM",
@@ -63,7 +63,7 @@
   "gider_orani": "0.69%",
   "kurulus": "Nov 4, 2010",
   "endeks": "Solactive Global Uranium & Nuclear Components Index",
-  "temettu_verimi": "4.56%"
+  "temettu_verimi": "4.33%"
  },
  "BOTZ": {
   "sembol": "BOTZ",
@@ -74,14 +74,14 @@
   "gider_orani": "0.68%",
   "kurulus": "Sep 12, 2016",
   "endeks": "Indxx Global Robotics & Artificial Intelligence Thematic",
-  "temettu_verimi": "0.50%"
+  "temettu_verimi": "0.49%"
  },
  "ROBT": {
   "sembol": "ROBT",
   "kaynak": "https://stockanalysis.com/etf/robt/",
   "cekim": "2026-08-25",
   "tam_ad": "First Trust Nasdaq Artificial Intelligence & Robotics ETF (ROBT)",
-  "aum": "$767.27M",
+  "aum": "$765.06M",
   "gider_orani": "0.65%",
   "kurulus": "Feb 21, 2018",
   "endeks": "Nasdaq CTA Artificial Intelligence & Robotics",
@@ -96,7 +96,7 @@
   "gider_orani": "0.35%",
   "kurulus": "Jan 31, 2006",
   "endeks": "S&P Biotechnology Select Industry",
-  "temettu_verimi": "0.35%"
+  "temettu_verimi": "0.34%"
  },
  "ARKG": {
   "sembol": "ARKG",
@@ -121,7 +121,7 @@
   "kaynak": "https://stockanalysis.com/etf/dram/",
   "cekim": "2026-08-25",
   "tam_ad": "Roundhill Memory ETF (DRAM)",
-  "aum": "$27.45B",
+  "aum": "$26.06B",
   "gider_orani": "0.65%",
   "kurulus": "Apr 2, 2026"
  },
