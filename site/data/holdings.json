@@ -2205,127 +2205,127 @@
   [
    "AWK",
    "American Water Works Company, Inc.",
-   7.91
+   8.37
   ],
   [
    "XYL",
    "Xylem Inc.",
-   7.87
+   7.6
   ],
   [
    "BVMF: SBSP3",
    "Companhia de Saneamento BÃ¡sico do Estado de SÃ£o Paulo - SABESP",
-   7.33
-  ],
-  [
-   "LON: UU",
-   "United Utilities Group PLC",
-   5.6
+   6.45
   ],
   [
    "WTRG",
    "Essential Utilities, Inc.",
-   5.58
+   5.9
+  ],
+  [
+   "LON: UU",
+   "United Utilities Group PLC",
+   5.79
   ],
   [
    "LON: SVT",
    "Severn Trent PLC",
-   5.05
+   5.24
   ],
   [
    "VLTO",
    "Veralto Corporation",
-   4.65
+   4.81
   ],
   [
    "ECL",
    "Ecolab Inc.",
-   4.0
+   4.13
   ],
   [
    "SWX: GEBN",
    "Geberit AG",
-   3.6
-  ],
-  [
-   "WMS",
-   "Advanced Drainage Systems, Inc.",
-   3.5
+   3.83
   ],
   [
    "WTS",
    "Watts Water Technologies, Inc.",
-   3.41
+   3.44
+  ],
+  [
+   "WMS",
+   "Advanced Drainage Systems, Inc.",
+   3.38
   ],
   [
    "ZWS",
    "Zurn Elkay Water Solutions Corporation",
-   2.53
+   2.44
   ],
   [
    "AWR",
    "American States Water Company",
-   2.21
+   2.4
   ],
   [
    "CNM",
    "Core & Main, Inc.",
-   2.11
-  ],
-  [
-   "BVMF: CSMG3",
-   "Companhia de Saneamento de Minas Gerais",
-   2.02
-  ],
-  [
-   "TYO: 6370",
-   "Kurita Water Industries Ltd.",
-   1.99
+   2.1
   ],
   [
    "CWT",
    "California Water Service Group",
-   1.95
+   2.04
   ],
   [
-   "PNR",
-   "Pentair plc",
-   1.86
+   "TYO: 6370",
+   "Kurita Water Industries Ltd.",
+   1.82
   ],
   [
-   "SWX: BEAN",
-   "BELIMO Holding AG",
-   1.71
+   "BVMF: CSMG3",
+   "Companhia de Saneamento de Minas Gerais",
+   1.76
   ],
   [
    "LON: PNN",
    "Pennon Group Plc",
-   1.68
+   1.73
   ],
   [
-   "WTTR",
-   "Select Water Solutions, Inc.",
-   1.61
+   "PNR",
+   "Pentair plc",
+   1.72
+  ],
+  [
+   "SWX: BEAN",
+   "BELIMO Holding AG",
+   1.7
   ],
   [
    "HTO",
    "H2O America",
-   1.6
+   1.7
   ],
   [
-   "MWA",
-   "Mueller Water Products, Inc.",
-   1.39
-  ],
-  [
-   "FELE",
-   "Franklin Electric Co., Inc.",
-   1.36
+   "WTTR",
+   "Select Water Solutions, Inc.",
+   1.52
   ],
   [
    "BMI",
    "Badger Meter, Inc.",
+   1.33
+  ],
+  [
+   "MWA",
+   "Mueller Water Products, Inc.",
    1.32
+  ],
+  [
+   "FELE",
+   "Franklin Electric Co., Inc.",
+   1.31
   ]
  ],
  "DGRO": [
@@ -3069,22 +3069,22 @@
   [
    "BME: AENA",
    "Aena S.M.E., S.A.",
-   5.28
+   5.65
   ],
   [
    "ASX: TCL",
    "Transurban Group",
-   5.26
+   5.3
   ],
   [
    "NEE",
    "NextEra Energy, Inc.",
-   4.7
+   4.82
   ],
   [
    "BME: IBE",
    "Iberdrola, S.A.",
-   4.05
+   4.1
   ],
   [
    "TSX: ENB",
@@ -3094,12 +3094,22 @@
   [
    "NZE: AIA",
    "Auckland International Airport Limited",
-   3.35
+   3.44
+  ],
+  [
+   "PAC",
+   "Grupo Aeroportuario del PacÃ­fico, S.A.B. de C.V.",
+   3.38
   ],
   [
    "WMB",
    "The Williams Companies, Inc.",
-   2.93
+   3.05
+  ],
+  [
+   "EPA: GET",
+   "Getlink SE",
+   2.79
   ],
   [
    "SO",
@@ -3109,77 +3119,77 @@
   [
    "DUK",
    "Duke Energy Corporation",
-   2.65
-  ],
-  [
-   "EPA: GET",
-   "Getlink SE",
-   2.57
-  ],
-  [
-   "BIT: ENEL",
-   "Enel SpA",
-   2.44
+   2.66
   ],
   [
    "CEG",
    "Constellation Energy Corporation",
-   2.29
+   2.44
+  ],
+  [
+   "BIT: ENEL",
+   "Enel SpA",
+   2.42
   ],
   [
    "TSX: TRP",
    "TC Energy Corporation",
-   2.25
+   2.26
   ],
   [
    "LON: NG",
    "National Grid plc",
-   2.19
-  ],
-  [
-   "SWX: FHZN",
-   "Flughafen ZÃ¼rich AG",
-   2.13
-  ],
-  [
-   "KMI",
-   "Kinder Morgan, Inc.",
-   2.06
-  ],
-  [
-   "EPA: ADP",
-   "Aeroports de Paris SA",
-   1.98
+   2.26
   ],
   [
    "TRGP",
    "Targa Resources Corp.",
-   1.88
+   2.17
+  ],
+  [
+   "SWX: FHZN",
+   "Flughafen ZÃ¼rich AG",
+   2.16
+  ],
+  [
+   "KMI",
+   "Kinder Morgan, Inc.",
+   2.13
   ],
   [
    "LNG",
    "Cheniere Energy, Inc.",
-   1.88
+   2.11
   ],
   [
    "OKE",
    "ONEOK, Inc.",
-   1.86
+   2.03
+  ],
+  [
+   "EPA: ADP",
+   "Aeroports de Paris SA",
+   2.0
   ],
   [
    "AEP",
    "American Electric Power Company, Inc.",
-   1.84
+   1.87
   ],
   [
    "ASR",
    "Grupo Aeroportuario del Sureste, S. A. B. de C. V.",
-   1.82
+   1.79
   ],
   [
    "D",
    "Dominion Energy, Inc.",
-   1.57
+   1.61
+  ],
+  [
+   "EPA: ENGI",
+   "Engie SA",
+   1.54
   ]
  ],
  "INDA": [
@@ -3938,12 +3948,12 @@
   [
    "TSX: CP",
    "Canadian Pacific Kansas City Limited",
-   3.82
+   3.84
   ],
   [
    "TYO: 9984",
    "SoftBank Group Corp.",
-   3.71
+   3.28
   ],
   [
    "TSX: CNR",
@@ -3953,92 +3963,102 @@
   [
    "ETR: DTE",
    "Deutsche Telekom AG",
-   2.95
+   3.02
   ],
   [
    "ETR: DHL",
    "Deutsche Post AG",
-   2.77
+   2.87
   ],
   [
    "VZ",
    "Verizon Communications Inc.",
-   2.71
-  ],
-  [
-   "NEE",
-   "NextEra Energy, Inc.",
-   2.4
+   2.8
   ],
   [
    "UNP",
    "Union Pacific Corporation",
-   2.33
+   2.46
   ],
   [
    "T",
    "AT&T Inc.",
-   2.31
+   2.39
+  ],
+  [
+   "NEE",
+   "NextEra Energy, Inc.",
+   2.35
   ],
   [
    "BME: IBE",
    "Iberdrola, S.A.",
-   2.19
+   2.2
   ],
   [
    "TSX: WCN",
    "Waste Connections, Inc.",
-   1.94
+   1.93
   ],
   [
    "NSE: BHARTIARTL",
    "Bharti Airtel Limited",
-   1.79
+   1.75
   ],
   [
    "TSX: ENB",
    "Enbridge Inc.",
-   1.66
-  ],
-  [
-   "EQIX",
-   "Equinix, Inc.",
-   1.46
+   1.62
   ],
   [
    "ASX: TCL",
    "Transurban Group",
-   1.41
+   1.43
   ],
   [
-   "SO",
-   "The Southern Company",
-   1.38
+   "EQIX",
+   "Equinix, Inc.",
+   1.42
   ],
   [
    "TYO: 9432",
    "NTT, Inc.",
-   1.37
+   1.42
   ],
   [
    "TYO: 9433",
    "KDDI Corporation",
-   1.34
+   1.35
   ],
   [
-   "DUK",
-   "Duke Energy Corporation",
-   1.29
-  ],
-  [
-   "CEG",
-   "Constellation Energy Corporation",
-   1.28
+   "SO",
+   "The Southern Company",
+   1.35
   ],
   [
    "BIT: ENEL",
    "Enel SpA",
+   1.29
+  ],
+  [
+   "CMCSA",
+   "Comcast Corporation",
+   1.29
+  ],
+  [
+   "CSX",
+   "CSX Corporation",
    1.28
+  ],
+  [
+   "DUK",
+   "Duke Energy Corporation",
+   1.27
+  ],
+  [
+   "CEG",
+   "Constellation Energy Corporation",
+   1.26
   ],
   [
    "LON: NG",
@@ -4046,19 +4066,9 @@
    1.26
   ],
   [
-   "CMCSA",
-   "Comcast Corporation",
-   1.25
-  ],
-  [
-   "CSX",
-   "CSX Corporation",
-   1.24
-  ],
-  [
-   "WMB",
-   "The Williams Companies, Inc.",
-   1.23
+   "TMUS",
+   "T-Mobile US, Inc.",
+   1.22
   ]
  ],
  "PAVE": [
