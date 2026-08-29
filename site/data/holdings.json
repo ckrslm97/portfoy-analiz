@@ -867,127 +867,127 @@
   [
    "APPN",
    "Appian Corporation",
-   2.19
+   2.34
   ],
   [
    "CCC",
    "CCC Intelligent Solutions Holdings Inc.",
-   2.1
-  ],
-  [
-   "S",
-   "SentinelOne, Inc.",
-   2.0
+   2.21
   ],
   [
    "PATH",
    "UiPath, Inc.",
-   1.97
-  ],
-  [
-   "WDAY",
-   "Workday, Inc.",
-   1.96
-  ],
-  [
-   "PANW",
-   "Palo Alto Networks, Inc.",
-   1.95
-  ],
-  [
-   "NET",
-   "Cloudflare, Inc.",
-   1.9
-  ],
-  [
-   "OII",
-   "Oceaneering International, Inc.",
-   1.86
-  ],
-  [
-   "OSL: AUTO",
-   "AutoStore Holdings Ltd.",
-   1.69
-  ],
-  [
-   "DT",
-   "Dynatrace, Inc.",
-   1.65
+   2.04
   ],
   [
    "ILMN",
    "Illumina, Inc.",
-   1.64
-  ],
-  [
-   "LON: OCDO",
-   "Ocado Group plc",
-   1.6
-  ],
-  [
-   "PLTR",
-   "Palantir Technologies Inc.",
-   1.58
-  ],
-  [
-   "NSY.DE",
-   "NICE Ltd ADR",
-   1.57
-  ],
-  [
-   "LON: QQ",
-   "QinetiQ Group plc",
-   1.54
-  ],
-  [
-   "EPA: DSY",
-   "Dassault SystÃ¨mes SE",
-   1.52
+   1.97
   ],
   [
    "TEM",
    "Tempus AI, Inc.",
-   1.49
+   1.93
+  ],
+  [
+   "WDAY",
+   "Workday, Inc.",
+   1.86
+  ],
+  [
+   "OII",
+   "Oceaneering International, Inc.",
+   1.85
+  ],
+  [
+   "S",
+   "SentinelOne, Inc.",
+   1.77
+  ],
+  [
+   "DT",
+   "Dynatrace, Inc.",
+   1.73
+  ],
+  [
+   "OSL: AUTO",
+   "AutoStore Holdings Ltd.",
+   1.72
+  ],
+  [
+   "PANW",
+   "Palo Alto Networks, Inc.",
+   1.72
+  ],
+  [
+   "EPA: DSY",
+   "Dassault SystÃ¨mes SE",
+   1.71
+  ],
+  [
+   "NET",
+   "Cloudflare, Inc.",
+   1.68
   ],
   [
    "STO: HEXA.B",
    "Hexagon AB (publ)",
-   1.49
+   1.62
+  ],
+  [
+   "PLTR",
+   "Palantir Technologies Inc.",
+   1.62
+  ],
+  [
+   "LON: OCDO",
+   "Ocado Group plc",
+   1.61
+  ],
+  [
+   "NSY.DE",
+   "NICE Ltd ADR",
+   1.55
   ],
   [
    "CRM",
    "Salesforce, Inc.",
-   1.46
+   1.53
   ],
   [
    "ETR: SIE",
    "Siemens Aktiengesellschaft",
-   1.44
+   1.52
+  ],
+  [
+   "LON: QQ",
+   "QinetiQ Group plc",
+   1.48
   ],
   [
    "NOW",
    "ServiceNow, Inc.",
-   1.42
+   1.44
   ],
   [
    "GNTX",
    "Gentex Corporation",
-   1.36
+   1.41
   ],
   [
-   "HKG: 9660",
-   "Horizon Robotics",
-   1.32
+   "RXRX",
+   "Recursion Pharmaceuticals, Inc.",
+   1.39
   ],
   [
-   "AI",
-   "C3.ai, Inc.",
-   1.31
+   "PEGA",
+   "Pegasystems Inc.",
+   1.35
   ],
   [
-   "ISRG",
-   "Intuitive Surgical, Inc.",
-   1.31
+   "CSCO",
+   "Cisco Systems, Inc.",
+   1.33
   ]
  ],
  "XBI": [
@@ -6187,124 +6187,119 @@
  ],
  "EPI": [
   [
+   "NSE: HINDPETRO",
+   "Hindustan Petroleum Corporation Limited",
+   0.59
+  ],
+  [
    "NSE: RELIANCE",
    "Reliance Industries Limited",
-   6.52
+   0.58
   ],
   [
    "NSE: ICICIBANK",
    "ICICI Bank Limited",
-   5.46
-  ],
-  [
-   "NSE: HDFCBANK",
-   "HDFC Bank Limited",
-   5.04
-  ],
-  [
-   "NSE: SBIN",
-   "State Bank of India",
-   2.93
-  ],
-  [
-   "NSE: INFY",
-   "Infosys Limited",
-   2.7
+   0.49
   ],
   [
    "NSE: ONGC",
    "Oil and Natural Gas Corporation Limited",
-   2.7
-  ],
-  [
-   "NSE: COALINDIA",
-   "Coal India Limited",
-   2.64
-  ],
-  [
-   "NSE: HINDALCO",
-   "Hindalco Industries Limited",
-   2.38
+   0.49
   ],
   [
    "NSE: NTPC",
    "NTPC Limited",
-   2.1
+   0.46
+  ],
+  [
+   "NSE: HDFCBANK",
+   "HDFC Bank Limited",
+   0.46
   ],
   [
    "NSE: POWERGRID",
    "Power Grid Corporation of India Limited",
-   1.99
+   0.46
   ],
   [
-   "NSE: AXISBANK",
-   "Axis Bank Limited",
-   1.6
+   "NSE: HINDALCO",
+   "Hindalco Industries Limited",
+   0.45
   ],
   [
-   "NSE: TATASTEEL",
-   "Tata Steel Limited",
-   1.53
-  ],
-  [
-   "NSE: BHARTIARTL",
-   "Bharti Airtel Limited",
-   1.44
-  ],
-  [
-   "NSE: KOTAKBANK",
-   "Kotak Mahindra Bank Limited",
-   1.29
-  ],
-  [
-   "NSE: OIL",
-   "Oil India Limited",
-   1.21
-  ],
-  [
-   "NSE: GRASIM",
-   "Grasim Industries Limited",
-   1.2
+   "NSE: IDFCFIRSTB",
+   "IDFC First Bank Limited",
+   0.45
   ],
   [
    "NSE: LT",
    "Larsen & Toubro Limited",
-   1.2
+   0.41
   ],
   [
-   "NSE: TCS",
-   "Tata Consultancy Services Limited",
-   1.17
+   "NSE: COALINDIA",
+   "Coal India Limited",
+   0.38
   ],
   [
-   "NSE: SUNPHARMA",
-   "Sun Pharmaceutical Industries Limited",
-   1.15
+   "NSE: TATASTEEL",
+   "Tata Steel Limited",
+   0.37
+  ],
+  [
+   "NSE: INFY",
+   "Infosys Limited",
+   0.36
   ],
   [
    "NSE: ADANIPOWER",
    "Adani Power Limited",
-   1.1
+   0.35
+  ],
+  [
+   "NSE: SUNPHARMA",
+   "Sun Pharmaceutical Industries Limited",
+   0.34
+  ],
+  [
+   "NSE: DRREDDY",
+   "Dr. Reddy's Laboratories Limited",
+   0.28
+  ],
+  [
+   "NSE: SBIN",
+   "State Bank of India",
+   0.27
   ],
   [
    "NSE: VAML",
    "Vedanta Aluminium Metal Limited",
-   1.07
+   0.26
+  ],
+  [
+   "NSE: INDIGO",
+   "InterGlobe Aviation Limited",
+   0.26
+  ],
+  [
+   "NSE: ASIANPAINT",
+   "Asian Paints Limited",
+   0.25
+  ],
+  [
+   "NSE: IOC",
+   "Indian Oil Corporation Limited",
+   0.25
+  ],
+  [
+   "NSE: RBLBANK",
+   "RBL Bank Limited",
+   0.23
   ],
   [
    "NSE: HCLTECH",
    "HCL Technologies Limited",
-   0.89
-  ],
-  [
-   "NSE: FEDERALBNK",
-   "The Federal Bank Limited",
-   0.84
-  ],
-  [
-   "NSE: MARUTI",
-   "Maruti Suzuki India Limited",
-   0.83
+   0.22
   ]
  ],
  "EWJ": [
