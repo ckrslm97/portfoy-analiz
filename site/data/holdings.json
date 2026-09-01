@@ -3069,37 +3069,37 @@
   [
    "BME: AENA",
    "Aena S.M.E., S.A.",
-   5.49
+   5.44
   ],
   [
    "ASX: TCL",
    "Transurban Group",
-   5.31
+   5.38
   ],
   [
    "NEE",
    "NextEra Energy, Inc.",
-   4.79
+   4.73
   ],
   [
    "BME: IBE",
    "Iberdrola, S.A.",
-   4.1
+   4.16
   ],
   [
    "TSX: ENB",
    "Enbridge Inc.",
-   3.85
-  ],
-  [
-   "PAC",
-   "Grupo Aeroportuario del PacÃ­fico, S.A.B. de C.V.",
-   3.47
+   3.9
   ],
   [
    "NZE: AIA",
    "Auckland International Airport Limited",
-   3.42
+   3.43
+  ],
+  [
+   "PAC",
+   "Grupo Aeroportuario del PacÃ­fico, S.A.B. de C.V.",
+   3.38
   ],
   [
    "WMB",
@@ -3109,12 +3109,12 @@
   [
    "SO",
    "The Southern Company",
-   2.77
+   2.76
   ],
   [
    "EPA: GET",
    "Getlink SE",
-   2.68
+   2.71
   ],
   [
    "DUK",
@@ -3124,67 +3124,67 @@
   [
    "CEG",
    "Constellation Energy Corporation",
-   2.48
+   2.45
   ],
   [
    "BIT: ENEL",
    "Enel SpA",
-   2.38
+   2.41
   ],
   [
    "TSX: TRP",
    "TC Energy Corporation",
-   2.28
+   2.29
   ],
   [
    "LON: NG",
    "National Grid plc",
-   2.21
-  ],
-  [
-   "TRGP",
-   "Targa Resources Corp.",
-   2.19
+   2.24
   ],
   [
    "KMI",
    "Kinder Morgan, Inc.",
-   2.18
+   2.2
+  ],
+  [
+   "TRGP",
+   "Targa Resources Corp.",
+   2.2
   ],
   [
    "LNG",
    "Cheniere Energy, Inc.",
-   2.13
-  ],
-  [
-   "SWX: FHZN",
-   "Flughafen ZÃ¼rich AG",
-   2.12
+   2.16
   ],
   [
    "OKE",
    "ONEOK, Inc.",
-   2.1
+   2.12
+  ],
+  [
+   "SWX: FHZN",
+   "Flughafen ZÃ¼rich AG",
+   1.96
   ],
   [
    "EPA: ADP",
    "Aeroports de Paris SA",
-   1.99
+   1.95
   ],
   [
    "AEP",
    "American Electric Power Company, Inc.",
-   1.87
+   1.88
   ],
   [
    "ASR",
    "Grupo Aeroportuario del Sureste, S. A. B. de C. V.",
-   1.77
+   1.76
   ],
   [
    "D",
    "Dominion Energy, Inc.",
-   1.6
+   1.59
   ],
   [
    "SRE",
@@ -3565,13 +3565,23 @@
  ],
  "KBE": [
   [
-   "CRBG",
-   "Corebridge Financial, Inc.",
+   "JXN",
+   "Jackson Financial Inc.",
+   1.18
+  ],
+  [
+   "NMIH",
+   "NMI Holdings, Inc.",
+   1.14
+  ],
+  [
+   "MTG",
+   "MGIC Investment Corporation",
    1.13
   ],
   [
-   "JXN",
-   "Jackson Financial Inc.",
+   "CRBG",
+   "Corebridge Financial, Inc.",
    1.13
   ],
   [
@@ -3582,81 +3592,91 @@
   [
    "TBBK",
    "The Bancorp, Inc.",
-   1.12
+   1.13
   ],
   [
    "NIC",
    "Nicolet Bankshares, Inc.",
+   1.12
+  ],
+  [
+   "ESNT",
+   "Essent Group Ltd.",
    1.1
   ],
   [
-   "NMIH",
-   "NMI Holdings, Inc.",
-   1.1
+   "BNY",
+   "The Bank of New York Mellon Corporation",
+   1.09
   ],
   [
-   "RKT",
-   "Rocket Companies, Inc.",
-   1.07
+   "JPM",
+   "JPMorgan Chase & Co.",
+   1.09
   ],
   [
-   "MTG",
-   "MGIC Investment Corporation",
+   "VOYA",
+   "Voya Financial, Inc.",
+   1.08
+  ],
+  [
+   "BAC",
+   "Bank of America Corporation",
+   1.08
+  ],
+  [
+   "FBP",
+   "First BanCorp.",
    1.07
   ],
   [
    "WSBC",
    "WesBanco, Inc.",
-   1.07
-  ],
-  [
-   "FBP",
-   "First BanCorp.",
    1.06
   ],
   [
-   "ESNT",
-   "Essent Group Ltd.",
-   1.05
+   "NTRS",
+   "Northern Trust Corporation",
+   1.06
   ],
   [
    "PRK",
    "Park National Corporation",
-   1.05
-  ],
-  [
-   "BAC",
-   "Bank of America Corporation",
-   1.05
-  ],
-  [
-   "JPM",
-   "JPMorgan Chase & Co.",
-   1.05
+   1.06
   ],
   [
    "CFR",
    "Cullen/Frost Bankers, Inc.",
-   1.04
+   1.05
   ],
   [
    "SBCF",
    "Seacoast Banking Corporation of Florida",
+   1.05
+  ],
+  [
+   "AX",
+   "Axos Financial, Inc.",
+   1.05
+  ],
+  [
+   "USB",
+   "U.S. Bancorp",
    1.04
   ],
   [
-   "BNY",
-   "The Bank of New York Mellon Corporation",
-   1.04
-  ],
-  [
-   "PNFP",
-   "Pinnacle Financial Partners, Inc.",
+   "RKT",
+   "Rocket Companies, Inc.",
    1.03
   ],
   [
-   "FBK",
-   "FB Financial Corporation",
+   "SSB",
+   "SouthState Bank Corporation",
+   1.03
+  ],
+  [
+   "UMBF",
+   "UMB Financial Corporation",
    1.03
   ],
   [
@@ -3665,28 +3685,8 @@
    1.03
   ],
   [
-   "SSB",
-   "SouthState Bank Corporation",
-   1.02
-  ],
-  [
-   "USB",
-   "U.S. Bancorp",
-   1.02
-  ],
-  [
-   "NTRS",
-   "Northern Trust Corporation",
-   1.02
-  ],
-  [
-   "AX",
-   "Axos Financial, Inc.",
-   1.02
-  ],
-  [
-   "UMBF",
-   "UMB Financial Corporation",
+   "BPOP",
+   "Popular, Inc.",
    1.02
   ]
  ],
