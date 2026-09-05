@@ -2474,37 +2474,37 @@
   [
    "TPE: 2330",
    "Taiwan Semiconductor Manufacturing Company Limited",
-   18.94
+   18.9
   ],
   [
    "KRX: 005930",
    "Samsung Electronics Co., Ltd.",
-   8.78
+   8.79
   ],
   [
    "KRX: 000660",
    "SK hynix Inc.",
-   6.67
+   6.62
   ],
   [
    "TPE: 2454",
    "MediaTek Inc.",
-   1.99
+   2.01
   ],
   [
    "TPE: 2308",
    "Delta Electronics, Inc.",
-   1.09
+   1.1
   ],
   [
    "TPE: 2317",
    "Hon Hai Precision Industry Co., Ltd.",
-   0.99
+   0.97
   ],
   [
    "NSE: HDFCBANK",
    "HDFC Bank Limited",
-   0.86
+   0.87
   ],
   [
    "NSE: ICICIBANK",
@@ -2514,7 +2514,7 @@
   [
    "NSE: RELIANCE",
    "Reliance Industries Limited",
-   0.82
+   0.81
   ],
   [
    "KRX: 402340",
@@ -2524,27 +2524,27 @@
   [
    "TPE: 3711",
    "ASE Technology Holding Co., Ltd.",
-   0.64
-  ],
-  [
-   "BVMF: VALE3",
-   "Vale S.A.",
-   0.59
-  ],
-  [
-   "KRX: 009150",
-   "Samsung Electro-Mechanics Co., Ltd.",
-   0.59
+   0.63
   ],
   [
    "NU",
    "Nu Holdings Ltd.",
+   0.58
+  ],
+  [
+   "BVMF: VALE3",
+   "Vale S.A.",
+   0.57
+  ],
+  [
+   "KRX: 009150",
+   "Samsung Electro-Mechanics Co., Ltd.",
    0.57
   ],
   [
    "NSE: BHARTIARTL",
    "Bharti Airtel Limited",
-   0.56
+   0.57
   ],
   [
    "JSE: ANG",
@@ -2554,16 +2554,21 @@
   [
    "TPE: 2383",
    "Elite Material Co., Ltd.",
-   0.51
+   0.49
   ],
   [
    "TPE: 2303",
    "United Microelectronics Corporation",
-   0.46
+   0.45
   ],
   [
    "BVMF: ITUB4",
    "ItaÃº Unibanco Holding S.A.",
+   0.45
+  ],
+  [
+   "KRX: 105560",
+   "KB Financial Group Inc.",
    0.45
   ],
   [
@@ -2572,14 +2577,9 @@
    0.44
   ],
   [
-   "KRX: 105560",
-   "KB Financial Group Inc.",
+   "JSE: GFI",
+   "Gold Fields Limited",
    0.43
-  ],
-  [
-   "TPE: 3037",
-   "Unimicron Technology Corp.",
-   0.42
   ]
  ],
  "FIW": [
@@ -4344,7 +4344,7 @@
   [
    "WELL",
    "Welltower Inc.",
-   9.34
+   9.35
   ],
   [
    "PLD",
@@ -4364,7 +4364,7 @@
   [
    "DLR",
    "Digital Realty Trust, Inc.",
-   3.68
+   3.69
   ],
   [
    "O",
@@ -4378,7 +4378,7 @@
   ],
   [
    "EQR",
-   "VIVMARK RESIDENTIAL",
+   "AvalonBay Communities Inc",
    2.74
   ],
   [
@@ -4389,7 +4389,7 @@
   [
    "ASX: GMG",
    "Goodman Group",
-   2.11
+   2.12
   ],
   [
    "IRM",
@@ -6575,92 +6575,87 @@
   [
    "AMS: ASML",
    "ASML Holding N.V.",
-   4.97
+   4.55
   ],
   [
    "LON: HSBA",
    "HSBC Holdings plc",
-   2.44
+   2.51
   ],
   [
    "SWX: ROP",
    "Roche Holding AG",
-   2.16
+   2.11
   ],
   [
    "SWX: NOVN",
    "Novartis AG",
-   1.92
-  ],
-  [
-   "SWX: NESN",
-   "NestlÃ© S.A.",
-   1.77
+   2.07
   ],
   [
    "LON: SHEL",
    "Shell plc",
-   1.71
+   1.9
   ],
   [
    "LON: AZN",
    "AstraZeneca PLC",
-   1.69
+   1.76
+  ],
+  [
+   "SWX: NESN",
+   "NestlÃ© S.A.",
+   1.74
   ],
   [
    "ETR: SIE",
    "Siemens Aktiengesellschaft",
-   1.63
+   1.6
   ],
   [
    "BME: SAN",
    "Banco Santander, S.A.",
-   1.51
+   1.55
   ],
   [
    "ETR: SAP",
    "SAP SE",
-   1.42
-  ],
-  [
-   "EPA: SU",
-   "Schneider Electric S.E.",
-   1.33
+   1.5
   ],
   [
    "ETR: ALV",
    "Allianz SE",
-   1.33
+   1.39
   ],
   [
    "EPA: TTE",
    "TotalEnergies SE",
+   1.33
+  ],
+  [
+   "EPA: SU",
+   "Schneider Electric S.E.",
    1.26
   ],
   [
    "LON: RR",
    "Rolls-Royce Holdings plc",
-   1.19
-  ],
-  [
-   "BME: BBVA",
-   "Banco Bilbao Vizcaya Argentaria, S.A.",
-   1.11
+   1.16
   ],
   [
    "SWX: UBSG",
    "UBS Group AG",
-   1.1
+   1.15
   ],
   [
-   "SWX: ABBN",
-   "ABB Ltd",
-   1.09
+   "BME: BBVA",
+   "Banco Bilbao Vizcaya Argentaria, S.A.",
+   1.14
   ],
   [
-   "EPA: AIR",
-   "Airbus SE",
-   1.05
+   "CPH: NOVO.B",
+   "Novo Nordisk A/S",
+   1.04
   ],
   [
    "BIT: UCG",
@@ -6668,34 +6663,39 @@
    1.02
   ],
   [
-   "CPH: NOVO.B",
-   "Novo Nordisk A/S",
-   1.01
+   "SWX: ABBN",
+   "ABB Ltd",
+   1.02
   ],
   [
    "BME: IBE",
    "Iberdrola, S.A.",
-   1.01
+   0.99
   ],
   [
-   "EPA: SAF",
-   "Safran SA",
-   0.97
+   "EPA: AIR",
+   "Airbus SE",
+   0.99
   ],
   [
    "LON: ULVR",
    "Unilever PLC",
-   0.94
+   0.99
+  ],
+  [
+   "EPA: SAF",
+   "Safran SA",
+   0.9
   ],
   [
    "EPA: MC",
    "LVMH MoÃ«t Hennessy - Louis Vuitton, SociÃ©tÃ© EuropÃ©enne",
-   0.93
+   0.9
   ],
   [
-   "ETR: ENR",
-   "Siemens Energy AG",
-   0.92
+   "EPA: AI",
+   "Air Liquide S.A.",
+   0.89
   ]
  ],
  "VGK": [
