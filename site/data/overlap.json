@@ -12,7 +12,7 @@
   "XBI": 33.2,
   "ARKG": 94.1,
   "NASA": 78.4,
-  "DRAM": 72.8,
+  "DRAM": 49.8,
   "JEDI": 85.6,
   "XLV": 84.8,
   "VHT": 72.8,
@@ -20,7 +20,7 @@
   "QBTS": 100.0,
   "LRCX": 100.0,
   "RKLB": 100.0,
-  "ACWI": 33.9,
+  "ACWI": 34.4,
   "AVUV": 17.3,
   "CGW": 83.7,
   "DGRO": 48.2,
@@ -33,17 +33,17 @@
   "INDA": 50.5,
   "INDY": 78.1,
   "IWM": 7.2,
-  "KBE": 27.1,
+  "KBE": 27.2,
   "KIE": 50.8,
   "KRE": 34.2,
-  "NFRA": 49.4,
+  "NFRA": 48.0,
   "PAVE": 63.8,
   "PHO": 93.2,
   "REET": 58.0,
   "SCHD": 79.4,
-  "SCHH": 72.6,
+  "SCHH": 72.5,
   "VB": 8.9,
-  "VNQ": 72.5,
+  "VNQ": 73.1,
   "VT": 29.3,
   "VTV": 38.3,
   "VWO": 32.0,
@@ -55,7 +55,7 @@
   "BBJP": 50.5,
   "DXJ": 49.4,
   "EPI": 8.7,
-  "EWJ": 51.5,
+  "EWJ": 51.6,
   "IEUR": 33.2,
   "IEV": 37.5,
   "VGK": 32.6
@@ -70,24 +70,24 @@
    "ortak_hisse": 21
   },
   "SCHH|VNQ": {
-   "overlap_pct": 53.6,
-   "ortak_hisse": 22
+   "overlap_pct": 53.28,
+   "ortak_hisse": 21
   },
   "REET|SCHH": {
-   "overlap_pct": 52.18,
-   "ortak_hisse": 21
+   "overlap_pct": 49.36,
+   "ortak_hisse": 20
   },
   "INDA|INDY": {
    "overlap_pct": 48.76,
    "ortak_hisse": 22
   },
   "BBJP|EWJ": {
-   "overlap_pct": 48.49,
+   "overlap_pct": 48.43,
    "ortak_hisse": 24
   },
   "REET|VNQ": {
-   "overlap_pct": 46.65,
-   "ortak_hisse": 18
+   "overlap_pct": 44.99,
+   "ortak_hisse": 16
   },
   "QQQM|SPYM": {
    "overlap_pct": 42.83,
@@ -114,11 +114,11 @@
    "ortak_hisse": 24
   },
   "SPYM|ACWI": {
-   "overlap_pct": 29.95,
+   "overlap_pct": 30.57,
    "ortak_hisse": 21
   },
   "DXJ|EWJ": {
-   "overlap_pct": 29.44,
+   "overlap_pct": 29.86,
    "ortak_hisse": 15
   },
   "VTV|VYM": {
@@ -130,11 +130,11 @@
    "ortak_hisse": 23
   },
   "CGW|FIW": {
-   "overlap_pct": 29.06,
+   "overlap_pct": 28.87,
    "ortak_hisse": 10
   },
   "CGW|PHO": {
-   "overlap_pct": 27.63,
+   "overlap_pct": 27.51,
    "ortak_hisse": 10
   },
   "DGRO|VYM": {
@@ -146,8 +146,8 @@
    "ortak_hisse": 19
   },
   "QQQM|ACWI": {
-   "overlap_pct": 25.22,
-   "ortak_hisse": 14
+   "overlap_pct": 25.31,
+   "ortak_hisse": 13
   },
   "IEMG|VWO": {
    "overlap_pct": 24.06,
@@ -170,7 +170,7 @@
    "ortak_hisse": 15
   },
   "PAVE|XLI": {
-   "overlap_pct": 19.57,
+   "overlap_pct": 19.56,
    "ortak_hisse": 9
   },
   "XLV|SCHD": {
@@ -197,10 +197,6 @@
    "overlap_pct": 15.41,
    "ortak_hisse": 2
   },
-  "IGF|NFRA": {
-   "overlap_pct": 15.29,
-   "ortak_hisse": 10
-  },
   "DGRO|SCHD": {
    "overlap_pct": 14.22,
    "ortak_hisse": 8
@@ -217,13 +213,17 @@
    "overlap_pct": 13.08,
    "ortak_hisse": 5
   },
+  "IGF|NFRA": {
+   "overlap_pct": 12.73,
+   "ortak_hisse": 8
+  },
+  "ACWI|DGRO": {
+   "overlap_pct": 12.38,
+   "ortak_hisse": 10
+  },
   "QQQM|BOTZ": {
    "overlap_pct": 12.34,
    "ortak_hisse": 3
-  },
-  "ACWI|DGRO": {
-   "overlap_pct": 11.82,
-   "ortak_hisse": 9
   },
   "SPYM|BOTZ": {
    "overlap_pct": 11.75,
@@ -293,13 +293,13 @@
    "overlap_pct": 8.08,
    "ortak_hisse": 4
   },
+  "BOTZ|ACWI": {
+   "overlap_pct": 7.96,
+   "ortak_hisse": 3
+  },
   "DGRO|XLP": {
    "overlap_pct": 7.83,
    "ortak_hisse": 4
-  },
-  "BOTZ|ACWI": {
-   "overlap_pct": 7.76,
-   "ortak_hisse": 3
   },
   "SPYM|VYM": {
    "overlap_pct": 7.65,
@@ -361,12 +361,16 @@
    "overlap_pct": 6.63,
    "ortak_hisse": 3
   },
+  "IAT|KBE": {
+   "overlap_pct": 6.2,
+   "ortak_hisse": 6
+  },
   "QQQM|VYM": {
    "overlap_pct": 5.99,
    "ortak_hisse": 3
   },
   "CIBR|ACWI": {
-   "overlap_pct": 5.85,
+   "overlap_pct": 5.7,
    "ortak_hisse": 4
   },
   "QQQM|QTUM": {
@@ -384,10 +388,6 @@
   "CIBR|ROBT": {
    "overlap_pct": 5.39,
    "ortak_hisse": 3
-  },
-  "XLF|KBE": {
-   "overlap_pct": 5.33,
-   "ortak_hisse": 5
   },
   "SCHD|XLI": {
    "overlap_pct": 5.32,
@@ -410,12 +410,20 @@
    "ortak_hisse": 3
   },
   "ACWI|VTV": {
-   "overlap_pct": 4.8,
-   "ortak_hisse": 7
+   "overlap_pct": 5.21,
+   "ortak_hisse": 8
+  },
+  "KBE|KRE": {
+   "overlap_pct": 5.16,
+   "ortak_hisse": 5
   },
   "IBB|SCHD": {
    "overlap_pct": 4.78,
    "ortak_hisse": 1
+  },
+  "ACWI|VYM": {
+   "overlap_pct": 4.59,
+   "ortak_hisse": 6
   },
   "SPYM|XLF": {
    "overlap_pct": 4.41,
@@ -429,21 +437,13 @@
    "overlap_pct": 4.41,
    "ortak_hisse": 11
   },
+  "XLF|KBE": {
+   "overlap_pct": 4.31,
+   "ortak_hisse": 4
+  },
   "QQQM|XLP": {
    "overlap_pct": 4.29,
    "ortak_hisse": 2
-  },
-  "ACWI|VYM": {
-   "overlap_pct": 4.26,
-   "ortak_hisse": 5
-  },
-  "IAT|KBE": {
-   "overlap_pct": 4.17,
-   "ortak_hisse": 4
-  },
-  "KBE|KRE": {
-   "overlap_pct": 4.15,
-   "ortak_hisse": 4
   },
   "NFRA|SCHD": {
    "overlap_pct": 4.11,
@@ -461,10 +461,6 @@
    "overlap_pct": 3.96,
    "ortak_hisse": 3
   },
-  "ACWI|VXUS": {
-   "overlap_pct": 3.92,
-   "ortak_hisse": 4
-  },
   "ARKG|XLV": {
    "overlap_pct": 3.9,
    "ortak_hisse": 1
@@ -481,9 +477,9 @@
    "overlap_pct": 3.84,
    "ortak_hisse": 6
   },
-  "QTUM|ACWI": {
-   "overlap_pct": 3.78,
-   "ortak_hisse": 3
+  "ACWI|VXUS": {
+   "overlap_pct": 3.81,
+   "ortak_hisse": 4
   },
   "XLE|VTV": {
    "overlap_pct": 3.77,
@@ -493,6 +489,18 @@
    "overlap_pct": 3.76,
    "ortak_hisse": 1
   },
+  "QTUM|ACWI": {
+   "overlap_pct": 3.73,
+   "ortak_hisse": 3
+  },
+  "NFRA|PAVE": {
+   "overlap_pct": 3.53,
+   "ortak_hisse": 2
+  },
+  "NFRA|XLI": {
+   "overlap_pct": 3.53,
+   "ortak_hisse": 2
+  },
   "QTUM|VT": {
    "overlap_pct": 3.5,
    "ortak_hisse": 3
@@ -501,40 +509,28 @@
    "overlap_pct": 3.46,
    "ortak_hisse": 4
   },
+  "ACWI|XLY": {
+   "overlap_pct": 3.42,
+   "ortak_hisse": 2
+  },
   "VT|VXUS": {
    "overlap_pct": 3.33,
    "ortak_hisse": 4
   },
-  "ACWI|XLY": {
-   "overlap_pct": 3.32,
-   "ortak_hisse": 2
-  },
   "NFRA|EWJ": {
-   "overlap_pct": 3.31,
+   "overlap_pct": 3.25,
    "ortak_hisse": 2
-  },
-  "ACWI|EMXC": {
-   "overlap_pct": 3.23,
-   "ortak_hisse": 3
-  },
-  "ACWI|IEMG": {
-   "overlap_pct": 3.23,
-   "ortak_hisse": 3
   },
   "DRAM|VXUS": {
    "overlap_pct": 3.21,
    "ortak_hisse": 2
   },
-  "DGRO|KBE": {
+  "ACWI|EMXC": {
    "overlap_pct": 3.2,
    "ortak_hisse": 3
   },
-  "KBE|VYM": {
+  "ACWI|IEMG": {
    "overlap_pct": 3.2,
-   "ortak_hisse": 3
-  },
-  "KBE|VTV": {
-   "overlap_pct": 3.15,
    "ortak_hisse": 3
   },
   "XBI|ARKG": {
@@ -581,6 +577,10 @@
    "overlap_pct": 2.98,
    "ortak_hisse": 2
   },
+  "URA|EWJ": {
+   "overlap_pct": 2.92,
+   "ortak_hisse": 2
+  },
   "QTUM|CIBR": {
    "overlap_pct": 2.91,
    "ortak_hisse": 2
@@ -596,10 +596,6 @@
   "XLE|DGRO": {
    "overlap_pct": 2.85,
    "ortak_hisse": 1
-  },
-  "URA|EWJ": {
-   "overlap_pct": 2.85,
-   "ortak_hisse": 2
   },
   "EMXC|VT": {
    "overlap_pct": 2.78,
@@ -622,12 +618,8 @@
    "ortak_hisse": 4
   },
   "XLF|ACWI": {
-   "overlap_pct": 2.59,
+   "overlap_pct": 2.65,
    "ortak_hisse": 4
-  },
-  "DRAM|ACWI": {
-   "overlap_pct": 2.55,
-   "ortak_hisse": 3
   },
   "IEMG|INDA": {
    "overlap_pct": 2.52,
@@ -661,14 +653,6 @@
    "overlap_pct": 2.35,
    "ortak_hisse": 2
   },
-  "NFRA|PAVE": {
-   "overlap_pct": 2.34,
-   "ortak_hisse": 1
-  },
-  "NFRA|XLI": {
-   "overlap_pct": 2.34,
-   "ortak_hisse": 1
-  },
   "XBI|VHT": {
    "overlap_pct": 2.33,
    "ortak_hisse": 2
@@ -677,13 +661,25 @@
    "overlap_pct": 2.31,
    "ortak_hisse": 2
   },
-  "DRAM|EWJ": {
-   "overlap_pct": 2.29,
-   "ortak_hisse": 1
-  },
   "BOTZ|XLV": {
    "overlap_pct": 2.17,
    "ortak_hisse": 1
+  },
+  "DGRO|KBE": {
+   "overlap_pct": 2.17,
+   "ortak_hisse": 2
+  },
+  "KBE|VTV": {
+   "overlap_pct": 2.17,
+   "ortak_hisse": 2
+  },
+  "KBE|VYM": {
+   "overlap_pct": 2.17,
+   "ortak_hisse": 2
+  },
+  "DRAM|ACWI": {
+   "overlap_pct": 2.13,
+   "ortak_hisse": 3
   },
   "QQQM|SCHD": {
    "overlap_pct": 2.07,
@@ -701,27 +697,27 @@
    "overlap_pct": 2.06,
    "ortak_hisse": 1
   },
-  "DRAM|VT": {
-   "overlap_pct": 2.03,
+  "XLV|ACWI": {
+   "overlap_pct": 1.97,
+   "ortak_hisse": 3
+  },
+  "VHT|ACWI": {
+   "overlap_pct": 1.97,
    "ortak_hisse": 3
   },
   "ROBT|IBB": {
    "overlap_pct": 1.94,
    "ortak_hisse": 1
   },
+  "DRAM|VT": {
+   "overlap_pct": 1.92,
+   "ortak_hisse": 3
+  },
   "CIBR|SCHD": {
    "overlap_pct": 1.85,
    "ortak_hisse": 1
   },
-  "DRAM|BBJP": {
-   "overlap_pct": 1.84,
-   "ortak_hisse": 1
-  },
   "BOTZ|VHT": {
-   "overlap_pct": 1.82,
-   "ortak_hisse": 1
-  },
-  "BOTZ|EWJ": {
    "overlap_pct": 1.82,
    "ortak_hisse": 1
   },
@@ -733,16 +729,20 @@
    "overlap_pct": 1.76,
    "ortak_hisse": 1
   },
-  "INDA|NFRA": {
-   "overlap_pct": 1.72,
-   "ortak_hisse": 1
-  },
-  "INDY|NFRA": {
-   "overlap_pct": 1.72,
+  "BOTZ|EWJ": {
+   "overlap_pct": 1.75,
    "ortak_hisse": 1
   },
   "CIBR|BOTZ": {
    "overlap_pct": 1.71,
+   "ortak_hisse": 1
+  },
+  "INDA|NFRA": {
+   "overlap_pct": 1.7,
+   "ortak_hisse": 1
+  },
+  "INDY|NFRA": {
+   "overlap_pct": 1.7,
    "ortak_hisse": 1
   },
   "URA|DXJ": {
@@ -765,18 +765,6 @@
    "overlap_pct": 1.57,
    "ortak_hisse": 1
   },
-  "QQQM|DRAM": {
-   "overlap_pct": 1.56,
-   "ortak_hisse": 1
-  },
-  "SPYM|DRAM": {
-   "overlap_pct": 1.56,
-   "ortak_hisse": 1
-  },
-  "DRAM|VTV": {
-   "overlap_pct": 1.56,
-   "ortak_hisse": 1
-  },
   "VT|VWO": {
    "overlap_pct": 1.55,
    "ortak_hisse": 1
@@ -793,16 +781,8 @@
    "overlap_pct": 1.53,
    "ortak_hisse": 3
   },
-  "XLV|ACWI": {
-   "overlap_pct": 1.5,
-   "ortak_hisse": 2
-  },
-  "VHT|ACWI": {
-   "overlap_pct": 1.5,
-   "ortak_hisse": 2
-  },
   "NFRA|DXJ": {
-   "overlap_pct": 1.49,
+   "overlap_pct": 1.5,
    "ortak_hisse": 1
   },
   "ROBT|IEUR": {
@@ -836,6 +816,10 @@
   "QTUM|XLI": {
    "overlap_pct": 1.41,
    "ortak_hisse": 1
+  },
+  "PAVE|VB": {
+   "overlap_pct": 1.41,
+   "ortak_hisse": 4
   },
   "SPYM|XLP": {
    "overlap_pct": 1.4,
@@ -881,16 +865,8 @@
    "overlap_pct": 1.29,
    "ortak_hisse": 1
   },
-  "QTUM|DRAM": {
-   "overlap_pct": 1.28,
-   "ortak_hisse": 1
-  },
   "QTUM|XLY": {
    "overlap_pct": 1.28,
-   "ortak_hisse": 1
-  },
-  "XLE|NFRA": {
-   "overlap_pct": 1.24,
    "ortak_hisse": 1
   },
   "VTV|XLY": {
@@ -916,10 +892,6 @@
   "XBI|SCHD": {
    "overlap_pct": 1.18,
    "ortak_hisse": 1
-  },
-  "PAVE|VB": {
-   "overlap_pct": 1.11,
-   "ortak_hisse": 3
   },
   "SPYM|KBE": {
    "overlap_pct": 1.09,
@@ -1005,10 +977,6 @@
    "overlap_pct": 0.92,
    "ortak_hisse": 1
   },
-  "ARKG|ACWI": {
-   "overlap_pct": 0.9,
-   "ortak_hisse": 1
-  },
   "IGF|IEUR": {
    "overlap_pct": 0.9,
    "ortak_hisse": 1
@@ -1020,6 +988,10 @@
   "XBI|VB": {
    "overlap_pct": 0.89,
    "ortak_hisse": 2
+  },
+  "ARKG|ACWI": {
+   "overlap_pct": 0.89,
+   "ortak_hisse": 1
   },
   "IBB|VB": {
    "overlap_pct": 0.89,
@@ -1049,15 +1021,19 @@
    "overlap_pct": 0.79,
    "ortak_hisse": 1
   },
-  "ACWI|IEUR": {
+  "QQQM|DRAM": {
    "overlap_pct": 0.69,
    "ortak_hisse": 1
   },
-  "ACWI|IEV": {
+  "QTUM|DRAM": {
    "overlap_pct": 0.69,
    "ortak_hisse": 1
   },
-  "ACWI|VGK": {
+  "SPYM|DRAM": {
+   "overlap_pct": 0.69,
+   "ortak_hisse": 1
+  },
+  "DRAM|VTV": {
    "overlap_pct": 0.69,
    "ortak_hisse": 1
   },
@@ -1074,6 +1050,18 @@
    "ortak_hisse": 1
   },
   "JEDI|AVUV": {
+   "overlap_pct": 0.61,
+   "ortak_hisse": 1
+  },
+  "ACWI|IEUR": {
+   "overlap_pct": 0.61,
+   "ortak_hisse": 1
+  },
+  "ACWI|IEV": {
+   "overlap_pct": 0.61,
+   "ortak_hisse": 1
+  },
+  "ACWI|VGK": {
    "overlap_pct": 0.61,
    "ortak_hisse": 1
   },
@@ -1114,7 +1102,7 @@
    "ortak_hisse": 1
   },
   "ACWI|XLP": {
-   "overlap_pct": 0.48,
+   "overlap_pct": 0.45,
    "ortak_hisse": 1
   },
   "ARKG|VB": {
