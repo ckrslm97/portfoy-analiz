@@ -25,17 +25,17 @@
   "CGW": 83.7,
   "DGRO": 48.2,
   "EMXC": 47.8,
-  "FIW": 83.3,
+  "FIW": 83.0,
   "IAT": 94.9,
   "IBB": 67.0,
   "IEMG": 38.5,
   "IGF": 70.7,
   "INDA": 50.5,
-  "INDY": 78.1,
+  "INDY": 77.8,
   "IWM": 7.2,
   "KBE": 27.2,
   "KIE": 50.8,
-  "KRE": 34.2,
+  "KRE": 34.3,
   "NFRA": 48.0,
   "PAVE": 63.8,
   "PHO": 93.2,
@@ -53,7 +53,7 @@
   "XLP": 92.9,
   "XLY": 89.8,
   "BBJP": 50.5,
-  "DXJ": 49.4,
+  "DXJ": 51.0,
   "EPI": 8.7,
   "EWJ": 51.6,
   "IEUR": 33.2,
@@ -66,7 +66,7 @@
    "ortak_hisse": 25
   },
   "FIW|PHO": {
-   "overlap_pct": 65.92,
+   "overlap_pct": 65.69,
    "ortak_hisse": 21
   },
   "SCHH|VNQ": {
@@ -105,10 +105,6 @@
    "overlap_pct": 31.3,
    "ortak_hisse": 23
   },
-  "BBJP|DXJ": {
-   "overlap_pct": 30.91,
-   "ortak_hisse": 16
-  },
   "IEUR|VGK": {
    "overlap_pct": 30.9,
    "ortak_hisse": 24
@@ -117,8 +113,8 @@
    "overlap_pct": 30.57,
    "ortak_hisse": 21
   },
-  "DXJ|EWJ": {
-   "overlap_pct": 29.86,
+  "BBJP|DXJ": {
+   "overlap_pct": 29.56,
    "ortak_hisse": 15
   },
   "VTV|VYM": {
@@ -130,8 +126,12 @@
    "ortak_hisse": 23
   },
   "CGW|FIW": {
-   "overlap_pct": 28.87,
+   "overlap_pct": 28.9,
    "ortak_hisse": 10
+  },
+  "DXJ|EWJ": {
+   "overlap_pct": 28.41,
+   "ortak_hisse": 14
   },
   "CGW|PHO": {
    "overlap_pct": 27.51,
@@ -166,7 +166,7 @@
    "ortak_hisse": 12
   },
   "IAT|KRE": {
-   "overlap_pct": 20.18,
+   "overlap_pct": 20.28,
    "ortak_hisse": 15
   },
   "PAVE|XLI": {
@@ -633,10 +633,6 @@
    "overlap_pct": 2.5,
    "ortak_hisse": 2
   },
-  "QTUM|DXJ": {
-   "overlap_pct": 2.48,
-   "ortak_hisse": 2
-  },
   "XBI|XLV": {
    "overlap_pct": 2.46,
    "ortak_hisse": 2
@@ -648,6 +644,10 @@
   "XLF|VT": {
    "overlap_pct": 2.45,
    "ortak_hisse": 4
+  },
+  "QTUM|DXJ": {
+   "overlap_pct": 2.44,
+   "ortak_hisse": 2
   },
   "QTUM|VTV": {
    "overlap_pct": 2.35,
@@ -713,6 +713,10 @@
    "overlap_pct": 1.92,
    "ortak_hisse": 3
   },
+  "URA|DXJ": {
+   "overlap_pct": 1.87,
+   "ortak_hisse": 1
+  },
   "CIBR|SCHD": {
    "overlap_pct": 1.85,
    "ortak_hisse": 1
@@ -743,10 +747,6 @@
   },
   "INDY|NFRA": {
    "overlap_pct": 1.7,
-   "ortak_hisse": 1
-  },
-  "URA|DXJ": {
-   "overlap_pct": 1.69,
    "ortak_hisse": 1
   },
   "BOTZ|BBJP": {
@@ -1035,6 +1035,10 @@
   },
   "DRAM|VTV": {
    "overlap_pct": 0.69,
+   "ortak_hisse": 1
+  },
+  "AVUV|KIE": {
+   "overlap_pct": 0.65,
    "ortak_hisse": 1
   },
   "IWM|KRE": {
