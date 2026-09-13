@@ -2813,24 +2813,24 @@
  ],
  "IBB": [
   [
-   "AMGN",
-   "Amgen Inc.",
-   8.53
-  ],
-  [
    "VRTX",
    "Vertex Pharmaceuticals Incorporated",
-   8.04
+   7.94
+  ],
+  [
+   "AMGN",
+   "Amgen Inc.",
+   7.85
   ],
   [
    "GILD",
    "Gilead Sciences, Inc.",
-   7.2
+   7.44
   ],
   [
    "REGN",
    "Regeneron Pharmaceuticals, Inc.",
-   5.7
+   5.92
   ],
   [
    "ARGX",
@@ -2840,102 +2840,102 @@
   [
    "MRNA",
    "Moderna, Inc.",
-   3.57
+   3.67
   ],
   [
    "NTRA",
    "Natera, Inc.",
-   3.17
+   3.3
   ],
   [
    "RVMD",
    "Revolution Medicines, Inc.",
-   2.82
-  ],
-  [
-   "ILMN",
-   "Illumina, Inc.",
-   2.31
-  ],
-  [
-   "BIIB",
-   "Biogen Inc.",
-   2.27
+   2.87
   ],
   [
    "ALNY",
    "Alnylam Pharmaceuticals, Inc.",
-   2.24
+   2.44
   ],
   [
-   "ONC",
-   "BeOne Medicines AG",
-   2.08
+   "BIIB",
+   "Biogen Inc.",
+   2.33
+  ],
+  [
+   "ILMN",
+   "Illumina, Inc.",
+   2.25
   ],
   [
    "INSM",
    "Insmed Incorporated",
-   1.81
+   2.02
+  ],
+  [
+   "ONC",
+   "BeOne Medicines AG",
+   2.01
   ],
   [
    "INCY",
    "Incyte Corporation",
-   1.75
-  ],
-  [
-   "UTHR",
-   "United Therapeutics Corporation",
-   1.5
+   1.81
   ],
   [
    "ROIV",
    "Roivant Sciences Ltd.",
-   1.27
+   1.56
+  ],
+  [
+   "UTHR",
+   "United Therapeutics Corporation",
+   1.53
   ],
   [
    "GMAB",
    "Genmab A/S",
-   1.23
+   1.25
   ],
   [
    "ASND",
    "Ascendis Pharma A/S",
-   1.09
+   1.2
   ],
   [
    "NBIX",
    "Neurocrine Biosciences, Inc.",
-   1.08
-  ],
-  [
-   "CRL",
-   "Charles River Laboratories International, Inc.",
-   0.99
-  ],
-  [
-   "MEDP",
-   "Medpace Holdings, Inc.",
-   0.98
+   1.14
   ],
   [
    "EXEL",
    "Exelixis, Inc.",
-   0.94
+   1.04
   ],
   [
-   "BBIO",
-   "BridgeBio Pharma, Inc.",
-   0.92
+   "MEDP",
+   "Medpace Holdings, Inc.",
+   0.99
+  ],
+  [
+   "CRL",
+   "Charles River Laboratories International, Inc.",
+   0.96
   ],
   [
    "HALO",
    "Halozyme Therapeutics, Inc.",
-   0.88
+   0.93
   ],
   [
    "BMRN",
    "BioMarin Pharmaceutical Inc.",
-   0.88
+   0.92
+  ],
+  [
+   "BBIO",
+   "BridgeBio Pharma, Inc.",
+   0.91
   ]
  ],
  "IEMG": [
@@ -3057,54 +3057,54 @@
  ],
  "IGF": [
   [
-   "BME: AENA",
-   "Aena S.M.E., S.A.",
-   5.36
-  ],
-  [
    "ASX: TCL",
    "Transurban Group",
-   5.36
+   5.29
+  ],
+  [
+   "BME: AENA",
+   "Aena S.M.E., S.A.",
+   5.13
   ],
   [
    "NEE",
    "NextEra Energy, Inc.",
-   4.81
+   4.83
   ],
   [
    "BME: IBE",
    "Iberdrola, S.A.",
-   4.09
+   4.17
   ],
   [
    "TSX: ENB",
    "Enbridge Inc.",
-   3.95
-  ],
-  [
-   "NZE: AIA",
-   "Auckland International Airport Limited",
-   3.43
+   3.8
   ],
   [
    "PAC",
    "Grupo Aeroportuario del PacÃ­fico, S.A.B. de C.V.",
-   3.31
+   3.38
+  ],
+  [
+   "NZE: AIA",
+   "Auckland International Airport Limited",
+   3.36
   ],
   [
    "WMB",
    "The Williams Companies, Inc.",
-   3.28
+   3.21
   ],
   [
    "SO",
    "The Southern Company",
-   2.76
+   2.78
   ],
   [
    "EPA: GET",
    "Getlink SE",
-   2.71
+   2.72
   ],
   [
    "DUK",
@@ -3114,72 +3114,72 @@
   [
    "CEG",
    "Constellation Energy Corporation",
-   2.49
-  ],
-  [
-   "BIT: ENEL",
-   "Enel SpA",
-   2.36
+   2.57
   ],
   [
    "TSX: TRP",
    "TC Energy Corporation",
-   2.34
+   2.32
+  ],
+  [
+   "BIT: ENEL",
+   "Enel SpA",
+   2.31
   ],
   [
    "TRGP",
    "Targa Resources Corp.",
-   2.27
-  ],
-  [
-   "LNG",
-   "Cheniere Energy, Inc.",
    2.26
-  ],
-  [
-   "KMI",
-   "Kinder Morgan, Inc.",
-   2.24
   ],
   [
    "LON: NG",
    "National Grid plc",
-   2.23
+   2.19
+  ],
+  [
+   "KMI",
+   "Kinder Morgan, Inc.",
+   2.18
   ],
   [
    "OKE",
    "ONEOK, Inc.",
-   2.15
+   2.17
   ],
   [
-   "SWX: FHZN",
-   "Flughafen ZÃ¼rich AG",
-   1.94
+   "LNG",
+   "Cheniere Energy, Inc.",
+   2.16
   ],
   [
    "EPA: ADP",
    "Aeroports de Paris SA",
-   1.9
+   1.97
   ],
   [
    "AEP",
    "American Electric Power Company, Inc.",
-   1.89
+   1.92
+  ],
+  [
+   "SWX: FHZN",
+   "Flughafen ZÃ¼rich AG",
+   1.9
   ],
   [
    "ASR",
    "Grupo Aeroportuario del Sureste, S. A. B. de C. V.",
-   1.72
+   1.75
   ],
   [
    "D",
    "Dominion Energy, Inc.",
-   1.62
+   1.6
   ],
   [
    "SRE",
    "Sempra",
-   1.57
+   1.58
   ]
  ],
  "INDA": [
@@ -3557,7 +3557,7 @@
   [
    "JXN",
    "Jackson Financial Inc.",
-   1.22
+   1.23
   ],
   [
    "CRBG",
@@ -3570,34 +3570,19 @@
    1.19
   ],
   [
-   "TBBK",
-   "The Bancorp, Inc.",
-   1.15
-  ],
-  [
-   "NMIH",
-   "NMI Holdings, Inc.",
-   1.14
-  ],
-  [
    "MTG",
    "MGIC Investment Corporation",
    1.14
   ],
   [
-   "ESNT",
-   "Essent Group Ltd.",
-   1.11
+   "NMIH",
+   "NMI Holdings, Inc.",
+   1.13
   ],
   [
    "NIC",
    "Nicolet Bankshares, Inc.",
-   1.1
-  ],
-  [
-   "VOYA",
-   "Voya Financial, Inc.",
-   1.1
+   1.12
   ],
   [
    "BNY",
@@ -3605,39 +3590,44 @@
    1.1
   ],
   [
-   "JPM",
-   "JPMorgan Chase & Co.",
+   "ESNT",
+   "Essent Group Ltd.",
+   1.1
+  ],
+  [
+   "VOYA",
+   "Voya Financial, Inc.",
    1.09
   ],
   [
    "BAC",
    "Bank of America Corporation",
-   1.08
+   1.09
   ],
   [
-   "WSBC",
-   "WesBanco, Inc.",
-   1.08
-  ],
-  [
-   "FBP",
-   "First BanCorp.",
-   1.07
-  ],
-  [
-   "RKT",
-   "Rocket Companies, Inc.",
-   1.06
+   "JPM",
+   "JPMorgan Chase & Co.",
+   1.09
   ],
   [
    "NTRS",
    "Northern Trust Corporation",
-   1.05
+   1.07
   ],
   [
    "CFR",
    "Cullen/Frost Bankers, Inc.",
-   1.05
+   1.07
+  ],
+  [
+   "WSBC",
+   "WesBanco, Inc.",
+   1.07
+  ],
+  [
+   "FBP",
+   "First BanCorp.",
+   1.06
   ],
   [
    "USB",
@@ -3650,24 +3640,34 @@
    1.04
   ],
   [
-   "PRK",
-   "Park National Corporation",
-   1.04
-  ],
-  [
    "SSB",
    "SouthState Bank Corporation",
    1.04
   ],
   [
-   "AX",
-   "Axos Financial, Inc.",
+   "WFC",
+   "Wells Fargo & Company",
+   1.04
+  ],
+  [
+   "WSFS",
+   "WSFS Financial Corporation",
    1.03
   ],
   [
-   "BPOP",
-   "Popular, Inc.",
-   1.03
+   "HOMB",
+   "Home BancShares, Inc.",
+   1.02
+  ],
+  [
+   "CVBF",
+   "CVB Financial Corp.",
+   1.02
+  ],
+  [
+   "BUSE",
+   "First Busey Corporation",
+   1.02
   ],
   [
    "CFG",
@@ -3675,9 +3675,9 @@
    1.02
   ],
   [
-   "PNFP",
-   "Pinnacle Financial Partners, Inc.",
-   1.02
+   "CBSH",
+   "Commerce Bancshares, Inc.",
+   1.01
   ]
  ],
  "KIE": [
