@@ -3,233 +3,238 @@
   [
    "NVDA",
    "NVIDIA Corporation",
-   8.54
+   8.51
   ],
   [
    "AAPL",
    "Apple Inc.",
-   6.99
+   7.73
   ],
   [
    "MSFT",
    "Microsoft Corporation",
-   5.76
-  ],
-  [
-   "AMZN",
-   "Amazon.com, Inc.",
-   4.53
+   5.89
   ],
   [
    "MU",
    "Micron Technology, Inc.",
-   4.47
+   4.9
+  ],
+  [
+   "AMZN",
+   "Amazon.com, Inc.",
+   4.36
   ],
   [
    "AMD",
    "Advanced Micro Devices, Inc.",
-   3.43
+   3.65
   ],
   [
    "GOOGL",
    "Alphabet Inc.",
-   3.15
-  ],
-  [
-   "AVGO",
-   "Broadcom Inc.",
-   3.11
-  ],
-  [
-   "GOOG",
-   "Alphabet Inc.",
-   2.94
+   3.12
   ],
   [
    "META",
    "Meta Platforms, Inc.",
-   2.7
+   3.07
   ],
   [
    "TSLA",
    "Tesla, Inc.",
-   2.58
+   2.93
+  ],
+  [
+   "GOOG",
+   "Alphabet Inc.",
+   2.9
+  ],
+  [
+   "AVGO",
+   "Broadcom Inc.",
+   2.76
   ],
   [
    "WMT",
    "Walmart Inc.",
-   2.46
+   2.29
   ],
   [
    "INTC",
    "Intel Corporation",
-   2.21
+   2.24
   ],
   [
    "CSCO",
    "Cisco Systems, Inc.",
-   2.12
-  ],
-  [
-   "AMAT",
-   "Applied Materials, Inc.",
-   1.89
+   1.88
   ],
   [
    "COST",
    "Costco Wholesale Corporation",
-   1.83
+   1.78
+  ],
+  [
+   "PLTR",
+   "Palantir Technologies Inc.",
+   1.69
   ],
   [
    "LRCX",
    "Lam Research Corporation",
-   1.77
+   1.66
   ],
   [
-   "PLTR",
-   "Palantir Technologies Inc.",
-   1.71
-  ],
-  [
-   "PANW",
-   "Palo Alto Networks, Inc.",
-   1.37
+   "AMAT",
+   "Applied Materials, Inc.",
+   1.6
   ],
   [
    "NFLX",
    "Netflix, Inc.",
-   1.36
+   1.42
   ],
   [
    "SPCX",
    "Space Exploration Technologies Corp.",
-   1.22
+   1.26
   ],
   [
-   "KLAC",
-   "KLA Corporation",
-   1.18
+   "PANW",
+   "Palo Alto Networks, Inc.",
+   1.23
+  ],
+  [
+   "SNDK",
+   "Sandisk Corporation",
+   1.11
   ],
   [
    "TXN",
    "Texas Instruments Incorporated",
-   1.09
+   1.05
   ],
   [
-   "CRWD",
-   "CrowdStrike Holdings, Inc.",
-   0.98
+   "KLAC",
+   "KLA Corporation",
+   1.03
   ],
   [
-   "AMGN",
-   "Amgen Inc.",
-   0.98
+   "LIN",
+   "Linde plc",
+   0.95
   ]
  ],
  "QTUM": [
   [
-   "HQ",
-   "Horizon Quantum Holdings Ltd.",
-   2.04
-  ],
-  [
    "ARQQ",
    "Arqit Quantum Inc.",
-   1.88
-  ],
-  [
-   "ESTC",
-   "Elastic N.V.",
-   1.66
+   1.83
   ],
   [
    "TPE: 3443",
    "Global Unichip Corp.",
-   1.65
+   1.82
   ],
   [
-   "SNOW",
-   "Snowflake Inc.",
-   1.57
-  ],
-  [
-   "PLTR",
-   "Palantir Technologies Inc.",
-   1.57
-  ],
-  [
-   "NTNX",
-   "Nutanix, Inc.",
-   1.57
-  ],
-  [
-   "RDNT",
-   "RadNet, Inc.",
-   1.56
+   "HQ",
+   "Horizon Quantum Holdings Ltd.",
+   1.81
   ],
   [
    "NET",
    "Cloudflare, Inc.",
-   1.49
+   1.66
   ],
   [
-   "TYO: 6701",
-   "NEC Corporation",
-   1.43
+   "ESTC",
+   "Elastic N.V.",
+   1.64
   ],
   [
-   "MSFT",
-   "Microsoft Corporation",
-   1.42
-  ],
-  [
-   "MDB",
-   "MongoDB, Inc.",
-   1.42
-  ],
-  [
-   "RTX",
-   "RTX Corporation",
-   1.41
-  ],
-  [
-   "BIT: REY",
-   "Reply S.p.A.",
-   1.4
-  ],
-  [
-   "EPA: AIR",
-   "Airbus SE",
-   1.39
+   "SNOW",
+   "Snowflake Inc.",
+   1.64
   ],
   [
    "HPE",
    "Hewlett Packard Enterprise Company",
-   1.37
+   1.63
   ],
   [
-   "TPE: 2357",
-   "ASUSTeK Computer Inc.",
-   1.34
+   "NTNX",
+   "Nutanix, Inc.",
+   1.58
   ],
   [
-   "BABA",
-   "Alibaba Group Holding Limited",
-   1.33
+   "RDNT",
+   "RadNet, Inc.",
+   1.55
+  ],
+  [
+   "PLTR",
+   "Palantir Technologies Inc.",
+   1.53
+  ],
+  [
+   "MSFT",
+   "Microsoft Corporation",
+   1.49
+  ],
+  [
+   "TYO: 9432",
+   "NTT, Inc.",
+   1.47
+  ],
+  [
+   "TYO: 6701",
+   "NEC Corporation",
+   1.41
   ],
   [
    "TYO: 6702",
    "Fujitsu Limited",
-   1.32
+   1.39
+  ],
+  [
+   "TPE: 2357",
+   "ASUSTeK Computer Inc.",
+   1.39
+  ],
+  [
+   "EPA: AIR",
+   "Airbus SE",
+   1.37
+  ],
+  [
+   "AMD",
+   "Advanced Micro Devices, Inc.",
+   1.36
   ],
   [
    "TYO: 6501",
    "Hitachi, Ltd.",
+   1.36
+  ],
+  [
+   "BIT: REY",
+   "Reply S.p.A.",
+   1.35
+  ],
+  [
+   "RTX",
+   "RTX Corporation",
+   1.33
+  ],
+  [
+   "TPE: 2454",
+   "MediaTek Inc.",
    1.31
   ],
   [
-   "ONTO",
-   "Onto Innovation Inc.",
+   "MU",
+   "Micron Technology, Inc.",
    1.3
   ],
   [
@@ -238,173 +243,168 @@
    1.3
   ],
   [
-   "TYO: 9432",
-   "NTT, Inc.",
-   1.29
+   "NVDA",
+   "NVIDIA Corporation",
+   1.3
   ],
   [
    "AMZN",
    "Amazon.com, Inc.",
-   1.28
-  ],
-  [
-   "MU",
-   "Micron Technology, Inc.",
-   1.28
+   1.29
   ]
  ],
  "XLE": [
   [
    "XOM",
    "ExxonMobil Holdings Corporation",
-   20.54
+   20.06
   ],
   [
    "CVX",
    "Chevron Corporation",
-   14.99
+   15.14
   ],
   [
    "COP",
    "ConocoPhillips",
-   6.14
+   6.32
   ],
   [
    "MPC",
    "Marathon Petroleum Corporation",
-   5.43
+   5.63
   ],
   [
    "PSX",
    "Phillips 66",
-   5.28
+   5.49
   ],
   [
    "VLO",
    "Valero Energy Corporation",
-   5.09
+   5.4
   ],
   [
    "SLB",
    "SLB N.V.",
-   4.43
+   4.45
   ],
   [
    "EOG",
    "EOG Resources, Inc.",
-   4.23
+   4.12
   ],
   [
    "WMB",
    "The Williams Companies, Inc.",
-   3.86
-  ],
-  [
-   "BKR",
-   "Baker Hughes Company",
-   3.82
-  ],
-  [
-   "KMI",
-   "Kinder Morgan, Inc.",
-   3.81
-  ],
-  [
-   "OKE",
-   "ONEOK, Inc.",
-   3.54
+   3.59
   ],
   [
    "TRGP",
    "Targa Resources Corp.",
-   3.48
+   3.53
+  ],
+  [
+   "KMI",
+   "Kinder Morgan, Inc.",
+   3.42
+  ],
+  [
+   "BKR",
+   "Baker Hughes Company",
+   3.32
   ],
   [
    "DVN",
    "Devon Energy Corporation",
-   3.1
+   3.28
   ],
   [
    "OXY",
    "Occidental Petroleum Corporation",
-   2.54
+   2.53
   ],
   [
    "FANG",
    "Diamondback Energy, Inc.",
-   2.35
+   2.25
   ],
   [
    "EQT",
    "EQT Corporation",
-   2.05
+   1.91
   ],
   [
    "HAL",
    "Halliburton Company",
-   1.66
+   1.69
   ],
   [
    "EXE",
    "Expand Energy Corporation",
-   1.37
+   1.28
   ],
   [
    "TPL",
    "Texas Pacific Land Corporation",
-   1.22
+   1.21
   ],
   [
    "APA",
    "APA Corporation",
-   0.86
+   0.89
   ]
  ],
  "SPYM": [
   [
    "NVDA",
    "NVIDIA Corporation",
-   8.13
+   8.02
   ],
   [
    "AAPL",
    "Apple Inc.",
-   6.68
+   7.4
   ],
   [
    "MSFT",
    "Microsoft Corporation",
-   5.5
+   5.58
   ],
   [
    "AMZN",
    "Amazon.com, Inc.",
-   3.87
+   3.81
   ],
   [
    "GOOGL",
    "Alphabet Inc.",
-   3.03
+   3.01
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   2.95
+   2.6
   ],
   [
    "GOOG",
    "Alphabet Inc.",
-   2.42
+   2.4
   ],
   [
    "META",
    "Meta Platforms, Inc.",
-   1.95
+   2.16
   ],
   [
    "MU",
    "Micron Technology, Inc.",
-   1.6
+   1.67
+  ],
+  [
+   "TSLA",
+   "Tesla, Inc.",
+   1.56
   ],
   [
    "JPM",
@@ -412,39 +412,34 @@
    1.45
   ],
   [
-   "TSLA",
-   "Tesla, Inc.",
-   1.43
+   "BRK.B",
+   "Berkshire Hathaway Inc.",
+   1.42
   ],
   [
    "LLY",
    "Eli Lilly and Company",
-   1.42
-  ],
-  [
-   "BRK.B",
-   "Berkshire Hathaway Inc.",
-   1.38
+   1.34
   ],
   [
    "AMD",
    "Advanced Micro Devices, Inc.",
-   1.17
+   1.28
   ],
   [
    "XOM",
    "ExxonMobil Holdings Corporation",
-   0.98
+   1.04
   ],
   [
    "JNJ",
    "Johnson & Johnson",
-   0.94
+   0.97
   ],
   [
    "V",
    "Visa Inc.",
-   0.9
+   0.93
   ],
   [
    "INTC",
@@ -454,12 +449,17 @@
   [
    "WMT",
    "Walmart Inc.",
-   0.76
+   0.71
   ],
   [
    "MA",
    "Mastercard Incorporated",
-   0.68
+   0.7
+  ],
+  [
+   "ABBV",
+   "AbbVie Inc.",
+   0.69
   ],
   [
    "CSCO",
@@ -467,24 +467,19 @@
    0.67
   ],
   [
-   "ABBV",
-   "AbbVie Inc.",
-   0.66
+   "BAC",
+   "Bank of America Corporation",
+   0.62
   ],
   [
    "COST",
    "Costco Wholesale Corporation",
-   0.64
+   0.61
   ],
   [
-   "AMAT",
-   "Applied Materials, Inc.",
-   0.63
-  ],
-  [
-   "LRCX",
-   "Lam Research Corporation",
-   0.63
+   "CVX",
+   "Chevron Corporation",
+   0.61
   ]
  ],
  "CIBR": [
@@ -618,249 +613,239 @@
   [
    "CCO.NE",
    "CAMECO CORP",
-   22.06
+   22.4
   ],
   [
    "TSX: U.UN",
    "Sprott Physical Uranium Trust Fund",
-   6.31
-  ],
-  [
-   "OKLO",
-   "Oklo Inc.",
-   6.11
+   6.46
   ],
   [
    "TSX: NXE",
    "NexGen Energy Ltd.",
-   6.05
+   5.88
+  ],
+  [
+   "OKLO",
+   "Oklo Inc.",
+   5.12
   ],
   [
    "UEC",
    "Uranium Energy Corp.",
-   4.93
+   4.72
   ],
   [
    "LON: KAP",
    "National Atomic Company Kazatomprom JSC",
-   4.45
-  ],
-  [
-   "EFR.NE",
-   "ENERGY FUELS INC",
-   3.5
-  ],
-  [
-   "XE",
-   "X-Energy, Inc.",
-   3.42
-  ],
-  [
-   "LEU",
-   "Centrus Energy Corp.",
-   3.26
+   4.42
   ],
   [
    "ASX: PDN",
    "Paladin Energy Ltd",
-   3.0
+   3.15
   ],
   [
-   "SMR",
-   "NuScale Power Corporation",
-   2.97
-  ],
-  [
-   "TSX: DML",
-   "Denison Mines Corp.",
-   2.74
+   "EFR.NE",
+   "ENERGY FUELS INC",
+   3.09
   ],
   [
    "JSE: SSW",
    "Sibanye Stillwater Limited",
-   2.33
+   2.83
   ],
   [
-   "KRX: 047040",
-   "Daewoo Engineering & Construction Co., Ltd.",
-   2.13
+   "SMR",
+   "NuScale Power Corporation",
+   2.8
   ],
   [
-   "KRX: 034020",
-   "Doosan Enerbility Co., Ltd.",
-   2.13
+   "LEU",
+   "Centrus Energy Corp.",
+   2.68
   ],
   [
    "KRX: 000720",
    "Hyundai Engineering & Construction Co.,Ltd.",
-   2.1
+   2.64
   ],
   [
-   "TYO: 7011",
-   "Mitsubishi Heavy Industries, Ltd.",
-   2.03
+   "TSX: DML",
+   "Denison Mines Corp.",
+   2.64
   ],
   [
-   "KRX: 028260",
-   "Samsung C&T Corporation",
-   1.91
+   "KRX: 047040",
+   "Daewoo Engineering & Construction Co., Ltd.",
+   2.55
+  ],
+  [
+   "KRX: 034020",
+   "Doosan Enerbility Co., Ltd.",
+   2.53
+  ],
+  [
+   "XE",
+   "X-Energy, Inc.",
+   2.5
   ],
   [
    "TYO: 8001",
    "ITOCHU Corporation",
-   1.9
+   2.25
   ],
   [
-   "ASX: BHP",
-   "BHP Group Limited",
-   1.86
-  ],
-  [
-   "YCA.L",
-   "YELLOW CAKE PLC",
-   1.8
-  ],
-  [
-   "KRX: 006360",
-   "GS Engineering & Construction Corporation",
-   1.55
-  ],
-  [
-   "TSX: ARE",
-   "Aecon Group Inc.",
-   1.49
+   "KRX: 028260",
+   "Samsung C&T Corporation",
+   2.06
   ],
   [
    "KRX: 052690",
    "KEPCO Engineering & Construction Company, Inc.",
-   1.25
+   2.03
+  ],
+  [
+   "ASX: BHP",
+   "BHP Group Limited",
+   1.92
+  ],
+  [
+   "TYO: 7011",
+   "Mitsubishi Heavy Industries, Ltd.",
+   1.88
+  ],
+  [
+   "YCA.L",
+   "YELLOW CAKE PLC",
+   1.85
+  ],
+  [
+   "KRX: 006360",
+   "GS Engineering & Construction Corporation",
+   1.83
+  ],
+  [
+   "TSX: ARE",
+   "Aecon Group Inc.",
+   1.47
   ],
   [
    "HKG: 1164",
    "CGN Mining Company Limited",
-   1.06
+   0.92
   ]
  ],
  "BOTZ": [
   [
-   "TYO: 6861",
-   "Keyence Corporation",
-   10.81
-  ],
-  [
-   "NVDA",
-   "NVIDIA Corporation",
-   9.37
+   "TYO: 6954",
+   "Fanuc Corporation",
+   8.13
   ],
   [
    "SWX: ABBN",
    "ABB Ltd",
-   9.14
+   7.95
   ],
   [
-   "TYO: 6954",
-   "Fanuc Corporation",
-   7.78
+   "TYO: 6861",
+   "Keyence Corporation",
+   7.9
   ],
   [
    "ISRG",
    "Intuitive Surgical, Inc.",
-   6.06
+   7.79
+  ],
+  [
+   "NVDA",
+   "NVIDIA Corporation",
+   7.63
   ],
   [
    "TYO: 6273",
    "SMC Corporation",
-   4.72
-  ],
-  [
-   "SHE: 300124",
-   "Shenzhen Inovance Technology Co.,Ltd",
-   3.82
+   4.68
   ],
   [
    "TYO: 6383",
    "Daifuku Co., Ltd.",
-   3.22
+   3.36
   ],
   [
    "AUR",
    "Aurora Innovation, Inc.",
-   2.45
+   2.76
   ],
   [
-   "SHE: 300757",
-   "RoboTechnik Intelligent Technology Co., LTD",
-   2.35
+   "SHE: 300124",
+   "Shenzhen Inovance Technology Co.,Ltd",
+   2.72
   ],
   [
    "CGNX",
    "Cognex Corporation",
-   2.33
+   2.72
   ],
   [
-   "GOOGL",
-   "Alphabet Inc.",
-   2.19
-  ],
-  [
-   "AVAV",
-   "AeroVironment, Inc.",
-   2.06
-  ],
-  [
-   "TYO: 6506",
-   "YASKAWA Electric Corporation",
-   1.95
+   "SHE: 300757",
+   "RoboTechnik Intelligent Technology Co., LTD",
+   2.1
   ],
   [
    "TYO: 6645",
    "OMRON Corporation",
-   1.94
-  ],
-  [
-   "HKG: 9660",
-   "Horizon Robotics",
-   1.71
-  ],
-  [
-   "BIDU",
-   "Baidu, Inc.",
-   1.68
+   2.02
   ],
   [
    "TSLA",
    "Tesla, Inc.",
-   1.61
+   2.01
   ],
   [
-   "PATH",
-   "UiPath, Inc.",
-   1.58
+   "GOOGL",
+   "Alphabet Inc.",
+   1.97
+  ],
+  [
+   "DE",
+   "Deere & Company",
+   1.9
+  ],
+  [
+   "HKG: 9660",
+   "Horizon Robotics",
+   1.88
+  ],
+  [
+   "TYO: 6506",
+   "YASKAWA Electric Corporation",
+   1.87
   ],
   [
    "HKG: 1810",
    "Xiaomi Corporation",
-   1.51
-  ],
-  [
-   "JBTM",
-   "JBT Marel Corporation",
-   1.33
+   1.57
   ],
   [
    "OSL: AUTO",
    "AutoStore Holdings Ltd.",
-   1.32
-  ],
-  [
-   "XPEV",
-   "XPeng Inc.",
-   1.15
+   1.44
   ],
   [
    "SYM",
    "Symbotic Inc.",
-   1.15
+   1.38
+  ],
+  [
+   "HKG: 9880",
+   "Ubtech Robotics Corp Ltd",
+   1.1
+  ],
+  [
+   "TYO: 6134",
+   "Fuji Corporation",
+   1.07
   ]
  ],
  "ROBT": [
@@ -992,38 +977,53 @@
  ],
  "XBI": [
   [
+   "MRNA",
+   "Moderna, Inc.",
+   3.04
+  ],
+  [
    "TWST",
    "Twist Bioscience Corporation",
-   1.76
+   1.82
   ],
   [
-   "ORKA",
-   "Oruka Therapeutics, Inc.",
-   1.61
-  ],
-  [
-   "APGE",
-   "Apogee Therapeutics, Inc.",
-   1.55
-  ],
-  [
-   "PRAX",
-   "Praxis Precision Medicines, Inc.",
-   1.46
-  ],
-  [
-   "KYMR",
-   "Kymera Therapeutics, Inc.",
-   1.39
+   "HALO",
+   "Halozyme Therapeutics, Inc.",
+   1.48
   ],
   [
    "NTRA",
    "Natera, Inc.",
+   1.48
+  ],
+  [
+   "KYMR",
+   "Kymera Therapeutics, Inc.",
+   1.43
+  ],
+  [
+   "ORKA",
+   "Oruka Therapeutics, Inc.",
+   1.4
+  ],
+  [
+   "ROIV",
+   "Roivant Sciences Ltd.",
+   1.39
+  ],
+  [
+   "TVTX",
+   "Travere Therapeutics, Inc.",
    1.37
   ],
   [
-   "DNTH",
-   "Dianthus Therapeutics, Inc.",
+   "RVMD",
+   "Revolution Medicines, Inc.",
+   1.37
+  ],
+  [
+   "INSM",
+   "Insmed Incorporated",
    1.37
   ],
   [
@@ -1032,88 +1032,73 @@
    1.36
   ],
   [
-   "HALO",
-   "Halozyme Therapeutics, Inc.",
-   1.36
+   "PRAX",
+   "Praxis Precision Medicines, Inc.",
+   1.35
   ],
   [
-   "RVMD",
-   "Revolution Medicines, Inc.",
-   1.33
-  ],
-  [
-   "MRNA",
-   "Moderna, Inc.",
-   1.32
-  ],
-  [
-   "INSM",
-   "Insmed Incorporated",
-   1.31
+   "DNTH",
+   "Dianthus Therapeutics, Inc.",
+   1.35
   ],
   [
    "CGON",
    "CG Oncology, Inc.",
-   1.3
-  ],
-  [
-   "SYRE",
-   "Spyre Therapeutics, Inc.",
-   1.29
-  ],
-  [
-   "RYTM",
-   "Rhythm Pharmaceuticals, Inc.",
-   1.29
-  ],
-  [
-   "REGN",
-   "Regeneron Pharmaceuticals, Inc.",
    1.28
   ],
   [
-   "ERAS",
-   "Erasca, Inc.",
-   1.27
-  ],
-  [
-   "TVTX",
-   "Travere Therapeutics, Inc.",
-   1.25
+   "SMMT",
+   "Summit Therapeutics Inc.",
+   1.28
   ],
   [
    "PCVX",
    "Vaxcyte, Inc.",
-   1.23
+   1.27
   ],
   [
-   "ROIV",
-   "Roivant Sciences Ltd.",
+   "REGN",
+   "Regeneron Pharmaceuticals, Inc.",
+   1.26
+  ],
+  [
+   "SRRK",
+   "Scholar Rock Holding Corporation",
    1.22
+  ],
+  [
+   "IOVA",
+   "Iovance Biotherapeutics, Inc.",
+   1.22
+  ],
+  [
+   "RYTM",
+   "Rhythm Pharmaceuticals, Inc.",
+   1.19
+  ],
+  [
+   "SYRE",
+   "Spyre Therapeutics, Inc.",
+   1.17
   ],
   [
    "RLAY",
    "Relay Therapeutics, Inc.",
-   1.2
-  ],
-  [
-   "AMGN",
-   "Amgen Inc.",
-   1.18
-  ],
-  [
-   "BMRN",
-   "BioMarin Pharmaceutical Inc.",
    1.16
   ],
   [
-   "ARWR",
-   "Arrowhead Pharmaceuticals, Inc.",
+   "ERAS",
+   "Erasca, Inc.",
    1.15
   ],
   [
-   "BBIO",
-   "BridgeBio Pharma, Inc.",
+   "GILD",
+   "Gilead Sciences, Inc.",
+   1.15
+  ],
+  [
+   "VRTX",
+   "Vertex Pharmaceuticals Incorporated",
    1.15
   ]
  ],
@@ -1121,169 +1106,169 @@
   [
    "TXG",
    "10x Genomics, Inc.",
-   9.13
+   10.56
   ],
   [
    "TWST",
    "Twist Bioscience Corporation",
-   8.57
+   8.33
   ],
   [
    "TEM",
    "Tempus AI, Inc.",
-   7.88
+   7.67
   ],
   [
    "CRSP",
    "CRISPR Therapeutics AG",
-   6.14
+   5.84
   ],
   [
    "PSNL",
    "Personalis, Inc.",
-   5.93
+   5.79
   ],
   [
    "ABSI",
    "Absci Corporation",
-   4.82
+   4.6
   ],
   [
    "GH",
    "Guardant Health, Inc.",
-   4.44
+   4.37
   ],
   [
    "NTRA",
    "Natera, Inc.",
-   4.08
+   4.3
   ],
   [
    "ILMN",
    "Illumina, Inc.",
-   3.95
-  ],
-  [
-   "LLY",
-   "Eli Lilly and Company",
-   3.9
+   4.04
   ],
   [
    "CDNA",
    "CareDx, Inc.",
-   3.8
+   4.0
   ],
   [
-   "BEAM",
-   "Beam Therapeutics Inc.",
-   3.54
+   "LLY",
+   "Eli Lilly and Company",
+   3.86
   ],
   [
    "CMPS",
    "COMPASS Pathways plc",
-   3.13
+   3.49
+  ],
+  [
+   "BEAM",
+   "Beam Therapeutics Inc.",
+   3.2
   ],
   [
    "RXRX",
    "Recursion Pharmaceuticals, Inc.",
-   2.41
-  ],
-  [
-   "SDGR",
-   "SchrÃ¶dinger, Inc.",
-   2.41
-  ],
-  [
-   "ARCT",
-   "Arcturus Therapeutics Holdings Inc.",
-   2.36
-  ],
-  [
-   "NRIX",
-   "Nurix Therapeutics, Inc.",
-   2.32
+   2.38
   ],
   [
    "ADPT",
    "Adaptive Biotechnologies Corporation",
-   2.29
+   2.34
   ],
   [
    "WGS",
    "GeneDx Holdings Corp.",
-   2.25
+   2.33
+  ],
+  [
+   "NRIX",
+   "Nurix Therapeutics, Inc.",
+   2.3
+  ],
+  [
+   "SDGR",
+   "SchrÃ¶dinger, Inc.",
+   2.26
+  ],
+  [
+   "ARCT",
+   "Arcturus Therapeutics Holdings Inc.",
+   2.2
   ],
   [
    "VCYT",
    "Veracyte, Inc.",
-   2.12
+   2.05
   ],
   [
    "BFLY",
    "Butterfly Network, Inc.",
-   2.07
-  ],
-  [
-   "IONS",
-   "Ionis Pharmaceuticals, Inc.",
-   1.85
+   1.9
   ],
   [
    "NTLA",
    "Intellia Therapeutics, Inc.",
-   1.76
+   1.78
+  ],
+  [
+   "IONS",
+   "Ionis Pharmaceuticals, Inc.",
+   1.72
   ],
   [
    "ALMR",
    "Alamar Biosciences, Inc.",
-   1.49
+   1.45
   ],
   [
-   "PRME",
-   "Prime Medicine, Inc.",
-   1.42
+   "GENB",
+   "Generate Biomedicines, Inc.",
+   1.31
   ]
  ],
  "NASA": [
   [
    "RKLB",
    "Rocket Lab Corporation",
-   11.4
+   9.59
   ],
   [
-   "VSAT",
-   "Viasat, Inc.",
-   5.81
+   "SPCX",
+   "Space Exploration Technologies Corp.",
+   6.93
   ],
   [
    "ASTS",
    "AST SpaceMobile, Inc.",
-   5.6
+   6.62
   ],
   [
-   "FLY",
-   "Firefly Aerospace Inc.",
-   4.34
+   "VSAT",
+   "Viasat, Inc.",
+   6.03
   ],
   [
-   "TSX: MDA",
-   "MDA Space Ltd.",
-   4.25
-  ],
-  [
-   "VOYG",
-   "Voyager Technologies, Inc.",
-   4.14
-  ],
-  [
-   "ECHO",
-   "EchoStar Corporation",
-   4.12
+   "TPEX: 3491",
+   "Universal Microwave Technology, Inc.",
+   4.68
   ],
   [
    "FTC.L",
    "Filtronic PLC",
-   3.84
+   4.37
+  ],
+  [
+   "TSX: MDA",
+   "MDA Space Ltd.",
+   3.9
+  ],
+  [
+   "FLY",
+   "Firefly Aerospace Inc.",
+   3.82
   ],
   [
    "LUNR",
@@ -1291,79 +1276,79 @@
    3.71
   ],
   [
-   "TPEX: 3491",
-   "Universal Microwave Technology, Inc.",
-   3.7
+   "VOYG",
+   "Voyager Technologies, Inc.",
+   3.66
   ],
   [
    "TSX: VNP",
    "5N Plus Inc.",
-   3.24
+   3.13
   ],
   [
    "BKSY",
    "BlackSky Technology Inc.",
-   2.96
-  ],
-  [
-   "PL",
-   "Planet Labs PBC",
-   2.85
-  ],
-  [
-   "SPCX",
-   "Space Exploration Technologies Corp.",
-   2.52
-  ],
-  [
-   "TYO: 186A",
-   "Astroscale Holdings Inc.",
-   2.19
+   2.29
   ],
   [
    "LITE",
    "Lumentum Holdings Inc.",
-   1.87
+   2.21
   ],
   [
-   "LPTH",
-   "LightPath Technologies, Inc.",
-   1.85
+   "TYO: 186A",
+   "Astroscale Holdings Inc.",
+   2.13
   ],
   [
-   "LASR",
-   "nLIGHT, Inc.",
-   1.56
-  ],
-  [
-   "ETR: AIXA",
-   "AIXTRON SE",
-   1.53
-  ],
-  [
-   "YSS",
-   "York Space Systems, Inc.",
-   1.51
+   "PL",
+   "Planet Labs PBC",
+   1.86
   ],
   [
    "TYO: 290A",
    "Synspective Inc.",
-   1.48
+   1.81
+  ],
+  [
+   "SATL",
+   "Satellogic Inc.",
+   1.72
+  ],
+  [
+   "ETR: AIXA",
+   "AIXTRON SE",
+   1.68
   ],
   [
    "TYO: 464A",
    "QPS Holdings Inc.",
-   1.44
-  ],
-  [
-   "VPG",
-   "Vishay Precision Group, Inc.",
-   1.36
+   1.66
   ],
   [
    "TPEX: 3105",
    "WIN Semiconductors Corp.",
-   1.13
+   1.64
+  ],
+  [
+   "LPTH",
+   "LightPath Technologies, Inc.",
+   1.54
+  ],
+  [
+   "VPG",
+   "Vishay Precision Group, Inc.",
+   1.38
+  ],
+  [
+   "YSS",
+   "York Space Systems, Inc.",
+   1.11
+  ],
+  [
+   "ECHO",
+   "EchoStar Corporation",
+   1.06
   ]
  ],
  "DRAM": [
@@ -1539,47 +1524,47 @@
   [
    "LLY",
    "Eli Lilly and Company",
-   14.88
+   14.76
   ],
   [
    "JNJ",
    "Johnson & Johnson",
-   10.41
+   10.69
   ],
   [
    "ABBV",
    "AbbVie Inc.",
-   7.37
+   7.6
   ],
   [
    "MRK",
    "Merck & Co., Inc.",
-   5.93
+   5.95
   ],
   [
    "UNH",
    "UnitedHealth Group Incorporated",
-   5.75
-  ],
-  [
-   "AMGN",
-   "Amgen Inc.",
-   3.77
+   5.76
   ],
   [
    "TMO",
    "Thermo Fisher Scientific Inc.",
-   3.73
+   3.79
   ],
   [
-   "ABT",
-   "Abbott Laboratories",
-   3.13
+   "AMGN",
+   "Amgen Inc.",
+   3.41
   ],
   [
    "GILD",
    "Gilead Sciences, Inc.",
-   2.95
+   2.98
+  ],
+  [
+   "ABT",
+   "Abbott Laboratories",
+   2.97
   ],
   [
    "PFE",
@@ -1589,77 +1574,77 @@
   [
    "VRTX",
    "Vertex Pharmaceuticals Incorporated",
-   2.25
-  ],
-  [
-   "BMY",
-   "Bristol-Myers Squibb Company",
-   2.22
-  ],
-  [
-   "DHR",
-   "Danaher Corporation",
    2.19
   ],
   [
    "ISRG",
    "Intuitive Surgical, Inc.",
+   2.19
+  ],
+  [
+   "BMY",
+   "Bristol-Myers Squibb Company",
    2.17
+  ],
+  [
+   "DHR",
+   "Danaher Corporation",
+   2.11
   ],
   [
    "CVS",
    "CVS Health Corporation",
-   1.95
+   2.02
   ],
   [
    "MDT",
    "Medtronic plc",
-   1.89
-  ],
-  [
-   "SYK",
-   "Stryker Corporation",
-   1.82
+   1.95
   ],
   [
    "MCK",
    "McKesson Corporation",
-   1.73
+   1.77
+  ],
+  [
+   "SYK",
+   "Stryker Corporation",
+   1.59
   ],
   [
    "ELV",
    "Elevance Health, Inc.",
-   1.39
+   1.52
   ],
   [
    "REGN",
    "Regeneron Pharmaceuticals, Inc.",
-   1.3
+   1.31
   ],
   [
    "CI",
    "The Cigna Group",
-   1.19
-  ],
-  [
-   "BSX",
-   "Boston Scientific Corporation",
-   1.17
+   1.24
   ],
   [
    "HCA",
    "HCA Healthcare, Inc.",
-   1.05
+   1.11
+  ],
+  [
+   "BSX",
+   "Boston Scientific Corporation",
+   1.07
   ],
   [
    "COR",
    "Cencora, Inc.",
-   1.02
+   1.05
   ],
   [
    "CAH",
    "Cardinal Health, Inc.",
-   0.89
+   0.92
   ]
  ],
  "VHT": [
@@ -1793,67 +1778,72 @@
   [
    "JPM",
    "JPMorgan Chase & Co.",
-   11.83
+   11.81
   ],
   [
    "BRK.B",
    "Berkshire Hathaway Inc.",
-   11.24
+   11.58
   ],
   [
    "V",
    "Visa Inc.",
-   7.35
+   7.61
   ],
   [
    "MA",
    "Mastercard Incorporated",
-   5.59
+   5.68
   ],
   [
    "BAC",
    "Bank of America Corporation",
-   5.12
+   5.06
   ],
   [
    "GS",
    "The Goldman Sachs Group, Inc.",
-   3.73
+   3.76
   ],
   [
    "WFC",
    "Wells Fargo & Company",
-   3.31
+   3.42
   ],
   [
    "MS",
    "Morgan Stanley",
-   3.17
+   3.18
   ],
   [
    "C",
    "Citigroup Inc.",
-   2.89
-  ],
-  [
-   "AXP",
-   "American Express Company",
-   2.22
+   2.93
   ],
   [
    "SCHW",
    "The Charles Schwab Corporation",
-   2.21
+   2.17
+  ],
+  [
+   "AXP",
+   "American Express Company",
+   2.14
   ],
   [
    "BLK",
    "BlackRock, Inc.",
-   2.06
+   1.93
   ],
   [
    "COF",
    "Capital One Financial Corporation",
-   1.72
+   1.6
+  ],
+  [
+   "PGR",
+   "The Progressive Corporation",
+   1.57
   ],
   [
    "SPGI",
@@ -1866,54 +1856,49 @@
    1.51
   ],
   [
-   "PGR",
-   "The Progressive Corporation",
-   1.49
-  ],
-  [
    "BNY",
    "The Bank of New York Mellon Corporation",
-   1.36
-  ],
-  [
-   "BX",
-   "Blackstone Inc.",
-   1.3
-  ],
-  [
-   "PNC",
-   "The PNC Financial Services Group, Inc.",
-   1.26
-  ],
-  [
-   "USB",
-   "U.S. Bancorp",
-   1.24
+   1.38
   ],
   [
    "CME",
    "CME Group Inc.",
-   1.19
+   1.24
   ],
   [
-   "MRSH",
-   "Marsh & McLennan Companies, Inc.",
+   "PNC",
+   "The PNC Financial Services Group, Inc.",
+   1.21
+  ],
+  [
+   "USB",
+   "U.S. Bancorp",
+   1.21
+  ],
+  [
+   "BX",
+   "Blackstone Inc.",
+   1.18
+  ],
+  [
+   "HOOD",
+   "Robinhood Markets, Inc.",
    1.1
   ],
   [
    "ICE",
    "Intercontinental Exchange, Inc.",
-   1.06
+   1.1
   ],
   [
-   "KKR",
-   "KKR & Co. Inc.",
-   0.96
+   "MRSH",
+   "Marsh & McLennan Companies, Inc.",
+   1.05
   ],
   [
    "TRV",
    "The Travelers Companies, Inc.",
-   0.96
+   0.99
   ]
  ],
  "QBTS": [
@@ -1941,17 +1926,17 @@
   [
    "NVDA",
    "NVIDIA Corporation",
-   5.01
+   4.84
   ],
   [
    "AAPL",
    "Apple Inc.",
-   4.6
+   4.7
   ],
   [
    "MSFT",
    "Microsoft Corporation",
-   3.43
+   3.37
   ],
   [
    "AMZN",
@@ -1966,12 +1951,12 @@
   [
    "TPE: 2330",
    "Taiwan Semiconductor Manufacturing Company Limited",
-   1.76
+   1.8
   ],
   [
    "AVGO",
    "Broadcom Inc.",
-   1.54
+   1.58
   ],
   [
    "GOOG",
@@ -1981,72 +1966,67 @@
   [
    "META",
    "Meta Platforms, Inc.",
-   1.28
+   1.37
   ],
   [
    "MU",
    "Micron Technology, Inc.",
-   1.03
+   1.06
   ],
   [
    "TSLA",
    "Tesla, Inc.",
-   1.03
+   1.01
   ],
   [
    "JPM",
    "JPMorgan Chase & Co.",
-   0.92
-  ],
-  [
-   "LLY",
-   "Eli Lilly and Company",
-   0.89
+   0.91
   ],
   [
    "KRX: 005930",
    "Samsung Electronics Co., Ltd.",
-   0.82
+   0.86
+  ],
+  [
+   "LLY",
+   "Eli Lilly and Company",
+   0.86
   ],
   [
    "AMD",
    "Advanced Micro Devices, Inc.",
-   0.71
+   0.81
+  ],
+  [
+   "KRX: 000660",
+   "SK hynix Inc.",
+   0.72
   ],
   [
    "BRK.B",
    "Berkshire Hathaway Inc.",
-   0.68
+   0.69
   ],
   [
    "XOM",
    "ExxonMobil Holdings Corporation",
+   0.66
+  ],
+  [
+   "AMS: ASML",
+   "ASML Holding N.V.",
    0.64
   ],
   [
    "JNJ",
    "Johnson & Johnson",
-   0.64
-  ],
-  [
-   "KRX: 000660",
-   "SK hynix Inc.",
    0.62
-  ],
-  [
-   "AMS: ASML",
-   "ASML Holding N.V.",
-   0.61
   ],
   [
    "V",
    "Visa Inc.",
-   0.6
-  ],
-  [
-   "MA",
-   "Mastercard Incorporated",
-   0.45
+   0.59
   ],
   [
    "WMT",
@@ -2054,141 +2034,146 @@
    0.45
   ],
   [
+   "MA",
+   "Mastercard Incorporated",
+   0.44
+  ],
+  [
    "ABBV",
    "AbbVie Inc.",
    0.44
   ],
   [
-   "CSCO",
-   "Cisco Systems, Inc.",
-   0.41
+   "INTC",
+   "Intel Corporation",
+   0.44
   ]
  ],
  "AVUV": [
   [
    "MATX",
    "Matson, Inc.",
-   1.01
+   1.07
   ],
   [
    "LNTH",
    "Lantheus Holdings, Inc.",
-   0.97
-  ],
-  [
-   "VSAT",
-   "Viasat, Inc.",
-   0.96
-  ],
-  [
-   "SM",
-   "SM Energy Company",
-   0.8
+   0.87
   ],
   [
    "GATX",
    "GATX Corporation",
+   0.86
+  ],
+  [
+   "ANF",
+   "Abercrombie & Fitch Co.",
+   0.86
+  ],
+  [
+   "SM",
+   "SM Energy Company",
+   0.86
+  ],
+  [
+   "VSAT",
+   "Viasat, Inc.",
    0.79
   ],
   [
    "M",
    "Macy's, Inc.",
-   0.78
-  ],
-  [
-   "SKYW",
-   "SkyWest, Inc.",
-   0.74
-  ],
-  [
-   "RUSHA",
-   "Rush Enterprises, Inc.",
-   0.73
-  ],
-  [
-   "AVT",
-   "Avnet, Inc.",
-   0.72
-  ],
-  [
-   "CBT",
-   "Cabot Corporation",
-   0.7
-  ],
-  [
-   "ALK",
-   "Alaska Air Group, Inc.",
-   0.69
-  ],
-  [
-   "OSCR",
-   "Oscar Health, Inc.",
-   0.65
+   0.76
   ],
   [
    "LEA",
    "Lear Corporation",
+   0.75
+  ],
+  [
+   "SKYW",
+   "SkyWest, Inc.",
+   0.69
+  ],
+  [
+   "CBT",
+   "Cabot Corporation",
+   0.69
+  ],
+  [
+   "RUSHA",
+   "Rush Enterprises, Inc.",
+   0.68
+  ],
+  [
+   "INSW",
+   "International Seaways, Inc.",
    0.65
   ],
   [
-   "CAKE",
-   "The Cheesecake Factory Incorporated",
+   "MUR",
+   "Murphy Oil Corporation",
    0.63
   ],
   [
-   "ANF",
-   "Abercrombie & Fitch Co.",
-   0.62
+   "MGY",
+   "Magnolia Oil & Gas Corporation",
+   0.63
   ],
   [
-   "CALM",
-   "Cal-Maine Foods, Inc.",
+   "OSCR",
+   "Oscar Health, Inc.",
    0.62
   ],
   [
    "TPC",
    "Tutor Perini Corporation",
-   0.61
-  ],
-  [
-   "IRDM",
-   "Iridium Communications Inc.",
-   0.61
-  ],
-  [
-   "AROC",
-   "Archrock, Inc.",
-   0.6
-  ],
-  [
-   "INSW",
-   "International Seaways, Inc.",
-   0.59
-  ],
-  [
-   "CROX",
-   "Crocs, Inc.",
-   0.58
-  ],
-  [
-   "OII",
-   "Oceaneering International, Inc.",
-   0.58
-  ],
-  [
-   "NOV",
-   "NOV Inc.",
-   0.57
+   0.62
   ],
   [
    "URBN",
    "Urban Outfitters, Inc.",
-   0.57
+   0.61
+  ],
+  [
+   "CAKE",
+   "The Cheesecake Factory Incorporated",
+   0.6
+  ],
+  [
+   "ALK",
+   "Alaska Air Group, Inc.",
+   0.6
+  ],
+  [
+   "OII",
+   "Oceaneering International, Inc.",
+   0.6
   ],
   [
    "SNEX",
    "StoneX Group Inc.",
-   0.56
+   0.59
+  ],
+  [
+   "AROC",
+   "Archrock, Inc.",
+   0.58
+  ],
+  [
+   "IRDM",
+   "Iridium Communications Inc.",
+   0.58
+  ],
+  [
+   "AVT",
+   "Avnet, Inc.",
+   0.58
+  ],
+  [
+   "NE",
+   "Noble Corporation plc",
+   0.57
   ]
  ],
  "CGW": [
@@ -2688,127 +2673,127 @@
   [
    "PNC",
    "The PNC Financial Services Group, Inc.",
-   14.78
+   15.16
   ],
   [
    "USB",
    "U.S. Bancorp",
-   14.59
+   15.08
   ],
   [
    "TFC",
    "Truist Financial Corporation",
-   9.52
+   9.71
   ],
   [
    "FITB",
    "Fifth Third Bancorp",
-   6.27
+   6.34
   ],
   [
    "CFG",
    "Citizens Financial Group, Inc.",
-   4.66
+   4.75
   ],
   [
    "MTB",
    "M&T Bank Corporation",
-   4.62
+   4.69
   ],
   [
    "HBAN",
    "Huntington Bancshares Incorporated",
-   4.31
+   4.38
   ],
   [
    "RF",
    "Regions Financial Corporation",
-   4.18
-  ],
-  [
-   "KEY",
-   "KeyCorp",
-   3.28
+   4.26
   ],
   [
    "FCNCA",
    "First Citizens BancShares, Inc.",
-   3.27
+   3.35
+  ],
+  [
+   "KEY",
+   "KeyCorp",
+   3.34
   ],
   [
    "EWBC",
    "East West Bancorp, Inc.",
-   2.88
+   2.93
   ],
   [
    "PNFP",
    "Pinnacle Financial Partners, Inc.",
-   2.49
-  ],
-  [
-   "WBS",
-   "Webster Financial Corporation",
-   1.98
+   2.48
   ],
   [
    "FHN",
    "First Horizon Corporation",
-   1.91
+   1.93
   ],
   [
    "BPOP",
    "Popular, Inc.",
-   1.77
-  ],
-  [
-   "WTFC",
-   "Wintrust Financial Corporation",
-   1.69
+   1.75
   ],
   [
    "SSB",
    "SouthState Bank Corporation",
-   1.68
+   1.72
   ],
   [
-   "UMBF",
-   "UMB Financial Corporation",
-   1.67
+   "WTFC",
+   "Wintrust Financial Corporation",
+   1.7
   ],
   [
    "CFR",
    "Cullen/Frost Bankers, Inc.",
-   1.64
+   1.7
   ],
   [
    "ZION",
    "Zions Bancorporation, National Association",
-   1.59
+   1.66
+  ],
+  [
+   "UMBF",
+   "UMB Financial Corporation",
+   1.65
   ],
   [
    "PB",
    "Prosperity Bancshares, Inc.",
-   1.36
+   1.39
   ],
   [
    "WAL",
    "Western Alliance Bancorporation",
-   1.29
+   1.35
   ],
   [
    "CBSH",
    "Commerce Bancshares, Inc.",
-   1.26
+   1.31
   ],
   [
    "VLY",
    "Valley National Bancorp",
-   1.11
+   1.09
   ],
   [
    "FNB",
    "F.N.B. Corporation",
-   1.06
+   1.08
+  ],
+  [
+   "UBSI",
+   "United Bankshares, Inc.",
+   1.05
   ]
  ],
  "IBB": [
@@ -2942,87 +2927,87 @@
   [
    "TPE: 2330",
    "Taiwan Semiconductor Manufacturing Company Limited",
-   13.42
+   13.27
   ],
   [
    "KRX: 005930",
    "Samsung Electronics Co., Ltd.",
-   6.35
+   6.39
   ],
   [
    "KRX: 000660",
    "SK hynix Inc.",
-   4.46
+   5.27
   ],
   [
    "HKG: 0700",
    "Tencent Holdings Limited",
-   2.49
+   2.37
   ],
   [
    "HKG: 9988",
    "Alibaba Group Holding Limited",
-   1.87
+   1.63
   ],
   [
    "TPE: 2454",
    "MediaTek Inc.",
-   1.36
-  ],
-  [
-   "TPE: 2308",
-   "Delta Electronics, Inc.",
-   0.82
-  ],
-  [
-   "TPE: 2317",
-   "Hon Hai Precision Industry Co., Ltd.",
-   0.72
+   1.48
   ],
   [
    "HKG: 0939",
    "China Construction Bank Corporation",
+   0.74
+  ],
+  [
+   "TPE: 2308",
+   "Delta Electronics, Inc.",
+   0.71
+  ],
+  [
+   "TPE: 2317",
+   "Hon Hai Precision Industry Co., Ltd.",
    0.68
   ],
   [
    "NSE: HDFCBANK",
    "HDFC Bank Limited",
-   0.61
+   0.59
   ],
   [
    "NSE: RELIANCE",
    "Reliance Industries Limited",
-   0.6
+   0.54
   ],
   [
    "NSE: ICICIBANK",
    "ICICI Bank Limited",
-   0.55
+   0.53
   ],
   [
    "KRX: 402340",
    "SK Square Co., Ltd.",
-   0.52
+   0.53
+  ],
+  [
+   "XTSLA",
+   "BLK CSH FND TREASURY SL AGENCY",
+   0.46
   ],
   [
    "TPE: 3711",
    "ASE Technology Holding Co., Ltd.",
-   0.47
+   0.46
   ],
   [
    "HKG: 1398",
    "Industrial and Commercial Bank of China Limited",
-   0.43
+   0.45
   ],
   [
    "KRX: 009150",
    "Samsung Electro-Mechanics Co., Ltd.",
-   0.43
-  ],
-  [
-   "HKG: 3690",
-   "Meituan",
-   0.42
+   0.41
   ],
   [
    "HKG: 1810",
@@ -3030,29 +3015,29 @@
    0.41
   ],
   [
-   "NSE: BHARTIARTL",
-   "Bharti Airtel Limited",
-   0.4
+   "BVMF: VALE3",
+   "Vale S.A.",
+   0.39
   ],
   [
-   "TPE: 2383",
-   "Elite Material Co., Ltd.",
-   0.37
+   "NSE: BHARTIARTL",
+   "Bharti Airtel Limited",
+   0.38
   ],
   [
    "NU",
    "Nu Holdings Ltd.",
-   0.36
+   0.38
   ],
   [
-   "XTSLA",
-   "BLK CSH FND TREASURY SL AGENCY",
-   0.36
+   "JSE: ANG",
+   "AngloGold Ashanti plc",
+   0.37
   ],
   [
-   "BVMF: VALE3",
-   "Vale S.A.",
-   0.35
+   "HKG: 3988",
+   "Bank of China Limited",
+   0.37
   ]
  ],
  "IGF": [
@@ -3082,11 +3067,6 @@
    3.8
   ],
   [
-   "PAC",
-   "Grupo Aeroportuario del PacÃ­fico, S.A.B. de C.V.",
-   3.38
-  ],
-  [
    "NZE: AIA",
    "Auckland International Airport Limited",
    3.36
@@ -3094,7 +3074,7 @@
   [
    "WMB",
    "The Williams Companies, Inc.",
-   3.21
+   3.18
   ],
   [
    "SO",
@@ -3308,17 +3288,22 @@
   [
    "NSE: HDFCBANK",
    "HDFC Bank Limited",
-   9.8
+   10.11
   ],
   [
    "NSE: ICICIBANK",
    "ICICI Bank Limited",
-   9.28
+   9.21
   ],
   [
    "NSE: RELIANCE",
    "Reliance Industries Limited",
-   8.03
+   7.91
+  ],
+  [
+   "XTSLA",
+   "BLK CSH FND TREASURY SL AGENCY",
+   5.54
   ],
   [
    "NSE: BHARTIARTL",
@@ -3328,62 +3313,57 @@
   [
    "NSE: LT",
    "Larsen & Toubro Limited",
-   4.25
+   4.27
   ],
   [
    "NSE: SBIN",
    "State Bank of India",
-   3.86
+   3.82
   ],
   [
    "NSE: INFY",
    "Infosys Limited",
-   3.62
-  ],
-  [
-   "XTSLA",
-   "BlackRock Cash Funds Treasury SL Agency",
-   3.52
+   3.38
   ],
   [
    "NSE: AXISBANK",
    "Axis Bank Limited",
-   3.3
+   3.35
   ],
   [
    "NSE: KOTAKBANK",
    "Kotak Mahindra Bank Limited",
-   2.83
+   2.87
   ],
   [
    "NSE: BAJFINANCE",
    "Bajaj Finance Limited",
-   2.57
+   2.58
   ],
   [
    "NSE: ITC",
    "ITC Limited",
-   2.31
-  ],
-  [
-   "NSE: TCS",
-   "Tata Consultancy Services Limited",
-   2.16
+   2.33
   ],
   [
    "NSE: ETERNAL",
    "Eternal Limited",
-   2.14
+   2.17
+  ],
+  [
+   "NSE: TCS",
+   "Tata Consultancy Services Limited",
+   2.09
   ],
   [
    "NSE: TITAN",
    "Titan Company Limited",
-   1.89
+   1.92
   ],
   [
    "NSE: SUNPHARMA",
    "Sun Pharmaceutical Industries Limited",
-   1.85
+   1.81
   ],
   [
    "NSE: HINDUNILVR",
@@ -3393,78 +3373,103 @@
   [
    "NSE: MARUTI",
    "Maruti Suzuki India Limited",
-   1.53
+   1.5
   ],
   [
    "NSE: NTPC",
    "NTPC Limited",
-   1.43
+   1.47
   ],
   [
    "NSE: TATASTEEL",
    "Tata Steel Limited",
-   1.39
+   1.41
   ],
   [
    "NSE: BEL",
    "Bharat Electronics Limited",
-   1.34
+   1.35
   ],
   [
    "NSE: SHRIRAMFIN",
    "Shriram Finance Limited",
-   1.33
+   1.34
   ],
   [
    "NSE: HINDALCO",
    "Hindalco Industries Limited",
-   1.33
+   1.32
   ],
   [
-   "NSE: HCLTECH",
-   "HCL Technologies Limited",
-   1.27
+   "NSE: ULTRACEMCO",
+   "UltraTech Cement Limited",
+   1.21
   ]
  ],
  "IWM": [
   [
    "MOG.A",
    "Moog Inc.",
-   0.38
+   0.34
   ],
   [
    "UMBF",
    "UMB Financial Corporation",
-   0.35
-  ],
-  [
-   "GKOS",
-   "Glaukos Corporation",
    0.34
   ],
   [
-   "VSAT",
-   "Viasat, Inc.",
+   "HUT",
+   "Hut 8 Corp.",
    0.33
-  ],
-  [
-   "FROG",
-   "JFrog Ltd.",
-   0.32
-  ],
-  [
-   "EAT",
-   "Brinker International, Inc.",
-   0.32
-  ],
-  [
-   "BTSG",
-   "BrightSpring Health Services, Inc.",
-   0.3
   ],
   [
    "CYTK",
    "Cytokinetics, Incorporated",
+   0.32
+  ],
+  [
+   "XTSLA",
+   "BLK CSH FND TREASURY SL AGENCY",
+   0.32
+  ],
+  [
+   "GKOS",
+   "Glaukos Corporation",
+   0.31
+  ],
+  [
+   "BTSG",
+   "BrightSpring Health Services, Inc.",
+   0.31
+  ],
+  [
+   "FROG",
+   "JFrog Ltd.",
+   0.31
+  ],
+  [
+   "FCFS",
+   "FirstCash Holdings, Inc.",
+   0.31
+  ],
+  [
+   "VSAT",
+   "Viasat, Inc.",
+   0.31
+  ],
+  [
+   "SM",
+   "SM Energy Company",
+   0.3
+  ],
+  [
+   "EAT",
+   "Brinker International, Inc.",
+   0.3
+  ],
+  [
+   "IDCC",
+   "InterDigital, Inc.",
    0.3
   ],
   [
@@ -3473,84 +3478,59 @@
    0.3
   ],
   [
-   "COMP",
-   "Compass, Inc.",
-   0.3
-  ],
-  [
    "PTGX",
    "Protagonist Therapeutics, Inc.",
-   0.29
-  ],
-  [
-   "PRAX",
-   "Praxis Precision Medicines, Inc.",
-   0.29
-  ],
-  [
-   "HQY",
-   "HealthEquity, Inc.",
-   0.28
-  ],
-  [
-   "IDCC",
-   "InterDigital, Inc.",
-   0.28
-  ],
-  [
-   "CTRE",
-   "CareTrust REIT, Inc.",
-   0.27
-  ],
-  [
-   "FCFS",
-   "FirstCash Holdings, Inc.",
-   0.27
-  ],
-  [
-   "CRNX",
-   "Crinetics Pharmaceuticals, Inc.",
-   0.27
-  ],
-  [
-   "HUT",
-   "Hut 8 Corp.",
-   0.27
+   0.3
   ],
   [
    "KRYS",
    "Krystal Biotech, Inc.",
-   0.26
+   0.3
+  ],
+  [
+   "CTRE",
+   "CareTrust REIT, Inc.",
+   0.29
+  ],
+  [
+   "USD",
+   "USD CASH",
+   0.28
+  ],
+  [
+   "PRAX",
+   "Praxis Precision Medicines, Inc.",
+   0.27
   ],
   [
    "RHP",
    "Ryman Hospitality Properties, Inc.",
-   0.26
-  ],
-  [
-   "ALKS",
-   "Alkermes plc",
-   0.26
-  ],
-  [
-   "JXN",
-   "Jackson Financial Inc.",
-   0.25
-  ],
-  [
-   "CMC",
-   "Commercial Metals Company",
-   0.25
+   0.27
   ],
   [
    "TWST",
    "Twist Bioscience Corporation",
-   0.25
+   0.27
   ],
   [
-   "ESE",
-   "ESCO Technologies Inc.",
-   0.25
+   "JXN",
+   "Jackson Financial Inc.",
+   0.27
+  ],
+  [
+   "TXG",
+   "10x Genomics, Inc.",
+   0.27
+  ],
+  [
+   "HQY",
+   "HealthEquity, Inc.",
+   0.27
+  ],
+  [
+   "SSRM.NE",
+   "SSR MINING",
+   0.26
   ]
  ],
  "KBE": [
@@ -3562,22 +3542,22 @@
   [
    "CRBG",
    "Corebridge Financial, Inc.",
-   1.19
+   1.21
   ],
   [
    "EQH",
    "Equitable Holdings, Inc.",
-   1.19
+   1.21
   ],
   [
    "MTG",
    "MGIC Investment Corporation",
-   1.14
+   1.13
   ],
   [
    "NMIH",
    "NMI Holdings, Inc.",
-   1.13
+   1.12
   ],
   [
    "NIC",
@@ -3590,13 +3570,18 @@
    1.1
   ],
   [
+   "VOYA",
+   "Voya Financial, Inc.",
+   1.1
+  ],
+  [
    "ESNT",
    "Essent Group Ltd.",
    1.1
   ],
   [
-   "VOYA",
-   "Voya Financial, Inc.",
+   "JPM",
+   "JPMorgan Chase & Co.",
    1.09
   ],
   [
@@ -3605,14 +3590,9 @@
    1.09
   ],
   [
-   "JPM",
-   "JPMorgan Chase & Co.",
-   1.09
-  ],
-  [
    "NTRS",
    "Northern Trust Corporation",
-   1.07
+   1.08
   ],
   [
    "CFR",
@@ -3632,6 +3612,11 @@
   [
    "USB",
    "U.S. Bancorp",
+   1.05
+  ],
+  [
+   "WFC",
+   "Wells Fargo & Company",
    1.04
   ],
   [
@@ -3645,18 +3630,18 @@
    1.04
   ],
   [
-   "WFC",
-   "Wells Fargo & Company",
-   1.04
+   "HOMB",
+   "Home BancShares, Inc.",
+   1.03
+  ],
+  [
+   "CFG",
+   "Citizens Financial Group, Inc.",
+   1.03
   ],
   [
    "WSFS",
    "WSFS Financial Corporation",
-   1.03
-  ],
-  [
-   "HOMB",
-   "Home BancShares, Inc.",
    1.02
   ],
   [
@@ -3670,14 +3655,9 @@
    1.02
   ],
   [
-   "CFG",
-   "Citizens Financial Group, Inc.",
+   "BANR",
+   "Banner Corporation",
    1.02
-  ],
-  [
-   "CBSH",
-   "Commerce Bancshares, Inc.",
-   1.01
   ]
  ],
  "KIE": [
@@ -3811,56 +3791,51 @@
   [
    "CFR",
    "Cullen/Frost Bankers, Inc.",
-   1.46
+   1.48
   ],
   [
    "SSB",
    "SouthState Bank Corporation",
-   1.43
+   1.44
   ],
   [
-   "BPOP",
-   "Popular, Inc.",
+   "HOMB",
+   "Home BancShares, Inc.",
    1.42
   ],
   [
    "CFG",
    "Citizens Financial Group, Inc.",
-   1.41
-  ],
-  [
-   "PNFP",
-   "Pinnacle Financial Partners, Inc.",
-   1.41
-  ],
-  [
-   "UMBF",
-   "UMB Financial Corporation",
-   1.41
-  ],
-  [
-   "HOMB",
-   "Home BancShares, Inc.",
-   1.4
-  ],
-  [
-   "ASB",
-   "Associated Banc-Corp",
-   1.4
+   1.42
   ],
   [
    "MTB",
    "M&T Bank Corporation",
-   1.39
+   1.4
   ],
   [
    "CBSH",
    "Commerce Bancshares, Inc.",
-   1.38
+   1.4
+  ],
+  [
+   "PNFP",
+   "Pinnacle Financial Partners, Inc.",
+   1.4
   ],
   [
    "HWC",
    "Hancock Whitney Corporation",
+   1.39
+  ],
+  [
+   "UMBF",
+   "UMB Financial Corporation",
+   1.39
+  ],
+  [
+   "RF",
+   "Regions Financial Corporation",
    1.38
   ],
   [
@@ -3869,19 +3844,24 @@
    1.38
   ],
   [
-   "RF",
-   "Regions Financial Corporation",
+   "UBSI",
+   "United Bankshares, Inc.",
    1.38
   ],
   [
-   "UBSI",
-   "United Bankshares, Inc.",
+   "ASB",
+   "Associated Banc-Corp",
+   1.38
+  ],
+  [
+   "BPOP",
+   "Popular, Inc.",
    1.37
   ],
   [
    "ZION",
    "Zions Bancorporation, National Association",
-   1.36
+   1.37
   ],
   [
    "FULT",
@@ -3894,19 +3874,19 @@
    1.35
   ],
   [
+   "FIBK",
+   "First Interstate BancSystem, Inc.",
+   1.34
+  ],
+  [
    "AUB",
    "Atlantic Union Bankshares Corporation",
-   1.35
+   1.33
   ],
   [
    "TFC",
    "Truist Financial Corporation",
-   1.34
-  ],
-  [
-   "FIBK",
-   "First Interstate BancSystem, Inc.",
-   1.34
+   1.33
   ],
   [
    "FNB",
@@ -3921,17 +3901,17 @@
   [
    "PB",
    "Prosperity Bancshares, Inc.",
-   1.32
-  ],
-  [
-   "EBC",
-   "Eastern Bankshares, Inc.",
    1.31
   ],
   [
    "HBAN",
    "Huntington Bancshares Incorporated",
    1.31
+  ],
+  [
+   "COLB",
+   "Columbia Banking System, Inc.",
+   1.3
   ]
  ],
  "NFRA": [
@@ -4441,52 +4421,52 @@
   [
    "MRK",
    "Merck & Co., Inc.",
-   4.82
-  ],
-  [
-   "AMGN",
-   "Amgen Inc.",
-   4.78
+   4.76
   ],
   [
    "ABT",
    "Abbott Laboratories",
-   4.74
+   4.43
+  ],
+  [
+   "CVX",
+   "Chevron Corporation",
+   4.28
   ],
   [
    "KO",
    "The Coca-Cola Company",
+   4.25
+  ],
+  [
+   "AMGN",
+   "Amgen Inc.",
+   4.23
+  ],
+  [
+   "COP",
+   "ConocoPhillips",
    4.18
   ],
   [
    "VZ",
    "Verizon Communications Inc.",
-   3.92
-  ],
-  [
-   "CVX",
-   "Chevron Corporation",
-   3.9
-  ],
-  [
-   "HD",
-   "The Home Depot, Inc.",
-   3.88
-  ],
-  [
-   "UNH",
-   "UnitedHealth Group Incorporated",
-   3.88
-  ],
-  [
-   "COP",
-   "ConocoPhillips",
-   3.85
+   4.11
   ],
   [
    "PG",
    "The Procter & Gamble Company",
-   3.78
+   3.93
+  ],
+  [
+   "UNH",
+   "UnitedHealth Group Incorporated",
+   3.81
+  ],
+  [
+   "HD",
+   "The Home Depot, Inc.",
+   3.74
   ],
   [
    "PEP",
@@ -4494,81 +4474,81 @@
    3.63
   ],
   [
-   "BMY",
-   "Bristol-Myers Squibb Company",
-   3.33
-  ],
-  [
    "TXN",
    "Texas Instruments Incorporated",
-   3.19
+   3.3
   ],
   [
-   "ACN",
-   "Accenture plc",
-   2.8
-  ],
-  [
-   "LMT",
-   "Lockheed Martin Corporation",
-   2.8
-  ],
-  [
-   "ADP",
-   "Automatic Data Processing, Inc.",
-   2.77
+   "BMY",
+   "Bristol-Myers Squibb Company",
+   3.25
   ],
   [
    "MO",
    "Altria Group, Inc.",
-   2.75
+   2.88
   ],
   [
-   "BX",
-   "Blackstone Inc.",
-   2.6
+   "ACN",
+   "Accenture plc",
+   2.82
   ],
   [
    "QCOM",
    "QUALCOMM Incorporated",
-   2.44
+   2.76
+  ],
+  [
+   "ADP",
+   "Automatic Data Processing, Inc.",
+   2.68
+  ],
+  [
+   "LMT",
+   "Lockheed Martin Corporation",
+   2.66
+  ],
+  [
+   "BX",
+   "Blackstone Inc.",
+   2.38
   ],
   [
    "CMCSA",
    "Comcast Corporation",
-   2.29
+   2.24
   ],
   [
    "SLB",
    "SLB N.V.",
-   2.0
-  ],
-  [
-   "UPS",
-   "United Parcel Service, Inc.",
-   1.92
+   2.09
   ],
   [
    "EOG",
    "EOG Resources, Inc.",
-   1.88
+   1.96
+  ],
+  [
+   "UPS",
+   "United Parcel Service, Inc.",
+   1.87
   ],
   [
    "TGT",
    "Target Corporation",
-   1.84
+   1.77
   ],
   [
    "OKE",
    "ONEOK, Inc.",
-   1.45
+   1.52
   ]
  ],
  "SCHH": [
   [
    "WELL",
    "Welltower Inc.",
-   11.09
+   11.19
   ],
   [
    "PLD",
@@ -4578,52 +4558,52 @@
   [
    "DLR",
    "Digital Realty Trust, Inc.",
-   4.63
+   4.68
   ],
   [
    "SPG",
    "Simon Property Group, Inc.",
-   4.54
+   4.49
   ],
   [
    "AMT",
    "American Tower Corporation",
-   4.26
+   4.36
   ],
   [
    "EQIX",
    "Equinix, Inc.",
-   4.25
+   4.3
   ],
   [
    "O",
    "Realty Income Corporation",
-   4.03
+   3.96
   ],
   [
    "PSA",
    "Public Storage",
-   3.58
+   3.55
   ],
   [
    "VMRK",
    "Vivmark Residential",
-   3.38
+   3.43
   ],
   [
    "VTR",
    "Ventas, Inc.",
-   3.1
+   3.12
   ],
   [
    "IRM",
    "Iron Mountain Incorporated",
-   2.46
+   2.45
   ],
   [
    "CCI",
    "Crown Castle Inc.",
-   2.34
+   2.36
   ],
   [
    "EXR",
@@ -4633,22 +4613,22 @@
   [
    "VICI",
    "VICI Properties Inc.",
-   1.96
+   1.94
   ],
   [
    "SBAC",
    "SBA Communications Corporation",
-   1.42
+   1.4
   ],
   [
    "ESS",
    "Essex Property Trust, Inc.",
-   1.26
+   1.25
   ],
   [
    "WY",
    "Weyerhaeuser Company",
-   1.17
+   1.14
   ],
   [
    "KIM",
@@ -4658,64 +4638,49 @@
   [
    "WPC",
    "W. P. Carey Inc.",
-   1.11
+   1.1
   ],
   [
    "INVH",
    "Invitation Homes Inc.",
-   1.1
+   1.07
   ],
   [
    "MAA",
    "Mid-America Apartment Communities, Inc.",
-   1.05
-  ],
-  [
-   "DOC",
-   "Healthpeak Properties, Inc.",
-   1.01
+   1.04
   ],
   [
    "HST",
    "Host Hotels & Resorts, Inc.",
-   0.99
+   1.01
   ],
   [
-   "SUI",
-   "Sun Communities, Inc.",
-   0.98
+   "DOC",
+   "Healthpeak Properties, Inc.",
+   1.0
   ],
   [
    "OHI",
    "Omega Healthcare Investors, Inc.",
-   0.98
+   1.0
+  ],
+  [
+   "SUI",
+   "Sun Communities, Inc.",
+   0.95
   ]
  ],
  "VB": [
   [
-   "CRDO",
-   "Credo Technology Group Holding Ltd",
-   0.54
-  ],
-  [
-   "JBL",
-   "Jabil Inc.",
-   0.49
-  ],
-  [
    "RVMD",
    "Revolution Medicines, Inc.",
-   0.45
-  ],
-  [
-   "ALAB",
-   "Astera Labs, Inc.",
-   0.45
+   0.47
   ],
   [
    "NTRA",
    "Natera, Inc.",
-   0.44
+   0.45
   ],
   [
    "EME",
@@ -4723,54 +4688,49 @@
    0.44
   ],
   [
-   "TWLO",
-   "Twilio Inc.",
-   0.38
+   "CRDO",
+   "Credo Technology Group Holding Ltd",
+   0.43
   ],
   [
-   "NRG",
-   "NRG Energy, Inc.",
-   0.37
-  ],
-  [
-   "MKSI",
-   "MKS Inc.",
-   0.36
-  ],
-  [
-   "FLEX",
-   "Flex Ltd.",
-   0.36
-  ],
-  [
-   "TPR",
-   "Tapestry, Inc.",
-   0.35
+   "JBL",
+   "Jabil Inc.",
+   0.41
   ],
   [
    "CASY",
    "Casey's General Stores, Inc.",
-   0.35
+   0.4
   ],
   [
-   "CRS",
-   "Carpenter Technology Corporation",
-   0.35
+   "TPR",
+   "Tapestry, Inc.",
+   0.38
+  ],
+  [
+   "TWLO",
+   "Twilio Inc.",
+   0.37
+  ],
+  [
+   "ILMN",
+   "Illumina, Inc.",
+   0.37
   ],
   [
    "ATO",
    "Atmos Energy Corporation",
-   0.34
+   0.36
   ],
   [
-   "CW",
-   "Curtiss-Wright Corporation",
-   0.34
+   "FTI",
+   "TechnipFMC plc",
+   0.35
   ],
   [
-   "FTAI",
-   "FTAI Aviation Ltd.",
-   0.33
+   "NRG",
+   "NRG Energy, Inc.",
+   0.35
   ],
   [
    "WSM",
@@ -4778,13 +4738,8 @@
    0.33
   ],
   [
-   "NVT",
-   "nVent Electric plc",
-   0.33
-  ],
-  [
-   "ENTG",
-   "Entegris, Inc.",
+   "CW",
+   "Curtiss-Wright Corporation",
    0.33
   ],
   [
@@ -4793,32 +4748,52 @@
    0.32
   ],
   [
-   "FTI",
-   "TechnipFMC plc",
-   0.32
-  ],
-  [
-   "MTZ",
-   "MasTec, Inc.",
+   "NVT",
+   "nVent Electric plc",
    0.31
   ],
   [
-   "MTSI",
-   "MACOM Technology Solutions Holdings, Inc.",
-   0.31
-  ],
-  [
-   "WWD",
-   "Woodward, Inc.",
+   "CRS",
+   "Carpenter Technology Corporation",
    0.3
+  ],
+  [
+   "P",
+   "Everpure, Inc.",
+   0.3
+  ],
+  [
+   "SW",
+   "Smurfit Westrock Plc",
+   0.3
+  ],
+  [
+   "ALAB",
+   "Astera Labs, Inc.",
+   0.3
+  ],
+  [
+   "OKTA",
+   "Okta, Inc.",
+   0.3
+  ],
+  [
+   "FFIV",
+   "F5, Inc.",
+   0.28
+  ],
+  [
+   "EXE",
+   "Expand Energy Corporation",
+   0.28
+  ],
+  [
+   "OMC",
+   "Omnicom Group Inc.",
+   0.28
   ]
  ],
  "VNQ": [
-  [
-   "VRTPX",
-   "Vanguard Real Estate II Index",
-   14.41
-  ],
   [
    "WELL",
    "Welltower Inc.",
@@ -5188,111 +5163,106 @@
   [
    "TPE: 2330",
    "Taiwan Semiconductor Manufacturing Company Limited",
-   15.67
+   14.99
   ],
   [
    "HKG: 0700",
    "Tencent Holdings Limited",
-   2.82
+   3.19
   ],
   [
    "BABAF",
    "Alibaba Group Holding Limited",
-   1.79
+   2.33
   ],
   [
    "TPE: 2454",
    "MediaTek Inc.",
-   1.64
+   1.31
+  ],
+  [
+   "CICHF",
+   "China Construction Bank Corporation",
+   0.86
   ],
   [
    "TPE: 2308",
    "Delta Electronics, Inc.",
-   0.99
+   0.79
   ],
   [
    "TPE: 2317",
    "Hon Hai Precision Industry Co., Ltd.",
-   0.8
-  ],
-  [
-   "NSE: HDFCBANK",
-   "HDFC Bank Limited",
-   0.79
+   0.78
   ],
   [
    "NSE: RELIANCE",
    "Reliance Industries Limited",
-   0.75
+   0.77
   ],
   [
-   "HKG: 0939",
-   "China Construction Bank Corporation",
+   "NSE: HDFCBANK",
+   "HDFC Bank Limited",
    0.75
   ],
   [
    "NSE: ICICIBANK",
    "ICICI Bank Limited",
-   0.63
+   0.67
   ],
   [
-   "TPE: 3711",
-   "ASE Technology Holding Co., Ltd.",
-   0.61
-  ],
-  [
-   "HKG: 1398",
+   "IDCBF",
    "Industrial and Commercial Bank of China Limited",
-   0.54
-  ],
-  [
-   "NSE: BHARTIARTL",
-   "Bharti Airtel Limited",
-   0.49
+   0.64
   ],
   [
    "PDD",
    "PDD Holdings Inc.",
-   0.48
+   0.57
   ],
   [
-   "TPE: 2327",
-   "Yageo Corporation",
+   "HKG: 3690",
+   "Meituan",
+   0.54
+  ],
+  [
+   "HKG: 1810",
+   "Xiaomi Corporation",
+   0.53
+  ],
+  [
+   "NSE: BHARTIARTL",
+   "Bharti Airtel Limited",
+   0.52
+  ],
+  [
+   "TPE: 3711",
+   "ASE Technology Holding Co., Ltd.",
    0.47
   ],
   [
    "BVMF: VALE3",
    "Vale S.A.",
-   0.43
+   0.44
   ],
   [
-   "TPE: 2303",
-   "United Microelectronics Corporation",
-   0.42
-  ],
-  [
-   "TPE: 2383",
-   "Elite Material Co., Ltd.",
-   0.4
-  ],
-  [
-   "HKG: 3690",
-   "Meituan",
-   0.4
-  ],
-  [
-   "HKG: 1810",
-   "Xiaomi Corporation",
-   0.39
-  ],
-  [
-   "HKG: 9999",
+   "NETTF",
    "NetEase, Inc.",
-   0.38
+   0.4
   ],
   [
-   "TPE: 3037",
-   "Unimicron Technology Corp.",
+   "PIAIF",
+   "Ping An Insurance (Group) Company of China, Ltd.",
+   0.4
+  ],
+  [
+   "BACHF",
+   "Bank of China Limited",
+   0.4
+  ],
+  [
+   "BYDDF",
+   "BYD Company Limited",
    0.37
   ]
  ],
@@ -5544,102 +5514,102 @@
   [
    "CAT",
    "Caterpillar Inc.",
-   6.74
+   6.95
   ],
   [
    "GE",
    "GE Aerospace",
-   6.44
+   6.23
   ],
   [
    "RTX",
    "RTX Corporation",
-   5.07
+   4.91
   ],
   [
    "GEV",
    "GE Vernova Inc.",
-   4.83
-  ],
-  [
-   "BA",
-   "The Boeing Company",
-   3.11
-  ],
-  [
-   "UNP",
-   "Union Pacific Corporation",
-   3.03
-  ],
-  [
-   "ETN",
-   "Eaton Corporation plc",
-   3.01
-  ],
-  [
-   "UBER",
-   "Uber Technologies, Inc.",
-   2.64
+   4.75
   ],
   [
    "DE",
    "Deere & Company",
-   2.63
+   3.13
+  ],
+  [
+   "UNP",
+   "Union Pacific Corporation",
+   3.11
+  ],
+  [
+   "BA",
+   "The Boeing Company",
+   3.06
+  ],
+  [
+   "ETN",
+   "Eaton Corporation plc",
+   3.05
+  ],
+  [
+   "UBER",
+   "Uber Technologies, Inc.",
+   2.69
   ],
   [
    "PH",
    "Parker-Hannifin Corporation",
-   2.29
-  ],
-  [
-   "LMT",
-   "Lockheed Martin Corporation",
-   2.08
-  ],
-  [
-   "HWM",
-   "Howmet Aerospace Inc.",
-   1.94
+   2.21
   ],
   [
    "ADP",
    "Automatic Data Processing, Inc.",
-   1.89
+   1.98
+  ],
+  [
+   "LMT",
+   "Lockheed Martin Corporation",
+   1.96
   ],
   [
    "VRT",
    "Vertiv Holdings Co",
-   1.89
+   1.82
   ],
   [
    "TT",
    "Trane Technologies plc",
-   1.81
+   1.8
   ],
   [
    "PWR",
    "Quanta Services, Inc.",
-   1.73
+   1.8
   ],
   [
-   "GD",
-   "General Dynamics Corporation",
-   1.71
-  ],
-  [
-   "MMM",
-   "3M Company",
-   1.63
+   "HWM",
+   "Howmet Aerospace Inc.",
+   1.69
   ],
   [
    "CSX",
    "CSX Corporation",
-   1.59
+   1.68
+  ],
+  [
+   "GD",
+   "General Dynamics Corporation",
+   1.67
   ],
   [
    "JCI",
    "Johnson Controls International plc",
-   1.58
+   1.64
+  ],
+  [
+   "MMM",
+   "3M Company",
+   1.59
   ],
   [
    "EMR",
@@ -5647,24 +5617,24 @@
    1.57
   ],
   [
-   "CMI",
-   "Cummins Inc.",
-   1.49
-  ],
-  [
    "WM",
    "Waste Management, Inc.",
+   1.45
+  ],
+  [
+   "CMI",
+   "Cummins Inc.",
    1.42
   ],
   [
    "UPS",
    "United Parcel Service, Inc.",
-   1.35
+   1.38
   ],
   [
-   "NOC",
-   "Northrop Grumman Corporation",
-   1.31
+   "NSC",
+   "Norfolk Southern Corporation",
+   1.33
   ]
  ],
  "XLP": [
@@ -5798,97 +5768,97 @@
   [
    "AMZN",
    "Amazon.com, Inc.",
-   24.3
+   24.91
   ],
   [
    "TSLA",
    "Tesla, Inc.",
-   15.86
+   17.75
   ],
   [
    "HD",
    "The Home Depot, Inc.",
-   5.55
+   5.31
   ],
   [
    "MCD",
    "McDonald's Corporation",
-   4.16
+   4.04
   ],
   [
    "BKNG",
    "Booking Holdings Inc.",
-   4.06
+   3.49
   ],
   [
    "TJX",
    "The TJX Companies, Inc.",
-   3.91
+   3.4
   ],
   [
    "SBUX",
    "Starbucks Corporation",
-   3.03
+   2.91
   ],
   [
    "LOW",
    "Lowe's Companies, Inc.",
-   3.02
-  ],
-  [
-   "DASH",
-   "DoorDash, Inc.",
-   2.03
-  ],
-  [
-   "ROST",
-   "Ross Stores, Inc.",
-   1.95
+   2.85
   ],
   [
    "GM",
    "General Motors Company",
-   1.93
+   2.0
+  ],
+  [
+   "DASH",
+   "DoorDash, Inc.",
+   1.98
+  ],
+  [
+   "ROST",
+   "Ross Stores, Inc.",
+   1.92
   ],
   [
    "MAR",
    "Marriott International, Inc.",
-   1.93
+   1.9
   ],
   [
    "ABNB",
    "Airbnb, Inc.",
-   1.9
-  ],
-  [
-   "RCL",
-   "Royal Caribbean Cruises Ltd.",
-   1.88
+   1.84
   ],
   [
    "ORLY",
    "O'Reilly Automotive, Inc.",
-   1.86
+   1.84
   ],
   [
    "HLT",
    "Hilton Worldwide Holdings Inc.",
-   1.84
+   1.8
+  ],
+  [
+   "RCL",
+   "Royal Caribbean Cruises Ltd.",
+   1.68
   ],
   [
    "F",
    "Ford Motor Company",
-   1.39
+   1.42
   ],
   [
    "CVNA",
    "Carvana Co.",
-   1.34
+   1.28
   ],
   [
-   "GRMN",
-   "Garmin Ltd.",
-   1.26
+   "EBAY",
+   "eBay Inc.",
+   1.24
   ],
   [
    "AZO",
@@ -5896,19 +5866,19 @@
    1.23
   ],
   [
-   "NKE",
-   "NIKE, Inc.",
-   1.21
-  ],
-  [
-   "EBAY",
-   "eBay Inc.",
-   1.13
-  ],
-  [
    "CMG",
    "Chipotle Mexican Grill, Inc.",
-   1.06
+   1.2
+  ],
+  [
+   "GRMN",
+   "Garmin Ltd.",
+   1.2
+  ],
+  [
+   "NKE",
+   "NIKE, Inc.",
+   1.14
   ],
   [
    "YUM",
@@ -5918,7 +5888,7 @@
   [
    "DHI",
    "D.R. Horton, Inc.",
-   0.97
+   0.94
   ]
  ],
  "BBJP": [
@@ -6672,42 +6642,42 @@
   [
    "AMS: ASML",
    "ASML Holding N.V.",
-   4.83
+   3.93
   ],
   [
    "LON: HSBA",
    "HSBC Holdings plc",
-   2.05
-  ],
-  [
-   "SWX: NOVN",
-   "Novartis AG",
-   1.84
+   2.26
   ],
   [
    "SWX: ROP",
    "Roche Holding AG",
-   1.83
+   1.9
   ],
   [
-   "LON: AZN",
-   "AstraZeneca PLC",
-   1.77
+   "SWX: NOVN",
+   "Novartis AG",
+   1.8
   ],
   [
    "SWX: NESN",
    "NestlÃ© S.A.",
-   1.67
+   1.59
+  ],
+  [
+   "LON: SHEL",
+   "Shell plc",
+   1.59
+  ],
+  [
+   "LON: AZN",
+   "AstraZeneca PLC",
+   1.58
   ],
   [
    "ETR: SIE",
    "Siemens Aktiengesellschaft",
    1.49
-  ],
-  [
-   "LON: SHEL",
-   "Shell plc",
-   1.38
   ],
   [
    "BME: SAN",
@@ -6717,77 +6687,82 @@
   [
    "ETR: ALV",
    "Allianz SE",
-   1.14
-  ],
-  [
-   "EPA: SU",
-   "Schneider Electric S.E.",
-   1.12
-  ],
-  [
-   "SWX: ABBN",
-   "ABB Ltd",
-   1.06
-  ],
-  [
-   "BME: IBE",
-   "Iberdrola, S.A.",
-   1.06
-  ],
-  [
-   "LON: RR",
-   "Rolls-Royce Holdings plc",
-   1.02
+   1.17
   ],
   [
    "ETR: SAP",
    "SAP SE",
-   1.0
+   1.17
   ],
   [
-   "SWX: UBSG",
-   "UBS Group AG",
-   0.98
-  ],
-  [
-   "CPH: NOVO.B",
-   "Novo Nordisk A/S",
-   0.97
+   "EPA: SU",
+   "Schneider Electric S.E.",
+   1.13
   ],
   [
    "EPA: TTE",
    "TotalEnergies SE",
-   0.94
+   1.05
   ],
   [
-   "ETR: ENR",
-   "Siemens Energy AG",
-   0.91
+   "LON: RR",
+   "Rolls-Royce Holdings plc",
+   1.04
+  ],
+  [
+   "SWX: UBSG",
+   "UBS Group AG",
+   1.02
+  ],
+  [
+   "BME: IBE",
+   "Iberdrola, S.A.",
+   1.01
   ],
   [
    "BME: BBVA",
    "Banco Bilbao Vizcaya Argentaria, S.A.",
-   0.89
+   0.98
   ],
   [
-   "EPA: MC",
-   "LVMH MoÃ«t Hennessy - Louis Vuitton, SociÃ©tÃ© EuropÃ©enne",
-   0.86
+   "SWX: ABBN",
+   "ABB Ltd",
+   0.95
   ],
   [
-   "EPA: SAF",
-   "Safran SA",
-   0.86
+   "CPH: NOVO.B",
+   "Novo Nordisk A/S",
+   0.93
   ],
   [
    "BIT: UCG",
    "UniCredit S.p.A.",
-   0.85
+   0.88
   ],
   [
    "EPA: AIR",
    "Airbus SE",
-   0.82
+   0.85
+  ],
+  [
+   "EPA: MC",
+   "LVMH MoÃ«t Hennessy - Louis Vuitton, SociÃ©tÃ© EuropÃ©enne",
+   0.84
+  ],
+  [
+   "EPA: SAF",
+   "Safran SA",
+   0.84
+  ],
+  [
+   "LON: ULVR",
+   "Unilever PLC",
+   0.83
+  ],
+  [
+   "ETR: ENR",
+   "Siemens Energy AG",
+   0.8
   ]
  ]
 }
