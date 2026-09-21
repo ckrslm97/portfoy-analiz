@@ -3328,7 +3328,7 @@
   [
    "NSE: BHARTIARTL",
    "Bharti Airtel Limited",
-   5.22
+   5.23
   ],
   [
    "NSE: LT",
@@ -3341,6 +3341,11 @@
    3.81
   ],
   [
+   "XTSLA",
+   "BlackRock Cash Funds Treasury SL Agency",
+   3.65
+  ],
+  [
    "NSE: INFY",
    "Infosys Limited",
    3.46
@@ -3349,11 +3354,6 @@
    "NSE: AXISBANK",
    "Axis Bank Limited",
    3.33
-  ],
-  [
-   "XTSLA",
-   "BLK CSH FND TREASURY SL AGENCY",
-   3.05
   ],
   [
    "NSE: KOTAKBANK",
@@ -3408,7 +3408,7 @@
   [
    "NSE: TATASTEEL",
    "Tata Steel Limited",
-   1.44
+   1.45
   ],
   [
    "NSE: HINDALCO",
@@ -3434,8 +3434,8 @@
  "IWM": [
   [
    "XTSLA",
-   "BLK CSH FND TREASURY SL AGENCY",
-   0.59
+   "BlackRock Cash Funds Treasury SL Agency",
+   0.44
   ],
   [
    "FROG",
@@ -3543,8 +3543,8 @@
    0.27
   ],
   [
-   "SSRM.NE",
-   "SSR MINING",
+   "SSRM",
+   "SSR Mining Inc.",
    0.26
   ],
   [
@@ -4387,6 +4387,11 @@
    1.48
   ],
   [
+   "XTSLA",
+   "BlackRock Cash Funds Treasury SL Agency",
+   1.0
+  ],
+  [
    "ESS",
    "Essex Property Trust, Inc.",
    0.98
@@ -4435,11 +4440,6 @@
    "MAA",
    "Mid-America Apartment Communities, Inc.",
    0.79
-  ],
-  [
-   "XTSLA",
-   "BLK CSH FND TREASURY SL AGENCY",
-   0.78
   ],
   [
    "REG",
@@ -4824,11 +4824,6 @@
   ]
  ],
  "VNQ": [
-  [
-   "VRTPX",
-   "Vanguard Real Estate II Index",
-   14.53
-  ],
   [
    "WELL",
    "Welltower Inc.",
